@@ -1,0 +1,195 @@
+
+@import 'colors';
+@import 'material';
+
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+$font: 'Roboto', sans-serif;
+$text-grey: rgba(0,0,0,0.54);
+
+$navbar-height: 79px;
+$navbar-default-bg: white;
+$navbar-margin-bottom: 0;
+
+$navbar-default-toggle-border-color: white;
+$navbar-inverse-toggle-hover-bg: white;
+$navbar-inverse-toggle-icon-bar-bg: white;
+
+$navbar-default-color: $text-grey;
+$navbar-default-link-color: $text-grey;
+$navbar-default-link-active-color: $text-grey;
+
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
+
+@media (max-width: 768px) {
+
+  .left-column {
+      margin-bottom: 40px;
+  }
+
+}
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+
+
+body {
+  padding: 0;
+  font-size: 16px;
+  font-family: $font;
+  font-weight: 300;
+  background-color: #f9f9f9;
+  color: $text-dark;
+}
+
+.navbar {
+}
+
+.navbar-logo {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 16px;
+}
+
+.main-container {
+  background: white;
+  border: $card-border;
+}
+
+.uvp {
+  font-size: 34px;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: $text-dark;
+}
+
+.narrative {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $text-grey;
+}
+
+.title-screen {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 20px;
+  @include box-shadow($whiteframe-shadow-z2);
+}
+
+.btn-default {
+  border-radius: $button-border-radius;
+  @include box-shadow($whiteframe-shadow-z1);
+  color: white;
+  background-color: $color-green;
+  font-size: 14px;
+  margin-top: 5px;
+  boder: none;
+}
+
+.navbar-default .navbar-nav > li > a.btn-default {
+  @extend .btn-default;
+  padding: 8px 12px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+input.form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: $card-border;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 0;
+  @include box-shadow(none);
+  padding-bottom: 2px;
+}
+
+input.form-control:focus {
+  @include box-shadow(none);
+  border-bottom: 2px solid $color-light-blue;
+}
+
+.register {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.section {
+  padding-top: 40px;
+  border-top: $card-border;
+  padding-bottom: 40px;
+}
+
+.section-dark {
+  background-color: $color-indigo;
+
+  .section-header {
+    color: $text-light;
+  }
+
+  .section-details {
+    color: $text-light;
+  }
+}
+
+.section-image {
+  max-width: 100%;
+  width: 100%;
+  margin-right: 20px;
+  @include box-shadow($whiteframe-shadow-z2);
+}
+
+.section-header {
+  font-size: 34px;
+  margin-left: 20px;
+}
+
+.section-details {
+  color: $text-grey;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.section-grey {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: #f9f9f9; 
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  color: $text-grey;
+  font-size: 14px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.search {
+  margin-top: -320px;
+  padding-left: 100px;
+}
+
+.search-header {
+  font-size: 34px;
+  font-weight: 300;
+  text-align: center;
+  color: $text-dark;
+  margin-left: -60px;
+  margin-bottom: 20px;
+}
+
