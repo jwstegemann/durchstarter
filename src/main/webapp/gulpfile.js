@@ -26,6 +26,8 @@ var paths = {
   styles: 'app/styles/**/*.scss',
   dist: 'dist',
   staticFiles: ['app/index.html', 'app/favicon.ico'],
+  fontsFiles: ['app/fonts/*'],
+  cssFiles: ['app/styles/font-awesome.min.css'],
   indexHtml: "http://localhost:9000/index.html",
   icons: 'app/icons/*'
 };
@@ -73,6 +75,27 @@ gulp.task('static', [], function() {
     .pipe(gulp.dest(dest));
 }); 
 
+/*
+ * fonts ressources
+ */
+gulp.task('fonts', [], function() {
+  var dest = paths.dist + '/fonts';
+
+  return gulp.src(paths.fontsFiles)
+    .pipe(changed(dest))
+    .pipe(gulp.dest(dest));
+}); 
+
+/*
+ * css ressources
+ */
+gulp.task('css', [], function() {
+  var dest = paths.dist + '/css';
+
+  return gulp.src(paths.cssFiles)
+    .pipe(changed(dest))
+    .pipe(gulp.dest(dest));
+}); 
 
 /*
  * scripts
@@ -211,7 +234,7 @@ gulp.task('watch', function() {
 /*
  * build
  */
-gulp.task('build', ['scripts', 'styles', 'images', 'icons', 'static']); 
+gulp.task('build', ['scripts', 'styles', 'images', 'icons', 'static', 'fonts', 'css']); 
 
 /*
  * build

@@ -193,3 +193,62 @@ input.form-control:focus {
   margin-bottom: 20px;
 }
 
+.ergebnis-titel {
+  margin-top: 20px;
+  font-size: 34px;
+  font-weight: 300;
+  text-align: center;
+  color: $text-grey;
+  margin-left: -60px;
+  margin-bottom: 20px;
+}
+
+.dp {
+  
+}
+
+p.kategorie {
+  font-size: 16px;
+  font-weight: 400;
+  color: $text-grey;
+  margin-bottom: 2px !important;
+}
+
+p.name {
+  font-weight: 400;
+  font-size: 18px;
+  color: $color-green;
+  margin-top: 0 !important;
+}
+
+p.telefon {
+  color: $text-grey;
+  margin-bottom: 0 !important;
+}
+
+p.telefax {
+  color: $text-grey;
+  margin-top: 0 !important;
+}
+
+p.email {
+  color: $text-grey;
+  margin-bottom: 0 !important;
+}
+
+p.url {
+  color: $text-grey;
+  margin-top: 0 !important;
+}
+
+p.anschrift {
+  color: $text-grey;
+}
+
+.icon-grey {
+  color: $text-grey;
+}
+
+.ergebnis-zeile {
+  margin-bottom: 40px !important;
+}
