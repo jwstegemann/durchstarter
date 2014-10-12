@@ -24,7 +24,7 @@ var paths = {
   scripts: ['app/js/**/*.js', 'app/js/**/*.jsx'],
   imageFiles: 'app/img/**/*',
   styles: 'app/styles/**/*.scss',
-  dist: 'dist',
+  dist: 'dist/app',
   staticFiles: ['app/index.html', 'app/favicon.ico'],
   fontsFiles: ['app/fonts/*'],
   cssFiles: ['app/styles/font-awesome.min.css'],

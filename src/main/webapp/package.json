@@ -1,11 +1,11 @@
 {
-  "name": "consigneur",
-  "version": "1.0.0",
+  "name": "durchstarter",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jwstegemann/consigneur.git"
+    "url": "https://github.com/jwstegemann/durchstarter.git"
   },
-  "homepage": "http://www.consigneur.com",
+  "homepage": "http://www.durchstarter24.de",
   "author": {
     "name": "Jens Stegemann",
     "email": "jwstegemann@gmail.com"

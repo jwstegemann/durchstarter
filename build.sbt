@@ -1,10 +1,8 @@
-import com.typesafe.sbt.SbtStartScript
+import AssemblyKeys._ // put this at the top of the file
 
-seq(SbtStartScript.startScriptForClassesSettings: _*)
+name := "durchstarter"
 
-name := "amanuensis"
-
-version := "0.9.1"
+version := "0.0.1"
 
 scalaVersion := "2.10.3"
 
@@ -54,4 +52,7 @@ libraryDependencies ++= Seq(
     "com.amazonaws"                           %   "aws-java-sdk"                % "1.6.3"    
 )
 
+assemblySettings
+
+mainClass := Some("durchstarter.Rest")
 

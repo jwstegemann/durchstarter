@@ -519,6 +519,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Dockerfile",
+			"settings":
+			{
+				"buffer_size": 654,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -680,6 +688,32 @@
 	},
 	"file_history":
 	[
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/UsingParams.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/domain/Story.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/web/Web.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/Boot.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/Api.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/RootServiceActor.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchServer.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/StaticHttpService.scala",
+		"/home/tiberius/scala/projects/durchstarter/build.sbt",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
+		"/home/tiberius/scala/projects/durchstarter/project/plugins.sbt",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/package.json",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/index.html",
+		"/home/tiberius/scala/projects/durchstarter/Dockerfile",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_colors.scss",
+		"/home/tiberius/scala/projects/durchstarter/src/main/resources/application.conf",
+		"/home/tiberius/scala/projects/durchstarter/src/main/resources/logback.xml",
+		"/home/tiberius/scala/projects/durchstarter/src/main/resources/ssl-keystore.jks",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/exceptions/Exceptions.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/AccessHttpService.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/util/Converters.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/util/Failable.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/util/StringUtils.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchDomain.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/Core.scala",
 		"/home/tiberius/scala/projects/consigneur/src/main/webapp/gulpfile.js",
 		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/icons/search.svg",
 		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/js/components/AppBar.jsx",
@@ -781,33 +815,7 @@
 		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/styles/typeahead.css",
 		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/bower_components/ngQuickDate/dist/ng-quick-date.js",
 		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/bower_components/ng-tags-input/ng-tags-input.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/api/UserHttpService.scala",
-		"/home/tiberius/scala/projects/amanuensis/curl/elasticsearch/permission",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/po/template.pot",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/GraphActor.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/domain/Graph.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/neo4j/CypherServer.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/translations.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/po/template_german.po",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/icons.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/package.json",
-		"/home/tiberius/scala/projects/amanuensis/neo4j/queries.cypher",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/elasticsearch/ElasticSearchDomain.scala",
-		"/home/tiberius/scala/projects/amanuensis/curl/elasticsearch/update_damod_0.9.2.sh",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/styles/modals.css",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/bower_components/font-awesome/css/font-awesome.css",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/.tmp/styles/buttons.css",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/styles/buttons.css",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/controllers/cab.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/styles/cab.css",
-		"/home/tiberius/scala/projects/amanuensis/build.sbt",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/styles/query.css",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/styles/main.css",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/controllers/searchDialog.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/services/utilService.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/styles/layout.css",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/.tmp/styles/responsive.css",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/bower_components/angular-loading-bar/build/loading-bar.min.css"
+		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/api/UserHttpService.scala"
 	],
 	"find":
 	{
@@ -872,6 +880,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"text-grey",
+			"static",
 			"handleErr",
 			"@extends",
 			"-font",
@@ -997,9 +1007,7 @@
 			"updateScrollbar()",
 			"update",
 			"show",
-			"border-radius",
-			"border-ra",
-			"border-r"
+			"border-radius"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1054,8 +1062,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Dockerfile",
+					"settings":
+					{
+						"buffer_size": 654,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								654,
+								654
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
