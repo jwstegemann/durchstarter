@@ -2,9 +2,6 @@
 'use strict';
 
 var React = require('react');
-var Icon = require('./Icon');
-
-var AppBar = require('./AppBar');
 
 
 module.exports = React.createClass({

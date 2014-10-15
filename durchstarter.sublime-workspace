@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"Daten",
+				"DatenplaetzeStore"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
 				"rea",
 				"real_build"
 			],
@@ -50,10 +58,6 @@
 			[
 				"modi",
 				"modified"
-			],
-			[
-				"re",
-				"retrieveQueryString"
 			],
 			[
 				"r",
@@ -510,36 +514,72 @@
 			[
 				"No",
 				"NoTimeConversions"
-			],
-			[
-				"expect",
-				"expectMsg"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/main/scala/durchstarter/core/elasticsearch/ElasticSearchServer.scala",
+			"file": "src/main/webapp/app/index.html",
 			"settings":
 			{
-				"buffer_size": 4366,
+				"buffer_size": 4747,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/main/scala/durchstarter/core/QueryDatenplaetzeActor.scala",
+			"file": "src/main/webapp/app/js/app.js",
 			"settings":
 			{
-				"buffer_size": 876,
+				"buffer_size": 548,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "build.sbt",
+			"file": "src/main/webapp/app/js/Actions.js",
 			"settings":
 			{
-				"buffer_size": 2767,
+				"buffer_size": 132,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/js/stores/DatenplaetzeStore.js",
+			"settings":
+			{
+				"buffer_size": 927,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/js/components/Info.jsx",
+			"settings":
+			{
+				"buffer_size": 5097,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/js/components/Ergebnis.jsx",
+			"settings":
+			{
+				"buffer_size": 1094,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/js/components/Datenplatz.jsx",
+			"settings":
+			{
+				"buffer_size": 1325,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 4022,
 				"line_ending": "Unix"
 			}
 		}
@@ -704,16 +744,23 @@
 	},
 	"file_history":
 	[
-		"/home/tiberius/.config/sublime-text-2/Packages/SublimeSBT/Default (Linux).sublime-keymap",
-		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/QueryDatenplaetzeActor.scala",
-		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/domain/Durchstarter.scala",
-		"/home/tiberius/scala/projects/durchstarter/elasticsearch/init",
-		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchDomain.scala",
+		"/home/tiberius/scala/projects/durchstarter/elasticsearch/load",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/QueryHttpService.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/AppBar.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchServer.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/QueryDatenplaetzeActor.scala",
+		"/home/tiberius/scala/projects/durchstarter/build.sbt",
+		"/home/tiberius/scala/projects/durchstarter/elasticsearch/init",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/domain/Durchstarter.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchDomain.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/resources/logback.xml",
+		"/home/tiberius/.config/sublime-text-2/Packages/SublimeSBT/Default (Linux).sublime-keymap",
 		"/home/tiberius/scala/projects/durchstarter/Dockerfile",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/UsingParams.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/Core.scala",
-		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/QueryHttpService.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/RootServiceActor.scala",
 		"/home/tiberius/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/domain/Story.scala",
@@ -721,15 +768,11 @@
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/Boot.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/Api.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/StaticHttpService.scala",
-		"/home/tiberius/scala/projects/durchstarter/build.sbt",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
 		"/home/tiberius/scala/projects/durchstarter/project/plugins.sbt",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/package.json",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/index.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_colors.scss",
 		"/home/tiberius/scala/projects/durchstarter/src/main/resources/application.conf",
-		"/home/tiberius/scala/projects/durchstarter/src/main/resources/logback.xml",
 		"/home/tiberius/scala/projects/durchstarter/src/main/resources/ssl-keystore.jks",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/exceptions/Exceptions.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/AccessHttpService.scala",
@@ -828,10 +871,7 @@
 		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/api/RootServiceActor.scala",
 		"/home/tiberius/scala/projects/amanuensis/curl/admin/create_user.sh",
 		"/home/tiberius/scala/projects/amanuensis/README.md",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/node_modules/grunt/node_modules/colors/ReadMe.md",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/services/slotService.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/controllers/slot.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/styles/story.css"
+		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/node_modules/grunt/node_modules/colors/ReadMe.md"
 	],
 	"find":
 	{
@@ -839,9 +879,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"/home/tiberius/scala/projects/durchstarter/src",
 			"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app",
 			"/home/tiberius/scala/projects/amanuensis/src/main/scala",
 			"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/",
@@ -896,6 +937,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"style=\"width:150%\"",
+			"style",
+			"class=",
+			"ElasticsearchException",
 			"suggest",
 			"compile",
 			"c",
@@ -1019,11 +1064,7 @@
 			"story-view",
 			"scrollbar",
 			"scroll",
-			"scrollbar",
-			"updateScr",
-			"updateScroll",
-			"updateScroo",
-			"updateScrollbar()"
+			"scrollbar"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1031,6 +1072,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"className=\"platzlogo\"",
+			"className=",
 			"-font;",
 			"title=\"{{'\\1' | translate}}\"",
 			"setPristine();",
@@ -1078,56 +1121,56 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/main/scala/durchstarter/core/elasticsearch/ElasticSearchServer.scala",
+					"file": "src/main/webapp/app/index.html",
 					"settings":
 					{
-						"buffer_size": 4366,
+						"buffer_size": 4747,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								951,
-								951
+								3668,
+								3668
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Scala/Scala.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 375.0,
+						"translation.y": 331.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/main/scala/durchstarter/core/QueryDatenplaetzeActor.scala",
+					"file": "src/main/webapp/app/js/app.js",
 					"settings":
 					{
-						"buffer_size": 876,
+						"buffer_size": 548,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								773,
-								773
+								283,
+								283
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Scala/Scala.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1139,28 +1182,165 @@
 				},
 				{
 					"buffer": 2,
-					"file": "build.sbt",
+					"file": "src/main/webapp/app/js/Actions.js",
 					"settings":
 					{
-						"buffer_size": 2767,
+						"buffer_size": 132,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								607,
-								607
+								15,
+								15
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/main/webapp/app/js/stores/DatenplaetzeStore.js",
+					"settings":
+					{
+						"buffer_size": 927,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								899,
+								899
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/main/webapp/app/js/components/Info.jsx",
+					"settings":
+					{
+						"buffer_size": 5097,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/main/webapp/app/js/components/Ergebnis.jsx",
+					"settings":
+					{
+						"buffer_size": 1094,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								897,
+								897
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/main/webapp/app/js/components/Datenplatz.jsx",
+					"settings":
+					{
+						"buffer_size": 1325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 5.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/main/webapp/app/styles/main.scss",
+					"settings":
+					{
+						"buffer_size": 4022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3388,
+								3388
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2574.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1209,7 +1389,7 @@
 	},
 	"output.sbt":
 	{
-		"height": 345.0
+		"height": 78.0
 	},
 	"output.sbt_error":
 	{

@@ -183,36 +183,12 @@ gulp.task('serve', ['prepare_serve', 'build', 'watch'], function() {
       directoryListing: true,
 //      fallback: 'index.html',
       proxies: [{
-        source: '/story',
-        target: 'http://localhost:8080/story'
+        source: '/datenplaetze',
+        target: 'http://localhost:8080/datenplaetze'
       },
       {
-        source: '/query',
-        target: 'http://localhost:8080/query'
-      },
-      {
-        source: '/user',
-        target: 'http://localhost:8080/user'
-      },
-      {
-        source: '/attachment',
-        target: 'http://localhost:8080/attachment'
-      },
-      {
-        source: '/graph',
-        target: 'http://localhost:8080/graph'
-      },
-      {
-        source: '/share',
-        target: 'http://localhost:8080/share'
-      },
-      {
-        source: '/star',
-        target: 'http://localhost:8080/star'
-      },
-      {
-        source: '/due',
-        target: 'http://localhost:8080/due'
+        source: '/ort',
+        target: 'http://localhost:8080/ort'
       }]
     }));
 
