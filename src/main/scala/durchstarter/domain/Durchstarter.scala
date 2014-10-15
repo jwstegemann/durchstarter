@@ -13,23 +13,22 @@ case class Ort(
 )
 
 case class Datenplatz(
-  id : String,
+  ort: String,
+  kategorie: String,
+  prio: Int,
   name: String,
   anschrift1: String,
   anschrift2: String,
   anschrift3: String,
   telefon: String,
   fax: String,
-  eMail: String,
-  url: String,
-  ort: String,
-  kategorie: String,
-  prio: Int
+  email: String,
+  url: String
 )
 
 object DurchstarterProtocol extends DefaultJsonProtocol {
 
   // JSON-Serialization
   implicit val ortJsonFormat = jsonFormat6(Ort.apply)
-  implicit val datenplatzJsonFormat = jsonFormat12(Datenplatz.apply)
+  implicit val datenplatzJsonFormat = jsonFormat11(Datenplatz.apply)
 }

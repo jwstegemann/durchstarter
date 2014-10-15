@@ -115,7 +115,7 @@ case class ElasticSearchServer(url: String, credentialsOption: Option[BasicHttpC
 
     log.debug("ElasticSearch-QueryDatenplaetze-Request: {}", queryObject)
     pipeline(Get(queryDatenplaetzeUrl, queryObject)) recover {
-      case x => throw ElasticSearchException(s"Error retrieving response from ElasticSearch-server: $x")
+        case x => throw ElasticSearchException(s"Error retrieving response from ElasticSearch-server: $x")
     }
   }
 
@@ -125,7 +125,7 @@ case class ElasticSearchServer(url: String, credentialsOption: Option[BasicHttpC
         ("text", JsString(text)),
         ("completion", JsObject(
           ("field", JsString(field)),
-          ("size", JsNumber(20))
+          ("size", JsNumber(10))
         ))
     )))
 

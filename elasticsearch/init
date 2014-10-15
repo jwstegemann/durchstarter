@@ -12,9 +12,7 @@ curl -XPUT "$1/datenplaetze"
 curl -XPUT "$1/datenplaetze/datenplatz/_mapping" -d'
 {
   "datenplatz": {
-    "_source": {
-      "enabled": "false"
-    },
+    "_source": {"enabled": "true"},
     "properties": {
       "id": {          
         "type": "string",
@@ -100,8 +98,8 @@ curl -XPUT "$1/orte/ort/_mapping" -d'
         },
         "bezeichnung": {
             "type": "completion",
-            "index_analyzer": "simple",
-            "search_analyzer": "simple",
+            "index_analyzer": "whitespace",
+            "search_analyzer": "whitespace",
             "payloads": "false"
         },
         "plz": {          
