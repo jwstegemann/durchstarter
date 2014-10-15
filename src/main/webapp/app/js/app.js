@@ -7,16 +7,15 @@ var Comment = require('./components/comment');
 var Routes = require('react-router/Routes');
 var Route = require('react-router/Route');
 
-var App = require('./components/App');
-var Story = require('./components/Story');
+var Info = require('./components/Info');
+var Ergebnis = require('./components/Ergebnis');
 
 
 
 var routes = (
   <Routes location="hash">
-    <Route name="app" path="/" handler={App}>
-      <Route name="story" path="/story/:storyId" handler={Story}/>
-    </Route>
+    <Route name="info" path="/" handler={Info} />
+    <Route name="ergebnis" path="/ort/:ortId" handler={Ergebnis} />
   </Routes>
 );
 
