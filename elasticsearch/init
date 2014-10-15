@@ -1,153 +1,130 @@
 #! /bin/bash
 
-curl -XDELETE "$1/stories"
-curl -XDELETE "$1/slots"
-curl -XDELETE "$1/groups"
-curl -XDELETE "$1/users"
+curl -XDELETE "$1/datenplaetze"
+curl -XDELETE "$1/orte"
 
-curl -XPUT "$1/stories"
-curl -XPUT "$1/slots"
+#
+# Datenplatz
+#
 
-curl -XPUT "$1/stories/story/_mapping" -d'
+curl -XPUT "$1/datenplaetze"
+
+curl -XPUT "$1/datenplaetze/datenplatz/_mapping" -d'
 {
-  "story": {
+  "datenplatz": {
+    "_source": {
+      "enabled": "false"
+    },
     "properties": {
       "id": {          
         "type": "string",
-        "store": "no",
-        "index": "no"
+        "store": "yes",
+        "analyzer": "keyword"
       },        
-      "title": {          
+      "name": {          
         "type": "string",
-        "store": "no",
+        "store": "yes",
         "analyzer": "german",
         "boost": 2.0
       },
-      "content": {
+      "anschrift1": {
         "type": "string",
-        "store": "no",
+        "store": "yes",
         "analyzer": "german"
       },
-      "created": {
-        "type": "date",
-        "format": "date_time",
-        "store": "no",
-        "index": "analyzed"
-      },
-      "createdBy": {
+      "anschrift2": {
         "type": "string",
-        "store": "no",
-        "index": "no"
-      },      
-      "modified": {
-        "type": "date",
-        "format": "date_time",
-        "store": "no",
-        "index": "analyzed"
+        "store": "yes",
+        "analyzer": "german"
       },
-      "modifiedBy": {
+      "anschrift3": {
         "type": "string",
-        "store": "no",
+        "store": "yes",
+        "analyzer": "german"
+      },
+      "telefon": {
+        "type": "string",
+        "store": "yes",
         "index": "not_analyzed"
       },
-      "due": {
-        "type": "date",
-        "format": "date_time",
-        "store": "no",
-        "index": "analyzed"
-      },
-      "dueTo": {
+      "fax": {
         "type": "string",
-        "store": "no",
+        "store": "yes",
         "index": "not_analyzed"
-      },    
-      "tags" : { 
-        "type": "multi_field",
-        "fields": {
-            "tags": {
-                "type": "string", 
-                "analyzer" : "keyword" 
-            },
-            "suggest": {
-                "type": "completion",
-                "index_analyzer": "simple",
-                "search_analyzer": "simple",
-                "payloads": "false"
-            }
-        }
       },
-      "canRead": {
-          "type": "string", 
-          "index": "not_analyzed"          
+      "email": {
+        "type": "string",
+        "store": "yes",
+        "index": "not_analyzed"
+      },
+      "url": {
+        "type": "string",
+        "store": "yes",
+        "index": "not_analyzed"
+      },
+      "ort": {
+        "type": "string",
+        "store": "yes",
+        "index": "not_analyzed"
+      },
+      "kategorie": {
+        "type": "string",
+        "store": "yes",
+        "index": "not_analyzed"
+      },
+      "prio": {
+        "type": "integer",
+        "store": "yes"
       }
     }
   }
 }'
 
+#
+# Ort
+#
 
-curl -XPUT "$1/slots/slot/_mapping" -d'
+curl -XPUT "$1/orte"
+
+curl -XPUT "$1/orte/ort/_mapping" -d'
 {
-  "slot": {
+  "ort": {
+    "_source": {
+      "enabled": "false"
+    },
     "properties": {
-        "name": {
+        "id": {          
+          "type": "string",
+          "store": "yes",
+          "analyzer": "keyword"
+        },
+        "bezeichnung": {
             "type": "completion",
             "index_analyzer": "simple",
             "search_analyzer": "simple",
             "payloads": "false"
-        }
+        },
+        "plz": {          
+          "type": "string",
+          "store": "yes",
+          "analyzer": "keyword"
+        },
+        "land": {          
+          "type": "string",
+          "store": "yes",
+          "analyzer": "keyword"
+        },
+        "gemeinde": {          
+          "type": "string",
+          "store": "yes",
+          "analyzer": "keyword"
+        },
+        "koordinaten": {          
+          "type": "geo_point",
+          "store": "yes",
+          "geohash": "true",
+          "geohash_precision": "1km"
+        }      
     }
   }
-}'
-
-curl -XPOST "$1/stories/story/dummyxyz" -d'
-{
-    "id": "dummyxyz",
-    "tags": [""]
-}'
-
-curl -XPOST "$1/slots/slot/dummyabcde" -d'
-{
-    "name": ""
-}'
-
-curl -XPUT "$1/users"
-
-curl -XPUT "$1/users/user/_mapping" -d'
-{
-  "user": {
-    "properties": {
-        "login": {
-            "type": "completion",
-            "index_analyzer": "simple",
-            "search_analyzer": "simple",
-            "payloads": "false"
-        }
-    }
-  }
-}'
-
-curl -XPOST "$1/users/user/dummyfghi" -d'
-{
-    "login": ""
-}'
-
-curl -XPUT "$1/groups"
-
-curl -XPUT "$1/groups/group/_mapping" -d'
-{
-  "user": {
-    "properties": {
-        "login": {
-            "type": "completion",
-            "index_analyzer": "simple",
-            "search_analyzer": "simple",
-            "payloads": "false"
-        }
-    }
-  }
-}'
-
-curl -XPOST "$1/groups/group/dummyzuio" -d'
-{
-    "login": ""
 }'

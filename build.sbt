@@ -20,6 +20,10 @@ fork in test := true
 // sbt-revolver
 seq(Revolver.settings: _*)
 
+envVars := Map (
+    "ELASTICSEARCH_URL" -> "http://1.2.3.4:8080/test"
+)
+
 // Repositories
 resolvers ++= Seq(
 	"spray.io nightlies" at "http://nightlies.spray.io/",
@@ -51,6 +55,8 @@ libraryDependencies ++= Seq(
     "commons-io"                              %   "commons-io"                  % "2.4"          % "optional",
     "com.amazonaws"                           %   "aws-java-sdk"                % "1.6.3"    
 )
+
+// Assembly
 
 assemblySettings
 

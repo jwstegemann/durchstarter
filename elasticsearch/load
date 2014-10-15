@@ -1,0 +1,526 @@
+#! /bin/bash 
+
+curl -XPUT "$1/orte/ort/1" -d'
+{
+"_id": "1",
+"bezeichnung": "38685 (in der Gemeinde Langelsheim im Landkreis Goslar in Niedersachsen)",
+"plz": "38685",
+"land": "Niedersachsen",
+"gemeinde": "Langelsheim",
+"long": 10.335896,
+"lat": 51.938286
+}'
+
+curl -XPUT "$1/orte/ort/2" -d'
+{
+"_id": "2",
+"bezeichnung": "38640 (in der Gemeinde Goslar im Landkreis Goslar in Niedersachsen)",
+"plz": "38640",
+"land": "Niedersachsen",
+"gemeinde": "Goslar",
+"long": 10.428975,
+"lat": 51.906412
+}'
+
+curl -XPUT "$1/orte/ort/3" -d'
+{
+"_id": "3",
+"bezeichnung": "14715 (in der Gemeinde Schönhausen im Landkreis Stendal in Sachsen-Anhalt)",
+"plz": "14715",
+"land": "Sachsen-Anhalt",
+"gemeinde": "Schönhausen",
+"long": 12.216972,
+"lat": 52.67693
+}'
+
+curl -XPUT "$1/orte/ort/4" -d'
+{
+"_id": "4",
+"bezeichnung": "14715 (in der Gemeinde Rhinow im Landkreis Havelland in Brandenburg)",
+"plz": "14715",
+"land": "Brandenburg",
+"gemeinde": "Rhinow",
+"long": 12.373391,
+"lat": 52.682272
+}'
+
+curl -XPUT "$1/orte/ort/5" -d'
+{
+"_id": "5",
+"bezeichnung": "14715 (in der Gemeinde Neunhausen im Landkreis Havelland in Brandenburg)",
+"plz": "14715",
+"land": "Brandenburg",
+"gemeinde": "Neunhausen",
+"long": 12.454731,
+"lat": 52.642261
+}'
+
+
+#
+# Datenplaetze
+#
+
+curl -XPUT "$1/datenplaetze/datenplatz/1" -d'
+{
+"ort": "1",
+"kategorie": "Industrie- und Handelskammer",
+"prio": 1,
+"name": "IHK Braunschweig",
+"anschrift1": "Geschäftsstelle Goslar",
+"anschrift2": "Mauerstr.34a",
+"anschrift3": "38640 Goslar",
+"telefon": "(05321)471112",
+"fax": "(05321)471113",
+"email": "info@ihk-bs.de",
+"url": "www.ihk-bs.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/2" -d'
+{
+"ort": "1",
+"kategorie": "Handwerkskammer",
+"prio": 2,
+"name": "HWK Braunschweig",
+"anschrift1": "Bambusstr. 11",
+"anschrift2": "38102 Braunschweig",
+"anschrift3": "",
+"telefon": "(0531)471144",
+"fax": "(0531)471155",
+"email": "kontakt@hwk-bs.de",
+"url": "www.hwk-bs.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/3" -d'
+{
+"ort": "1",
+"kategorie": "Gewerbeamt",
+"prio": 6,
+"name": "Stadtverwaltung Langelsheim",
+"anschrift1": "Gewerbeamt",
+"anschrift2": "Lange Str. 12",
+"anschrift3": "38685 Langelsheim",
+"telefon": "(05326)471122",
+"fax": "(05326)471443",
+"email": "gewerbeamt@langelsheim.de",
+"url": "www.langelsheim.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/4" -d'
+{
+"ort": "1",
+"kategorie": ";Unternehmensberatung",
+"prio": 17,
+"name": "Beratung Spott",
+"anschrift1": "Herr Gustav",
+"anschrift2": "Miederstr. 11",
+"anschrift3": "38685 Langelsheim",
+"telefon": "(05326)112233",
+"fax": "(05326)221133",
+"email": "spott@beratung.de",
+"url": "www.beratung.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/5" -d'
+{
+"ort": "1",
+"kategorie": "Steuerberater",
+"prio": 15,
+"name": "Steuerbüro Wielert",
+"anschrift1": "Herr Keune",
+"anschrift2": "Klausstr. 1",
+"anschrift3": "38640 Goslar",
+"telefon": "(05321)111111",
+"fax": "(05321)121212",
+"email": "keune@wielert.de",
+"url": "www.wielert.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/6" -d'
+{
+"ort": "2",
+"kategorie": "Industrie- und Handelskammer",
+"prio": 1,
+"name": "IHK Braunschweig",
+"anschrift1": "Geschäftsstelle Goslar",
+"anschrift2": "Mauerstr.34a",
+"anschrift3": "38640 Goslar",
+"telefon": "(05321)471112",
+"fax": "(05321)471113",
+"email": "info@ihk-bs.de",
+"url": "www.ihk-bs.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/7" -d'
+{
+"ort": "2",
+"kategorie": "Handwerkskammer",
+"prio": 2,
+"name": "HWK Braunschweig",
+"anschrift1": "Bambusstr. 11",
+"anschrift2": "38102 Braunschweig",
+"anschrift3": "",
+"telefon": "(0531)471144",
+"fax": "(0531)471155",
+"email": "kontakt@hwk-bs.de",
+"url": "www.hwk-bs.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/8" -d'
+{
+"ort": "2",
+"kategorie": "Gewerbeamt",
+"prio": 6,
+"name": "Stadtverwaltung Goslar",
+"anschrift1": "Gewerbeamt",
+"anschrift2": "Breite Str. 112",
+"anschrift3": "38640 Goslar",
+"telefon": "(05321)44444",
+"fax": "(05321)66666",
+"email": "gewerbeamt@goslar.de",
+"url": "www.goslar.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/9" -d'
+{
+"ort": "2",
+"kategorie": "Unternehmensberatung",
+"prio": 17,
+"name": "Beratung Spott",
+"anschrift1": "Herr Gustav",
+"anschrift2": "Miederstr. 11",
+"anschrift3": "38685 Langelsheim",
+"telefon": "(05326)112233",
+"fax": "(05326)221133",
+"email": "spott@beratung.de",
+"url": "www.beratung.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/10" -d'
+{
+"ort": "2",
+"kategorie": "Steuerberater",
+"prio": 15,
+"name": "Steuerbüro Wielert",
+"anschrift1": "Herr Keune",
+"anschrift2": "Klausstr. 1",
+"anschrift3": "38640 Goslar",
+"telefon": "(05321)111111",
+"fax": "(05321)121212",
+"email": "keune@wielert.de",
+"url": "www.wielert.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/11" -d'
+{
+"ort": "2",
+"kategorie": "Immobilienmakler",
+"prio": 19,
+"name": "Immo Harz",
+"anschrift1": "Herr Klein",
+"anschrift2": "Braunstr. 2",
+"anschrift3": "38644 Goslar",
+"telefon": "(05321)95657",
+"fax": "(05321)95658",
+"email": "klein@immo-harz.de",
+"url": "www.immo-harz.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/12" -d'
+{
+"ort": "3",
+"kategorie": "Industrie- und Handelskammer",
+"prio": 1,
+"name": "IHK Stendal",
+"anschrift1": "Geschäftsstelle Schönhausen",
+"anschrift2": "Maurerstr. 3b",
+"anschrift3": "39254 Stendal",
+"telefon": "(05711)471112",
+"fax": "(05711)471113",
+"email": "info@ihk-stendal.de",
+"url": "www.ihk-stendal.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/13" -d'
+{
+"ort": "3",
+"kategorie": "Handwerkskammer",
+"prio": 2,
+"name": "HWK Stendal",
+"anschrift1": "Bambusstr. 11",
+"anschrift2": "39254 Stendal",
+"anschrift3": "",
+"telefon": "(05711)474444",
+"fax": "(05711)474455",
+"email": "kontakt@hwk-stendal.de",
+"url": "www.hwk-stendal.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/14" -d'
+{
+"ort": "3",
+"kategorie": "Gewerbeamt",
+"prio": 6,
+"name": "Stadtverwaltung Schönhausen",
+"anschrift1": "Gewerbeamt",
+"anschrift2": "Breite Str. 112",
+"anschrift3": "39254 Schönhausen",
+"telefon": "(05711)44444",
+"fax": "(05711)555555",
+"email": "gewerbeamt@schoenhausen.de",
+"url": "www.schoenhausen.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/15" -d'
+{
+"ort": "3",
+"kategorie": "Unternehmensberatung",
+"prio": 17,
+"name": "Beratung Spott",
+"anschrift1": "Herr Gustav",
+"anschrift2": "Miederstr. 11",
+"anschrift3": "39254 Schönhausen",
+"telefon": "(05711)112233",
+"fax": "(05711)221133",
+"email": "spott@beratung.de",
+"url": "www.beratung.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/16" -d'
+{
+"ort": "3",
+"kategorie": "Steuerberater",
+"prio": 15,
+"name": "Steuerbüro Wielert",
+"anschrift1": "Herr Keune",
+"anschrift2": "Klausstr. 1",
+"anschrift3": "39254 Schönhausen",
+"telefon": "(05711)111111",
+"fax": "(05711)121212",
+"email": "keune@wielert.de",
+"url": "www.wielert.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/17" -d'
+{
+"ort": "3",
+"kategorie": "Immobilienmakler",
+"prio": 19,
+"name": "Immo Klein",
+"anschrift1": "Herr Harz",
+"anschrift2": "Braunstr. 2",
+"anschrift3": "39255 Schönhausen",
+"telefon": "(05711)95657",
+"fax": "(05711)95658",
+"email": "harz@immo-klein.de",
+"url": "www.immo-klein.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/18" -d'
+{
+"ort": "4",
+"kategorie": "Industrie- und Handelskammer",
+"prio": 1,
+"name": "IHK Kippen",
+"anschrift1": "Maurerstr. 3b",
+"anschrift2": "",
+"anschrift3": "38888 Kippen",
+"telefon": "(0570)471112",
+"fax": "(0570)471113",
+"email": "info@ihk-kippen.de",
+"url": "www.ihk-kippen.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/19" -d'
+{
+"ort": "4",
+"kategorie": "Handwerkskammer",
+"prio": 2,
+"name": "HWK Kippen",
+"anschrift1": "Bambusstr. 11",
+"anschrift2": ";38888 Kippen",
+"anschrift3": "",
+"telefon": "(0570)72312,
+"fax": "(0570)72313",
+"email": "kontakt@hwk-kippen.de",
+"url": "www.hwk-kippen.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/20" -d'
+{
+"ort": "4",
+"kategorie": "Gewerbeamt",
+"prio": 6,
+"name": "Stadtverwaltung Rhinow",
+"anschrift1": "Gewerbeamt",
+"anschrift2": "Breite Str. 112",
+"anschrift3": "14715 Rhinow",
+"telefon": "(05711)44444",
+"fax": "(05711)555555",
+"email": "gewerbeamt@rhinow.de",
+"url": "www.rhinow.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/21" -d'
+{
+"ort": "4",
+"kategorie": ";Unternehmensberatung",
+"prio": 17,
+"name": "Beratung Stegemann",
+"anschrift1": "Herr Karl Stegemann",
+"anschrift2": "Miederstr. 11",
+"anschrift3": "14715 Rhinow",
+"telefon": "(05711)123456",
+"fax": "(05711)234567",
+"email": "stegemann@stegemann.de",
+"url": "www.stegemann.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/22" -d'
+{
+"ort": "4",
+"kategorie": "Steuerberater",
+"prio": 15,
+"name": "Steuerbüro Wielert",
+"anschrift1": "Herr Keune",
+"anschrift2": "Klausstr. 1",
+"anschrift3": "14716 Dadenhausen",
+"telefon": "(05711)111111",
+"fax": "(05711)121212",
+"email": "keune@wielert.de",
+"url": "www.wielert.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/23" -d'
+{
+"ort": "4",
+"kategorie": "Immobilienmakler",
+"prio": 19,
+"name": "Immo Klein",
+"anschrift1": "Herr Harz",
+"anschrift2": "Grünstr. 2",
+"anschrift3": "14718 Dersleben",
+"telefon": "(05711)95657",
+"fax": "(05711)95658",
+"email": "harz@immo-klein.de",
+"url": "www.immo-klein.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/24" -d'
+{
+"ort": "5",
+"kategorie": "Industrie- und Handelskammer",
+"prio": 1,
+"name": "IHK Kippen",
+"anschrift1": "Maurerstr. 3b",
+"anschrift2": "",
+"anschrift3": "38888 Kippen",
+"telefon": "(0570)471112",
+"fax": "(0570)471113",
+"email": "info@ihk-kippen.de",
+"url": "www.ihk-kippen.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/25" -d'
+{
+"ort": "5",
+"kategorie": "Handwerkskammer",
+"prio": 2,
+"name": "HWK Kippen",
+"anschrift1": "Bambusstr. 11",
+"anschrift2": ";38888 Kippen",
+"anschrift3": "",
+"telefon": "(0570)72312,
+"fax": "(0570)72313",
+"email": "kontakt@hwk-kippen.de",
+"url": "www.hwk-kippen.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/26" -d'
+{
+"ort": "5",
+"kategorie": "Gewerbeamt",
+"prio": 6,
+"name": "Stadtverwaltung Neunhausen",
+"anschrift1": "Gewerbeamt",
+"anschrift2": "Breite Str. 1",
+"anschrift3": "14715 Neunhausen",
+"telefon": "(05711)44444",
+"fax": "(05711)555555",
+"email": "gewerbeamt@neunhausen.de",
+"url": "www.neunhausen.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/27" -d'
+{
+"ort": "5",
+"kategorie": ";Unternehmensberatung",
+"prio": 17,
+"name": "Beratung Stegemann",
+"anschrift1": "Herr Karl Stegemann",
+"anschrift2": "Miederstr. 11",
+"anschrift3": "14715 Neunhausen",
+"telefon": "(05711)123456",
+"fax": "(05711)234567",
+"email": "stegemann@stegemann.de",
+"url": "www.stegemann.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/28" -d'
+{
+"ort": "5",
+"kategorie": "Steuerberater",
+"prio": 15,
+"name": "Steuerbüro Wielert",
+"anschrift1": "Herr Keune",
+"anschrift2": "Klausstr. 1",
+"anschrift3": "14716 Dadenhausen",
+"telefon": "(05711)111111",
+"fax": "(05711)121212",
+"email": "keune@wielert.de",
+"url": "www.wielert.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/29" -d'
+{
+"ort": "5",
+"kategorie": "Immobilienmakler",
+"prio": 19,
+"name": "Immo Klein",
+"anschrift1": "Herr Harz",
+"anschrift2": "Blaustr. 2",
+"anschrift3": "14718 Gaersleben",
+"telefon": "(05711)95657",
+"fax": "(05711)95658",
+"email": "harz@immo-klein.de",
+"url": "www.immo-klein.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/30" -d'
+{
+"ort": "5",
+"kategorie": "Versicherungsmakler",
+"prio": 20,
+"name": "Allianz",
+"anschrift1": "Herr Dieter",
+"anschrift2": "Gelbe Gasse 1",
+"anschrift3": "14717 Mindesleben",
+"telefon": "(03843)959595",
+"fax": "(03843)212121",
+"email": "keune@wielert.de",
+"url": "www.wielert.de"
+}'
+
+curl -XPUT "$1/datenplaetze/datenplatz/31" -d'
+{
+"ort": "5",
+"kategorie": "Krankenkasse",
+"prio": 14,
+"name": "BKK Hausbau",
+"anschrift1": "Frau Mieter",
+"anschrift2": "Lila Weg",
+"anschrift3": "14715 Neunhausen",
+"telefon": "(0384)1122",
+"fax": "(0384)2211",
+"email": "mieter@bkk-hausbau.de",
+"url": "www.bkk-hausbau-neunhausen.de"
+}'

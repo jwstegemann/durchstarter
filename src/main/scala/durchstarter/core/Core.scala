@@ -40,7 +40,7 @@ trait CoreActors {
   /*
    * start all the core actors here
    */
-  //val storyActorInstance = system.actorOf(Props[StoryActor], "story")
+  val queryDatenplaetzeActorInstance = system.actorOf(Props[QueryDatenplaetzeActor], "queryDatenplaetze")
 
 }
 
