@@ -11,6 +11,8 @@ var Ergebnis = require('./components/Ergebnis');
 
 var Actions = require('./Actions');
 
+var Suchfeld = require('./components/Suchfeld');
+
 
 
 var routes = (
@@ -20,7 +22,16 @@ var routes = (
   </Routes>
 );
 
-var app = React.renderComponent(
+var result = React.renderComponent(
   routes,
   document.getElementById('container')
+);
+
+var suchfeld = (
+    <Suchfeld />
+);
+
+var suche = React.renderComponent(
+  suchfeld,
+  document.getElementById('searchfield')
 );
