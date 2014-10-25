@@ -24,13 +24,11 @@ module.exports = React.createClass({
       <div>
         <div className="row">
             <div className="col-md-10 col-md-offset-1">  
-                <p className="ergebnis-titel">Ihre Ansprechpartner in 38685 Langelsheim&nbsp;&nbsp;<i className="fa fa-print"></i></p>
+                <p className="ergebnis-titel">Ihre Ansprechpartner:&nbsp;&nbsp;<i className="fa fa-print"></i></p>
             </div>
         </div>
 
         <div className="row ergebnis-zeile">
-          {console.log(this.state)}
-
           { this.state.datenplaetze.map(function(object, index) {
             return <Datenplatz datenplatz={object} key={index} />;
           })}

@@ -100,7 +100,7 @@ curl -XPUT "$1/orte/ort/_mapping" -d'
             "type": "completion",
             "index_analyzer": "whitespace",
             "search_analyzer": "whitespace",
-            "payloads": "false"
+            "payloads": "true"
         },
         "plz": {          
           "type": "string",

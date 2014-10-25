@@ -46,7 +46,7 @@ trait QueryHttpService extends HttpService with SprayJsonSupport {
         get {
           dynamic {
             //FixMe: we do not need a Message-Type Fulltext here...
-            complete((queryDatenplaetzeActor ? SuggestOrte(text)).mapTo[SuggestResult])
+            complete((queryDatenplaetzeActor ? SuggestOrte(text)).mapTo[SuggestResult[Ort]])
           }
         }
       }

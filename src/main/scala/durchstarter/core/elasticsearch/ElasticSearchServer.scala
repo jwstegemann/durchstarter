@@ -88,11 +88,11 @@ case class ElasticSearchServer(url: String, credentialsOption: Option[BasicHttpC
   )
 
   // pipeline for queries that should return something
-  final def pipelineSuggest: HttpRequest => Future[SuggestResult] = (
+  final def pipelineSuggest: HttpRequest => Future[SuggestResult[Ort]] = (
     addHeader("Accept","application/json; charset=UTF-8")
     ~> send
     ~> mapToElasticSeachException
-    ~> unmarshal[SuggestResult]
+    ~> unmarshal[SuggestResult[Ort]]
   )
 
   // pipeline for queries just to be executed
@@ -119,7 +119,7 @@ case class ElasticSearchServer(url: String, credentialsOption: Option[BasicHttpC
     }
   }
 
-  def suggest(url: String, field: String, text: String): Future[SuggestResult] = {
+  def suggest(url: String, field: String, text: String): Future[SuggestResult[Ort]] = {
     val queryObject = JsObject(
       ("suggest", JsObject(
         ("text", JsString(text)),

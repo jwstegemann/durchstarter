@@ -95,6 +95,12 @@ body {
   boder: none;
 }
 
+.btn-default:focus {
+  @include box-shadow($whiteframe-shadow-z2);
+  color: white;
+  background-color: $color-green;
+}
+
 .navbar-default .navbar-nav > li > a.btn-default {
   @extend .btn-default;
   padding: 8px 12px;
@@ -258,4 +264,29 @@ p.anschrift {
 .platzlogo {
   width: 100px;
 //  box-shadow: 0px 2px 5px 0 rgba(0,0,0,0.26);
+}
+
+
+/*
+ * Suchfeld
+ */
+ .active {
+  background-color: $color-yellow-300;
+  border-radius: 3px;
+ }
+
+.suggestions {
+  top: 10px;
+  background: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+//  border: 1px solid $color-grey-200;
+  box-shadow: $whiteframe-shadow-z2;
+  border-radius: 0 0 3px 3px;
+}
+
+.suggestion-item {
+  padding: 5px;
+  cursor: pointer;
 }

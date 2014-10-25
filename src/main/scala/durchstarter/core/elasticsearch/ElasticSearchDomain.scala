@@ -21,11 +21,11 @@ case class Dates(ranges: Seq[Range])
 
 case class Range(from_str: String, count: Int)
 
-case class SuggestResult(suggest: Seq[Suggestion])
+case class SuggestResult[T](suggest: Seq[Suggestion[T]])
 
-case class Suggestion(options: Seq[SuggestOption])
+case class Suggestion[T](options: Seq[SuggestOption[T]])
 
-case class SuggestOption(text: String, score: Double)
+case class SuggestOption[T](text: String, score: Double, payload: T)
 
 
 object ElasticSearchProtocol extends DefaultJsonProtocol {
@@ -45,7 +45,7 @@ object ElasticSearchProtocol extends DefaultJsonProtocol {
   implicit val facetsJsonFormat = jsonFormat2(Facets)
   implicit val queryResultJsonFormat = jsonFormat2(QueryResult)
 
-  implicit val suggestOptionJsonFormat = jsonFormat2(SuggestOption)
-  implicit val suggestionJsonFormat = jsonFormat1(Suggestion)
-  implicit val SuggestResultJsonFormat = jsonFormat1(SuggestResult)
+  implicit val suggestOrtOptionJsonFormat = jsonFormat3(SuggestOption[Ort])
+  implicit val suggestionOrtJsonFormat = jsonFormat1(Suggestion[Ort])
+  implicit val SuggestOrtResultJsonFormat = jsonFormat1(SuggestResult[Ort])
 }

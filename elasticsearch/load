@@ -3,7 +3,13 @@
 curl -XPUT "$1/orte/ort/1" -d'
 {
 "_id": "1",
-"bezeichnung": "38685 (in der Gemeinde Langelsheim im Landkreis Goslar in Niedersachsen)",
+"bezeichnung": {
+  "input": "38685 (in der Gemeinde Langelsheim im Landkreis Goslar in Niedersachsen)",
+  "payload": {
+    "id": "1",
+    "koordinaten": "51.938286,10.335896"
+  }
+},
 "plz": "38685",
 "land": "Niedersachsen",
 "gemeinde": "Langelsheim",
@@ -13,7 +19,13 @@ curl -XPUT "$1/orte/ort/1" -d'
 curl -XPUT "$1/orte/ort/2" -d'
 {
 "_id": "2",
-"bezeichnung": "38640 (in der Gemeinde Goslar im Landkreis Goslar in Niedersachsen)",
+"bezeichnung": {
+  "input": "38640 (in der Gemeinde Goslar im Landkreis Goslar in Niedersachsen)",
+  "payload": {
+    "id": "2",
+    "koordinaten": "51.906412,10.428975"
+  }
+},
 "plz": "38640",
 "land": "Niedersachsen",
 "gemeinde": "Goslar",
@@ -23,7 +35,13 @@ curl -XPUT "$1/orte/ort/2" -d'
 curl -XPUT "$1/orte/ort/3" -d'
 {
 "_id": "3",
-"bezeichnung": "14715 (in der Gemeinde Schönhausen im Landkreis Stendal in Sachsen-Anhalt)",
+"bezeichnung": {
+  "input": "14715 (in der Gemeinde Schönhausen im Landkreis Stendal in Sachsen-Anhalt)",
+  "payload": {
+    "id": "3",
+    "koordinaten": "52.67693,12.216972"
+  }
+},
 "plz": "14715",
 "land": "Sachsen-Anhalt",
 "gemeinde": "Schönhausen",
@@ -33,7 +51,13 @@ curl -XPUT "$1/orte/ort/3" -d'
 curl -XPUT "$1/orte/ort/4" -d'
 {
 "_id": "4",
-"bezeichnung": "14715 (in der Gemeinde Rhinow im Landkreis Havelland in Brandenburg)",
+"bezeichnung": {
+  "input": "14715 (in der Gemeinde Rhinow im Landkreis Havelland in Brandenburg)",
+  "payload": {
+    "id": "4",
+    "koordinaten": "52.682272,12.373391"
+  }
+},
 "plz": "14715",
 "land": "Brandenburg",
 "gemeinde": "Rhinow",
@@ -43,7 +67,13 @@ curl -XPUT "$1/orte/ort/4" -d'
 curl -XPUT "$1/orte/ort/5" -d'
 {
 "_id": "5",
-"bezeichnung": "14715 (in der Gemeinde Neunhausen im Landkreis Havelland in Brandenburg)",
+"bezeichnung": {
+  "input": "14715 (in der Gemeinde Neunhausen im Landkreis Havelland in Brandenburg)",
+  "payload": {
+    "id": "5",
+    "koordinaten": "52.642261,12.454731"
+  }
+},
 "plz": "14715",
 "land": "Brandenburg",
 "gemeinde": "Neunhausen",
