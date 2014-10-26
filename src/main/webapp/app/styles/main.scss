@@ -168,6 +168,11 @@ input.form-control:focus {
   margin-left: 20px;
 }
 
+.section-list {
+  color: $text-grey;
+  font-size: 20px;  
+}
+
 .section-grey {
   padding-top: 15px;
   padding-bottom: 5px;
@@ -175,7 +180,7 @@ input.form-control:focus {
 }
 
 .copyright {
-  text-align: center;
+  text-align: left;
   width: 100%;
   color: $text-grey;
   font-size: 14px;
@@ -187,7 +192,7 @@ input.form-control:focus {
 
 .search {
   margin-top: -320px;
-  padding-left: 100px;
+  padding-left: 70px;
 }
 
 .search-header {
@@ -289,4 +294,8 @@ p.anschrift {
 .suggestion-item {
   padding: 5px;
   cursor: pointer;
+}
+
+.second-foto {
+  margin-top: 20px;
 }

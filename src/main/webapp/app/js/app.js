@@ -5,6 +5,7 @@ var React = require('react');
 
 var Routes = require('react-router/Routes');
 var Route = require('react-router/Route');
+var DefaultRoute = require('react-router/DefaultRoute');
 
 var Info = require('./components/Info');
 var Ergebnis = require('./components/Ergebnis');
@@ -17,6 +18,7 @@ var Suchfeld = require('./components/Suchfeld');
 
 var routes = (
   <Routes location="hash">
+    <DefaultRoute handler={Info} />
     <Route name="info" path="/" handler={Info} />
     <Route name="ergebnis" path="/ort/:ortId" handler={Ergebnis} />
   </Routes>

@@ -184,7 +184,7 @@ module.exports = React.createClass({
         <form className="form-inline" role="form">
           <div className="form-group col-sm-8">
             <input ref="searchinput" className="form-control input-lg" id="exampleInputEmail2" 
-              value={this.state.plz} placeholder="In welcher Postleitzahlen möchten Sie suchen?" 
+              value={this.state.plz} placeholder="Postleitzahl Ihres Unternehmensstandortes" 
               onChange={this.handleChange} onKeyDown={this.handleOnKeyDown} 
               onFocus={this.handleFocus} onBlur={this.handleBlur} />
 
@@ -192,7 +192,7 @@ module.exports = React.createClass({
 
           </div>
           <button ref="searchbutton" type="submit" className="btn btn-lg btn-default">
-            FINDEN
+            KONTAKTE FINDEN
           </button>
         </form>
       </div>

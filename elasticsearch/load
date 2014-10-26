@@ -388,7 +388,7 @@ curl -XPUT "$1/datenplaetze/datenplatz/20" -d'
 curl -XPUT "$1/datenplaetze/datenplatz/21" -d'
 {
 "ort": "4",
-"kategorie": ";Unternehmensberatung",
+"kategorie": "Unternehmensberatung",
 "prio": 17,
 "name": "Beratung Stegemann",
 "anschrift1": "Herr Karl Stegemann",
