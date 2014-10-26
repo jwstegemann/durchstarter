@@ -5,6 +5,8 @@ var React = require('react');
 
 module.exports = React.createClass({
   render: function() {
+    var logoFile = 'img/logos/logo' + Math.floor((Math.random() * 11) + 1) + '.jpg';
+
     return (
       <div className="col-md-6 dp">
 
@@ -12,13 +14,8 @@ module.exports = React.createClass({
               <div className="col-md-8">
                   <p className="kategorie">{this.props.datenplatz.kategorie}</p>
                   <p className="name">{this.props.datenplatz.name}</p>
-              </div>
-              <div className="col-md-2">
-                  <img className="platzlogo" src="img/content/stegun.png" />
-              </div>
-          </div>
-                
-          <p className="anschrift"><i className="fa fa-home icon-grey"></i>&nbsp;{this.props.datenplatz.anschrift1} - {this.props.datenplatz.anschrift2}</p>
+
+                  <p className="anschrift"><i className="fa fa-home icon-grey"></i>&nbsp;{this.props.datenplatz.anschrift1} - {this.props.datenplatz.anschrift2}</p>
 
           <p className="telefon"><i className="fa fa-phone icon-grey"></i>&nbsp;{this.props.datenplatz.telefon}</p>
           <p className="telefax"><i className="fa fa-file-photo-o icon-grey"></i>&nbsp;{this.props.datenplatz.fax}</p>
@@ -26,6 +23,13 @@ module.exports = React.createClass({
               <a href={'mailto:' + this.props.datenplatz.email}>{this.props.datenplatz.email}</a>
           </p>
           <p className="url"><i className="fa fa-globe icon-grey"></i>&nbsp;<a href={'http://' + this.props.datenplatz.url} target="_blank">{this.props.datenplatz.url}</a></p>
+              </div>
+              <div className="col-md-2">
+                  <img className="platzlogo" src={logoFile} />
+              </div>
+          </div>
+                
+          
       </div>
     );
   }
