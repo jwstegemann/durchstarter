@@ -25,7 +25,7 @@ var paths = {
   imageFiles: 'app/img/**/*',
   styles: 'app/styles/**/*.scss',
   dist: 'dist/app',
-  staticFiles: ['app/index.html', 'app/favicon.ico'],
+  staticFiles: ['app/index.html', 'app/favicon.ico', 'app/impressum.html'],
   fontsFiles: ['app/fonts/*'],
   cssFiles: ['app/styles/font-awesome.min.css'],
   indexHtml: "http://localhost:9000/index.html",

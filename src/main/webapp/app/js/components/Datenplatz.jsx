@@ -23,9 +23,9 @@ module.exports = React.createClass({
           <p className="telefon"><i className="fa fa-phone icon-grey"></i>&nbsp;{this.props.datenplatz.telefon}</p>
           <p className="telefax"><i className="fa fa-file-photo-o icon-grey"></i>&nbsp;{this.props.datenplatz.fax}</p>
           <p className="email"><i className="fa fa-envelope-o icon-grey"></i>&nbsp;
-              <a href="mailto:info@test.de">{this.props.datenplatz.email}</a>
+              <a href={'mailto:' + this.props.datenplatz.email}>{this.props.datenplatz.email}</a>
           </p>
-          <p className="url"><i className="fa fa-globe icon-grey"></i>&nbsp;<a href="test.de">{this.props.datenplatz.url}</a></p>
+          <p className="url"><i className="fa fa-globe icon-grey"></i>&nbsp;<a href={'http://' + this.props.datenplatz.url} target="_blank">{this.props.datenplatz.url}</a></p>
       </div>
     );
   }

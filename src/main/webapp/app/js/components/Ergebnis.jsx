@@ -19,12 +19,16 @@ module.exports = React.createClass({
     Actions.zeigeDatenplaetze(this.props.params.ortId);
   },
 
+  printMe: function() {
+    window.print();
+  },
+
   render: function() {
     return (
       <div>
         <div className="row">
             <div className="col-md-10 col-md-offset-1">  
-                <p className="ergebnis-titel">Ihre Ansprechpartner:&nbsp;&nbsp;<i className="fa fa-print"></i></p>
+                <p className="ergebnis-titel">Ihre Ansprechpartner:&nbsp;&nbsp;<i className="print-me fa fa-print hidden-print" onClick={this.printMe}></i></p>
             </div>
         </div>
 
