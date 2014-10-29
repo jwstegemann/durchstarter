@@ -611,7 +611,7 @@
 			"file": "src/main/webapp/app/js/components/Datenplatz.jsx",
 			"settings":
 			{
-				"buffer_size": 1391,
+				"buffer_size": 1483,
 				"line_ending": "Unix"
 			}
 		},
@@ -1161,7 +1161,6 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1322,7 +1321,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1471,15 +1472,15 @@
 					"file": "src/main/webapp/app/js/components/Datenplatz.jsx",
 					"settings":
 					{
-						"buffer_size": 1391,
+						"buffer_size": 1483,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1106,
-								1106
+								1088,
+								1088
 							]
 						],
 						"settings":

@@ -362,7 +362,7 @@ curl -XPUT "$1/datenplaetze/datenplatz/19" -d'
 "prio": 2,
 "name": "HWK Kippen",
 "anschrift1": "Bambusstr. 11",
-"anschrift2": ";38888 Kippen",
+"anschrift2": "38888 Kippen",
 "anschrift3": "",
 "telefon": "(0570)72312",
 "fax": "(0570)72313",
@@ -452,7 +452,7 @@ curl -XPUT "$1/datenplaetze/datenplatz/25" -d'
 "prio": 2,
 "name": "HWK Kippen",
 "anschrift1": "Bambusstr. 11",
-"anschrift2": ";38888 Kippen",
+"anschrift2": "38888 Kippen",
 "anschrift3": "",
 "telefon": "(0570)72312",
 "fax": "(0570)72313",
@@ -478,7 +478,7 @@ curl -XPUT "$1/datenplaetze/datenplatz/26" -d'
 curl -XPUT "$1/datenplaetze/datenplatz/27" -d'
 {
 "ort": "5",
-"kategorie": ";Unternehmensberatung",
+"kategorie": "Unternehmensberatung",
 "prio": 17,
 "name": "Beratung Stegemann",
 "anschrift1": "Herr Karl Stegemann",
