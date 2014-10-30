@@ -36,7 +36,7 @@ module.exports = React.createClass({
                   <li>Industrie- und Handelskammer</li>
                   <li>Handwerkskammer</li>
                   <li>Wirtschaftsförderungen in Stadt und Landkreis</li>
-                  <li>Gewerbeamt</li>
+                  <li>Gemeindeverwaltung</li>
                   <li>Arbeitsamt</li>
                   <li>Jobcenter</li>    
                   <li>Startercenter</li>

@@ -34,6 +34,24 @@ $navbar-default-link-active-color: $text-grey;
 
 }
 
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+
+  p.ergebnis-titel {
+    font-size: 18px;
+    margin-left: 15px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  div.dp {
+    margin-bottom: 20px !important;  
+  }
+}
+
+
 @import 'sass-bootstrap/lib/bootstrap';
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
@@ -63,7 +81,7 @@ body {
 }
 
 .uvp {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 300;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -72,7 +90,7 @@ body {
 }
 
 .narrative {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 20px;
   text-align: center;
   color: $text-grey;
@@ -157,20 +175,20 @@ input.form-control:focus {
 }
 
 .section-header {
-  font-size: 34px;
+  font-size: 28px;
   margin-left: 20px;
 }
 
 .section-details {
   color: $text-grey;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 20px;
   margin-left: 20px;
 }
 
 .section-list {
   color: $text-grey;
-  font-size: 20px;  
+  font-size: 16px;  
 }
 
 .section-grey {
@@ -183,7 +201,7 @@ input.form-control:focus {
   text-align: left;
   width: 100%;
   color: $text-grey;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .contact {
@@ -196,7 +214,7 @@ input.form-control:focus {
 }
 
 .search-header {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 300;
   text-align: center;
   color: $text-dark;
@@ -206,7 +224,7 @@ input.form-control:focus {
 
 .ergebnis-titel {
   margin-top: 20px;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 300;
   text-align: center;
   color: $text-grey;
@@ -218,10 +236,11 @@ input.form-control:focus {
   margin-bottom: 40px !important;  
   padding-left: 30px;
   padding-right: 30px;
+  page-break-inside: avoid;
 }
 
 p.kategorie {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: $text-grey;
   margin-bottom: 2px !important;
@@ -229,7 +248,7 @@ p.kategorie {
 
 p.name {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: $color-green;
   margin-top: 0 !important;
 }
@@ -292,6 +311,7 @@ p.anschrift {
 }
 
 .suggestion-item {
+  font-size: 14px;
   padding: 5px;
   cursor: pointer;
 }
@@ -302,4 +322,32 @@ p.anschrift {
 
 .print-me {
   cursor: pointer;  
+}
+
+.screenshot {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: $whiteframe-shadow-z2;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.right {
+  text-align: right;
+}
+
+label {
+  color: $text-grey;
+}
+
+form.angebot {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding: 20px;
+  box-shadow: $whiteframe-shadow-z2;
+}
+
+.form-title {
+  font-size: 28px;
+  margin-bottom: 20px;
 }

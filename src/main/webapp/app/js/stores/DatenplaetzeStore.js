@@ -22,7 +22,9 @@ module.exports = Reflux.createStore({
                 var datenplaetze = result.body.hits.hits.map(function(hit, id) {
                     return hit._source;
                 });
-                self.trigger(datenplaetze);
+                self.trigger(datenplaetze.sort(function(a,b) {
+                    return (a.prio <= b.prio)?-1:1;    
+                }));
            });
     }
 

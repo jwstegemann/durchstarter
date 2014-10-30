@@ -108,7 +108,7 @@ module.exports = React.createClass({
 
       this.refs.searchbutton.getDOMNode().focus();
       
-      Router.transitionTo('ergebnis', {ortId: ortId}); 
+      Router.transitionTo('ergebnis', {ortId: ortId}, {name: this.state.orte[index].text}); 
     }   
   },
 

@@ -520,106 +520,13 @@
 	"buffers":
 	[
 		{
-			"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
-			"settings":
-			{
-				"buffer_size": 5098,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/styles/main.scss",
-			"settings":
-			{
-				"buffer_size": 4733,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/js/components/Ergebnis.jsx",
-			"settings":
-			{
-				"buffer_size": 1132,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/index.html",
-			"settings":
-			{
-				"buffer_size": 5012,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/impressum.html",
-			"settings":
-			{
-				"buffer_size": 4263,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/js/app.js",
-			"settings":
-			{
-				"buffer_size": 824,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/styles/_colors.scss",
-			"settings":
-			{
-				"buffer_size": 14648,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/styles/_material.scss",
-			"settings":
-			{
-				"buffer_size": 3353,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/js/stores/OrteStore.js",
-			"settings":
-			{
-				"buffer_size": 633,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/js/stores/DatenplaetzeStore.js",
-			"settings":
-			{
-				"buffer_size": 686,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/js/components/Info.jsx",
-			"settings":
-			{
-				"buffer_size": 5744,
-				"line_ending": "Unix"
-			}
-		},
-		{
+			"contents": "/** @jsx React.DOM */\n'use strict';\n\nvar React = require('react');\n\nmodule.exports = React.createClass({\n  render: function() {\n    var logoFile = 'img/logos/logo' + Math.floor((Math.random() * 10) + 1) + '.jpg';\n\n    return (\n      <div className=\"col-md-6 dp\">\n\n          <div className=\"row\">\n              <div className=\"col-md-8\">\n                  <p className=\"kategorie\">{this.props.datenplatz.kategorie}</p>\n                  <p className=\"name\">{this.props.datenplatz.name}</p>\n\n                  <p className=\"anschrift\">\n                    <i className=\"fa fa-home fa-fw icon-grey\"></i>&nbsp;{this.props.datenplatz.anschrift1}<br/>\n                    <i className=\"fa fa-fw\"></i>&nbsp;{this.props.datenplatz.anschrift2}<br/>\n                    <i className=\"fa fa-fw\"></i>&nbsp;{this.props.datenplatz.anschrift3}\n                  </p>\n\n          <p className=\"telefon\"><i className=\"fa fa-fw fa-phone icon-grey\"></i>&nbsp;{this.props.datenplatz.telefon}</p>\n          <p className=\"telefax\"><i className=\"fa fa-fw fa-file-photo-o icon-grey\"></i>&nbsp;{this.props.datenplatz.fax}</p>\n          <p className=\"email\"><i className=\"fa fa-fw fa-envelope-o icon-grey\"></i>&nbsp;\n              <a href={'mailto:' + this.props.datenplatz.email}>{this.props.datenplatz.email}</a>\n          </p>\n          <p className=\"url\"><i className=\"fa fa-fw fa-globe icon-grey\"></i>&nbsp;<a href={'http://' + this.props.datenplatz.url} target=\"_blank\">{this.props.datenplatz.url}</a></p>\n              </div>\n              <div className=\"col-md-2\">\n                  <img className=\"platzlogo\" src={logoFile} />\n              </div>\n          </div>\n                \n          \n      </div>\n    );\n  }\n});\n",
 			"file": "src/main/webapp/app/js/components/Datenplatz.jsx",
+			"file_size": 1704,
+			"file_write_time": 1414587759000000,
 			"settings":
 			{
-				"buffer_size": 1483,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 5034,
+				"buffer_size": 1704,
 				"line_ending": "Unix"
 			}
 		}
@@ -785,23 +692,25 @@
 	"file_history":
 	[
 		"/home/tiberius/scala/projects/durchstarter/elasticsearch/load",
-		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/QueryHttpService.scala",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/index.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/app.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/Actions.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/DatenplaetzeStore.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/OrteStore.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Ergebnis.jsx",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Ergebnis.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/index.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/impressum.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/app.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_colors.scss",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_material.scss",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/OrteStore.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/QueryHttpService.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/Actions.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchDomain.scala",
 		"/home/tiberius/scala/projects/durchstarter/elasticsearch/init",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/domain/Durchstarter.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchServer.scala",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/AppBar.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/QueryDatenplaetzeActor.scala",
 		"/home/tiberius/scala/projects/durchstarter/build.sbt",
@@ -819,7 +728,6 @@
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/StaticHttpService.scala",
 		"/home/tiberius/scala/projects/durchstarter/project/plugins.sbt",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/package.json",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_colors.scss",
 		"/home/tiberius/scala/projects/durchstarter/src/main/resources/application.conf",
 		"/home/tiberius/scala/projects/durchstarter/src/main/resources/ssl-keystore.jks",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/exceptions/Exceptions.scala",
@@ -910,8 +818,7 @@
 		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/po/de.po",
 		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/directives/errorDialog.js",
 		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/controllers/graph.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/views/findpaths.html",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/views/login.html"
+		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/views/findpaths.html"
 	],
 	"find":
 	{
@@ -977,6 +884,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";",
 			"20px",
 			"blue",
 			"style=\"width:150%\"",
@@ -1103,8 +1011,7 @@
 			"updateScr",
 			"on-finish-render",
 			"mCustom",
-			"story-view",
-			"scrollbar"
+			"story-view"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1161,354 +1068,23 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
-					"settings":
-					{
-						"buffer_size": 5098,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4714,
-								4714
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2250.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/main/webapp/app/styles/main.scss",
-					"settings":
-					{
-						"buffer_size": 4733,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4713,
-								4713
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4169.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/main/webapp/app/js/components/Ergebnis.jsx",
-					"settings":
-					{
-						"buffer_size": 1132,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								799,
-								799
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 5.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/main/webapp/app/index.html",
-					"settings":
-					{
-						"buffer_size": 5012,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2009,
-								2009
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 253.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/main/webapp/app/impressum.html",
-					"settings":
-					{
-						"buffer_size": 4263,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2020,
-								2020
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/main/webapp/app/js/app.js",
-					"settings":
-					{
-						"buffer_size": 824,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								467,
-								467
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/main/webapp/app/styles/_colors.scss",
-					"settings":
-					{
-						"buffer_size": 14648,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4926,
-								4926
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2970.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/main/webapp/app/styles/_material.scss",
-					"settings":
-					{
-						"buffer_size": 3353,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1528,
-								1528
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 179.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "src/main/webapp/app/js/stores/OrteStore.js",
-					"settings":
-					{
-						"buffer_size": 633,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								399,
-								399
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "src/main/webapp/app/js/stores/DatenplaetzeStore.js",
-					"settings":
-					{
-						"buffer_size": 686,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								617,
-								617
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "src/main/webapp/app/js/components/Info.jsx",
-					"settings":
-					{
-						"buffer_size": 5744,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4629,
-								4629
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 405.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
 					"file": "src/main/webapp/app/js/components/Datenplatz.jsx",
 					"settings":
 					{
-						"buffer_size": 1483,
+						"buffer_size": 1704,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1088,
-								1088
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "src/main/webapp/gulpfile.js",
-					"settings":
-					{
-						"buffer_size": 5034,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1069,
-								1069
+								226,
+								226
 							]
 						],
 						"settings":
@@ -1584,12 +1160,12 @@
 		"selected_items":
 		[
 			[
-				"gulpfie",
-				"src/main/webapp/gulpfile.js"
-			],
-			[
 				"datenpl",
 				"src/main/webapp/app/js/components/Datenplatz.jsx"
+			],
+			[
+				"gulpfie",
+				"src/main/webapp/gulpfile.js"
 			],
 			[
 				"app.js",
