@@ -16,10 +16,10 @@ module.exports = React.createClass({
 
       <div className="row">
           <div className="col-md-10 col-md-offset-1">
-              <p className="narrative">Sie erhalten ganz einfach mit der Eingabe der Postleitzahl die für Ihre Region vorhandenen Kontaktdaten</p>
-              <p className="narrative">eine Eingabe = alle Kontakte</p>
-              <p className="narrative">natürlich auch zum ausdrucken und somit jederzeit griffbereit</p>
-              <p className="narrative">und natürlich kostenlos</p>
+              <p className="narrative">Sie erhalten ganz einfach mit der Eingabe der Postleitzahl die für Ihre Region vorhandenen Kontaktdaten.</p>
+              <p className="narrative">Eine Eingabe = Alle Kontakte</p>
+              <p className="narrative">Auch zum ausdrucken und somit jederzeit griffbereit</p>
+              <p className="narrative">...und natürlich kostenlos</p>
           </div>
       </div>        
 
@@ -49,7 +49,7 @@ module.exports = React.createClass({
       <div className="row section">
           <div className="col-md-5 col-md-offset-1 left-column">
               <p className="section-header">Weitere Kontakte für Sie:</p>
-              <p className="section-details">Außerdem haben Dienstleister folgender Kategorien die Möglichkeit ihre Kontaktdaten in ihrer Kategorie und ihrer Region exklusiv und kostenpflichtg zu präsentieren:</p>
+              <p className="section-details">Außerdem haben Dienstleister die Möglichkeit ihre Kontaktdaten in folgenden Kategorien und ihrer Region exklusiv und kostenpflichtg zu präsentieren:</p>
                 <ul className="section-list">
                 <li>Banken</li>  
                 <li>Krankenkassen</li>    

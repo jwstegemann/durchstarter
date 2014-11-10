@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
 				"se",
 				"searchinput"
 			],
@@ -110,10 +122,6 @@
 			[
 				"a",
 				"default"
-			],
-			[
-				"back",
-				"background"
 			],
 			[
 				"border-",
@@ -278,10 +286,6 @@
 			[
 				"value",
 				"valueSelected"
-			],
-			[
-				"margin-",
-				"margin-left"
 			],
 			[
 				"op",
@@ -492,10 +496,6 @@
 				"stories"
 			],
 			[
-				"background",
-				"background-color"
-			],
-			[
 				"actor",
 				"actorOf"
 			],
@@ -520,13 +520,50 @@
 	"buffers":
 	[
 		{
-			"contents": "/** @jsx React.DOM */\n'use strict';\n\nvar React = require('react');\n\nmodule.exports = React.createClass({\n  render: function() {\n    var logoFile = 'img/logos/logo' + Math.floor((Math.random() * 10) + 1) + '.jpg';\n\n    return (\n      <div className=\"col-md-6 dp\">\n\n          <div className=\"row\">\n              <div className=\"col-md-8\">\n                  <p className=\"kategorie\">{this.props.datenplatz.kategorie}</p>\n                  <p className=\"name\">{this.props.datenplatz.name}</p>\n\n                  <p className=\"anschrift\">\n                    <i className=\"fa fa-home fa-fw icon-grey\"></i>&nbsp;{this.props.datenplatz.anschrift1}<br/>\n                    <i className=\"fa fa-fw\"></i>&nbsp;{this.props.datenplatz.anschrift2}<br/>\n                    <i className=\"fa fa-fw\"></i>&nbsp;{this.props.datenplatz.anschrift3}\n                  </p>\n\n          <p className=\"telefon\"><i className=\"fa fa-fw fa-phone icon-grey\"></i>&nbsp;{this.props.datenplatz.telefon}</p>\n          <p className=\"telefax\"><i className=\"fa fa-fw fa-file-photo-o icon-grey\"></i>&nbsp;{this.props.datenplatz.fax}</p>\n          <p className=\"email\"><i className=\"fa fa-fw fa-envelope-o icon-grey\"></i>&nbsp;\n              <a href={'mailto:' + this.props.datenplatz.email}>{this.props.datenplatz.email}</a>\n          </p>\n          <p className=\"url\"><i className=\"fa fa-fw fa-globe icon-grey\"></i>&nbsp;<a href={'http://' + this.props.datenplatz.url} target=\"_blank\">{this.props.datenplatz.url}</a></p>\n              </div>\n              <div className=\"col-md-2\">\n                  <img className=\"platzlogo\" src={logoFile} />\n              </div>\n          </div>\n                \n          \n      </div>\n    );\n  }\n});\n",
-			"file": "src/main/webapp/app/js/components/Datenplatz.jsx",
-			"file_size": 1704,
-			"file_write_time": 1414587759000000,
+			"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
 			"settings":
 			{
-				"buffer_size": 1704,
+				"buffer_size": 5872,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 5542,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/index.html",
+			"settings":
+			{
+				"buffer_size": 5006,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/js/components/Info.jsx",
+			"settings":
+			{
+				"buffer_size": 5730,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/eintrag.html",
+			"settings":
+			{
+				"buffer_size": 11403,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/agbs.html",
+			"settings":
+			{
+				"buffer_size": 9933,
 				"line_ending": "Unix"
 			}
 		}
@@ -691,20 +728,23 @@
 	},
 	"file_history":
 	[
-		"/home/tiberius/scala/projects/durchstarter/elasticsearch/load",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/DatenplaetzeStore.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Ergebnis.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/OrteStore.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/DatenplaetzeStore.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/index.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/impressum.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/unternehmer.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/agbs.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/eintrag.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/app.js",
+		"/home/tiberius/scala/projects/durchstarter/elasticsearch/load",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_colors.scss",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_material.scss",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/OrteStore.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/QueryHttpService.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/Actions.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchDomain.scala",
@@ -815,10 +855,7 @@
 		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/directives/selectbox.js",
 		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/views/story.html",
 		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/app.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/po/de.po",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/directives/errorDialog.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/controllers/graph.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/views/findpaths.html"
+		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/po/de.po"
 	],
 	"find":
 	{
@@ -884,6 +921,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"title",
+			"weight",
 			";",
 			"20px",
 			"blue",
@@ -1009,9 +1048,7 @@
 			"uploading your file",
 			"elastics",
 			"updateScr",
-			"on-finish-render",
-			"mCustom",
-			"story-view"
+			"on-finish-render"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1068,23 +1105,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/main/webapp/app/js/components/Datenplatz.jsx",
+					"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
 					"settings":
 					{
-						"buffer_size": 1704,
+						"buffer_size": 5872,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								226,
-								226
+								4042,
+								4042
 							]
 						],
 						"settings":
@@ -1094,7 +1131,147 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2250.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main/webapp/app/styles/main.scss",
+					"settings":
+					{
+						"buffer_size": 5542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1333,
+								1333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 888.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/main/webapp/app/index.html",
+					"settings":
+					{
+						"buffer_size": 5006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3097,
+								3097
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/main/webapp/app/js/components/Info.jsx",
+					"settings":
+					{
+						"buffer_size": 5730,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2326,
+								2326
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 53.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/main/webapp/app/eintrag.html",
+					"settings":
+					{
+						"buffer_size": 11403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3805,
+								3805
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 569.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/main/webapp/app/agbs.html",
+					"settings":
+					{
+						"buffer_size": 9933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6421,
+								6421
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 945.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1160,20 +1337,56 @@
 		"selected_items":
 		[
 			[
-				"datenpl",
-				"src/main/webapp/app/js/components/Datenplatz.jsx"
+				"info",
+				"src/main/webapp/app/js/components/Info.jsx"
 			],
 			[
-				"gulpfie",
-				"src/main/webapp/gulpfile.js"
+				"index.html",
+				"src/main/webapp/app/index.html"
+			],
+			[
+				"main",
+				"src/main/webapp/app/styles/main.scss"
+			],
+			[
+				"main.scss",
+				"src/main/webapp/app/styles/main.scss"
+			],
+			[
+				"such",
+				"src/main/webapp/app/js/components/Suchfeld.jsx"
 			],
 			[
 				"app.js",
 				"src/main/webapp/app/js/app.js"
 			],
 			[
-				"index.html",
+				"main.",
+				"src/main/webapp/app/styles/main.scss"
+			],
+			[
+				"iindex.html",
 				"src/main/webapp/app/index.html"
+			],
+			[
+				"daten",
+				"src/main/webapp/app/js/stores/DatenplaetzeStore.js"
+			],
+			[
+				"ortes",
+				"src/main/webapp/app/js/stores/OrteStore.js"
+			],
+			[
+				"ergebnis",
+				"src/main/webapp/app/js/components/Ergebnis.jsx"
+			],
+			[
+				"datenpl",
+				"src/main/webapp/app/js/components/Datenplatz.jsx"
+			],
+			[
+				"gulpfie",
+				"src/main/webapp/gulpfile.js"
 			],
 			[
 				"orte",
@@ -1194,14 +1407,6 @@
 			[
 				"ergebn",
 				"src/main/webapp/app/js/components/Ergebnis.jsx"
-			],
-			[
-				"main.scss",
-				"src/main/webapp/app/styles/main.scss"
-			],
-			[
-				"such",
-				"src/main/webapp/app/js/components/Suchfeld.jsx"
 			],
 			[
 				"",
@@ -1488,10 +1693,6 @@
 				"src/main/scala/amanuensis/api/UserHttpService.scala"
 			],
 			[
-				"main",
-				"src/main/webapp/app/styles/main.css"
-			],
-			[
 				"log",
 				"src/main/webapp/app/scripts/controllers/login.js"
 			],
@@ -1646,30 +1847,6 @@
 			[
 				"elast",
 				"src/main/scala/amanuensis/core/elasticsearch/ElasticSearchDomain.scala"
-			],
-			[
-				"elas",
-				"src/main/scala/amanuensis/core/elasticsearch/ElasticSearchServer.scala"
-			],
-			[
-				"querya",
-				"src/main/scala/amanuensis/core/QueryActor.scala"
-			],
-			[
-				"query.",
-				"src/main/webapp/app/views/query.html"
-			],
-			[
-				"elastics",
-				"src/main/scala/amanuensis/core/elasticsearch/ElasticSearchServer.scala"
-			],
-			[
-				"storyactor",
-				"src/main/scala/amanuensis/core/StoryActor.scala"
-			],
-			[
-				"findpa",
-				"src/main/webapp/app/views/findpaths.html"
 			]
 		],
 		"width": 0.0
