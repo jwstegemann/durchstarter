@@ -1,7 +1,8 @@
 /** @jsx React.DOM */
 'use strict';
 
-var React = require('react');
+var React = require('react/addons');
+var CSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 var Routes = require('react-router/Routes');
 var Route = require('react-router/Route');
@@ -15,12 +16,22 @@ var Actions = require('./Actions');
 var Suchfeld = require('./components/Suchfeld');
 
 
+var App = React.createClass({
+  render: function() {
+    return (
+      <CSSTransitionGroup transitionName="example">
+        <this.props.activeRouteHandler />
+      </CSSTransitionGroup>
+    );
+  }
+});
 
 var routes = (
   <Routes location="hash">
-    <DefaultRoute handler={Info} />
-    <Route name="info" path="/" handler={Info} />
-    <Route name="ergebnis" path="/ort/:ortId" handler={Ergebnis} />
+    <Route handler={App}>
+      <Route name="info" path="/" handler={Info} addHandlerKey={true} />
+      <Route name="ergebnis" path="/ort/:ortId" handler={Ergebnis} addHandlerKey={true} />
+    </Route>
   </Routes>
 );
 

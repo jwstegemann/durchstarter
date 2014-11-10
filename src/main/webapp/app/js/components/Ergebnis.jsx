@@ -50,10 +50,9 @@ module.exports = React.createClass({
               (index%2)?<div className="clearfix visible-md-block"></div>:undefined
             ];
           })}
-
         </div>
 
-      </div>   
+      </div>
     );
   }
 });
