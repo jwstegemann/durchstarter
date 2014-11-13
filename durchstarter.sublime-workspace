@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"update",
+				"updateOrte"
+			],
+			[
 				"margin-",
 				"margin-top"
 			],
@@ -186,10 +190,6 @@
 			[
 				"selec",
 				"selectionStart"
-			],
-			[
-				"update",
-				"updated"
 			],
 			[
 				"an",
@@ -523,7 +523,7 @@
 			"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
 			"settings":
 			{
-				"buffer_size": 5872,
+				"buffer_size": 5903,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "src/main/webapp/app/styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 5542,
+				"buffer_size": 5798,
 				"line_ending": "Unix"
 			}
 		},
@@ -544,10 +544,42 @@
 			}
 		},
 		{
+			"file": "src/main/webapp/app/js/stores/OrteStore.js",
+			"settings":
+			{
+				"buffer_size": 702,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/js/components/Ergebnis.jsx",
+			"settings":
+			{
+				"buffer_size": 1618,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/js/app.js",
+			"settings":
+			{
+				"buffer_size": 1141,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/js/stores/DatenplaetzeStore.js",
+			"settings":
+			{
+				"buffer_size": 825,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "src/main/webapp/app/js/components/Info.jsx",
 			"settings":
 			{
-				"buffer_size": 5730,
+				"buffer_size": 5813,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,15 +587,15 @@
 			"file": "src/main/webapp/app/eintrag.html",
 			"settings":
 			{
-				"buffer_size": 11403,
+				"buffer_size": 11376,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/main/webapp/app/agbs.html",
+			"file": "src/main/webapp/app/unternehmer.html",
 			"settings":
 			{
-				"buffer_size": 9933,
+				"buffer_size": 5488,
 				"line_ending": "Unix"
 			}
 		}
@@ -579,6 +611,10 @@
 				"SBT: Start SBT"
 			],
 			[
+				"kill",
+				"SBT: Kill SBT"
+			],
+			[
 				"Package Control: ",
 				"Package Control: Install Package"
 			],
@@ -588,10 +624,6 @@
 			],
 			[
 				"ki",
-				"SBT: Kill SBT"
-			],
-			[
-				"kill",
 				"SBT: Kill SBT"
 			],
 			[
@@ -728,6 +760,9 @@
 	},
 	"file_history":
 	[
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/eintrag.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/agbs.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Ergebnis.jsx",
@@ -737,9 +772,6 @@
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/impressum.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/unternehmer.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/agbs.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/eintrag.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/app.js",
 		"/home/tiberius/scala/projects/durchstarter/elasticsearch/load",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
@@ -1105,7 +1137,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -1113,15 +1145,15 @@
 					"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
 					"settings":
 					{
-						"buffer_size": 5872,
+						"buffer_size": 5903,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4042,
-								4042
+								5788,
+								5788
 							]
 						],
 						"settings":
@@ -1131,7 +1163,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2250.0,
+						"translation.y": 2707.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1141,15 +1173,15 @@
 					"file": "src/main/webapp/app/styles/main.scss",
 					"settings":
 					{
-						"buffer_size": 5542,
+						"buffer_size": 5798,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1333,
-								1333
+								5540,
+								5540
 							]
 						],
 						"settings":
@@ -1159,7 +1191,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 888.0,
+						"translation.y": 5129.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1187,25 +1219,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 405.0,
+						"translation.y": 840.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "src/main/webapp/app/js/components/Info.jsx",
+					"file": "src/main/webapp/app/js/stores/OrteStore.js",
 					"settings":
 					{
-						"buffer_size": 5730,
+						"buffer_size": 702,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2326,
-								2326
+								389,
+								389
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/main/webapp/app/js/components/Ergebnis.jsx",
+					"settings":
+					{
+						"buffer_size": 1618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								623,
+								623
 							]
 						],
 						"settings":
@@ -1214,54 +1274,110 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 53.0,
-						"translation.y": 405.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/main/webapp/app/eintrag.html",
-					"settings":
-					{
-						"buffer_size": 11403,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3805,
-								3805
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
 						"translation.x": 0.0,
-						"translation.y": 569.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "src/main/webapp/app/agbs.html",
+					"file": "src/main/webapp/app/js/app.js",
 					"settings":
 					{
-						"buffer_size": 9933,
+						"buffer_size": 1141,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6421,
-								6421
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/main/webapp/app/js/stores/DatenplaetzeStore.js",
+					"settings":
+					{
+						"buffer_size": 825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								659,
+								659
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/main/webapp/app/js/components/Info.jsx",
+					"settings":
+					{
+						"buffer_size": 5813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								131,
+								131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/main/webapp/app/eintrag.html",
+					"settings":
+					{
+						"buffer_size": 11376,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4229,
+								4229
 							]
 						],
 						"settings":
@@ -1271,7 +1387,35 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 945.0,
+						"translation.y": 689.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/main/webapp/app/unternehmer.html",
+					"settings":
+					{
+						"buffer_size": 5488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3451,
+								3451
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 509.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1341,6 +1485,14 @@
 				"src/main/webapp/app/js/components/Info.jsx"
 			],
 			[
+				"erg",
+				"src/main/webapp/app/js/components/Ergebnis.jsx"
+			],
+			[
+				"orte",
+				"src/main/webapp/app/js/stores/OrteStore.js"
+			],
+			[
 				"index.html",
 				"src/main/webapp/app/index.html"
 			],
@@ -1387,10 +1539,6 @@
 			[
 				"gulpfie",
 				"src/main/webapp/gulpfile.js"
-			],
-			[
-				"orte",
-				"src/main/webapp/app/js/stores/OrteStore.js"
 			],
 			[
 				"mate",
@@ -1843,10 +1991,6 @@
 			[
 				"graphhtt",
 				"src/main/scala/amanuensis/api/GraphHttpService.scala"
-			],
-			[
-				"elast",
-				"src/main/scala/amanuensis/core/elasticsearch/ElasticSearchDomain.scala"
 			]
 		],
 		"width": 0.0

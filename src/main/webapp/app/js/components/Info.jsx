@@ -5,6 +5,10 @@ var React = require('react');
 
 
 module.exports = React.createClass({
+  demo: function() {
+    alert('in der Demoversion nicht möglich')    
+  },
+
   render: function() {
     return (
       <div>
@@ -112,7 +116,7 @@ module.exports = React.createClass({
                 <div className="form-group col-sm-7">
                   <input type="email" className="form-control input-lg" id="exampleInputEmail2" placeholder="Ihre eMail-Adresse" />
                 </div>
-                <button type="submit" className="btn btn-lg btn-default">
+                <button className="btn btn-lg btn-default" onClick={this.demo}>
                   NEWSLETTER ABONNIEREN
                 </button>
               </form>
