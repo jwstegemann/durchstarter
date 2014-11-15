@@ -2,11 +2,30 @@
 'use strict';
 
 var React = require('react');
+var request = require('superagent');
 
 
 module.exports = React.createClass({
   demo: function() {
     alert('in der Demoversion nicht möglich')    
+  },
+
+  newsletter: function(e) {
+    //e.preventDefault();
+
+    var form = this.refs.newsletterform.getDOMNode();
+
+    if (!form.checkValidity || form.checkValidity()) {
+      var email = this.refs.newsletteremail.getDOMNode().value;
+      request
+           .put('/newsletter/1')
+           .send({eMail: email})
+           .end(function(result){
+                //console.log(result)
+           });
+
+      form.reset();
+    }
   },
 
   render: function() {
@@ -112,11 +131,11 @@ module.exports = React.createClass({
       <a name="register"></a>
       <div className="row section register">
           <div className="col-md-6 col-md-offset-3">
-              <form className="form-inline" role="form">
+              <form ref="newsletterform" className="form-inline" role="form">
                 <div className="form-group col-sm-7">
-                  <input type="email" className="form-control input-lg" id="exampleInputEmail2" placeholder="Ihre eMail-Adresse" />
+                  <input ref="newsletteremail" type="email" className="form-control input-lg" id="exampleInputEmail2" placeholder="Ihre eMail-Adresse" />
                 </div>
-                <button className="btn btn-lg btn-default" onClick={this.demo}>
+                <button className="btn btn-lg btn-default" onClick={this.newsletter}>
                   NEWSLETTER ABONNIEREN
                 </button>
               </form>

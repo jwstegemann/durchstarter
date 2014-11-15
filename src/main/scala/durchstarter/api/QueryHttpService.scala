@@ -23,8 +23,10 @@ import StatusCode._
 trait QueryHttpService extends HttpService with SprayJsonSupport { 
 
   import ElasticSearchProtocol._
+  import DurchstarterProtocol._
 
   private val queryDatenplaetzeActor = actorRefFactory.actorSelection("/user/queryDatenplaetze")
+//  private val emailActor = 
 
   private implicit val timeout = new Timeout(5.seconds)
   private implicit def executionContext = actorRefFactory.dispatcher
@@ -50,5 +52,25 @@ trait QueryHttpService extends HttpService with SprayJsonSupport {
           }
         }
       }
-    } 
+    } ~
+    path("newsletter" / "1") {
+      put {
+        entity(as[NewsletterRequest]) { newsletter =>
+          val emailActor = actorRefFactory.actorSelection("/user/email")  
+
+          emailActor ! newsletter
+          complete(StatusCodes.OK)
+        }
+      }
+    } ~
+    path("angebot" / "2") {
+      put {
+        entity(as[AngebotRequest]) { angebot =>
+          val emailActor = actorRefFactory.actorSelection("/user/email")  
+
+          emailActor ! angebot
+          complete(StatusCodes.OK)
+        }
+      }
+    }
 }

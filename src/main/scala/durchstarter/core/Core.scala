@@ -41,6 +41,6 @@ trait CoreActors {
    * start all the core actors here
    */
   val queryDatenplaetzeActorInstance = system.actorOf(Props[QueryDatenplaetzeActor], "queryDatenplaetze")
-
+  val emailActorInstance = system.actorOf(Props[EmailActor], "email")
 }
 

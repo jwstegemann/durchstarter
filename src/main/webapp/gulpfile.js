@@ -195,6 +195,14 @@ gulp.task('serve', ['prepare_serve', 'build', 'watch'], function() {
       {
         source: '/ort',
         target: 'http://localhost:8080/ort'
+      },
+      {
+        source: '/newsletter',
+        target: 'http://localhost:8080/newsletter'
+      },
+      {
+        source: '/angebot',
+        target: 'http://localhost:8080/angebot'
       }]
     }));
 

@@ -378,3 +378,8 @@ form.angebot {
 .example-leave.example-leave-active {
   opacity: 0.01;
 }
+
+form.checked input:required:invalid, input:focus:invalid {
+  /* insert your own styles for invalid form input */
+  border-bottom: 2px solid $color-red;
+}

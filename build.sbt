@@ -33,7 +33,8 @@ resolvers ++= Seq(
 //    "sgodbillon" at "https://bitbucket.org/sgodbillon/repository/raw/master/snapshots/",
     "Typesafe Snapshots" at "http://repo.typesafe.com/typesafe/maven-snapshots",
     "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases",
-    "Typesafe repository" at "http://repo.typesafe.com/typesafe/repo1/"
+    "Typesafe repository" at "http://repo.typesafe.com/typesafe/repo1/",
+    "softprops-maven" at "http://dl.bintray.com/content/softprops/maven"
 )
 
 // Libraries to add
@@ -53,7 +54,8 @@ libraryDependencies ++= Seq(
     "org.joda"                                %   "joda-convert"                % "1.2",    
     "org.specs2"                              %%  "specs2"                      % "1.14"         % "test",
     "commons-io"                              %   "commons-io"                  % "2.4"          % "optional",
-    "com.amazonaws"                           %   "aws-java-sdk"                % "1.6.3"    
+    "com.amazonaws"                           %   "aws-java-sdk"                % "1.6.3",
+    "me.lessis"                               %%  "courier"                     % "0.1.3"
 )
 
 // Assembly

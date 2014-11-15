@@ -113,7 +113,7 @@ module.exports = React.createClass({
   },
 
   navigateToOrt: function(index) {
-    console.log('navigating to ' + index + ' of ' + this.state.orte);
+//    console.log('navigating to ' + index + ' of ' + this.state.orte);
 
     if (index != undefined && index >= 0 && index < this.state.orte.length) {
       var ortId = this.state.orte[index].payload.id;
@@ -166,13 +166,13 @@ module.exports = React.createClass({
   },
 
   handleClickOrt: function(index, event) {
-    console.log('clicked');
+//  console.log('clicked');
     event.preventDefault();
     this.navigateToOrt(index);
   },
 
   render: function() {
-    console.log("focus: " + this.state.showSuggestions);
+ // console.log("focus: " + this.state.showSuggestions);
 
 
     var self = this;
