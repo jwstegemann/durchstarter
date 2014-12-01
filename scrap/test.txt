@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><!-- ##code-section View --><head><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"><!--[if lt IE 7]></base><![endif]--><meta name="generator" content="Plone - http://plone.org"><title>IHK-Finder &#8212; Deutscher Industrie- und Handelskammertag</title><style type="text/css" media="all">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/kupustyles-cachekey1444.css);</style><link rel="stylesheet" type="text/css" media="screen" href="http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcetinymce.stylesheetstinymce-cachekey4794.css"><style type="text/css">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/invisibles-cachekey9822.css);</style><!--[if IE]>    
+    
+    
+    
+      <style type="text/css">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcedihk.theme.stylesheetsIEFixes-cachekey8982.css);</style>
+    
+    
+    
+        <![endif]--><style type="text/css" media="screen">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/orderablereference-cachekey5052.css);</style><style type="text/css" media="screen">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourceplone.app.jquerytools.overlays-cachekey6606.css);</style><style type="text/css" media="screen">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcecollective.solr.resourcesstyle-cachekey2371.css);</style><style type="text/css" media="all">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcedihk.itheme.stylesheetslayout-cachekey2992.css);</style><!--[if IE]>    
+    
+    
+    
+      <style type="text/css" media="all">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcedihk.theme.javascriptsdihk-ie_navigation-cachekey9369.js);</style>
+    
+    
+    
+        <![endif]--><style type="text/css" media="all">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcedihk.itheme.stylesheetsform-cachekey8567.css);</style><!--[if IE]>    
+    
+    
+    
+      <style type="text/css">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcedihk.itheme.stylesheetsIEFixes-cachekey0390.css);</style>
+    
+    
+    
+        <![endif]--><style type="text/css">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcedihk.itheme.stylesheetsprint-cachekey9270.css);</style><style type="text/css" media="all">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcedihk.ihk-finder.csscontent-cachekey5933.css);</style><style type="text/css" media="all">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcedihk.ihk-finder.cssjtip-cachekey2200.css);</style><!--[if IE]>    
+    
+    
+    
+      <style type="text/css" media="all">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcedihk.ihk-finder.cssIEFixes-cachekey9224.css);</style>
+    
+    
+    
+        <![endif]--><style type="text/css">@import url(http://www.dihk.de/portal_css/dihk.itheme%20Skin/resourcedihk.internet.stylesheetsadditional-cachekey7253.css);</style><script type="text/javascript" src="http://www.dihk.de/portal_javascripts/dihk.itheme%20Skin/jquery-cachekey0103.js">
+      </script><script type="text/javascript" src="http://www.dihk.de/portal_javascripts/dihk.itheme%20Skin/resourcedihk.theme.javascriptsbase2-dom-pf-cachekey8698.js">
+      </script><script type="text/javascript" src="http://www.dihk.de/portal_javascripts/dihk.itheme%20Skin/resourcedihk.theme.javascriptsdihk-lib-cachekey3531.js">
+      </script><script type="text/javascript" src="http://www.dihk.de/portal_javascripts/dihk.itheme%20Skin/resourcedihk.theme.javascriptsui.checkbox-cachekey0437.js">
+      </script><script type="text/javascript" src="http://www.dihk.de/portal_javascripts/dihk.itheme%20Skin/resourcedihk.theme.javascriptsjquery.event.hover-1.0-cachekey4869.js">
+      </script><script type="text/javascript" src="http://www.dihk.de/portal_javascripts/dihk.itheme%20Skin/orderablereference-cachekey2021.js">
+      </script><!--[if IE]>    
+    
+    
+      <script type="text/javascript"
+              src="http://www.dihk.de/portal_javascripts/dihk.itheme%20Skin/resourcedihk.theme.javascriptsdihk-ie_navigation-cachekey0290.js">
+      </script>
+    
+    
+    
+        <![endif]--><script type="text/javascript" src="http://www.dihk.de/portal_javascripts/dihk.itheme%20Skin/resourcedihk.ihk-finder.jsihk-finder-cachekey7952.js">
+      </script><script type="text/javascript" src="http://www.dihk.de/portal_javascripts/dihk.itheme%20Skin/resourcedihk.ihk-finder.jsjtip-cachekey3649.js">
+      </script><script type="text/javascript" src="http://www.dihk.de/portal_javascripts/dihk.itheme%20Skin/resourcedihk.internet.scriptslivesearch-cachekey3742.js">
+      </script><link rel="kinetic-stylesheet" type="text/css" href="http://www.dihk.de/portal_kss/dihk.itheme%20Skin/resourcetinymce.ksstinymce-cachekey9792.kss"><link rel="kinetic-stylesheet" type="text/css" href="http://www.dihk.de/portal_kss/dihk.itheme%20Skin/at-cachekey8136.kss"><meta name="DC.creator" content="admin"><meta name="DC.format" content="text/plain"><meta name="DC.date.modified" content="2014-11-23 00:07:47"><meta name="DC.date.created" content="2010-09-13 18:14:14"><meta name="DC.type" content="DIHKIHKFinder"><meta name="DC.distribution" content="Global"><meta name="robots" content="ALL"><meta name="distribution" content="Global"><meta name="keywords" content="asdadsasd"><link rel="canonical" href="http://www.dihk.de/ihk-finder"><link rel="kss-base-url" href="http://www.dihk.de/ihk-finder"><!-- Internet Explorer CSS Fixes --><link rel="shortcut icon" type="image/x-icon" href="http://www.dihk.de/favicon.ico"><link rel="home" href="http://www.dihk.de" title="Startseite"><link rel="contents" href="http://www.dihk.de/sitemap" title="&#220;bersicht"><link rel="search" href="http://www.dihk.de/search_form" title="Search this site"><!-- Disable IE6 image toolbar --><meta http-equiv="imagetoolbar" content="no"></head><script src="http://wis.ihk.de/fileadmin/templates/scripts/typo3_email_uncryption.js?1404122434" type="text/javascript"></script><script src="http://wis.ihk.de/fileadmin/js/google_md5.js?1351512911" type="text/javascript"></script><script src="http://wis.ihk.de/fileadmin/templates/scripts/mootools-1.2.1-core-nc.js?1305043581" type="text/javascript"></script><script src="http://wis.ihk.de/fileadmin/templates/scripts/mootools-1.2-more.js?1238177447" type="text/javascript"></script><script src="http://wis.ihk.de/fileadmin/templates/scripts/ihk_findersuche.js?1254387459" type="text/javascript"></script><script src="http://wis.ihk.de/urchin.js" type="text/javascript"></script><script type="text/javascript">_userv=0;urchinTracker();</script><script src="http://wis.ihk.de/fileadmin/js/jquery-1.7.x-1.8.x-1.2.x.js" type="text/javascript"></script><body class="template-base_edit section-public_site template- cssfix" dir="ltr">
+   
+   	
+   		
+   			 <div id="visual-portal-wrapper">
+
+      <div id="portal-top">
+        <div id="portal-header">
+<p class="hiddenStructure">
+  <a accesskey="2" href="http://www.dihk.de/ihk-finder?path=IHKFINDER&amp;withmap=0#documentContent">Direkt zum Inhalt</a> |
+
+  <a accesskey="6" href="http://www.dihk.de/ihk-finder?path=IHKFINDER&amp;withmap=0#portlet-navigation-tree">Direkt zur Navigation</a>
+</p>
+
+
+<!-- ##code-section View -->
+  <ul class="fontResizer"><li class="legend">Schrift:</li><li><span class="smallFont">A</span></li><li><span class="medFont">A</span></li><li><span class="largeFont">A</span></li></ul><!-- ##/code-section View --><!-- ##code-section View --><ul id="portal-organisationnav"><li id="portaltab-publicsite">
+	  	<a href="http://www.dihk.de" title="Zu www.dihk.de">
+			   	<img alt="DIHK.de Logo" src="http://www.dihk.de/++resource++dihk.theme.images/main/dihk-public.gif"></a>
+	</li>
+	<li id="portaltab-org-ihk"><a href="http://www.dihk.de/ihk-finder" target="_blank" title="zur IHK"><img src="http://www.dihk.de/++resource++dihk.theme.images/main/ihk.gif" alt=""></a></li>
+	<li id="portaltab-org-ahk"><a href="http://www.ahk.de/" title="zur AHK" target="_blank"><img src="http://www.dihk.de/++resource++dihk.theme.images/main/ahk.gif" alt=""></a></li></ul><!-- ##/code-section View --><!-- ##code-section View --><script type="text/javascript">if (typeof globalHover === "undefined") {	globalHover = function() { return true; };}</script><h5 class="hiddenStructure">Sektionen</h5><ul id="portal-globalnav"><li class="plain tab-themenfelder"><a><img src="http://www.dihk.de/portal_cont2i/renderedText?template_name=nav0&amp;text=THEMENFELDER" alt="THEMENFELDER"></a><ul id="parent-b0148f16fc7f33b32ef46642d259b360"><script type="text/javascript">jq('#parent-b0148f16fc7f33b32ef46642d259b360').load('http://www.dihk.de/themenfelder/dyn_menu');</script></ul></li><li class="plain tab-branchen"><a><img src="http://www.dihk.de/portal_cont2i/renderedText?template_name=nav0&amp;text=BRANCHEN" alt="BRANCHEN"></a><ul id="parent-22f8183e145d87bef4436c4a5e67a386"><script type="text/javascript">jq('#parent-22f8183e145d87bef4436c4a5e67a386').load('http://www.dihk.de/branchen/dyn_menu');</script></ul></li><li id="portaltab-category" class="plain tab-presse"><a href="http://www.dihk.de/presse"><img src="http://www.dihk.de/portal_cont2i/renderedText?template_name=nav0&amp;text=PRESSE" alt="PRESSE"></a><ul id="parent-44b5d63aed0fc29087bab33a3cbed7bd"><script type="text/javascript">jq('#parent-44b5d63aed0fc29087bab33a3cbed7bd').load('http://www.dihk.de/presse/dyn_menu');</script></ul></li><li id="portaltab-category" class="plain tab-wir-ueber-uns"><a href="http://www.dihk.de/wir-ueber-uns"><img src="http://www.dihk.de/portal_cont2i/renderedText?template_name=nav0&amp;text=WIR%20%DCBER%20UNS" alt="WIR &#220;BER UNS"></a><ul id="parent-d89bd6034c1100fb15a1ab2cc76f5c78"><script type="text/javascript">jq('#parent-d89bd6034c1100fb15a1ab2cc76f5c78').load('http://www.dihk.de/wir-ueber-uns/dyn_menu');</script></ul></li><li id="portaltab-category" class="plain tab-dihk-in-bruessel"><a href="http://www.dihk.de/dihk-in-bruessel"><img src="http://www.dihk.de/portal_cont2i/renderedText?template_name=nav0&amp;text=DIHK%20IN%20BR%DCSSEL" alt="DIHK IN BR&#220;SSEL"></a></li><li class="selected tab-ihk-finder"><a href="http://www.dihk.de/ihk-finder"><img src="http://www.dihk.de/portal_cont2i/renderedText?template_name=nav0&amp;text=IHK-FINDER" alt="IHK-FINDER"></a></li><li class="plain tab-publikationen"><a href="http://www.dihk-verlag.de" target="_blank"><img src="http://www.dihk.de/portal_cont2i/renderedText?template_name=nav0&amp;text=PUBLIKATIONEN" alt="PUBLIKATIONEN"></a></li><li class="plain tab-ihktransparent-navi"><a href="http://www.dihk.de/ihktransparent" target="_blank"><img src="http://www.dihk.de/portal_cont2i/renderedText?template_name=nav0&amp;text=IHKTRANSPARENT" alt="IHKTRANSPARENT"></a></li><li class="plain tab-enref"><a href="http://www.dihk.de/en" target="_blank"><img src="http://www.dihk.de/portal_cont2i/renderedText?template_name=nav0&amp;text=ENGLISH" alt="ENGLISH"></a></li></ul><!-- ##/code-section View --><!-- ##code-section View --><div id="portal-information">	         	
+			 <img alt="Hauptrubriklogo" id="portal-information-image" src="http://www.dihk.de/pools/headerbildergross/p_start_der-dihk.jpg"></div>
+
+<!-- ##/code-section View -->    
+
+
+
+<!-- ##code-section View -->
+<div id="portal-searchbox">
+  <form name="searchform" action="http://www.dihk.de/isuche">
+    <label for="searchGadget" class="hiddenStructure">Website durchsuchen</label>
+    <div class="LSBox">
+      <input name="SearchableText" type="text" size="18" title="Website durchsuchen" accesskey="4" class="inputLabel" id="searchGadget" onfocus="search_helper(this);"><input class="searchButton" type="image" src="http://www.dihk.de/++resource++dihk.theme.images/icon/button_search.gif" value="Suche"><div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+    
+	<div id="searchwithpath">	
+		<input type="checkbox" name="path" value="/Plone/public_site/ihk-finder"><span>Ab gew&#228;hlter Rubrik suchen</span>
+	</div>
+	</div>
+    
+  
+  <input type="hidden" name="facet" value="true"><input type="hidden" name="facet.field" value="kategorie"><input type="hidden" name="facet.field" value="dokumentart"></form>  
+<div id="portal-advanced-search"><a href="http://www.dihk.de/advancedsearch" accesskey="5">Erweiterte Suche</a></div>
+</div>    
+
+<!-- ##/code-section View -->    
+
+
+
+<!-- ##code-section View -->
+<div id="portal-breadcrumbs" class="area-" style="background-color:#e9ecf0">
+  <h2>
+     <a href="http://www.dihk.de"><img src="http://www.dihk.de/portal_cont2i/renderedText?template_name=breadcrumprubrik&amp;text=DIHK%20Internet"></a>
+     
+  </h2>
+  <ul><li>
+        <a href="http://www.dihk.de" title="Home">Home</a>
+        <span>-</span>
+    </li> 
+    <li>
+        
+    	   
+	           
+	           	  
+			   <strong>IHK-Finder</strong>
+	    
+	</li></ul></div>
+<!-- ##/code-section View -->    
+
+
+</div>
+
+      </div>
+
+      <div class="visualClear" id="clear-space-before-wrapper-table"><!-- --></div>
+	  
+	
+<!-- ##code-section View -->
+<div id="portal-column-meta">
+	<script type="text/javascript">function dynLoadOpen(typ) {var objekt = jq('#meta-jq-' + typ); 
+	objekt.load('http://www.dihk.de/' + typ +'/@@popup');	
+	objekt.toggle();}</script><ul id="portal-metanav"><!-- li id="tab-meta-language"><a href="#" tal:attributes="href string:${context/topurl|nothing}/en">English</a></li--><li id="tab-meta-initiativen"><a href="http://www.dihk.de/ihk-finder/" onclick="javascript: dynLoadOpen('initiativen');return false;">B&#246;rsen</a></li>
+        <li id="tab-meta-boersen"><a href="http://www.dihk.de/ihk-finder/" onclick="javascript: dynLoadOpen('boersen');return false;">B&#246;rsen</a></li>
+    </ul></div><div style="display:none" id="meta-jq-boersen">&#160;</div><div style="display:none" id="meta-jq-initiativen">&#160;</div>
+<!-- ##/code-section View -->    
+
+
+
+      <div id="portal-columns" class="two-Columns">
+        
+        <div id="portal-column-one">
+          <div class="visualPadding">
+          <div id="portlet-current-site">
+            
+              
+<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e652f7075626c69635f736974652f69686b2d66696e6465720a69686b66696e646572706f72746c65746c696e6b73" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e652f7075626c69635f736974652f69686b2d66696e6465720a69686b66696e646572706f72746c65746c696e6b73">
+<!-- ##code-section Portlet -->
+<div class="marginalPortlet first-MarginalPortlet">
+                <h2>Downloads</h2>
+                  <dl class="download"><dt><a target="_blank" href="http://www.dihk.de/ressourcen/downloads/adressen.pdf/at_download/file?mdate=1406290077786">IHK Adressen</a></dt>
+                    <dd class="info">Stand 25.07.2014, 166 KB</dd>
+                    <dd class="link"><a class="pdf download piwik_download" target="_blank" href="http://www.dihk.de/ressourcen/downloads/adressen.pdf/at_download/file?mdate=1406290077786">Download:  Adressen.pdf</a></dd>
+                  </dl></div>
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e652f7075626c69635f736974652f69686b2d66696e6465720a766572616e7374616c74756e67656e706f72746c6574" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e652f7075626c69635f736974652f69686b2d66696e6465720a766572616e7374616c74756e67656e706f72746c6574">
+<!-- ##code-section Portlet -->
+ 
+ <div id="portlet-current-site">
+            <div class="functionPortlet">
+              <a href="http://www.dihk.de/veranstaltungen"><img alt="" src="http://www.dihk.de/++resource++dihk.veranstaltungen.images/teaser/main.gif"></a>
+              <p>Die IHKs f&#252;hren allein oder mit Partnern zahlreiche Veranstaltungen durch, angefangen bei Seminaren und Fortbildungskursen &#252;ber Informationsveranstaltungen und Podiumsdiskussionen bis hin zu Gro&#223;veranstaltungen mit prominenten Teilnehmern und Rednern aus Wirtschaft, Politik, Sport und Kultur.</p>
+            </div><!-- #functionPortlet -->
+ </div>
+    
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a506f72746c65744665617475726545696e66616368" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a506f72746c65744665617475726545696e66616368">
+<!-- ##code-section Portlet -->
+    <!--.infoPortlet-->
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a52756272696b4e617669676174696f6e" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a52756272696b4e617669676174696f6e">
+<!-- ##code-section Portlet -->
+
+    
+
+	<!-- #portlet-current-site -->
+    
+ 
+
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a536561726368466163657473" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a536561726368466163657473">
+<!-- ##code-section Portlet -->
+   
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a506f72746c6574466561747572654672656974657874" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a506f72746c6574466561747572654672656974657874">
+<!-- ##code-section Portlet -->
+	
+	<div style="clear: both; height: 0px;">&#160;</div>	
+	
+	
+		<div class="marginalPortlet">
+			<h2>Vernetzt mit Ihrer IHK</h2>
+			<div class="kssattr-portlethash-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a506f72746c6574466561747572654672656974657874 portletWrapper" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a506f72746c6574466561747572654672656974657874">
+<div class="marginalPortlet">
+<p><a href="http://dihk-fb.de/ihk-finder" target="_blank"><img src="http://www.dihk.de/../ressourcen/bilder/ihks-auf-facebook.jpg" alt="IHKs auf facebook" class="image-left no-border"></a> Welche  IHKs einen eigenen Facebook-Auftritt haben, erfahren Sie <span class="link-external"><a class="external-link" href="http://dihk-fb.de/ihk-finder" target="_blank">hier</a></span>.</p>
+</div>
+</div>
+	        <!-- div class="line"></div-->
+		</div>		
+		
+	
+
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a537461746963546167436c6f7564506f72746c6574" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a537461746963546167436c6f7564506f72746c6574">
+<!-- ##code-section Portlet -->
+
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a736f6369616c6c696e6b73" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a736f6369616c6c696e6b73">
+<!-- ##code-section Portlet -->
+<div class="content-column-two sociallinks" style="margin-left: 6px; margin-top: 20px;">
+       <h2>Folgen Sie uns im Social Web</h2>
+ 	
+ 		<table width="200"><tbody><tr><td width="36"><a target="_blank" href="https://twitter.com/DIHK_News"><img src="http://www.dihk.de/++resource++dihk.itheme.images/icon/twitter_small.png" alt="Twitter" title="Twitter" width="30"></a></td>
+ 		<td style="padding: 8px 16px 0 0;"><a style="color: #003366" target="_blank" href="https://twitter.com/DIHK_News">Twitter</a></td>
+ 		<td width="26"><a target="_blank" href="https://www.facebook.com/DIHKBerlin"><img src="http://www.dihk.de/++resource++dihk.itheme.images/icon/f_logo.png" alt="Facebook" title="Facebook" width="21"></a></td>	
+ 		<td style="padding: 8px 0 0 6px;"><a style="color: #003366" target="_blank" href="https://www.facebook.com/DIHKBerlin">Facebook</a></td>
+ 		</tr></tbody></table></div>
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+
+
+
+            
+            &#160;
+          </div>
+          </div>
+        </div>
+        
+        
+        
+        
+				
+				        
+        <div id="portal-column-content" class="sl sr">
+          <div id="portal-content-wrapper">
+          
+            <div class="">
+
+              
+
+              <div id="region-content" class="documentContent">
+
+                <span id="contentTopLeft"></span>
+                <span id="contentTopRight"></span>
+
+                <a name="documentContent"></a>
+
+                
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none"><dt>Info</dt>
+        <dd></dd>
+    </dl><div id="viewlet-above-content"></div>
+
+                
+                
+                <div id="content">
+                     <!-- div id="content" tal:omit-tag="not:context/@@plone_context_state/is_view_template"-->
+                  
+                  
+
+<!-- ##code-section Main -->
+
+        <div id="documentActions-firstItem" class="documentActions">
+            <h5 class="hiddenStructure">Artikelaktionen</h5>
+            <ul><li class="document-action-goBack"><a href="javascript:history.back()" title="Zur&amp;uuml;ck">Zur&#252;ck</a></li>
+                <li class="document-action-print"><a href="javascript:this.print();" title="Drucken">Drucken</a></li>
+				
+            </ul></div>
+    
+
+<div class="content-column-one">	
+	<h2 id="titlee" class="page">Ihre IHK</h2>
+	
+    <h3 id="descc" class="discreet">Finden Sie die IHK in Ihrer N&#228;he und nutzen Sie das breite Serviceangebot.</h3>	
+	
+	
+	<form action="http://www.dihk.de/ihk-finder/ihk-finder-dihk.html" enctype="application/x-www-form-urlencoded" method="get"><table class="suchformular_liste"><tr><th><label for="suchfeld_ihk">Ihre <abbr title="Postleitzahl">PLZ</abbr></label></th> 
+					 <th><label for="ihksuche_ihk"><abbr title="Industrie- und Handelskammer">IHK</abbr>-Standort</label></th> 
+					 <th><label for="ihksuche_bundesland">Bundesland</label></th></tr><tr><td><input type="text" name="tx_wisihkdihk_pi1[sword]" value="38159" size="50" id="suchfeld_ihk"></td><td><select name="tx_wisihkdihk_pi1[ihk]" id="ihksuche_ihk"><option title="Bitte ausw&#228;hlen" selected value="">Bitte ausw&#228;hlen</option><option value="1">Aachen</option><option value="2">Arnsberg</option><option value="3">Aschaffenburg</option><option value="86">Augsburg</option><option value="5">Bayreuth</option><option value="6">Berlin</option><option value="7">Bielefeld</option><option value="8">Bochum</option><option value="9">Bonn</option><option value="10">Braunschweig</option><option value="11">Bremen</option><option value="12">Bremerhaven</option><option value="39">Chemnitz</option><option value="13">Coburg</option><option value="76">Cottbus</option><option value="14">Darmstadt</option><option value="15">Detmold</option><option value="93">Dillenburg</option><option value="23">Dortmund</option><option value="85">Dresden</option><option value="25">Duisburg</option><option value="24">D&#252;sseldorf</option><option value="26">Emden</option><option value="19">Erfurt</option><option value="27">Essen</option><option value="16">Flensburg</option><option value="21">Frankfurt (Oder)</option><option value="28">Frankfurt am Main</option><option value="29">Freiburg</option><option value="17">Fulda</option><option value="48">Gera</option><option value="30">Gie&#223;en-Friedberg</option><option value="36">Hagen</option><option value="33">Halle</option><option value="18">Hamburg</option><option value="40">Hanau</option><option value="75">Hannover</option><option value="77">Heidenheim</option><option value="78">Heilbronn</option><option value="80">Karlsruhe</option><option value="81">Kassel</option><option value="32">Kiel</option><option value="82">Koblenz</option><option value="84">Konstanz</option><option value="79">Krefeld</option><option value="83">K&#246;ln</option><option value="51">Leipzig</option><option value="20">Limburg Lahn</option><option value="43">Ludwigshafen</option><option value="44">L&#252;beck</option><option value="45">L&#252;neburg</option><option value="37">Magdeburg</option><option value="46">Mainz</option><option value="47">Mannheim</option><option value="87">M&#252;nchen</option><option value="49">M&#252;nster</option><option value="41">Neubrandenburg</option><option value="50">N&#252;rnberg</option><option value="53">Offenbach Main</option><option value="54">Oldenburg</option><option value="55">Osnabr&#252;ck</option><option value="56">Passau</option><option value="60">Pforzheim</option><option value="42">Potsdam</option><option value="62">Regensburg</option><option value="63">Reutlingen</option><option value="57">Rostock</option><option value="66">Saarbr&#252;cken</option><option value="58">Schwerin</option><option value="67">Siegen</option><option value="68">Stade</option><option value="69">Stuttgart</option><option value="72">Suhl</option><option value="35">Trier</option><option value="52">Ulm</option><option value="64">Villingen-Schwenningen</option><option value="61">Weingarten</option><option value="34">Wiesbaden</option><option value="73">Wuppertal</option><option value="71">W&#252;rzburg</option></select></td><td><select name="tx_wisihkdihk_pi1[bundesland]" id="ihksuche_bundesland"><option title="Bitte ausw&#228;hlen" selected value="">Bitte ausw&#228;hlen</option><option value="1">Baden-W&#252;rttemberg</option><option value="2">Bayern</option><option value="3">Berlin</option><option value="4">Brandenburg</option><option value="5">Bremen</option><option value="6">Hamburg</option><option value="7">Hessen</option><option value="8">Mecklenburg-Vorpommern</option><option value="9">Niedersachsen</option><option value="10">Nordrhein-Westfalen</option><option value="11">Rheinland-Pfalz</option><option value="12">Saarland</option><option value="13">Sachsen</option><option value="14">Sachsen-Anhalt</option><option value="15">Schleswig-Holstein</option><option value="16">Th&#252;ringen</option></select></td></tr></table><div class="submitButtonBox"> 
+                      <input type="submit" class="submit_step1" value="Suchen"><input type="reset" value="Zur&#252;cksetzen" class="resetFormButton" tabindex="7" name="resetFormBt" onclick="document.getElementById('suchfeld_ihk').value=''; document.getElementById('ihksuche_ihk').options[0].selected=true; document.getElementById('ihksuche_bundesland').options[0].selected=true; return false;"></div></form>
+
+		<div style="height:0.5em;width:100%"></div>
+	
+	
+        <div id="ihkfinderreplace-pagenav-top"></div>
+        <div id="ihkfinderreplace-pagenav-top2"></div>
+				
+		
+		<div class="tx-wisihkdihk-pi1-listrow">
+			<table class="ergebniss_liste" id="ergebniss_liste_table"><tr class="tx-wisihkdihk-pi1-listrow-header"><th class="name_desc" colspan="2"><p><a href="http://www.dihk.de/ihk-finder/ihk-finder-dihk.html?tx_wisihkdihk_pi1%5Bsword%5D=38159&amp;tx_wisihkdihk_pi1%5Bpointer%5D=0&amp;tx_wisihkdihk_pi1%5Bsort%5D=name%3A1">Industrie- und Handelskammer</a></p></th> 
+				<th><p><a href="http://www.dihk.de/ihk-finder/ihk-finder-dihk.html?tx_wisihkdihk_pi1%5Bsword%5D=38159&amp;tx_wisihkdihk_pi1%5Bpointer%5D=0&amp;tx_wisihkdihk_pi1%5Bsort%5D=plz%3A1">PLZ</a></p></th> 
+				<th><p><a href="http://www.dihk.de/ihk-finder/ihk-finder-dihk.html?tx_wisihkdihk_pi1%5Bsword%5D=38159&amp;tx_wisihkdihk_pi1%5Bpointer%5D=0&amp;tx_wisihkdihk_pi1%5Bsort%5D=ort%3A1">Ort</a></p></th> 
+				<th><p><a href="http://www.dihk.de/ihk-finder/ihk-finder-dihk.html?tx_wisihkdihk_pi1%5Bsword%5D=38159&amp;tx_wisihkdihk_pi1%5Bpointer%5D=0&amp;tx_wisihkdihk_pi1%5Bsort%5D=bundesland%3A1">Bundesland</a></p></th> 
+			</tr><tr><td valign="top"><p><a href="http://www.dihk.de/ihk-finder/details-zur-ihk.html?tx_wisihkdihk_pi1%5BshowUid%5D=10&amp;tx_wisihkdihk_pi1%5Bsword%5D=38159&amp;tx_wisihkdihk_pi1%5Bpointer%5D=0&amp;tx_wisihkdihk_pi1%5Bsort%5D=name%3A0&amp;cHash=6be494e2127580bac5ff7f35d2955e1a"><img src="http://wis.ihk.de/typo3temp/pics/bcd701efa9.jpg" width="90" height="20" border="0" alt="Logo: IHK Braunschweig" title="Logo der IHK Braunschweig"></a></p></td> 
+				<td valign="top"><p><a href="http://www.dihk.de/ihk-finder/details-zur-ihk.html?tx_wisihkdihk_pi1%5BshowUid%5D=10&amp;tx_wisihkdihk_pi1%5Bsword%5D=38159&amp;tx_wisihkdihk_pi1%5Bpointer%5D=0&amp;tx_wisihkdihk_pi1%5Bsort%5D=name%3A0&amp;cHash=6be494e2127580bac5ff7f35d2955e1a" title="Zur Kammerdetailansicht von: Industrie- und Handelskammer Braunschweig">Industrie- und Handelskammer Braunschweig</a></p></td> 
+				<td valign="top"><p>38100</p></td> 
+				<td valign="top"><p>Braunschweig</p></td> 
+				<td valign="top"><p>Niedersachsen</p></td> 
+			</tr></table></div>
+	<div id="linksunten">
+			
+			
+			<a style="float:right" id="backtomap" href="http://www.dihk.de/ihk-finder">Zur&#252;ck zur Kartenansicht</a>
+
+		</div>
+	
+
+
+</div>
+<div class="content-column-two">
+		
+                                
+                                <div>
+                                    <div class="visualPadding">
+                                        
+                                            
+<div id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a5a757361747a696e666f726d6174696f6e656e" class="portletWrapper kssattr-portlethash-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a5a757361747a696e666f726d6174696f6e656e">
+<!-- ##code-section Portlet -->
+
+        
+        
+		
+ 
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a506f72746c6574466561747572654d65687266616368" class="portletWrapper kssattr-portlethash-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a506f72746c6574466561747572654d65687266616368">
+<!-- ##code-section Portlet -->
+    
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a42616e6e6572506f72746c6574" class="portletWrapper kssattr-portlethash-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a42616e6e6572506f72746c6574">
+<!-- ##code-section Portlet -->
+    
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a506f72746c6574466561747572654672656974657874" class="portletWrapper kssattr-portlethash-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a506f72746c6574466561747572654672656974657874">
+<!-- ##code-section Portlet -->
+
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+<div id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a53686f705375636865" class="portletWrapper kssattr-portlethash-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a53686f705375636865">
+<!-- ##code-section Portlet -->
+     
+   
+<!-- ##/code-section Portlet -->    
+
+</div>
+
+
+
+
+                                        &#160;
+                                    </div>
+                                </div>
+                                
+                            	
+</div>
+<!-- ##/code-section Main -->    
+
+  
+				 
+                </div>
+                
+
+
+
+                <span id="contentBottomLeft"></span>
+                <span id="contentBottomRight"></span>
+
+              </div>
+
+            </div>
+
+          
+          </div>
+          <div class="visualClear" id="clear-space-after-portal-wrapper"><!-- --></div>
+        </div>
+        
+<div class="visualClear"><!-- --></div>
+
+      </div>
+      
+
+      <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
+
+      
+
+      
+
+        
+
+<!-- ##code-section View -->
+<div class="visualClear"><!-- --></div>
+<div id="portal-footer">
+  <div id="documentActions-lastItem" class="documentActions">
+      <ul><li class="document-action-gotop"><a title="Nach oben" href="http://www.dihk.de/ihk-finder?path=IHKFINDER&amp;withmap=0#portal-top">Nach oben</a></li>
+        <li class="document-action-advise"><a title="Weiter empfehlen" href="http://www.dihk.de/ihk-finder/sendto_form">Weiter empfehlen</a></li>
+        <li class="document-action-print"><a href="javascript:this.print();" title="Drucken">Drucken</a></li></ul></div>
+  <ul id="portal-footer-nav"><li><a href="http://www.dihk.de//">Home</a><span>|</span></li>
+
+  
+    <li><a href="http://www.dihk.de/wir-ueber-uns/kontakt">Kontakt</a><span>|</span></li>
+
+  
+    <li><a href="http://www.dihk.de/presse/rss-feeds">RSS</a><span>|</span></li>
+
+  
+    <li><a href="http://www.dihk.de/presse/newsletter">Newsletter</a><span>|</span></li>
+
+  
+    <li><a href="http://www.dihk.de/wir-ueber-uns/impressum">Impressum</a><span>|</span></li>
+
+  
+    <li><a href="http://www.dihk.de/wir-ueber-uns/disclaimer">Disclaimer</a><span>|</span></li>
+
+  
+    <li><a href="http://www.dihk.de/wir-ueber-uns/datenschutz">Datenschutz</a><span>|</span></li>
+ 
+   
+   </ul></div> 
+<div class="visualClear"><!-- --></div>    
+<!-- ##/code-section View -->    
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://www.dihk.de/piwik//";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script><noscript><p><img src="http://www.dihk.de/piwik/piwik.php?idsite=1" style="border:0" alt=""></p></noscript>
+<!-- End Piwik Code -->
+
+      
+
+      <div class="visualClear"><!-- --></div>
+    </div>
+</body><!-- ##/code-section View --></html>

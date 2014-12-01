@@ -519,38 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/main/webapp/app/js/components/Info.jsx",
-			"settings":
-			{
-				"buffer_size": 6328,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/js/components/EintragFormular.js",
-			"settings":
-			{
-				"buffer_size": 4175,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/styles/main.scss",
-			"settings":
-			{
-				"buffer_size": 5953,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
-			"settings":
-			{
-				"buffer_size": 5905,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -712,28 +680,32 @@
 	},
 	"file_history":
 	[
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/EintragFormular.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/eintrag.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/agbs.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/index.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/unternehmer.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/agbs.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/eintrag.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/index.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/unternehmer.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/EintragFormular.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/EmailActor.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/impressum.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/kontakt.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Ergebnis.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/app.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/eintrag.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/eintrag.html",
 		"/home/tiberius/scala/projects/durchstarter/build.sbt",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/DatenplaetzeStore.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/EmailActor.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/Core.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/domain/Durchstarter.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/QueryHttpService.scala",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/index.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/OrteStore.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/unternehmer.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/agbs.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/kontakt.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/impressum.html",
 		"/home/tiberius/scala/projects/durchstarter/elasticsearch/load",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_colors.scss",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_material.scss",
@@ -835,11 +807,7 @@
 		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/services/storyService.js",
 		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/AccessActor.scala",
 		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/api/AccessHttpService.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/util/StringUtils.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/util/Converters.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/util/Failable.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/api/StaticHttpService.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/FavourActor.scala"
+		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/util/StringUtils.scala"
 	],
 	"find":
 	{
@@ -847,9 +815,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"/home/tiberius/scala/projects/durchstarter/src/main/webapp",
 			"/home/tiberius/scala/projects/durchstarter/src",
 			"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app",
 			"/home/tiberius/scala/projects/amanuensis/src/main/scala",
@@ -905,6 +874,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Unternehemer",
+			"Unternehe",
+			"script",
 			"console",
 			"console.",
 			"class=",
@@ -1029,10 +1001,7 @@
 			"responsive",
 			"calc",
 			"right",
-			"trigger",
-			"<a",
-			"loca",
-			"fixed"
+			"trigger"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1040,6 +1009,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Unternehmer",
 			"className=",
 			"className=\"platzlogo\"",
 			"className=",
@@ -1090,121 +1060,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/main/webapp/app/js/components/Info.jsx",
-					"settings":
-					{
-						"buffer_size": 6328,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								636,
-								636
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/main/webapp/app/js/components/EintragFormular.js",
-					"settings":
-					{
-						"buffer_size": 4175,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4104,
-								4104
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1080.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/main/webapp/app/styles/main.scss",
-					"settings":
-					{
-						"buffer_size": 5953,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5813,
-								5813
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5270.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
-					"settings":
-					{
-						"buffer_size": 5905,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								73,
-								73
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1266,16 +1123,8 @@
 		"selected_items":
 		[
 			[
-				"such",
-				"src/main/webapp/app/js/components/Suchfeld.jsx"
-			],
-			[
-				"main.",
-				"src/main/webapp/app/styles/main.scss"
-			],
-			[
-				"eintr",
-				"src/main/webapp/app/js/components/EintragFormular.js"
+				"eintrag",
+				"src/main/webapp/app/eintrag.html"
 			],
 			[
 				"info",
@@ -1286,8 +1135,28 @@
 				"src/main/webapp/gulpfile.js"
 			],
 			[
-				"eintrag",
-				"src/main/webapp/app/eintrag.html"
+				"index.html",
+				"src/main/webapp/app/index.html"
+			],
+			[
+				"main",
+				"src/main/webapp/app/styles/main.scss"
+			],
+			[
+				"email",
+				"src/main/scala/durchstarter/core/EmailActor.scala"
+			],
+			[
+				"such",
+				"src/main/webapp/app/js/components/Suchfeld.jsx"
+			],
+			[
+				"main.",
+				"src/main/webapp/app/styles/main.scss"
+			],
+			[
+				"eintr",
+				"src/main/webapp/app/js/components/EintragFormular.js"
 			],
 			[
 				"bui",
@@ -1312,14 +1181,6 @@
 			[
 				"orte",
 				"src/main/webapp/app/js/stores/OrteStore.js"
-			],
-			[
-				"index.html",
-				"src/main/webapp/app/index.html"
-			],
-			[
-				"main",
-				"src/main/webapp/app/styles/main.scss"
 			],
 			[
 				"main.scss",
@@ -1772,10 +1633,6 @@
 			[
 				"queryhttp",
 				"src/main/scala/amanuensis/api/QueryHttpService.scala"
-			],
-			[
-				"graphhttp",
-				"src/main/scala/amanuensis/api/GraphHttpService.scala"
 			]
 		],
 		"width": 0.0

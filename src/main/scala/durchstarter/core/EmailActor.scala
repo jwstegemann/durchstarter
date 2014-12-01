@@ -42,7 +42,7 @@ class EmailActor extends Actor with ActorLogging with Failable {
 
   def sendNewsletter(req: NewsletterRequest) = {
     mailer(Envelope.from("formular" `@` "beratung-stegemann.de")
-      .to("jwstegemann" `@` "gmail.com")
+      .to("jst" `@` "beratung-stegemann.de")
       .subject("durchstarter24.de - Newsletter")
       .content(Text(req.toJson.prettyPrint))
     )   
@@ -52,7 +52,7 @@ class EmailActor extends Actor with ActorLogging with Failable {
 
   def sendAngebot(req: AngebotRequest) = {
     mailer(Envelope.from("formular" `@` "beratung-stegemann.de")
-      .to("jwstegemann" `@` "gmail.com")
+      .to("jst" `@` "beratung-stegemann.de")
       .subject("durchstarter24.de - Angebot")
       .content(Text(req.toJson.prettyPrint))
     )   

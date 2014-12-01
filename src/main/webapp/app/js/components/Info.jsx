@@ -66,6 +66,8 @@ module.exports = React.createClass({
                   <li>Gründerzentren Hochschulen</li>       
                   <li>Förderbanken von Bund und Land</li>
                 </ul>
+                <p className="section-details"><a href="unternehmer.html">mehr...</a></p>
+                
           </div>
       </div>
 
@@ -88,8 +90,9 @@ module.exports = React.createClass({
                 <li>Bürodienstleister</li>
                 <li>Krisenmanager</li>   
                 <li>Einkaufsverbände</li>  
-                <li>Reinigungsfirmen</li>
+                <li>Facilitymanagement / Reinigung</li>
               </ul>
+              <p className="section-details"><a href="eintrag.html">mehr...</a></p>
           </div>
           <div className="col-md-5">
               <img className="section-image" src="img/meeting.jpg"></img>
@@ -112,6 +115,7 @@ module.exports = React.createClass({
               <p className="section-header">Immer und überall für Sie da!</p>
               <p className="section-details">Unser Team ist bemüht alle Kontaktdaten ständig aktuell zu halten. Sollte Ihnen doch einmal ein Fehler auffallen, so würden wir uns über eine kurze Nachricht freuen.</p>
               <p className="section-details">Für Fragen und Anregungen stehen wir Ihnen jederzeit gerne per email zur Verfügung.</p>
+              <p className="section-details"><a href="kontakt.html">mehr...</a></p>
           </div>
           <div className="col-md-5">
               <img className="section-image" src="img/kaffee.jpg"></img>

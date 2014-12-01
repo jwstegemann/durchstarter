@@ -36,6 +36,15 @@ $navbar-default-link-active-color: $text-grey;
     background: white !important;
   }
 
+  div.search {
+    text-align: center;
+  }
+
+  .navbar-logo > img {
+    margin-top: 8px;
+    width: 200px !important;
+  }
+
 }
 
 @media print {
