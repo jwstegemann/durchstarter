@@ -74,7 +74,7 @@ module.exports = React.createClass({
       <div className="row section">
           <div className="col-md-5 col-md-offset-1 left-column">
               <p className="section-header">Weitere Kontakte für Sie:</p>
-              <p className="section-details">Außerdem haben Dienstleister die Möglichkeit ihre Kontaktdaten in folgenden Kategorien und ihrer Region exklusiv und kostenpflichtg zu präsentieren:</p>
+              <p className="section-details">Außerdem haben Dienstleister die Möglichkeit ihre Kontaktdaten in folgenden Kategorien und ihrer Region exklusiv und zunächst sogar kostenlos zu präsentieren:</p>
                 <ul className="section-list">
                 <li>Banken</li>  
                 <li>Krankenkassen</li>    
