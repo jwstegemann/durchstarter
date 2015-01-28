@@ -73,6 +73,11 @@ curl -XPUT "$1/datenplaetze/datenplatz/_mapping" -d'
       "prio": {
         "type": "integer",
         "store": "yes"
+      },
+      "icon": {
+        "type": "string",
+        "store": "yes",
+        "index": "not_analyzed"
       }
     }
   }
