@@ -1,50 +1,62 @@
-var request = require('superagent');
+//var process = require('process');
+var _ = require('highland');
+var request = require('request');
+var util = require('util');
 var cheerio = require('cheerio');
-var fs = require('fs');
-var async = require('async');
-var nl = require('os').EOL;
-var sleep = require('sleep');
+var bunyan = require('bunyan');
 
-var idx = 1;
-
-var cache = {};
+var orte = require('./orte.js');
 
 
-function scrap(plz, callback) {
+var log = bunyan.createLogger({name: "ihk_grob"});
 
-  var url = 'http://www.dihk.de/ihk-finder/ihk-finder-dihk.html?tx_wisihkdihk_pi1%5Bsword%5D='+plz+'&tx_wisihkdihk_pi1%5Bihk%5D=&tx_wisihkdihk_pi1%5Bbundesland%5D=';
 
-  request.get(url)
-    .end(function(err, res){
-      if (!err) {
 
-        domPlz = cheerio.load(res.text);
-        ihkId = domPlz('#ergebniss_liste_table tr:nth-child(2) td:nth-child(2) a').text();
-        ihkUrl = domPlz('#ergebniss_liste_table tr:nth-child(2) td:nth-child(2) a').attr('href');
+function formatDetails(details) {
 
-        console.log(plz + "^" + ihkId + "^" + ihkUrl);
-      }
-      else {
-        console.log('### Fehler@'+plz+':' + err.message);
-      }
+  domDetails = cheerio.load(details);
 
-      idx++;
-      callback();
-    });
+  ihkId = domDetails('#ergebniss_liste_table tr:nth-child(2) td:nth-child(2) a').text();
+  ihkUrl = domDetails('#ergebniss_liste_table tr:nth-child(2) td:nth-child(2) a').attr('href');
+
+  return ihkId + '^' + ihkUrl;
+
 }
 
-// handle file
+function getDetails(plz) {
+  url = 'http://www.dihk.de/ihk-finder/ihk-finder-dihk.html?tx_wisihkdihk_pi1%5Bsword%5D='+plz+'&tx_wisihkdihk_pi1%5Bihk%5D=&tx_wisihkdihk_pi1%5Bbundesland%5D=';
 
-var plzPattern = /\d{5}$/;
+  return _(request.get(url))
+    .collect()
+    .map(function(chunks) {
+      return plz + "^" + (cache[name] = formatDetails(Buffer.concat(chunks).toString()));  
+    })
+}
 
-var plzs = fs.readFileSync('./plzs.csv').toString().split(nl);
 
-async.eachSeries(plzs, function(plzLine, callback) {
+/* var res = _(process.stdin)
+  .split()
+  .map(function(line) {
+    return line.split('^');  
+  })
+  .uniq(function(i,j) {
+    return i[0] === j[0];
+  })
+  .map(function(input) {
+    return getDetails(input[0])
+  })
+  .flatten()
+  .map(function(line) {
+    return line + '\n';
+  })
+  .pipe(process.stdout); */
 
-  plz = plzLine.match(plzPattern);
 
-  if (plz) scrap(plz[0], callback);
+orte.each(function(ort) {
+  log.info(ort.plz);
+});
 
-  if (idx !== 0 && (idx % 100) === 0) sleep.sleep(20);
-
+orte.map(function(gemeinden) {
+  log.info(gemeinden['Dresden(1067)'][0]);
 })
+
