@@ -34,7 +34,7 @@ orte.stream()
   .flatMap(function(batch) {
     return _(batch).reduce([],function(bulk,ort) {
       titel = ort.plz + ' (Gemeinde ' + ort.gemeinde + ', Landkreis ' + ort.landkreis + ' in ' + ort.bundesland + ')';
-      koord = ort.latitude.replace(',','.') + ',' + ort.longitude.replace(',','.');
+      koord = "13.000,51.000"; //ort.latitude.replace(',','.') + ',' + ort.longitude.replace(',','.');
 
       doc = {
         _id: ort.id,
