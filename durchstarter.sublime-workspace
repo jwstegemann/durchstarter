@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"adre",
+				"adressFelder"
+			],
+			[
+				"tele",
+				"telefon"
+			],
+			[
+				"ansch",
+				"anschrift3"
+			],
+			[
+				"ans",
+				"anschrift2"
+			],
+			[
 				"bu",
 				"bulkRequest"
 			],
@@ -498,43 +514,27 @@
 			[
 				"Access-",
 				"Access-Control-Allow-Methods"
-			],
-			[
-				"hide",
-				"hideOutStories"
-			],
-			[
-				"showOut",
-				"showOutStories"
-			],
-			[
-				"sh",
-				"shadow-right"
-			],
-			[
-				"s",
-				"stories"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "scrap/index_ihk.js",
+			"contents": "//var process = require('process');\nvar _ = require('highland');\nvar request = require('request');\nvar util = require('util');\nvar cheerio = require('cheerio');\nvar bunyan = require('bunyan');\nvar es = require('elasticsearch');\nvar nl = require('os').EOL;\nvar extend = require('util')._extend;\n\nvar orte = require('./orte.js');\n\n\nvar client = new es.Client({\n  host: 'localhost:9200',\n  log: 'error'\n});\n\nvar log = bunyan.createLogger({name: \"index_ihk\", src: true});\n\n\nvar getLandkreise = _.wrapCallback(function(callback) {\n\n  request.get('http://de.wikipedia.org/wiki/Liste_der_Landkreise_in_Deutschland', function(err, res, body) {\n      if (!err) {\n\n        dom = cheerio.load(body);\n\n        lks = [];\n\n        lk_rows = dom('#mw-content-text > table tr').each(function(index, element) {\n          \n          lk_cols = cheerio(element).find('td').map(function(i,e) {\n            return cheerio(e).text();\n          });\n\n          url = cheerio(element).find('td:nth-of-type(2) > a').attr('href');\n\n          lks.push({\n            krs: lk_cols[0],\n            landkreis: lk_cols[1],\n            bundesland: lk_cols[2],\n            kreissitz: lk_cols[3],\n            url: url\n          });\n        });\n\n        callback(err, lks);\n      }\n      else {\n        callback(err, res);\n      }\n    });\n});\n\n\nvar getDetails = _.wrapCallback(function(lk, callback) {\n\n  request.get('http://de.wikipedia.org' + lk.url, function(err, res, body) {\n      if (!err) {\n        domDetails = cheerio.load(body);\n\n//        log.info(body);\n\n        // Anschrift\n\n        adresse = domDetails('td:contains(\"verwaltung:\") + td');\n        adressFelder = adresse.text().split( /\\n/);\n\n        url = domDetails('td:contains(\"Webpräsenz:\") + td').text().replace('\\n','');\n\n        details = extend({\n          anschrift1: adressFelder[0],\n          anschrift2: adressFelder[1],\n          anschrift3: (adressFelder[2])?(adressFelder[2]):'',\n          web: url\n        },lk);\n\n\n        callback(err, details);\n      } \n      else {\n        callback(err, res);\n      }\n    });\n});\n\n\ngetLandkreise()\n  .flatten()\n  .reject(function(lk) {\n    return (!lk.krs || !lk.url)\n  })\n//  .take(1)\n  .flatMap(getDetails)\n  .map(function(lk) {\n    return lk.krs + \"^\"\n      + lk.kreissitz + \"^\"\n      + lk.landkreis + \"^\"\n      + lk.bundesland + \"^\"\n      + lk.anschrift1 + \"^\"\n      + lk.anschrift2 + \"^\"\n      + lk.anschrift3 + \"^\"\n      + lk.web + nl;\n  })\n  .pipe(process.stdout);\n",
+			"file": "scrap/scrap_landkreis.js",
+			"file_size": 2452,
+			"file_write_time": 1422572553000000,
 			"settings":
 			{
-				"buffer_size": 3908,
+				"buffer_size": 2452,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "var request = require('superagent');\nvar cheerio = require('cheerio');\nvar fs = require('fs');\nvar async = require('async');\nvar nl = require('os').EOL;\nvar sleep = require('sleep');\n\nvar idx = 1;\n\nvar cache = {};\n\n\nfunction scrap(plz, callback) {\n\n  var url = 'http://www.dihk.de/ihk-finder/ihk-finder-dihk.html?tx_wisihkdihk_pi1%5Bsword%5D='+plz+'&tx_wisihkdihk_pi1%5Bihk%5D=&tx_wisihkdihk_pi1%5Bbundesland%5D=';\n\n  request.get(url, function(err, res, body) {\n      if (!err) {\n\n        domPlz = cheerio.load(res.text);\n        ihkId = domPlz('#ergebniss_liste_table tr:nth-child(2) td:nth-child(2) a').text();\n        ihkUrl = domPlz('#ergebniss_liste_table tr:nth-child(2) td:nth-child(2) a').attr('href');\n\n        console.log(plz + \"^\" + ihkId + \"^\" + ihkUrl);\n      }\n      else {\n        console.log('### Fehler@'+plz+':' + err.message);\n      }\n\n      idx++;\n      callback();\n    });\n}\n\n// handle file\n\nvar plzPattern = /\\d{5}$/;\n\nvar plzs = fs.readFileSync('./plzs.csv').toString().split(nl);\n\nasync.eachSeries(plzs, function(plzLine, callback) {\n\n  plz = plzLine.match(plzPattern);\n\n  if (plz) scrap(plz[0], callback);\n\n  if (idx !== 0 && (idx % 100) === 0) sleep.sleep(20);\n\n})",
-			"file": "scrap/ihk_grob_alt.js",
-			"file_size": 1192,
-			"file_write_time": 1422268028000000,
+			"file": "scrap/phantom_arbeitsagentur.js",
 			"settings":
 			{
-				"buffer_size": 1190,
+				"buffer_size": 1545,
 				"line_ending": "Unix"
 			}
 		}
@@ -699,7 +699,15 @@
 	},
 	"file_history":
 	[
+		"/home/tiberius/scala/projects/durchstarter/scrap/tmp.txt",
+		"/home/tiberius/scala/projects/durchstarter/scrap/phantom_arbeitsagentur.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/ihk_fein.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/web_landkreis.csv",
+		"/home/tiberius/scala/projects/durchstarter/scrap/scrap_ihk.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/orte.csv",
+		"/home/tiberius/scala/projects/durchstarter/scrap/ihk_grob_alt.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/index_fa.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/index_ihk.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/index_orte.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/dp_finanzamt.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/orte.js",
@@ -707,13 +715,10 @@
 		"/home/tiberius/scala/projects/durchstarter/scrap/clone.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/kategorien.js",
 		"/home/tiberius/Dropbox/Export Portal/export/kategorien.csv",
-		"/home/tiberius/scala/projects/durchstarter/scrap/orte.csv",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchServer.scala",
-		"/home/tiberius/scala/projects/durchstarter/scrap/ihk_grob_alt.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/ihk_rx.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/ihk.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/plzs.csv",
-		"/home/tiberius/scala/projects/durchstarter/scrap/ihk_fein.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/ihks_pure.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/test.txt",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/DatenplaetzeStore.js",
@@ -821,12 +826,7 @@
 		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/Core.scala",
 		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/SlotActor.scala",
 		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/QueryActor.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/api/StoryHttpService.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/controllers/story.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/index.html",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/views/query.html",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/controllers/login.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/directives/markdownEditor.js"
+		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/api/StoryHttpService.scala"
 	],
 	"find":
 	{
@@ -893,6 +893,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Jobcenter",
+			"log",
+			"log.",
+			"url:",
 			"log",
 			"^",
 			"info",
@@ -1016,11 +1020,7 @@
 			"defaults",
 			"touch",
 			"touchAction",
-			"velocity",
-			"swipe",
-			"swipe-",
-			"dele",
-			"show"
+			"velocity"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1080,23 +1080,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "scrap/index_ihk.js",
+					"file": "scrap/scrap_landkreis.js",
 					"settings":
 					{
-						"buffer_size": 3908,
+						"buffer_size": 2452,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1556,
-								1556
+								924,
+								924
 							]
 						],
 						"settings":
@@ -1106,25 +1106,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 675.0,
+						"translation.y": 494.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "scrap/ihk_grob_alt.js",
+					"file": "scrap/phantom_arbeitsagentur.js",
 					"settings":
 					{
-						"buffer_size": 1190,
+						"buffer_size": 1545,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								458,
-								458
+								840,
+								840
 							]
 						],
 						"settings":
@@ -1134,7 +1134,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

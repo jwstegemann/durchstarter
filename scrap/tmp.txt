@@ -1,0 +1,1406 @@
+step 1
+load started
+load finished
+step 2
+load started
+load finished
+load started
+load finished
+step 3
+<html class="p_AFMaximized" dir="ltr" lang="de"><head><link rel="stylesheet" charset="UTF-8" type="text/css" href="/apps/adf/styles/cache/gsr40518e9c_5b59_459a_8d71_85d8a9d30676-desktop-hp8il2-ltr-webkit.css"><meta content="width=320" name="viewport"><title>Dienststellen vor Ort</title><link rel="stylesheet" type="text/css" afrres="true" href="/web/wcm/idc/resources/BA_Customization/css/reset.css"><link rel="stylesheet" type="text/css" afrres="true" href="/web/wcm/idc/resources/BA_Customization/css/template.css"><link rel="stylesheet" type="text/css" afrres="true" href="/web/wcm/idc/resources/BA_Customization/css/elements.css"><link rel="stylesheet" type="text/css" afrres="true" href="/web/wcm/idc/resources/BA_Customization/css/template768.css"><link rel="stylesheet" type="text/css" afrres="true" href="/web/wcm/idc/resources/BA_Customization/css/template320.css"><link rel="stylesheet" type="text/css" afrres="true" href="/web/wcm/idc/resources/BA_Customization/css/template1280.css"><link rel="stylesheet" type="text/css" afrres="true" href="/web/wcm/idc/resources/BA_Customization/css/template1440.css"><link rel="stylesheet" type="text/css" afrres="true" href="/web/wcm/idc/resources/BA_Customization/css/jquery.treeview.css"><link rel="stylesheet" type="text/css" afrres="true" href="/apps/css/mediaquery.css"></head><body class="af_document p_AFMaximized"><noscript>Diese Seite verwendet JavaScript und ben&amp;ouml;tigt einen JavaScript-f&amp;auml;higen Browser. Ihr Browser unterst&amp;uuml;tzt JavaScript nicht.</noscript><div id="afr::Splash" class="af_document_splash-screen" style="display: none; "><div class="af_document_splash-screen-cell"><span class="af_document_splash-screen-content"><span class="af_document_splash-screen-message">Wird geladen...</span></span></div></div><script type="text/javascript" src="/apps/adf/jsLibs/Locale1_2_12_3_3.js"></script><script type="text/javascript">var AdfAssert = new Object();AdfAssert.DEBUG = false;</script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/boot-11.1.1.6.0-4213.js"></script><script type="text/javascript">AdfLogger.DEFAULT_LEVEL=AdfLogger.OFF;(AdfLogger.LOGGER=new AdfLogger('global', new AdfBufferedLogWriter())).register();var checkAgentSupport = true;AdfAgent._UNSUPPORTED_BROWSER_ALERT="Sie verwenden einen nicht unterstützten Browser. Die unterstützten Browser sind Internet Explorer 7 und höher, Firefox 2.0.0.2 und höher, Safari 3.1.2 und höher sowie Google Chrome 1.0 und höher.";AdfAgent.AGENT = AdfAgent.getAgent(window);var lookAndFeel = new AdfDhtmlLookAndFeel(window);AdfAgent._LOG_WRITERS = "NativeLogWriter";AdfPage.PAGE = lookAndFeel.createPage();var page = AdfPage.PAGE;page.setBaseResourceUrl("/apps");page.setAnimationEnabled(true);</script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/core-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/AdfTranslations-11.1.1.6.0-4213de.js?loc=de&amp;skinId=gsr40518e9c_5b59_459a_8d71_85d8a9d30676.desktop"></script><script type="text/javascript" src="/apps/js/egovportal.js"></script><script type="text/javascript" src="/apps/js/jquery-1.7.2.min.js"></script><iframe name="afr::PushIframe" id="afr::PushIframe" style="display:none" src="/apps/afr/blank.html"></iframe><input type="hidden" id="oracle.adf.view.faces.RICH_UPDATE"><script type="text/javascript">AdfDhtmlPage.__frameBusting("differentDomain");</script><div id="afr::DocWrapper"><div id="d1"><a id="d1::skip" href="#" class="af_document_skip-link" style="display: none; ">Zum Inhalt wechseln</a><form id="f1" name="f1" class="af_form" method="POST" action="/apps/faces/home/pvo?_adf.ctrl-state=4yfgr5d1p_4"><link href="/web/wcm/idc/resources/BA_Customization/images/favicon.ico" rel="shortcut icon"><div id="pt1:pt_root" class="af_panelGroupLayout"><div><div id="pt1:pt_pgl2" class="af_panelGroupLayout" style="margin: 0 auto;"><div><div id="pt1:pt_pgl1" class="af_panelGroupLayout"><div><span id="pt1:topAnchor"></span></div><div><span id="pt1:pt_g1" class="af_panelGroupLayout"><!--
+    IdocScript implementation of the Header region template.    
+-->
+<!--@Comment: Have to set the prefix to use when referencing links. This has to be taken from an environment variable.
+We take the given parameter in the service and based on it, choose which is the prefix-->
+
+   
+
+
+<!-- Do some computation useful later in the page -->
+ 
+<header class="cheader"><!-- BA-HEADER-HTML5 -->
+ <!-- Start BA Bar -->
+  <div class="BABarBackgroundRed">
+    <div class="BABarBackgroundGray"></div>
+  </div>  
+  
+  <div class="BABarContainer">
+    <div class="BABarCenter">
+      <div class="BABar">
+        <div class="BABarSpaceLeft"></div>
+        <div class="BABarSpaceWhite"></div>
+        <div class="BABarMenu" role="application">
+          <div class="BABarItem hide320">
+            <div class="BABarItemContent"><a href="#" title="">Unsere Internetauftritte</a></div>
+            <div class="BABarSubmenuWrapper">
+              <div class="BABarOtherSubmenu">
+                <ul>
+                                    
+                               
+                        <li class="BABarListItem">
+                            <a href="http://www.abi.de/index.htm?zg=schueler" target="_blank">
+                                    abi.de
+                            </a>    
+                        </li>                        
+           
+                        <li class="BABarListItem">
+                            <a href="http://www.berufenet.arbeitsagentur.de" target="_blank">
+                                    BERUFENET
+                            </a>    
+                        </li>                        
+           
+                        <li class="BABarListItem">
+                            <a href="http://www.berufe.tv/BA/" target="_blank">
+                                    BERUFE.TV
+                            </a>    
+                        </li>                        
+           
+                        <li class="BABarListItem">
+                            <a href="https://ben.arbeitsagentur.de/">
+                                    Berufsentwicklungsnavigator
+                            </a>    
+                        </li>                        
+           
+                        <li class="BABarListItem">
+                            <a href="http://jobboerse.arbeitsagentur.de/" target="_blank">
+                                    JOBBÖRSE
+                            </a>    
+                        </li>                        
+           
+                        <li class="BABarListItem">
+                            <a href="http://www.kursnet.arbeitsagentur.de" target="_blank">
+                                    KURSNET
+                            </a>    
+                        </li>                        
+           
+                        <li class="BABarListItem">
+                            <a href="http://www.planet-beruf.de/Berufe-von-A-bis-Z.39.0.html" target="_blank">
+                                    planet-beruf.de
+                            </a>    
+                        </li>                        
+           
+                        <li class="BABarListItem">
+                            <a href="http://statistik.arbeitsagentur.de/" target="_blank">
+                                    Statistik
+                            </a>    
+                        </li>                        
+           
+                        <li class="BABarListItem">
+                            <a href="http://www.studienwahl.de" target="_blank">
+                                    studienwahl.de
+                            </a>    
+                        </li>                        
+                </ul>                
+                <div class="BABarCloseContainer">
+                  <img src="/web/wcm/idc/resources/BA_Customization/images/w_baclose.png" class="dropdownClose" tabindex="0" alt="Weitere BA-Seiten Schließen">
+                </div>                 
+              </div>
+            </div>  
+            <span class="ba_ReadOnlyInJaws">Ende Unsere Internetauftritte</span>
+          </div>
+
+
+                <div class="BABarItem hide320">
+                   <div class="BABarItemContent">
+                    <a href="/web/content/DE/service/Ueberuns/index.htm">
+                            Über uns
+                    </a> 
+                    </div>
+                </div>
+                <div class="BABarItem hide320">
+                   <div class="BABarItemContent">
+                    <a href="https://www.arbeitsagentur.de/apps/faces/home/kf?ba.l=de">
+                            Kontakt
+                    </a> 
+                    </div>
+                </div>
+          <!-- new menu-->
+          <div class="BABarItem hide320">
+            <div class="BABarItemContent"><a href="#" title="">Anmeldung</a></div>
+            <div class="BABarSubmenuWrapper">
+              <div class="BABarOtherSubmenu">
+                <ul>
+                                    
+                               
+                        <li class="BABarListItem">
+                            <a href="https://jobboerse.arbeitsagentur.de/vamJB/anmeldung.html" title="Zur Anmeldung in der JOBBÖRSE" target="_blank">
+                                    JOBBÖRSE
+                            </a>    
+                        </li>                        
+           
+                        <li class="BABarListItem">
+                            <a href="https://formular.arbeitsagentur.de/eantrag/portal-login.page" title="Zur Anmeldung im Formulardienst Kindergeld (über die Startseite)" target="_blank">
+                                    Formulardienst Kindergeld
+                            </a>    
+                        </li>                        
+                </ul>                               
+              </div>
+            </div>  
+            <span class="ba_ReadOnlyInJaws">Ende Anmeldung</span>
+          </div>
+          <!-- end new menu-->
+          
+          <div class="BABarSearchBox">
+            <div class="BABarSearchWrapper">
+                    <script type="text/javascript">
+                        function doSearch(searchparam){ 
+                            var encodedSearchParam = encodeURIComponent(searchparam.value);
+                            var submitUrl = "/apps/faces/home/search?ba.l=de&ba.q=" + encodedSearchParam;                            
+                            window.open(submitUrl, "_self");    
+                        }
+                    </script>                
+                    Suche<input type="text" id="baq" class="BABarInput">
+                    <img src="/web/wcm/idc/resources/BA_Customization/images/w_basearch.png" id="searchSubmitButton" class="BABarSearchImage" tabindex="0" alt="Suche" onclick="doSearch(document.getElementById('baq'))">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End BA Bar -->
+  
+    <!-- ServiceNav -->
+    <div class="headerServiceBackground"></div>
+    <div class="headerServiceContainer">
+        <div class="headerServiceCenter">
+            <div class="headerServiceMenu hide320">
+                
+                <div class="headerServiceItem">                
+                    <div class="headerServiceItemContent">
+                         
+                                                            
+                                                        <a href="#">Schnellzugriff</a>
+                    </div>                                    
+                        <div class="headerServiceSubWrapper">
+    <div class="headerServiceSubLeft"> 
+        <!--@Comment: Loop the list with sublinks and generate them -->
+        
+        <!--@Comment: This is the raw input received from the list. In contains the data "as is", including the wrapper-->
+                        
+                <div class="headerServiceSubItem">
+                    <a href="http://www.arbeitsagentur.de/apps/faces/home/pvo?ba.l=de">
+                            Dienststellen vor Ort
+                                                
+                    </a>    
+                </div>                
+                        
+                <div class="headerServiceSubItem">
+                    <a href="/web/content/DE/Formulare/index.htm">
+                            Formulare
+                                                
+                    </a>    
+                </div>                
+                        
+                <div class="headerServiceSubItem">
+                    <a href="http://www.arbeitsagentur.de/apps/faces/home/vdb?ba.l=de">
+                            Veranstaltungsdatenbank
+                                                
+                    </a>    
+                </div>                
+                        
+                <div class="headerServiceSubItem">
+                    <a href="/web/content/DE/Veroeffentlichungen/index.htm">
+                            Veröffentlichungen
+                                                
+                    </a>    
+                </div>                
+                
+    </div>
+</div>  
+                       
+                    <span class="ba_ReadOnlyInJaws">Ende Schnellzugriff</span>
+                </div>
+                
+                                    
+                        <div class="headerServiceSeparator"></div>
+                  
+                
+                    
+                                <div class="headerServiceItem">                
+                    <div class="headerServiceItemContent">
+                            <a href="/web/content/DE/service/BesondereDienste/index.htm">                            
+                                    Gebärdensprache
+                                                                
+                            </a>
+                                            </div>                                    
+   
+                    <span class="ba_ReadOnlyInJaws">Ende Gebärdensprache</span>
+                </div>
+                
+                                    
+                        <div class="headerServiceSeparator"></div>
+                  
+                
+                    
+                                <div class="headerServiceItem">                
+                    <div class="headerServiceItemContent">
+                            <a href="http://www.arbeitsagentur.de/web/content/DE/Detail/index.htm?dfContentId=L6019022DSTBAI613645&amp;isEasyLang=true">                            
+                                    Leichte Sprache
+                                                                
+                            </a>
+                                            </div>                                    
+   
+                    <span class="ba_ReadOnlyInJaws">Ende Leichte Sprache</span>
+                </div>
+                
+                                    
+                        <div class="headerServiceSeparator"></div>
+                  
+                
+                    
+                                <div class="headerServiceItem">                
+                    <div class="headerServiceItemContent">
+                            <a href="/web/content/EN/index.htm">                            
+                                    EN
+                                                                
+                            </a>
+                                            </div>                                    
+   
+                    <span class="ba_ReadOnlyInJaws">Ende EN</span>
+                </div>
+                
+                                    
+                        <div class="headerServiceSeparator"></div>
+                  
+                
+                    
+                                <div class="headerServiceItem">                
+                    <div class="headerServiceItemContent">
+                            <a href="/web/content/FR/index.htm">                            
+                                    FR
+                                                                
+                            </a>
+                                            </div>                                    
+   
+                    <span class="ba_ReadOnlyInJaws">Ende FR</span>
+                </div>
+                
+                  
+                
+                    
+                    
+                
+            </div>            
+        </div>
+    </div>
+    <!-- END ServiceNav -->
+  
+  <div class="headerSubpageContainer">
+    <div class="headerContainerImages">
+      <div class="headerSubpageMenuGrayLine"></div>
+      <div class="headerImageCenter">            
+            <div class="headerImageBox">                            
+                        
+                             
+                <div class="headerImage"><img id="headerImg" src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mtk5/~edisp/l6019022dstbai607281.jpg?name768=groups%2Fpublic%2Fdocuments%2Fwebdatei%2Fmdaw%2Fmtk5%2F%7Eedisp%2Fl6019022dstbai607294.jpg&amp;name1024=groups%2Fpublic%2Fdocuments%2Fwebdatei%2Fmdaw%2Fmtk5%2F%7Eedisp%2Fl6019022dstbai607281.jpg&amp;name1280=groups%2Fpublic%2Fdocuments%2Fwebdatei%2Fmdaw%2Fmtk5%2F%7Eedisp%2Fl6019022dstbai607281.jpg&amp;name1440=groups%2Fpublic%2Fdocuments%2Fwebdatei%2Fmdaw%2Fmtk5%2F%7Eedisp%2Fl6019022dstbai607281.jpg" alt=""></div>
+               
+               <!--@Comment: Generate the two logos. This is based on a checkbox in the datafile, which specifies if the small logo should be displayed.
+                 If the small logo is not displayed, the bigger logo is shown with its largest size.-->
+               <!--@Comment: Generate the big logo -->  
+               <!--@Comment: Test if the big logo exists -->
+                       
+                             
+                          
+               <a class="subHeader" href="/web/content/DE/index.htm" title="Startseite">
+        
+                     
+                    <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mtk4/~edisp/l6019022dstbai603407.gif" class="header2LogoImage singleLogo" title="Ba Logo" alt="Ba Logo"><br>
+              
+               </a>
+        </div>           
+      </div>
+    </div>
+    <div class="headerSubpage">
+                      
+        <div class="cnav">
+          <div class="headerMenu">            
+                <div class="headerMenuleftSpace">&nbsp;</div>                
+                <!-- Generate the top navigation. The top navigation is composed from the sections that are direct children of the language section. -->
+                
+                        
+                    
+                                    
+                        <div class="headerMenuItem hide320">
+                          <div class="headerMenuItemArrowDownWrapper">
+                            <div class="headerMenuItemArrowDown"></div>
+                          </div>
+                          <div class="headerMenuItemContent"><a href="/web/content/DE/BuergerinnenUndBuerger/index.htm" title="Bürgerinnen &amp; Bürger">Bürgerinnen &amp; Bürger</a></div>
+                                                                            
+                                                    
+                          
+                          <!-- When the value of the flag is 'false', do not display the subcontainer. When the value
+                                is 'true' or empty string, display the megemap (The empty string is here to comply with older datafiles
+                                that did not have this element)-->
+                                
+                              <div class="headerSubMenuContainer">
+                                <div class="headerSubMenuItem headerSubMenuItemFirst">
+                                  <h2 class="red">Bürgerinnen &amp; Bürger</h2>
+                                  <ul>                                
+                                    <!--@Comment: generate a list with the subsections of the top section -->
+                                                                    
+                                            <li>
+                                                <a href="/web/content/DE/BuergerinnenUndBuerger/ArbeitundBeruf/index.htm" title="Arbeit und Beruf">Arbeit und Beruf</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/BuergerinnenUndBuerger/Arbeitslosigkeit/index.htm" title="Arbeitslosigkeit">Arbeitslosigkeit</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/BuergerinnenUndBuerger/Ausbildung/index.htm" title="Ausbildung">Ausbildung</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/BuergerinnenUndBuerger/Chancengleichheit/index.htm" title="Chancengleichheit">Chancengleichheit</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/BuergerinnenUndBuerger/FamilieundKinder/index.htm" title="Familie und Kinder">Familie und Kinder</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/BuergerinnenUndBuerger/FinanzielleHilfen/index.htm" title="Finanzielle Hilfen">Finanzielle Hilfen</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/BuergerinnenUndBuerger/MenschenmitBehinderung/index.htm" title="Menschen mit Behinderung">Menschen mit Behinderung</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/BuergerinnenUndBuerger/Studium/index.htm" title="Studium">Studium</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/BuergerinnenUndBuerger/Weiterbildung/index.htm" title="Weiterbildung">Weiterbildung</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/BuergerinnenUndBuerger/ZwischenSchuleundBeruf/index.htm" title="Zwischen Schule und Beruf">Zwischen Schule und Beruf</a>
+                                            </li>
+                                  </ul>
+                                </div>
+                                                                
+                                    <div class="headerSubMenuItem">
+    <h2>Online-Dienstleistungen</h2>
+    <ul>
+                           
+                <li>
+                    <a href="https://jobboerse.arbeitsagentur.de/vamJB/arbeitsuchendMelden.html" target="_blank">                
+                        Arbeitsuchend melden
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="https://formular.arbeitsagentur.de/arbeitslosengeld-online" target="_blank">                
+                        Arbeitslosengeld beantragen
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="https://jobboerse.arbeitsagentur.de/vamJB/stellengesuchVerwalten.html" target="_blank">                
+                        Bewerberprofil veröffentlichen
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="http://jobboerse.arbeitsagentur.de/vamJB/weiterleitenExtern?ziel=bewerbungVerwalten" target="_blank">                
+                        Bewerbungsmappe erstellen
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="https://www.arbeitsagentur.de/apps/faces/home/kf?kfid=E2-10">                
+                        Kontakt zur Berufsberatung
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="https://formular.arbeitsagentur.de/adressaenderung-online" target="_blank">                
+                        Adressänderung melden
+                    </a>        
+                </li>
+                            
+    </ul>
+</div>
+<div class="headerSubMenuItem headerSubMenuItemLast headerSubMenuItemImgListWrapper hide768">
+    <h2>Aktuelles</h2>
+        
+    <div class="caside aim-megamap">    
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                            
+                         
+                    
+<div class="aim-aside">
+      
+  <figure class="cr-figure">
+    <a href="/web/content/DE/Veroeffentlichungen/Themenheftedurchstarten/Existenzgruendung/Geschaeftsidee/Detail/index.htm?dfContentId=L6019022DSTBAI514633" title="Bild">
+      <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mdkz/~edisp/l6019022dstbai366373.jpg" alt="Broschueren" title="Broschueren"></a>
+  </figure>
+  
+  <div>
+    <h2>
+      <a class="cr-link" href="/web/content/DE/Veroeffentlichungen/Themenheftedurchstarten/Existenzgruendung/Geschaeftsidee/Detail/index.htm?dfContentId=L6019022DSTBAI514633" title="Megamap">
+              
+        Die Geschäftsidee zur Existenzgründung</a>
+    </h2>    
+        
+        <p class="cr-short-description">
+          Bevor Sie mit Ihrer Geschäftsidee an den... 
+          <a class="cr-arrow" title="mehr" href="/web/content/DE/Veroeffentlichungen/Themenheftedurchstarten/Existenzgruendung/Geschaeftsidee/Detail/index.htm?dfContentId=L6019022DSTBAI514633">mehr</a>      
+        </p>  
+  </div>
+</div>    
+                        
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                            
+                         
+                    
+<div class="aim-aside">
+      
+  <figure class="cr-figure">
+    <a href="/web/content/DE/Veroeffentlichungen/Themenheftedurchstarten/FamilieundBeruf/Arbeitszeitmodelle/Detail/index.htm?dfContentId=L6019022DSTBAI514579" title="Bild">
+      <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mdkz/~edisp/l6019022dstbai366281.jpg" alt="Broschueren" title="Broschueren"></a>
+  </figure>
+  
+  <div>
+    <h2>
+      <a class="cr-link" href="/web/content/DE/Veroeffentlichungen/Themenheftedurchstarten/FamilieundBeruf/Arbeitszeitmodelle/Detail/index.htm?dfContentId=L6019022DSTBAI514579" title="Megamap">
+              
+        Arbeitszeitmodelle und Arbeitsmodelle</a>
+    </h2>    
+        
+        <p class="cr-short-description">
+          Die Wahl des passenden Arbeitszeit- und... 
+          <a class="cr-arrow" title="mehr" href="/web/content/DE/Veroeffentlichungen/Themenheftedurchstarten/FamilieundBeruf/Arbeitszeitmodelle/Detail/index.htm?dfContentId=L6019022DSTBAI514579">mehr</a>      
+        </p>  
+  </div>
+</div>    
+                        
+    </div>
+</div>            
+                                                        
+                              </div>                           
+                        </div>
+                        <div class="headerMenuItem hide320">
+                          <div class="headerMenuItemArrowDownWrapper">
+                            <div class="headerMenuItemArrowDown"></div>
+                          </div>
+                          <div class="headerMenuItemContent"><a href="/web/content/DE/Unternehmen/index.htm" title="Unternehmen">Unternehmen</a></div>
+                                                                            
+                                                    
+                          
+                          <!-- When the value of the flag is 'false', do not display the subcontainer. When the value
+                                is 'true' or empty string, display the megemap (The empty string is here to comply with older datafiles
+                                that did not have this element)-->
+                                
+                              <div class="headerSubMenuContainer">
+                                <div class="headerSubMenuItem headerSubMenuItemFirst">
+                                  <h2 class="red">Unternehmen</h2>
+                                  <ul>                                
+                                    <!--@Comment: generate a list with the subsections of the top section -->
+                                                                    
+                                            <li>
+                                                <a href="/web/content/DE/Unternehmen/Arbeitskraeftebedarf/index.htm" title="Arbeitskräftebedarf">Arbeitskräftebedarf</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Unternehmen/Arbeitsmarktinformationen/index.htm" title="Arbeitsmarktinformationen">Arbeitsmarktinformationen</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Unternehmen/Ausbildung/index.htm" title="Ausbildung">Ausbildung</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Unternehmen/FinanzielleHilfen/index.htm" title="Finanzielle Hilfen">Finanzielle Hilfen</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Unternehmen/NewsletterService/index.htm" title="Newsletter-Service">Newsletter-Service</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Unternehmen/Rechtsgrundlagen/index.htm" title="Rechtsgrundlagen">Rechtsgrundlagen</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Unternehmen/Sozialversicherung/index.htm" title="Sozialversicherung">Sozialversicherung</a>
+                                            </li>
+                                  </ul>
+                                </div>
+                                                                
+                                    <div class="headerSubMenuItem">
+    <h2>Online-Dienstleistungen</h2>
+    <ul>
+                           
+                <li>
+                    <a href="https://jobboerse.arbeitsagentur.de/vamJB/stellenangebotMelden.html?execution=e2s1" target="_blank">                
+                        Stellenmeldung online
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="https://jobboerse.arbeitsagentur.de/vamJB/registrieren.html?execution=e3s1" target="_blank">                
+                        JOBBÖRSE: Registrierung in der JOBBÖRSE der BA
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="https://formular.arbeitsagentur.de/formularnet/start.page?formID=BetriebsnummernService" target="_blank">                
+                        Online-Antrag auf Erteilung/Änderung einer Betriebsnummer
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="/web/content/DE/Unternehmen/Detail/index.htm?dfContentId=L6019022DSTBAI625283">                
+                        Projekt BEA: Bescheinigungen elektronisch annehmen
+                    </a>        
+                </li>
+                            
+    </ul>
+</div>
+<div class="headerSubMenuItem headerSubMenuItemLast headerSubMenuItemImgListWrapper hide768">
+    <h2>Informationen&nbsp;für Unternehmen</h2>
+        
+    <div class="caside aim-megamap">    
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                            
+                         
+                    
+<div class="aim-aside">
+      
+  <figure class="cr-figure">
+    <a href="/web/content/DE/Unternehmen/Detail/index.htm?dfContentId=L6019022DSTBAI518665" title="Bild">
+      <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mtk4/~edisp/l6019022dstbai604429.jpg" alt="Broschueren" title="Broschueren"></a>
+  </figure>
+  
+  <div>
+    <h2>
+      <a class="cr-link" href="/web/content/DE/Unternehmen/Detail/index.htm?dfContentId=L6019022DSTBAI518665" title="Megamap">
+              
+        Faktor A  - das Arbeitgebermagazin</a>
+    </h2>    
+        
+        <p class="cr-short-description">
+          Informationen zum Personalmanagement finden... 
+          <a class="cr-arrow" title="mehr" href="/web/content/DE/Unternehmen/Detail/index.htm?dfContentId=L6019022DSTBAI518665">mehr</a>      
+        </p>  
+  </div>
+</div>    
+                        
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                            
+                         
+                    
+<div class="aim-aside">
+      
+  <figure class="cr-figure">
+    <a href="/web/content/DE/Unternehmen/Arbeitskraeftebedarf/Internationales/MigrationCheck/Detail/index.htm?dfContentId=L6019022DSTBAI522597" title="Bild">
+      <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mdkz/~edisp/l6019022dstbai366025.jpg" alt="Broschueren" title="Broschueren"></a>
+  </figure>
+  
+  <div>
+    <h2>
+      <a class="cr-link" href="/web/content/DE/Unternehmen/Arbeitskraeftebedarf/Internationales/MigrationCheck/Detail/index.htm?dfContentId=L6019022DSTBAI522597" title="Megamap">
+              
+        Migration-Check</a>
+    </h2>    
+        
+        <p class="cr-short-description">
+          Sie möchten eine Bewerberin / einen Bewerber... 
+          <a class="cr-arrow" title="mehr" href="/web/content/DE/Unternehmen/Arbeitskraeftebedarf/Internationales/MigrationCheck/Detail/index.htm?dfContentId=L6019022DSTBAI522597">mehr</a>      
+        </p>  
+  </div>
+</div>    
+                        
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                            
+                         
+                    
+<div class="aim-aside">
+      
+  <figure class="cr-figure">
+    <a href="/web/content/DE/Unternehmen/Arbeitskraeftebedarf/Beratung/Detail/index.htm?dfContentId=L6019022DSTBAI486031" title="Bild">
+      <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mdkz/~edisp/l6019022dstbai366165.jpg" alt="Broschueren" title="Broschueren"></a>
+  </figure>
+  
+  <div>
+    <h2>
+      <a class="cr-link" href="/web/content/DE/Unternehmen/Arbeitskraeftebedarf/Beratung/Detail/index.htm?dfContentId=L6019022DSTBAI486031" title="Megamap">
+              
+        Arbeitsmarktberatung</a>
+    </h2>    
+        
+        <p class="cr-short-description">
+          Die Arbeitsmarktberatung trägt dazu bei, Sie... 
+          <a class="cr-arrow" title="mehr" href="/web/content/DE/Unternehmen/Arbeitskraeftebedarf/Beratung/Detail/index.htm?dfContentId=L6019022DSTBAI486031">mehr</a>      
+        </p>  
+  </div>
+</div>    
+                        
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                            
+                         
+                    
+<div class="aim-aside">
+      
+  <figure class="cr-figure">
+    <a href="/web/content/DE/Unternehmen/Detail/index.htm?dfContentId=L6019022DSTBAI494847" title="Bild">
+      <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mdkz/~edisp/l6019022dstbai366277.jpg" alt="Broschueren" title="Broschueren"></a>
+  </figure>
+  
+  <div>
+    <h2>
+      <a class="cr-link" href="/web/content/DE/Unternehmen/Detail/index.htm?dfContentId=L6019022DSTBAI494847" title="Megamap">
+              
+        Der Arbeitgeber-Service – Ihr Partner am Arbeitsmarkt</a>
+    </h2>    
+        
+        <p class="cr-short-description">
+          Der Arbeitgeber-Service der Bundesagentur für... 
+          <a class="cr-arrow" title="mehr" href="/web/content/DE/Unternehmen/Detail/index.htm?dfContentId=L6019022DSTBAI494847">mehr</a>      
+        </p>  
+  </div>
+</div>    
+                        
+    </div>
+</div>            
+                                                        
+                              </div>                           
+                        </div>
+                        <div class="headerMenuItem hide320">
+                          <div class="headerMenuItemArrowDownWrapper">
+                            <div class="headerMenuItemArrowDown"></div>
+                          </div>
+                          <div class="headerMenuItemContent"><a href="/web/content/DE/Institutionen/index.htm" title="Institutionen">Institutionen</a></div>
+                                                                            
+                                                    
+                          
+                          <!-- When the value of the flag is 'false', do not display the subcontainer. When the value
+                                is 'true' or empty string, display the megemap (The empty string is here to comply with older datafiles
+                                that did not have this element)-->
+                                
+                              <div class="headerSubMenuContainer">
+                                <div class="headerSubMenuItem headerSubMenuItemFirst">
+                                  <h2 class="red">Institutionen</h2>
+                                  <ul>                                
+                                    <!--@Comment: generate a list with the subsections of the top section -->
+                                                                    
+                                            <li>
+                                                <a href="/web/content/DE/Institutionen/Aerzte/index.htm" title="Ärzte">Ärzte</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Institutionen/Ausbilder/index.htm" title="Ausbilder">Ausbilder</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Institutionen/Behoerden/index.htm" title="Behörden">Behörden</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Institutionen/OeffentlicheEinrichtungenVereine/index.htm" title="Öffentliche Einrichtungen / Vereine">Öffentliche Einrichtungen / Vereine</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Institutionen/Psychologen/index.htm" title="Psychologen">Psychologen</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Institutionen/SchulenElternverbaende/index.htm" title="Schulen, Elternverbände">Schulen, Elternverbände</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Institutionen/Traeger/index.htm" title="Träger">Träger</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Institutionen/Wissenschaft/index.htm" title="Wissenschaft">Wissenschaft</a>
+                                            </li>
+                                  </ul>
+                                </div>
+                                                                
+                                    <div class="headerSubMenuItem">
+    <h2>Online-Dienstleistungen</h2>
+    <ul>
+                           
+                <li>
+                    <a href="/web/content/DE/BuergerinnenUndBuerger/Detail/index.htm?dfContentId=L6019022DSTBAI485471">                
+                        Berufsinformationszentrum (BiZ)
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="https://jobboerse.arbeitsagentur.de/vamJB/anmeldung.html" target="_blank">                
+                        Zur JOBBÖRSE - Eingabemöglichkeit für Anbieter von berufsorientierenden Veranstaltungen
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="/web/content/DE/Institutionen/Traeger/QualitaetssicherungArbeitsmarktdienstleistungen/Detail/index.htm?dfContentId=L6019022DSTBAI517694">                
+                        Allgemeines zur Qualitätssicherung
+                    </a>        
+                </li>
+                            
+    </ul>
+</div>
+<div class="headerSubMenuItem headerSubMenuItemLast headerSubMenuItemImgListWrapper hide768">
+    <h2>Informationen&nbsp;für Institutionen</h2>
+        
+    <div class="caside aim-megamap">    
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                            
+                         
+                    
+<div class="aim-aside">
+      
+  <figure class="cr-figure">
+    <a href="/web/content/DE/BuergerinnenUndBuerger/Detail/index.htm?dfContentId=L6019022DSTBAI485471" title="Bild">
+      <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mdk1/~edisp/l6019022dstbai377291.jpg" alt="Broschueren" title="Broschueren"></a>
+  </figure>
+  
+  <div>
+    <h2>
+      <a class="cr-link" href="/web/content/DE/BuergerinnenUndBuerger/Detail/index.htm?dfContentId=L6019022DSTBAI485471" title="Megamap">
+              
+        Berufsinformationszentrum (BiZ)</a>
+    </h2>    
+        
+        <p class="cr-short-description">
+          Das BiZ ist die Adresse für alle Bürgerinnen... 
+          <a class="cr-arrow" title="mehr" href="/web/content/DE/BuergerinnenUndBuerger/Detail/index.htm?dfContentId=L6019022DSTBAI485471">mehr</a>      
+        </p>  
+  </div>
+</div>    
+                        
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                            
+                         
+                    
+<div class="aim-aside">
+      
+  <figure class="cr-figure">
+    <a href="/web/content/DE/Institutionen/Detail/index.htm?dfContentId=L6019022DSTBAI526557" title="Bild">
+      <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mdk1/~edisp/l6019022dstbai377315.jpg" alt="Broschueren" title="Broschueren"></a>
+  </figure>
+  
+  <div>
+    <h2>
+      <a class="cr-link" href="/web/content/DE/Institutionen/Detail/index.htm?dfContentId=L6019022DSTBAI526557" title="Megamap">
+              
+        Veranstaltungsportal Berufsorientierung</a>
+    </h2>    
+        
+        <p class="cr-short-description">
+          Hier können Anbieter von Veranstaltungen Ihre... 
+          <a class="cr-arrow" title="mehr" href="/web/content/DE/Institutionen/Detail/index.htm?dfContentId=L6019022DSTBAI526557">mehr</a>      
+        </p>  
+  </div>
+</div>    
+                        
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                        
+    </div>
+</div>            
+                                                        
+                              </div>                           
+                        </div>
+                        <div class="headerMenuItem hide320">
+                          <div class="headerMenuItemArrowDownWrapper">
+                            <div class="headerMenuItemArrowDown"></div>
+                          </div>
+                          <div class="headerMenuItemContent"><a href="/web/content/DE/Presse/index.htm" title="Presse">Presse</a></div>
+                                                                            
+                                                    
+                          
+                          <!-- When the value of the flag is 'false', do not display the subcontainer. When the value
+                                is 'true' or empty string, display the megemap (The empty string is here to comply with older datafiles
+                                that did not have this element)-->
+                                
+                              <div class="headerSubMenuContainer">
+                                <div class="headerSubMenuItem headerSubMenuItemFirst">
+                                  <h2 class="red">Presse</h2>
+                                  <ul>                                
+                                    <!--@Comment: generate a list with the subsections of the top section -->
+                                                                    
+                                            <li>
+                                                <a href="/web/content/DE/Presse/BiografiendesVorstandes/index.htm" title="Biografien des Vorstandes">Biografien des Vorstandes</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Presse/Kontakt/index.htm" title="Kontakt zum Presseteam">Kontakt zum Presseteam</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Presse/Messetermine/index.htm" title="Messen">Messen</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Presse/Pressefotos/index.htm" title="Pressefotos">Pressefotos</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Presse/Presseinformationen/index.htm" title="Presseinformationen">Presseinformationen</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Presse/Statistik/index.htm" title="Statistik">Statistik</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/Presse/Termine/index.htm" title="Termine">Termine</a>
+                                            </li>
+                                  </ul>
+                                </div>
+                                                                
+                                    <div class="headerSubMenuItem">
+    <h2>Online-Dienstleistungen für die Presse</h2>
+    <ul>
+                           
+                <li>
+                    <a href="http://www.iab.de/asp/bamail/ba-presse-dienst.htm" target="_blank">                
+                        BA-Pressedienst
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="http://www.ba-audio.de" target="_blank">                
+                        Hörfunkservice der Bundesagentur für Arbeit
+                    </a>        
+                </li>
+                            
+                           
+                <li>
+                    <a href="http://www.ba-themendienst.de/" target="_blank">                
+                        Themendienst der BA
+                    </a>        
+                </li>
+                            
+    </ul>
+</div>
+<div class="headerSubMenuItem headerSubMenuItemLast headerSubMenuItemImgListWrapper hide768">
+    <h2>Informationen für die Presse</h2>
+        
+    <div class="caside aim-megamap">    
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                        
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                            
+                         
+                    
+<div class="aim-aside">
+      
+  <figure class="cr-figure">
+    <a href="/web/content/DE/Presse/Pressefotos/Detail/index.htm?dfContentId=L6019022DSTBAI485392" title="Bild">
+      <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mjex/~edisp/l6019022dstbai612871.jpg" alt="Broschueren" title="Broschueren"></a>
+  </figure>
+  
+  <div>
+    <h2>
+      <a class="cr-link" href="/web/content/DE/Presse/Pressefotos/Detail/index.htm?dfContentId=L6019022DSTBAI485392" title="Megamap">
+              
+        Pressefotos</a>
+    </h2>    
+        
+        <p class="cr-short-description">
+          Kostenfreie Fotos vom Vorstand, aus der... 
+          <a class="cr-arrow" title="mehr" href="/web/content/DE/Presse/Pressefotos/Detail/index.htm?dfContentId=L6019022DSTBAI485392">mehr</a>      
+        </p>  
+  </div>
+</div>    
+                        
+            <!--@Comment: Generate a placeholder for the megamap rendition of the content type -->
+                            
+                            
+                         
+                    
+<div class="aim-aside">
+      
+  <figure class="cr-figure">
+    <a href="/web/content/DE/Presse/Messetermine/Detail/index.htm?dfContentId=L6019022DSTBAI517640" title="Bild">
+      <img src="/web/wcm/idc/groups/public/documents/webdatei/mdaw/mdkz/~edisp/l6019022dstbai366125.jpg" alt="Broschueren" title="Broschueren"></a>
+  </figure>
+  
+  <div>
+    <h2>
+      <a class="cr-link" href="/web/content/DE/Presse/Messetermine/Detail/index.htm?dfContentId=L6019022DSTBAI517640" title="Megamap">
+              
+        Messen</a>
+    </h2>    
+        
+        <p class="cr-short-description">
+          Auf namhaften Messen präsentiert sich... 
+          <a class="cr-arrow" title="mehr" href="/web/content/DE/Presse/Messetermine/Detail/index.htm?dfContentId=L6019022DSTBAI517640">mehr</a>      
+        </p>  
+  </div>
+</div>    
+                        
+    </div>
+</div>            
+                                                        
+                              </div>                           
+                        </div>
+                        <div class="headerMenuItem hide320">
+                          <div class="headerMenuItemArrowDownWrapper">
+                            <div class="headerMenuItemArrowDown"></div>
+                          </div>
+                          <div class="headerMenuItemContent"><a href="/web/content/DE/KarriereBA/index.htm" title="Karriere BA">Karriere BA</a></div>
+                                                                            
+                          
+                          
+                          <!-- When the value of the flag is 'false', do not display the subcontainer. When the value
+                                is 'true' or empty string, display the megemap (The empty string is here to comply with older datafiles
+                                that did not have this element)-->
+                                
+                              <div class="headerSubMenuContainer">
+                                <div class="headerSubMenuItem headerSubMenuItemFirst">
+                                  <h2 class="red">Karriere BA</h2>
+                                  <ul>                                
+                                    <!--@Comment: generate a list with the subsections of the top section -->
+                                                                    
+                                            <li>
+                                                <a href="/web/content/DE/KarriereBA/ArbeitsweltBA/index.htm" title="Arbeitswelt BA">Arbeitswelt BA</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/KarriereBA/Berufserfahrene/index.htm" title="Berufserfahrene">Berufserfahrene</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/KarriereBA/SchuelerundSchulabsolventen/index.htm" title="Schüler und Schulabsolventen">Schüler und Schulabsolventen</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/KarriereBA/StellenundBewerbung/index.htm" title="Stellen und Bewerbung">Stellen und Bewerbung</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/content/DE/KarriereBA/UeberdieBA/index.htm" title="Über die BA">Über die BA</a>
+                                            </li>
+                                  </ul>
+                                </div>
+                                                                
+                        
+                              </div>                           
+                        </div>
+                <div class="headerMenuItem show320"><div class="headerMenuItemContent"><a class="cr-arrow wcc_header_navigation_link_320" href="#headerMenu320">Navigation</a></div></div>                                        
+          </div>
+        </div>
+          
+    </div>
+    
+  </div>
+  </header>
+</span></div><div><div id="pt1:pgl1" class="wcp_center_alignment_box wcp_header_navigation_box af_panelGroupLayout"><div><a id="pt1:cl1" class="wcp_header_navigation_link af_commandImageLink" onclick="return false;" href="#"><img id="pt1:cl1::icon" src="/apps/images/icons/arrow-white.png" alt="" class="af_commandImageLink_image"><span class="af_commandImageLink_text">Navigation</span></a></div></div></div><div><div id="pt1:pt_pgl6" class="AFStretchWidth ba_background af_panelGroupLayout" style="padding-bottom:15px;"><div><div id="pt1:pt_pgl4" class="wcp_center_alignment_box af_panelGroupLayout" style="padding-top:20px;padding-bottom:10px;"><div><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:pt_pgl9" class="ba_breadcrumb af_panelGroupLayout"><tbody><tr><td><a id="pt1:gl1" class="ba_breadcrumb_firstNode af_goLink" style="color:#000000" href="http://www.arbeitsagentur.de/">Startseite</a></td><td><img id="pt1:im1" alt="" class="ba_breadcrumb_separator af_image" src="/apps/images/icons/breadcrumb.png"></td><td><div id="pt1:pt_r1" class="af_region"><div id="pt1:pt_r1:0:pg_bc1" class="WCBreadCrumbNav af_panelGroupLayout" style="width:100%;height:100%;overflow:auto;"><div><div id="pt1:pt_r1:0:taskFlowPopup" style="display:none"><div style="top:auto;right:auto;left:auto;bottom:auto;width:auto;height:auto;position:relative;" id="pt1:pt_r1:0:taskFlowPopup::content"></div></div></div><div><span id="pt1:pt_r1:0:bc1" class="af_breadCrumbs"><div class="af_breadCrumbs_body"><div id="pt1:pt_r1:0:bc1::soi" class="af_breadCrumbs_overflow-indicator" title="Weitere Links anzeigen..." tabindex="0"><div id="pt1:pt_r1:0:bc1::soc" class="af_breadCrumbs_overflow-container"></div></div><div id="pt1:pt_r1:0:bc1::oc" class="af_breadCrumbs_content"><a style="display: none; "></a><a id="pt1:pt_r1:0:bc1:0:cni1" class="af_breadCrumbs_step p_AFDisabled">Dienststellen vor Ort</a></div></div><div class="af_breadCrumbs_overflow-spacer"></div></span></div></div><div style="display:none"><a id="pt1:pt_r1:0:_afrCommandDelegate" class="af_commandLink" onclick="return false;" href="#"></a></div></div></td></tr></tbody></table></div></div></div></div></div></div></div><div><div id="pt1:pt_g2" class="AFStretchWidth ba_background af_panelGroupLayout" style="min-height:500px"><div><div id="pt1:pt_pgl8" class="wcp_center_alignment_box af_panelGroupLayout"><div><div id="pt1:r1" class="af_region"><div id="pt1:r1:0:pvoTmpl:pt_pgl1" class="ba_pvo af_panelGroupLayout"><div><script id="pt1:r1:0:pvoTmpl:pt_s3" type="text/javascript" src="/apps/js/pvo.js"></script></div><div><script id="pt1:r1:0:pvoTmpl:pt_s2" type="text/javascript" src="/apps/js/jquery.maphighlight.min.js"></script></div><div><script id="pt1:r1:0:pvoTmpl:pt_s4" type="text/javascript" src="/apps/js/adapt.min.js"></script></div><div><button id="pt1:r1:0:pvoTmpl:cbListener" class="af_commandButton p_AFTextOnly" style="display:none" onclick="return false;"></button><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:pgl69" class="ba_background af_panelGroupLayout"><tbody><tr><td><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:pgl1" class="ba_horizontal_group af_panelGroupLayout" style="display:none"><tbody><tr><td><div align="right" id="pt1:r1:0:pvoTmpl:pgl4" class="ba_left_vertical_group af_panelGroupLayout"><div><a id="pt1:r1:0:pvoTmpl:pvo_Ergebnisseite_zurueck" class="ba_search_result_back_button af_commandImageLink" onclick="return false;" href="#"><img id="pt1:r1:0:pvoTmpl:pvo_Ergebnisseite_zurueck::icon" src="/apps/images/icons/paginierung-zurueck.png" alt="" class="af_commandImageLink_image"><span class="af_commandImageLink_text">zurück zur Landkarte</span></a></div></div></td><td><div id="pt1:r1:0:pvoTmpl:pgl3" class="ba_vertical_group af_panelGroupLayout"><div><div id="pt1:r1:0:pvoTmpl:dc2:pvosubf:pgl2" class="ba_search_vertical_group af_panelGroupLayout"><div><div id="pt1:r1:0:pvoTmpl:dc2:pvosubf:ot1" class="ba_ReadOnlyInJaws af_panelHeader"><table class="af_panelHeader_title-table" cellpadding="0" cellspacing="0" border="0" width="0" summary=""><tbody><tr><td class="af_panelHeader_title-start0">&nbsp;</td><td class="af_panelHeader_title0"><table cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tbody><tr><td class="af_panelHeader_icon-cell"></td><td id="pt1:r1:0:pvoTmpl:dc2:pvosubf:ot1::_afrTtxt"><div title="Sucheingabe von Thema, Ort oder Postleitzahl" class="af_panelHeader_title-text-cell"><h1 class="af_panelHeader_title-text0 ">Sucheingabe von Thema, Ort oder Postleitzahl</h1></div></td><td id="pt1:r1:0:pvoTmpl:dc2:pvosubf:ot1::_afrEps"><div class="af_panelHeader_title-text0  af_panelHeader_title-text-ellipsis" style="display: none" title="Sucheingabe von Thema, Ort oder Postleitzahl">…</div></td><td id="pt1:r1:0:pvoTmpl:dc2:pvosubf:ot1::_afrStr" style="width: 100%"></td></tr></tbody></table></td><td class="af_panelHeader_title-end0">&nbsp;</td></tr></tbody></table><div class="af_panelHeader_content0"><div></div></div></div></div><div><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:dc2:pvosubf:pgl5" class="AFStretchWidth ba_search_horizontal_textgroup af_panelGroupLayout"><tbody><tr><td><span class="ba_search_text">Finden Sie Ihre Dienststelle vor Ort: Agenturen für Arbeit, Jobcenter und die Familienkasse.</span></td></tr></tbody></table></div><div><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:dc2:pvosubf:pgl6" class="ba_search_horizontal_group af_panelGroupLayout"><tbody><tr><td><span id="pt1:r1:0:pvoTmpl:dc2:pvosubf:dc_ot1" class="ba_search_label af_outputLabel"><label for="pt1:r1:0:pvoTmpl:dc2:pvosubf:Suche_OrtPlz::content">PLZ oder Ort</label></span></td><td><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:dc2:pvosubf:pgl7" class="af_panelGroupLayout"><tbody><tr><td><table class="ba_search_input af_inputText" id="pt1:r1:0:pvoTmpl:dc2:pvosubf:Suche_OrtPlz" cellpadding="0" cellspacing="0" border="0" summary=""><tbody><tr><td class="af_inputText_label"></td><td valign="top" nowrap="" class="AFContentCell"><input id="pt1:r1:0:pvoTmpl:dc2:pvosubf:Suche_OrtPlz::content" name="pt1:r1:0:pvoTmpl:dc2:pvosubf:Suche_OrtPlz" class="af_inputText_content" type="text" value="38685"></td></tr></tbody></table></td><td><button id="pt1:r1:0:pvoTmpl:dc2:pvosubf:Suche_Hilfe_2" class="ba_search_help af_commandButton p_AFTextOnly" onclick="return false;">Hilfe - Bitte geben Sie einen Ort oder eine 5-stellige PLZ ein. Die Eingabe einer PLZ liefert in der Regel genauere Ergebnisse.</button></td></tr></tbody></table></td></tr></tbody></table></div><div><button id="pt1:r1:0:pvoTmpl:dc2:pvosubf:Suche_Suchen" class="ba_search_execute af_commandButton p_AFTextOnly" onclick="return false;" title="Suche ausführen und Suchergebnisse anzeigen">Anzeigen</button></div></div><div id="pt1:r1:0:pvoTmpl:dc2:pvosubf:helpPopup" style="display:none"><div style="top:auto;right:auto;left:auto;bottom:auto;width:auto;height:auto;position:relative;" id="pt1:r1:0:pvoTmpl:dc2:pvosubf:helpPopup::content"></div></div><div id="pt1:r1:0:pvoTmpl:dc2:pvosubf:helpPopup_2" style="display:none"><div style="top:auto;right:auto;left:auto;bottom:auto;width:auto;height:auto;position:relative;" id="pt1:r1:0:pvoTmpl:dc2:pvosubf:helpPopup_2::content"></div></div></div><div><div id="pt1:r1:0:pvoTmpl:pgl10" class="ba_search_results af_panelGroupLayout"><div><div id="pt1:r1:0:pvoTmpl:ot1" class="ba_ReadOnlyInJaws af_panelHeader"><table class="af_panelHeader_title-table" cellpadding="0" cellspacing="0" border="0" width="0" summary=""><tbody><tr><td class="af_panelHeader_title-start0">&nbsp;</td><td class="af_panelHeader_title0"><table cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tbody><tr><td class="af_panelHeader_icon-cell"></td><td id="pt1:r1:0:pvoTmpl:ot1::_afrTtxt"><div title="Anzeige der Suchergebnisse" class="af_panelHeader_title-text-cell"><h1 class="af_panelHeader_title-text0 ">Anzeige der Suchergebnisse</h1></div></td><td id="pt1:r1:0:pvoTmpl:ot1::_afrEps"><div class="af_panelHeader_title-text0  af_panelHeader_title-text-ellipsis" style="display: none" title="Anzeige der Suchergebnisse">…</div></td><td id="pt1:r1:0:pvoTmpl:ot1::_afrStr" style="width: 100%"></td></tr></tbody></table></td><td class="af_panelHeader_title-end0">&nbsp;</td></tr></tbody></table><div class="af_panelHeader_content0"><div></div></div></div></div><div><span class="ba_ReadOnlyInJaws" id="pt1:r1:0:pvoTmpl:dc_ot2">Das Suchergebnis mit den Dienststellen vor Ort wird angezeigt</span></div><div><span class="ba_ReadOnlyInJaws" id="pt1:r1:0:pvoTmpl:ot19">Die Ergebnisse sind in die Reiter 'Arbeitsagentur', 'Jobcenter' und 'Familienkasse' aufgeteilt. Aktuell ausgewählt ist Arbeitsagentur</span></div><div><div id="pt1:r1:0:pvoTmpl:pt2" class="ba_search_results af_panelTabbed" style="width:auto;overflow:visible;height:auto"><div style="height:2em"><div class="af_panelTabbed_header-center" style="height:2em;left:0px;right:0px"><span style="display:block;"></span></div><div id="pt1:r1:0:pvoTmpl:pt2::tabh" style="height:2em;left:0px;right:0px" _afrdistab="pt1:r1:0:pvoTmpl:Arbeitsagentur" class="af_panelTabbed_header"><div class="af_panelTabbed_tab-boundary"><div id="pt1:r1:0:pvoTmpl:pt2::tabh::soi" class="af_panelTabbed_start-overflow-indicator"><div id="pt1:r1:0:pvoTmpl:pt2::tabh::soc" class="af_panelTabbed_overflow-container"></div></div><div id="pt1:r1:0:pvoTmpl:pt2::tabh::oc" class="af_panelTabbed_viewable-tabs"><div id="pt1:r1:0:pvoTmpl:Arbeitsagentur::ti" _afrptkey="pt1:r1:0:pvoTmpl:Arbeitsagentur" title="Ergebnisliste der Arbeitsagenturen" class="af_panelTabbed_tab p_AFSelected"><div class="af_panelTabbed_tab-start" style="height:2em"></div><div class="af_panelTabbed_tab-content" style="height:2em"><a id="pt1:r1:0:pvoTmpl:Arbeitsagentur::disAcr" class="af_panelTabbed_tab-text-link p_AFSelected" href="#" onclick="return false;">Arbeitsagenturen</a></div><div class="af_panelTabbed_tab-end" style="height:2em"></div></div><div id="pt1:r1:0:pvoTmpl:Jobcenter::ti" _afrptkey="pt1:r1:0:pvoTmpl:Jobcenter" title="Ergebnisliste der Jobcenter und optierenden Kommunen" class="af_panelTabbed_tab"><div class="af_panelTabbed_tab-start" style="height:2em"></div><div class="af_panelTabbed_tab-content" style="height:2em"><a id="pt1:r1:0:pvoTmpl:Jobcenter::disAcr" class="af_panelTabbed_tab-text-link" href="#" onclick="return false;">Jobcenter</a></div><div class="af_panelTabbed_tab-end" style="height:2em"></div></div><div id="pt1:r1:0:pvoTmpl:Familienkasse::ti" _afrptkey="pt1:r1:0:pvoTmpl:Familienkasse" title="Ergebnisliste der Familienkassen" class="af_panelTabbed_tab"><div class="af_panelTabbed_tab-start" style="height:2em"></div><div class="af_panelTabbed_tab-content" style="height:2em"><a id="pt1:r1:0:pvoTmpl:Familienkasse::disAcr" class="af_panelTabbed_tab-text-link" href="#" onclick="return false;">Familienkassen</a></div><div class="af_panelTabbed_tab-end" style="height:2em"></div></div></div><div id="pt1:r1:0:pvoTmpl:pt2::tabh::eoi" class="af_panelTabbed_end-overflow-indicator"><div id="pt1:r1:0:pvoTmpl:pt2::tabh::eoc" class="af_panelTabbed_overflow-container"></div></div></div><div class="af_panelTabbed_overflow-spacer"></div></div></div><table cellpadding="0" cellspacing="0" border="0" width="100%" summary="" style="table-layout:fixed"><tbody><tr><td style="width:100%" id="pt1:r1:0:pvoTmpl:pt2::tabb"><div class="af_panelTabbed_body p_AFFlow"><div style=""><div id="pt1:r1:0:pvoTmpl:Arbeitsagentur" class="af_showDetailItem"><div id="pt1:r1:0:pvoTmpl:pgl51" class="ba_tab_group af_panelGroupLayout"><div><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:pgl36" class="ba_resultinfo_group af_panelGroupLayout"><tbody><tr><td><span class="ba_resultinfo_text">2</span></td><td>Treffer für</td><td><span class="ba_resultinfo_text">38685</span></td></tr></tbody></table></div><div><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:pgl0" class="AFStretchWidth ba_searchinfo_group_blank af_panelGroupLayout"><tbody><tr></tr></tbody></table></div><div><div id="pt1:r1:0:pvoTmpl:i2:0:pgl20" class="ba_searchresult_group af_panelGroupLayout"><div><span class="ba_ReadOnlyInJaws" id="pt1:r1:0:pvoTmpl:i2:0:ot22">Suchergebnis 1</span></div><div><a id="pt1:r1:0:pvoTmpl:i2:0:Partner_AA_Treffer1" title="Zur Dienststelle wechseln" class="ba_searchresult_top_header af_goLink" href="http://www.arbeitsagentur.de/web/content/21119">Agentur für Arbeit Clausthal-Zellerfeld</a></div><div><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:i2:0:pgl57" class="ba_searchresult_horizontal_group AFStretchWidth af_panelGroupLayout"><tbody><tr><td><div id="pt1:r1:0:pvoTmpl:i2:0:pgl35" class="ba_searchresult_vertical_group af_panelGroupLayout"><div><div id="pt1:r1:0:pvoTmpl:i2:0:pgl58" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><span class="ba_searchresult_header">Besucheradresse</span></div><div>Robert Koch Str. 32a</div><div>Clausthal-Zellerfeld</div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:0:pgl62" class="af_panelGroupLayout"><div><span class="ba_searchresult_header">Postanschrift</span></div><div>Agentur für Arbeit Braunschweig-Goslar</div><div><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:i2:0:pgl6" class="af_panelGroupLayout"><tbody><tr><td><span class="ba_searchresult_highlighter">38084</span></td><td>Braunschweig</td></tr></tbody></table></div></div></div></div></td><td><div id="pt1:r1:0:pvoTmpl:i2:0:pgl8" class="ba_searchresult_vertical_group af_panelGroupLayout"><div><div id="pt1:r1:0:pvoTmpl:i2:0:pgl63" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><span class="ba_searchresult_header">Kontaktmöglichkeiten</span></div><div>	Tel: 0800 4 5555 00 (Arbeitnehmer)*<br>Tel: 0800 4 5555 20 (Arbeitgeber)*<br>*Dieser Anruf ist für Sie kostenfrei</div><div>Fax: 05323 / 962222</div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:0:pgl14" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><a id="pt1:r1:0:pvoTmpl:i2:0:Partner_AA_Tel_Acc" title="Servicetelefon für Hörgeschädigte" class="ba_searchresult_link af_goImageLink" href="https://www.arbeitsagentur.de/web/content/DE/service/Ueberuns/Kontaktdaten/Detail/index.htm?dfContentId=L6019022DSTBAI635289"><img id="pt1:r1:0:pvoTmpl:i2:0:Partner_AA_Tel_Acc::icon" src="/apps/images/icons/bullet.gif" title="Servicetelefon für Hörgeschädigte" alt="Servicetelefon für Hörgeschädigte" class="af_goImageLink_image"><span class="af_goImageLink_text">Servicetelefon für Hörgeschädigte</span></a></div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:0:pgl64" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><a id="pt1:r1:0:pvoTmpl:i2:0:Partner_AA_Name" title="Zum Kontaktformular" class="ba_searchresult_link af_goImageLink" href="/apps/faces/home/kf?_adf.ctrl-state=4yfgr5d1p_4&amp;q=38685&amp;&amp;ctxdvo=1&amp;kfid=E0-3"><img id="pt1:r1:0:pvoTmpl:i2:0:Partner_AA_Name::icon" src="/apps/images/icons/bullet.gif" title="Zum Kontaktformular" alt="Zum Kontaktformular" class="af_goImageLink_image"><span class="af_goImageLink_text">Kontaktformular</span></a></div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:0:pgl13" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><a id="pt1:r1:0:pvoTmpl:i2:0:Partner_Link_Detail" title="Zur Dienststelle wechseln" class="ba_searchresult_detaillink af_goImageLink" href="http://www.arbeitsagentur.de/web/content/21119"><img id="pt1:r1:0:pvoTmpl:i2:0:Partner_Link_Detail::icon" src="/apps/images/icons/bullet.gif" title="Zur Dienststelle wechseln" alt="Zur Dienststelle wechseln" class="af_goImageLink_image"><span class="af_goImageLink_text">zur Webseite der Dienststelle</span></a></div></div></div></div></td><td><div id="pt1:r1:0:pvoTmpl:i2:0:pgl9" class="ba_searchresult_vertical_group af_panelGroupLayout"><div><div id="pt1:r1:0:pvoTmpl:i2:0:pgl37" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><span class="ba_searchresult_header">Öffnungszeiten</span></div><div>Mo.- Mi. 08.00-12.30 Uhr</div><div>Do. 08.00-12.30 Uhr</div><div>und 14.00-18.00 Uhr</div><div>Fr. 08.00-12.30 Uhr</div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:0:pgl17" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div></div></div></div></div></td></tr></tbody></table></div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:1:pgl20" class="ba_searchresult_group af_panelGroupLayout"><div><span class="ba_ReadOnlyInJaws" id="pt1:r1:0:pvoTmpl:i2:1:ot22">Suchergebnis 2</span></div><div><a id="pt1:r1:0:pvoTmpl:i2:1:Partner_AA_Treffer1" title="Zur Dienststelle wechseln" class="ba_searchresult_top_header af_goLink" href="http://www.arbeitsagentur.de/web/content/21115">Agentur für Arbeit Goslar</a></div><div><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:i2:1:pgl57" class="ba_searchresult_horizontal_group AFStretchWidth af_panelGroupLayout"><tbody><tr><td><div id="pt1:r1:0:pvoTmpl:i2:1:pgl35" class="ba_searchresult_vertical_group af_panelGroupLayout"><div><div id="pt1:r1:0:pvoTmpl:i2:1:pgl58" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><span class="ba_searchresult_header">Besucheradresse</span></div><div>Robert Koch Str. 11</div><div>Goslar</div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:1:pgl62" class="af_panelGroupLayout"><div><span class="ba_searchresult_header">Postanschrift</span></div><div>Agentur für Arbeit Braunschweig-Goslar</div><div><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:i2:1:pgl6" class="af_panelGroupLayout"><tbody><tr><td><span class="ba_searchresult_highlighter">38084</span></td><td>Braunschweig</td></tr></tbody></table></div></div></div></div></td><td><div id="pt1:r1:0:pvoTmpl:i2:1:pgl8" class="ba_searchresult_vertical_group af_panelGroupLayout"><div><div id="pt1:r1:0:pvoTmpl:i2:1:pgl63" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><span class="ba_searchresult_header">Kontaktmöglichkeiten</span></div><div>	Tel: 0800 4 5555 00 (Arbeitnehmer)*<br>Tel: 0800 4 5555 20 (Arbeitgeber)*<br>*Dieser Anruf ist für Sie kostenfrei</div><div>Fax: 05321 / 557450</div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:1:pgl14" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><a id="pt1:r1:0:pvoTmpl:i2:1:Partner_AA_Tel_Acc" title="Servicetelefon für Hörgeschädigte" class="ba_searchresult_link af_goImageLink" href="https://www.arbeitsagentur.de/web/content/DE/service/Ueberuns/Kontaktdaten/Detail/index.htm?dfContentId=L6019022DSTBAI635289"><img id="pt1:r1:0:pvoTmpl:i2:1:Partner_AA_Tel_Acc::icon" src="/apps/images/icons/bullet.gif" title="Servicetelefon für Hörgeschädigte" alt="Servicetelefon für Hörgeschädigte" class="af_goImageLink_image"><span class="af_goImageLink_text">Servicetelefon für Hörgeschädigte</span></a></div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:1:pgl64" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><a id="pt1:r1:0:pvoTmpl:i2:1:Partner_AA_Name" title="Zum Kontaktformular" class="ba_searchresult_link af_goImageLink" href="/apps/faces/home/kf?_adf.ctrl-state=4yfgr5d1p_4&amp;q=38685&amp;&amp;ctxdvo=1&amp;kfid=E0-3"><img id="pt1:r1:0:pvoTmpl:i2:1:Partner_AA_Name::icon" src="/apps/images/icons/bullet.gif" title="Zum Kontaktformular" alt="Zum Kontaktformular" class="af_goImageLink_image"><span class="af_goImageLink_text">Kontaktformular</span></a></div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:1:pgl13" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><a id="pt1:r1:0:pvoTmpl:i2:1:Partner_Link_Detail" title="Zur Dienststelle wechseln" class="ba_searchresult_detaillink af_goImageLink" href="http://www.arbeitsagentur.de/web/content/21115"><img id="pt1:r1:0:pvoTmpl:i2:1:Partner_Link_Detail::icon" src="/apps/images/icons/bullet.gif" title="Zur Dienststelle wechseln" alt="Zur Dienststelle wechseln" class="af_goImageLink_image"><span class="af_goImageLink_text">zur Webseite der Dienststelle</span></a></div></div></div></div></td><td><div id="pt1:r1:0:pvoTmpl:i2:1:pgl9" class="ba_searchresult_vertical_group af_panelGroupLayout"><div><div id="pt1:r1:0:pvoTmpl:i2:1:pgl37" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div><span class="ba_searchresult_header">Öffnungszeiten</span></div><div>Mo.- Mi. 08.00-12.30 Uhr</div><div>Do. 08.00-12.30 Uhr</div><div>und 14.00-18.00 Uhr</div><div>Fr. 08.00-12.30 Uhr</div></div></div><div><div id="pt1:r1:0:pvoTmpl:i2:1:pgl17" class="ba_searchresult_vertical_subgroup af_panelGroupLayout"><div></div></div></div></div></td></tr></tbody></table></div></div></div><div><table cellpadding="0" cellspacing="0" border="0" summary="" align="center" id="pt1:r1:0:pvoTmpl:pgl65" class="ba_result_navigation_group af_panelGroupLayout" style="display:none"><tbody><tr><td><a id="pt1:r1:0:pvoTmpl:Partner_AA_Paginierung1" title="Zum Anfang der Suchergebnisse" class="ba_searchresult_navigation_end af_commandLink" style="display:none" onclick="return false;" href="#">erste Seite</a></td><td><a id="pt1:r1:0:pvoTmpl:Partner_AA_Paginierung2" title="Einen Schritt zurück" class="ba_searchresult_navigation_page af_commandImageLink" style="display:none" onclick="return false;" href="#"><img id="pt1:r1:0:pvoTmpl:Partner_AA_Paginierung2::icon" src="/apps/images/icons/paginierung-zurueck.png" title="Einen Schritt zurück" alt="Einen Schritt zurück" class="af_commandImageLink_image"></a></td><td><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:r1:0:pvoTmpl:i6:0:pgl66" class="af_panelGroupLayout"><tbody><tr><td><a id="pt1:r1:0:pvoTmpl:i6:0:Partner_AA_Paginierung3" title="Zu den Treffern 1 bis 2" class="ba_searchresult_navigation_page_current af_commandLink" style="display:none" onclick="return false;" href="#"><span title=""></span><span style="display:none">Seite</span> 1</a></td></tr></tbody></table></td><td><a id="pt1:r1:0:pvoTmpl:Partner_AA_Paginierung4" title="Einen Schritt weiter" class="ba_searchresult_navigation_page af_commandImageLink" style="display:none" onclick="return false;" href="#"><img id="pt1:r1:0:pvoTmpl:Partner_AA_Paginierung4::icon" src="/apps/images/icons/bullet.gif" title="Einen Schritt weiter" alt="Einen Schritt weiter" class="af_commandImageLink_image"></a></td><td><a id="pt1:r1:0:pvoTmpl:Partner_AA_Paginierung5" title="Zum Ende der Suchergebnisse" class="ba_searchresult_navigation_end af_commandLink" style="display:none" onclick="return false;" href="#">letzte Seite</a></td></tr></tbody></table></div></div></div></div><div style="display:none"><div id="pt1:r1:0:pvoTmpl:Jobcenter" class="af_showDetailItem"></div></div><div style="display:none"><div id="pt1:r1:0:pvoTmpl:Familienkasse" class="af_showDetailItem"></div></div></div></td></tr></tbody></table><div style="height:9px"><div class="af_panelTabbed_footer-center" style="height:9px;left:0px;right:0px"><span style="display:block;"></span></div><div id="pt1:r1:0:pvoTmpl:pt2::tabf" style="height:9px;left:0px;right:0px" class="af_panelTabbed_footer"><div class="af_panelTabbed_tab-boundary"><div id="pt1:r1:0:pvoTmpl:pt2::tabf::soi" class="af_panelTabbed_start-overflow-indicator"><div id="pt1:r1:0:pvoTmpl:pt2::tabf::soc" class="af_panelTabbed_overflow-container"></div></div><div id="pt1:r1:0:pvoTmpl:pt2::tabf::oc" class="af_panelTabbed_viewable-tabs"></div><div id="pt1:r1:0:pvoTmpl:pt2::tabf::eoi" class="af_panelTabbed_end-overflow-indicator"><div id="pt1:r1:0:pvoTmpl:pt2::tabf::eoc" class="af_panelTabbed_overflow-container"></div></div></div><div class="af_panelTabbed_overflow-spacer"></div></div></div></div></div></div></div></div></td><td><div id="pt1:r1:0:pvoTmpl:helpPopup" style="display:none"><div style="top:auto;right:auto;left:auto;bottom:auto;width:auto;height:auto;position:relative;" id="pt1:r1:0:pvoTmpl:helpPopup::content"></div></div></td><td><div id="pt1:r1:0:pvoTmpl:helpPopup_2" style="display:none"><div style="top:auto;right:auto;left:auto;bottom:auto;width:auto;height:auto;position:relative;" id="pt1:r1:0:pvoTmpl:helpPopup_2::content"></div></div></td></tr></tbody></table></td></tr></tbody></table></div><div><span style="display:none">Version DvO: 1.2.1.0.2</span></div><div><input id="pt1:r1:0:pvoTmpl:pt_ih1" type="hidden" name="pt1:r1:0:pvoTmpl:pt_ih1" value=""></div></div><div style="display:none"><a id="pt1:r1:0:_afrCommandDelegate" class="af_commandLink" onclick="return false;" href="#"></a></div></div></div></div></div></div></div><div><div id="pt1:pt_pgl3" class="af_panelGroupLayout"><div><div id="pt1:pt_pgl7" class="AFStretchWidth ba_background af_panelGroupLayout"><div><div align="right" id="pt1:pt_pgl5" class="wcp_center_alignment_box af_panelGroupLayout"><div><div id="pt1:pt_r2" class="af_region"><div id="pt1:pt_r2:0:pgl1" class="ba_footer af_panelGroupLayout"><div><a id="pt1:pt_r2:0:cil2" title="" class="ba_footerLink af_commandImageLink" onclick="return false;" href="#"><img id="pt1:pt_r2:0:cil2::icon" src="/apps/images/icons/favoriten-dunkel.png" alt="" class="af_commandImageLink_image"><span class="af_commandImageLink_text">Zu den Favoriten hinzufügen</span></a></div><div><table cellpadding="0" cellspacing="0" border="0" summary="" id="pt1:pt_r2:0:pgl2" class="af_panelGroupLayout"><tbody><tr><td><img id="pt1:pt_r2:0:im1" title="Drucken" alt="Drucken" class="ba_footerImage af_image" src="/apps/images/icons/drucken-dunkel.png"></td><td><a id="pt1:pt_r2:0:cl1" title="Drucken" class="ba_footerLink af_commandLink" onclick="return false;" href="#">Drucken</a></td></tr></tbody></table></div><div><a id="pt1:pt_r2:0:gil3" class="ba_footerLink af_goImageLink" href="/apps/faces/home/kf?kfid=E0-3&amp;mto=service-haus.infomanagement%40arbeitsagentur.de"><img id="pt1:pt_r2:0:gil3::icon" src="/apps/images/icons/fehler-melden-dunkel.png" alt="" class="af_goImageLink_image"><span class="af_goImageLink_text">Fehler melden</span></a></div><div><a id="pt1:pt_r2:0:pt_gil1" class="ba_footerLink af_commandImageLink" onclick="return false;" href="#"><img id="pt1:pt_r2:0:pt_gil1::icon" src="/apps/images/icons/nach-oben-dunkel.png" alt="" class="af_commandImageLink_image"><span class="af_commandImageLink_text">Seitenanfang</span></a></div></div><div style="display:none"><a id="pt1:pt_r2:0:_afrCommandDelegate" class="af_commandLink" onclick="return false;" href="#"></a></div></div></div></div></div></div></div><div><span id="pt1:bottomAnchor"></span></div><div><span id="pt1:pt_g3" class="af_panelGroupLayout"><!--@Comment: Have to set the prefix to use when referencing links. This has to be taken from an environment variable.
+We take the given parameter in the service and based on it, choose which is the prefix-->
+   
+<!-- Do some computation useful later in the page -->
+<!-- Get the current section ID from the URL -->
+<div class="footerContainer">
+ <div class="footerBackgroundRed">
+  <div class="footerBackgroundGray"></div>
+ </div>
+ <div class="footer">
+    <div class="footerLinksBottomBar">
+        <div class="footerLinksBottomBarGray"></div>
+        <div class="footerLinksBottomBarRed"></div>
+    </div> 
+  <div class="caside">
+   <!-- BA-ASIDE-HTML5 -->
+       
+   <div class="footerStartpage"><a href="/web/content/DE/index.htm">Startseite</a></div>
+   
+    <!-- add the footer site map-->
+         
+        	<div class="footerListContainer">
+        
+            
+            <div class="footerList footerFirst">
+                 <a class="resetAnchor" href="/web/content/DE/BuergerinnenUndBuerger/index.htm" title=""><h2>Bürgerinnen &amp; Bürger</h2></a>      
+                       
+                                  
+                 <ul>
+                          <li>
+                               <a href="/web/content/DE/BuergerinnenUndBuerger/ArbeitundBeruf/index.htm" title="">Arbeit und Beruf</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/BuergerinnenUndBuerger/Arbeitslosigkeit/index.htm" title="">Arbeitslosigkeit</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/BuergerinnenUndBuerger/Ausbildung/index.htm" title="">Ausbildung</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/BuergerinnenUndBuerger/Chancengleichheit/index.htm" title="">Chancengleichheit</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/BuergerinnenUndBuerger/FamilieundKinder/index.htm" title="">Familie und Kinder</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/BuergerinnenUndBuerger/FinanzielleHilfen/index.htm" title="">Finanzielle Hilfen</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/BuergerinnenUndBuerger/MenschenmitBehinderung/index.htm" title="">Menschen mit Behinderung</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/BuergerinnenUndBuerger/Studium/index.htm" title="">Studium</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/BuergerinnenUndBuerger/Weiterbildung/index.htm" title="">Weiterbildung</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/BuergerinnenUndBuerger/ZwischenSchuleundBeruf/index.htm" title="">Zwischen Schule und Beruf</a>
+                          </li>           
+                 </ul>
+            </div>
+         
+        
+        
+            
+            <div class="footerList ">
+                 <a class="resetAnchor" href="/web/content/DE/Unternehmen/index.htm" title=""><h2>Unternehmen</h2></a>      
+                       
+                                  
+                 <ul>
+                          <li>
+                               <a href="/web/content/DE/Unternehmen/Arbeitskraeftebedarf/index.htm" title="">Arbeitskräftebedarf</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Unternehmen/Arbeitsmarktinformationen/index.htm" title="">Arbeitsmarktinformationen</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Unternehmen/Ausbildung/index.htm" title="">Ausbildung</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Unternehmen/FinanzielleHilfen/index.htm" title="">Finanzielle Hilfen</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Unternehmen/NewsletterService/index.htm" title="">Newsletter-Service</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Unternehmen/Rechtsgrundlagen/index.htm" title="">Rechtsgrundlagen</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Unternehmen/Sozialversicherung/index.htm" title="">Sozialversicherung</a>
+                          </li>           
+                 </ul>
+            </div>
+         
+        
+                <div class="footerListLineRow defaultHidden showMinTo767 ">
+                    <div></div>
+                </div>
+            
+            
+                        
+        
+            
+            <div class="footerList  footerListContainer2">
+                 <a class="resetAnchor" href="/web/content/DE/Institutionen/index.htm" title=""><h2>Institutionen</h2></a>      
+                       
+                                  
+                 <ul>
+                          <li>
+                               <a href="/web/content/DE/Institutionen/Aerzte/index.htm" title="">Ärzte</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Institutionen/Ausbilder/index.htm" title="">Ausbilder</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Institutionen/Behoerden/index.htm" title="">Behörden</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Institutionen/OeffentlicheEinrichtungenVereine/index.htm" title="">Öffentliche Einrichtungen / Vereine</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Institutionen/Psychologen/index.htm" title="">Psychologen</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Institutionen/SchulenElternverbaende/index.htm" title="">Schulen, Elternverbände</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Institutionen/Traeger/index.htm" title="">Träger</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Institutionen/Wissenschaft/index.htm" title="">Wissenschaft</a>
+                          </li>           
+                 </ul>
+            </div>
+         
+        
+                    <div class="footerListLineRow defaultHidden show768To1023 ">
+                        <div></div>
+                    </div>
+        
+            
+            <div class="footerList  footerListContainer3">
+                 <a class="resetAnchor" href="/web/content/DE/Presse/index.htm" title=""><h2>Presse</h2></a>      
+                       
+                                  
+                 <ul>
+                          <li>
+                               <a href="/web/content/DE/Presse/BiografiendesVorstandes/index.htm" title="">Biografien des Vorstandes</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Presse/Kontakt/index.htm" title="">Kontakt zum Presseteam</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Presse/Messetermine/index.htm" title="">Messen</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Presse/Pressefotos/index.htm" title="">Pressefotos</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Presse/Presseinformationen/index.htm" title="">Presseinformationen</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Presse/Statistik/index.htm" title="">Statistik</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/Presse/Termine/index.htm" title="">Termine</a>
+                          </li>           
+                 </ul>
+            </div>
+         
+        
+                <div class="footerListLineRow defaultHidden showMinTo767 ">
+                    <div></div>
+                </div>
+            
+            
+                        
+                <div class="footerListLineRow hideMinTo767 hide768To1023 hide1280To1439 hide1440ToMax ">
+                    <div></div>
+                </div>
+        
+            
+            <div class="footerList  footerListContainer2 footerListContainer4 footerFirstIe78">
+                 <a class="resetAnchor" href="/web/content/DE/KarriereBA/index.htm" title=""><h2>Karriere BA</h2></a>      
+                       
+                                  
+                 <ul>
+                          <li>
+                               <a href="/web/content/DE/KarriereBA/ArbeitsweltBA/index.htm" title="">Arbeitswelt BA</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/KarriereBA/Berufserfahrene/index.htm" title="">Berufserfahrene</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/KarriereBA/SchuelerundSchulabsolventen/index.htm" title="">Schüler und Schulabsolventen</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/KarriereBA/StellenundBewerbung/index.htm" title="">Stellen und Bewerbung</a>
+                          </li>           
+                          <li>
+                               <a href="/web/content/DE/KarriereBA/UeberdieBA/index.htm" title="">Über die BA</a>
+                          </li>           
+                 </ul>
+            </div>
+         
+        
+                <div class="footerListLineRow defaultHidden show1280To1439 hide768">
+                    <div></div>
+                </div>
+        
+            
+        	
+            	<div class="footerList hide768  footerListContainer5">
+             		<a href="/apps/faces/home/pvo" title="Dienststellen vor Ort" class="resetAnchor"><h2>Dienststellen vor Ort</h2></a>
+             		<p><label for="pvoq">PLZ oder Ort</label></p>
+             		<div class="footerList-form">
+                		<script type="text/javascript">
+                    		function doSearchPvo(searchparam){ 
+                    			var searchParamEncoded = encodeURIComponent(searchparam.value);
+                    			var submitUrl = "/apps/faces/home/pvo?q=" + searchParamEncoded;
+                        		window.open(submitUrl, "_self");    
+                    		}
+                		</script>        
+                		<input type="text" id="pvoq" class="footerList-input">
+              
+             		<img class="footerList-submit" id="pvoSubmitButton" src="/web/wcm/idc/resources/BA_Customization/images/BAA_Webicons_Lupe.png" alt="Submit PVO Search" title="" onclick="doSearchPvo(document.getElementById('pvoq'))">
+                	</div>
+                	<br>  
+             		<a href="/apps/faces/home/vdb" title="Veranstaltungsdatenbank" class="resetAnchor"><h2>Veranstaltungsdatenbank</h2></a>
+             		<p><label for="vdbq">PLZ oder Ort</label></p>
+             		<div class="footerList-form">
+                		<script type="text/javascript">
+                    		function doSearchVdb(searchparam){
+                    			var searchParamEncoded = encodeURIComponent(searchparam.value);
+                    			var submitUrl = "/apps/faces/home/vdb?ort=" + searchParamEncoded; 
+                        		window.open(submitUrl, "_self");    
+                    		}
+                		</script>        
+                		<input type="text" id="vdbq" class="footerList-input">
+              
+             		<img class="footerList-submit" id="vdbSubmitButton" src="/web/wcm/idc/resources/BA_Customization/images/BAA_Webicons_Lupe.png" alt="Submit VDB Search" title="" onclick="doSearchVdb(document.getElementById('vdbq'))">
+                	</div>  
+            	</div>        		
+    
+ 
+        
+                <div class="footerListLineRow defaultHidden showMinTo767 hide768">
+                    <div></div>
+                </div>
+            
+            
+                        
+                    <div class="footerListLineRow defaultHidden show768To1023 hide768">
+                        <div></div>
+                    </div>
+                <div class="footerListLineRow defaultHidden show1440ToMax hide768">
+                    <div></div>
+                </div>
+                
+            
+     
+            <div class="footerList hide768  footerListContainer2 footerListContainer3 footerListContainer6">
+             <h2>Schnellzugriffe</h2>
+              
+             
+              
+             <ul>
+                    
+                <li>
+                   <a href="/web/content/DE/Unternehmen/Arbeitsmarktinformationen/index.htm">
+                        Arbeitsmarktinformationen
+                   </a>           
+                </li>           
+                    
+               
+                    
+                <li>
+                   <a href="/web/content/DE/Unternehmen/Arbeitskraeftebedarf/index.htm">
+                        Arbeitskräftebedarf
+                   </a>           
+                </li>           
+                    
+               
+                    
+                <li>
+                   <a href="/web/content/DE/Institutionen/Ausbilder/index.htm">
+                        Ausbilder
+                   </a>           
+                </li>           
+                    
+               
+                    
+                <li>
+                   <a href="/web/content/DE/Institutionen/SchulenElternverbaende/Detail/index.htm?dfContentId=L6019022DSTBAI486028">
+                        Berufsberatung
+                   </a>           
+                </li>           
+                    
+               
+                    
+                <li>
+                   <a href="/web/content/DE/BuergerinnenUndBuerger/Ausbildung/Berufsausbildung/index.htm">
+                        Berufsausbildung
+                   </a>           
+                </li>           
+                    
+               
+                    
+                <li>
+                   <a href="/web/content/DE/BuergerinnenUndBuerger/FamilieundKinder/index.htm">
+                        Familie und Kinder
+                   </a>           
+                </li>           
+                    
+               
+                    
+                <li>
+                   <a href="/web/content/DE/BuergerinnenUndBuerger/FinanzielleHilfen/index.htm">
+                        Finanzielle Hilfen
+                   </a>           
+                </li>           
+                    
+               
+                    
+                <li>
+                   <a href="/web/content/DE/Unternehmen/Sozialversicherung/index.htm">
+                        Sozialversicherung
+                   </a>           
+                </li>           
+                    
+               
+                    
+                <li>
+                   <a href="/web/content/DE/Institutionen/Traeger/index.htm">
+                        Träger
+                   </a>           
+                </li>           
+                    
+               
+              
+             </ul>
+            </div>            
+         
+        
+        
+   </div>
+         
+      
+     
+    <div class="footerListSpaceRow"></div>
+  </div><!-- BA-ASIDE-HTML5 -->
+    <div id="headerMenu320"></div>
+ </div>
+ <div class="footerBottom">
+  <div class="footerBottomBackgroundRed">
+   <div class="footerBottomBackgroundGray"></div>
+  </div>
+  <div class="footerBottomCentered">
+   <div class="footerBottomBar">
+    <div class="footerBottomBarGray"></div>
+    <div class="footerBottomBarRed"></div>
+   </div>
+   <div class="headerMenu320">
+        <!--Left navigation -->
+        <!-- The root section from which this navigation starts is represented by the ID given by "rootNaviNode" which should be in the binder at the time when this include is invoked. -->               
+        <div class="cnav">
+            <!-- Print level 1 -->
+            <ul class="level1">
+            </ul>
+        </div>
+   </div>
+   
+   <div class="cfooter">
+    <!-- BA-FOOTER-HTML5 -->
+    <div class="serviceMenu320">
+    
+    <!-- START WEITERE LINKS GENERATION -->
+    
+                    
+        
+    
+    <!-- END WEITERE LINKS GENERATION -->
+    
+    
+    <!-- START KONTAKT LINKS IN THE BA BAR. -->
+    
+    <!-- END KONTAKT LINKS IN THE BA BAR. -->
+    
+    <!-- START SERVICE LINKS GENERATION -->
+    
+    
+    
+    <!-- END SERVICE LINKS GENERATION -->
+
+    </div>
+    <div class="footerBottomContent">
+     ©&nbsp;Bundesagentur für Arbeit 
+          
+                
+            |
+            <a href="/web/content/DE/Detail/index.htm?dfContentId=L6019022DSTBAI603668">
+                    Hilfe
+                        
+            </a>                  
+                
+            |
+            <a href="/web/content/DE/Detail/index.htm?sitemap=true">
+                    Inhalt
+                        
+            </a>                  
+                
+            |
+            <a href="/web/content/DE/service/Impressum/Detail/index.htm?dfContentId=L6019022DSTBAI485431">
+                    Impressum
+                        
+            </a>                  
+    </div>
+   </div><!-- BA-FOOTER-HTML5 -->
+  </div>
+ </div>
+</div></span></div></div></div><div><div id="pt1:wPopup" style="display:none"><div style="top:auto;right:auto;left:auto;bottom:auto;width:auto;height:auto;position:relative;" id="pt1:wPopup::content"><div id="pt1:gpw1" class="ba_wait_window af_panelWindow"><div class="af_panelWindow_inactive-background" _afrpanelwindowbackground="1"></div><div class="af_panelWindow_inactive-background" _afrpanelwindowbackground="1"></div><div class="af_panelWindow_inactive-background" _afrpanelwindowbackground="1"></div><div class="af_panelWindow_inactive-background" _afrpanelwindowbackground="1"></div><table cellpadding="0" cellspacing="0" border="0" summary="" class="af_panelWindow_main"><tbody><tr><td class="af_panelWindow_header-start" id="pt1:gpw1::_hse">&nbsp;</td><td class="af_panelWindow_header" id="pt1:gpw1::_hce"><table cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tbody><tr><td><div id="pt1:gpw1::_ticn" class="af_panelWindow_icon-region" style="display:none"></div></td><td class="af_panelWindow_header-content-center" id="pt1:gpw1::tb"><div id="pt1:gpw1::_ttxt" class="af_panelWindow_title"></div></td></tr></tbody></table></td><td class="af_panelWindow_header-end" id="pt1:gpw1::_hee">&nbsp;</td></tr><tr><td class="af_panelWindow_content-start" id="pt1:gpw1::_cse">&nbsp;</td><td class="af_panelWindow_content" id="pt1:gpw1::contentContainer"><div id="pt1:gpw1::_ccntr" class="af_panelWindow_content-center" style="width:31px;height:31px;position:relative;overflow:hidden;"><span id="pt1:gppgl" class="af_panelGroupLayout" style="position:absolute;width:auto;height:auto;top:0px;left:0px;bottom:0px;right:0px"><img id="pt1:gpt_i1" class="af_image" src="/apps/images/ladeanzeige.gif"></span></div></td><td class="af_panelWindow_content-end" id="pt1:gpw1::_cee">&nbsp;</td></tr><tr><td class="af_panelWindow_footer-start" id="pt1:gpw1::_fse"><div></div></td><td class="af_panelWindow_footer" id="pt1:gpw1::_fce"><table cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tbody><tr><td class="af_panelWindow_footer-content" id="pt1:gpw1::_fcc"></td><td align="left" valign="bottom"><div class="af_panelWindow_resize-icon-region"><a tabindex="-1" class="af_panelWindow_resize-icon-style" id="pt1:gpw1::_ree" title="Skalieren"></a></div></td></tr></tbody></table></td><td class="af_panelWindow_footer-end" id="pt1:gpw1::_fee"><div></div></td></tr></tbody></table></div></div></div></div></div></div><div><span style="display:none">Portalversion: 1.2.3.0.5</span></div><div><span aria-atomic="true" aria-live="polite" class="p_OraHiddenLabel" id="accessibilityNotificationbox" role="status">&nbsp;</span></div></div><input type="hidden" name="org.apache.myfaces.trinidad.faces.FORM" value="f1"><span id="f1::postscript"><input type="hidden" name="javax.faces.ViewState" value="!1c0h1dbkj7"></span></form><div id="d1::msgCtr" style="display:none"><div id="d1::msgDlg" class="af_dialog"><div class="af_dialog_inactive-background" _afrpanelwindowbackground="1"></div><div class="af_dialog_inactive-background" _afrpanelwindowbackground="1"></div><div class="af_dialog_inactive-background" _afrpanelwindowbackground="1"></div><div class="af_dialog_inactive-background" _afrpanelwindowbackground="1"></div><table cellpadding="0" cellspacing="0" border="0" summary="" class="af_dialog_main"><tbody><tr><td class="p_AFResizable af_dialog_header-start" id="d1::msgDlg::_hse">&nbsp;</td><td class="p_AFResizable af_dialog_header" id="d1::msgDlg::_hce"><table cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tbody><tr><td><div id="d1::msgDlg::_ticn" class="af_dialog_icon-region" style="display:none"></div></td><td class="af_dialog_header-content-center" id="d1::msgDlg::tb"><div id="d1::msgDlg::_ttxt" class="af_dialog_title"></div></td><td><div class="af_dialog_close-icon-region"><a href="#" onclick="this.focus();return false" class="af_dialog_close-icon-style" id="d1::msgDlg::close" title="Schließen"></a></div></td></tr></tbody></table></td><td class="p_AFResizable af_dialog_header-end" id="d1::msgDlg::_hee">&nbsp;</td></tr><tr><td class="p_AFResizable af_dialog_content-start" id="d1::msgDlg::_cse">&nbsp;</td><td class="p_AFResizable af_dialog_content" id="d1::msgDlg::contentContainer"><div id="d1::msgDlg::_ccntr" class="af_dialog_content-center" style="position:relative;overflow:auto;"><div id="d1::msgDlg::_cnt" class="af_document_messages"></div></div></td><td class="p_AFResizable af_dialog_content-end" id="d1::msgDlg::_cee">&nbsp;</td></tr><tr><td class="p_AFResizable af_dialog_footer-start" id="d1::msgDlg::_fse"><div></div></td><td class="p_AFResizable af_dialog_footer" id="d1::msgDlg::_fce"><table cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tbody><tr><td class="p_AFResizable af_dialog_footer-content" id="d1::msgDlg::_fcc"><button id="d1::msgDlg::cancel" class="af_dialog_footer-button p_AFTextOnly" onclick="return false;" _afrpdo="cancel">OK</button></td><td align="left" valign="bottom"><div class="p_AFResizable af_dialog_resize-icon-region"><a tabindex="-1" class="af_dialog_resize-icon-style" id="d1::msgDlg::_ree" title="Skalieren"></a></div></td></tr></tbody></table></td><td class="p_AFResizable af_dialog_footer-end" id="d1::msgDlg::_fee"><div></div></td></tr></tbody></table></div></div><span id="d1::iconC" style="display:none"><span id="af_messages::info-icon"><img src="/apps/afr/info.png" width="16" height="16" border="0" title="Information" alt="Information"></span><span id="af_message::warning-icon"><img src="/apps/afr/warning.png" width="16" height="16" border="0" title="Warnung" alt="Warnung"></span><span id="af_messages::fatal-icon"><img src="/apps/afr/error.png" width="16" height="16" border="0" title="Kritischer Fehler" alt="Kritischer Fehler"></span><span id="af_message::info-icon"><img src="/apps/afr/info.png" width="16" height="16" border="0" title="Information" alt="Information"></span><span id="af_message::fatal-icon"><img src="/apps/afr/error.png" width="16" height="16" border="0" title="Kritischer Fehler" alt="Kritischer Fehler"></span><span id="af_messages::warning-icon"><img src="/apps/afr/warning.png" width="16" height="16" border="0" title="Warnung" alt="Warnung"></span><span id="af_message::confirmation-icon"><img src="/apps/afr/confirmation.png" width="16" height="16" border="0" title="Bestätigung" alt="Bestätigung"></span><span id="af_message::error-icon"><img src="/apps/afr/error.png" width="16" height="16" border="0" title="Fehler" alt="Fehler"></span><span id="af_messages::error-icon"><img src="/apps/afr/error.png" width="16" height="16" border="0" title="Fehler" alt="Fehler"></span><span id="af_messages::confirmation-icon"><img src="/apps/afr/confirmation.png" width="16" height="16" border="0" title="Bestätigung" alt="Bestätigung"></span></span><div id="afr::DlgSrvPopupCtnr"><div id="afr::DlgSrvPopupCtnr::content" style="display:none"></div></div><div id="afr::UtilPopupCtnr" _pid="j_id3" _did="j_id4" _dmw="250" style="display:none"><div id="j_id3" style="display:none"><div style="top:auto;right:auto;left:auto;bottom:auto;width:auto;height:auto;position:relative;" id="j_id3::content"><div id="j_id4" class="af_dialog"><div class="af_dialog_inactive-background" _afrpanelwindowbackground="1"></div><div class="af_dialog_inactive-background" _afrpanelwindowbackground="1"></div><div class="af_dialog_inactive-background" _afrpanelwindowbackground="1"></div><div class="af_dialog_inactive-background" _afrpanelwindowbackground="1"></div><table cellpadding="0" cellspacing="0" border="0" summary="" class="af_dialog_main"><tbody><tr><td class="af_dialog_header-start" id="j_id4::_hse">&nbsp;</td><td class="af_dialog_header" id="j_id4::_hce"><table cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tbody><tr><td><div id="j_id4::_ticn" class="af_dialog_icon-region" style="display:none"></div></td><td class="af_dialog_header-content-center" id="j_id4::tb"><div id="j_id4::_ttxt" class="af_dialog_title"></div></td></tr></tbody></table></td><td class="af_dialog_header-end" id="j_id4::_hee">&nbsp;</td></tr><tr><td class="af_dialog_content-start" id="j_id4::_cse">&nbsp;</td><td class="af_dialog_content" id="j_id4::contentContainer"></td><td class="af_dialog_content-end" id="j_id4::_cee">&nbsp;</td></tr><tr><td class="af_dialog_footer-start" id="j_id4::_fse"><div></div></td><td class="af_dialog_footer" id="j_id4::_fce"><table cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tbody><tr><td class="af_dialog_footer-content" id="j_id4::_fcc"><button id="j_id4::ok" class="af_dialog_footer-button p_AFTextOnly" onclick="return false;" _afrpdo="ok">OK</button><button id="j_id4::cancel" class="af_dialog_footer-button p_AFTextOnly" onclick="return false;" _afrpdo="cancel">Abbrechen</button></td><td align="left" valign="bottom"><div class="af_dialog_resize-icon-region"><a tabindex="-1" class="af_dialog_resize-icon-style" id="j_id4::_ree" title="Skalieren"></a></div></td></tr></tbody></table></td><td class="af_dialog_footer-end" id="j_id4::_fee"><div></div></td></tr></tbody></table></div></div></div></div></div></div><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/iedit-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/uncommon-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/input-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/detail-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/header-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/nav-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/box-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/region-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/label-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/tabbed-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/detailitem-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/imagelink-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/print-11.1.1.6.0-4213.js"></script><script type="text/javascript" src="/apps/afr/partition/webkit/n/default/opt/scrollComponentIntoView-11.1.1.6.0-4213.js"></script><script type="text/javascript">AdfBootstrap._onLoad=function (){if (AdfPage.PAGE.__checkRichResponseDirty()) return;var isCachedPage = AdfPage.PAGE.__handleCachedPageForNewWindow('4yfgr5d1p_1');if (!isCachedPage){window.name='4yfgr5d1p_1';};AdfAgent.AGENT.elementsAdded(document);AdfDhtmlLookAndFeel.addSkinProperties({"af|messages::message-group-title":"af_messages_message-group-title","af|messages::message-group-type-separator":"af_messages_message-group-type-separator","af|dialog-tr-open-animation-duration":"300","af|messages::summary":"af_messages_summary","af|message::intro":"af_message_intro","af|popup-tr-shadow-offset":3,"af|panelWindow-tr-open-animation-duration":"300","af|messages::detail":"af_messages_detail","af|message::type":"af_message_type","af|message::detail":"af_message_detail","af|messages::header-text":"af_messages_header-text",".AFNoteWindow-tr-open-animation-duration":"200","af|panelWindow::resize-ghost":"af_panelWindow_resize-ghost","af|dialog::resize-ghost":"af_dialog_resize-ghost","af|messages::intro":"af_messages_intro","af|popup-tr-shadow-starting-black-percent":100,"af|messages::component-link":"af_messages_component-link",".AFPopupSelector-tr-open-animation-duration":"200","af|message::summary":"af_message_summary","af|popup-tr-shadow-pixel-size":4});AdfPage.PAGE.addComponents(new AdfRichDocument('d1',{'clientListeners':{load:onPageLoad},'title':'Dienststellen vor Ort'}),new AdfRichForm('f1'),new AdfRichOutputText('pt1:topAnchor'),new AdfRichCommandImageLink('pt1:cl1',{'behaviors':new AdfScrollComponentIntoViewBehavior('bottomAnchor',true),'accessKey':'\uffff','text':'Navigation','styleClass':'wcp_header_navigation_link','icon':'/apps/images/icons/arrow-white.png'}),new AdfRichRegion('pt1:pt_r1'),new AdfRichPopup('pt1:pt_r1:0:taskFlowPopup',{'contentDelivery':'lazyUncached'}),new AdfRichBreadCrumbs('pt1:pt_r1:0:bc1'),new AdfRichCommandNavigationItem('pt1:pt_r1:0:bc1:0:cni1',{'selectedPrettyUrl':'home/pvo','modelPath':'egovportal-navigation-model','partialSubmit':true,'accessKey':'\uffff','text':'Dienststellen vor Ort','disabled':true}),new AdfRichCommandLink('pt1:pt_r1:0:_afrCommandDelegate',{'partialSubmit':true}),new AdfRichRegion('pt1:r1'),new AdfRichPanelGroupLayout('pt1:r1:0:pvoTmpl:pt_pgl1',{'clientListeners':{load:ccmap_loadJquery()},'layout':'vertical','styleClass':'ba_pvo'}),new AdfRichCommandButton('pt1:r1:0:pvoTmpl:cbListener',{'visible':false,'accessKey':'\uffff','text':''}),new AdfRichCommandImageLink('pt1:r1:0:pvoTmpl:pvo_Ergebnisseite_zurueck',{'icon':'/apps/images/icons/paginierung-zurueck.png'}),new AdfRichSubform('pt1:r1:0:pvoTmpl:dc2:pvosubf',{'defaultCommand':'Suche_Suchen'}),new AdfRichPanelHeader('pt1:r1:0:pvoTmpl:dc2:pvosubf:ot1'),new AdfRichOutputLabel('pt1:r1:0:pvoTmpl:dc2:pvosubf:dc_ot1',{'for':'pt1:r1:0:pvoTmpl:dc2:pvosubf:Suche_OrtPlz'}),new AdfRichInputText('pt1:r1:0:pvoTmpl:dc2:pvosubf:Suche_OrtPlz',{'autoSubmit':true}),new AdfRichCommandButton('pt1:r1:0:pvoTmpl:dc2:pvosubf:Suche_Hilfe_2',{'behaviors':new AdfShowPopupBehavior('helpPopup_2',AdfRichPopup.ALIGN_START_BEFORE,'Suche_Hilfe_2','action'),'accessKey':'\uffff','text':'Hilfe - Bitte geben Sie einen Ort oder eine 5-stellige PLZ ein. Die Eingabe einer PLZ liefert in der Regel genauere Ergebnisse.','styleClass':'ba_search_help'}),new AdfRichCommandButton('pt1:r1:0:pvoTmpl:dc2:pvosubf:Suche_Suchen',{'shortDesc':'Suche ausf\xfchren und Suchergebnisse anzeigen'}),new AdfRichPopup('pt1:r1:0:pvoTmpl:dc2:pvosubf:helpPopup'),new AdfRichPopup('pt1:r1:0:pvoTmpl:dc2:pvosubf:helpPopup_2'),new AdfRichPanelHeader('pt1:r1:0:pvoTmpl:ot1'),new AdfRichOutputText('pt1:r1:0:pvoTmpl:dc_ot2',{'styleClass':'ba_ReadOnlyInJaws'}),new AdfRichOutputText('pt1:r1:0:pvoTmpl:ot19',{'styleClass':'ba_ReadOnlyInJaws'}),new AdfRichPanelTabbed('pt1:r1:0:pvoTmpl:pt2'),new AdfRichShowDetailItem('pt1:r1:0:pvoTmpl:Arbeitsagentur',{'clientListeners':{disclosure:pvo_alertTabSwitch},'disclosed':true,'stretchChildren':'first','text':'Arbeitsagenturen','shortDesc':'Ergebnisliste der Arbeitsagenturen','accessKey':'\uffff'}),new AdfRichOutputText('pt1:r1:0:pvoTmpl:i2:0:ot22',{'styleClass':'ba_ReadOnlyInJaws'}),new AdfRichGoImageLink('pt1:r1:0:pvoTmpl:i2:0:Partner_AA_Tel_Acc',{'shortDesc':'Servicetelefon f\xfcr H\xf6rgesch\xe4digte','icon':'/apps/images/icons/bullet.gif'}),new AdfRichGoImageLink('pt1:r1:0:pvoTmpl:i2:0:Partner_AA_Name',{'shortDesc':'Zum Kontaktformular','icon':'/apps/images/icons/bullet.gif'}),new AdfRichGoImageLink('pt1:r1:0:pvoTmpl:i2:0:Partner_Link_Detail',{'shortDesc':'Zur Dienststelle wechseln','icon':'/apps/images/icons/bullet.gif'}),new AdfRichOutputText('pt1:r1:0:pvoTmpl:i2:1:ot22',{'styleClass':'ba_ReadOnlyInJaws'}),new AdfRichGoImageLink('pt1:r1:0:pvoTmpl:i2:1:Partner_AA_Tel_Acc',{'shortDesc':'Servicetelefon f\xfcr H\xf6rgesch\xe4digte','icon':'/apps/images/icons/bullet.gif'}),new AdfRichGoImageLink('pt1:r1:0:pvoTmpl:i2:1:Partner_AA_Name',{'shortDesc':'Zum Kontaktformular','icon':'/apps/images/icons/bullet.gif'}),new AdfRichGoImageLink('pt1:r1:0:pvoTmpl:i2:1:Partner_Link_Detail',{'shortDesc':'Zur Dienststelle wechseln','icon':'/apps/images/icons/bullet.gif'}),new AdfRichCommandLink('pt1:r1:0:pvoTmpl:Partner_AA_Paginierung1',{'shortDesc':'Zum Anfang der Suchergebnisse'}),new AdfRichCommandImageLink('pt1:r1:0:pvoTmpl:Partner_AA_Paginierung2',{'shortDesc':'Einen Schritt zur\xfcck','icon':'/apps/images/icons/paginierung-zurueck.png'}),new AdfRichCommandLink('pt1:r1:0:pvoTmpl:i6:0:Partner_AA_Paginierung3',{'shortDesc':'Zu den Treffern 1 bis 2'}),new AdfRichCommandImageLink('pt1:r1:0:pvoTmpl:Partner_AA_Paginierung4',{'shortDesc':'Einen Schritt weiter','icon':'/apps/images/icons/bullet.gif'}),new AdfRichCommandLink('pt1:r1:0:pvoTmpl:Partner_AA_Paginierung5',{'shortDesc':'Zum Ende der Suchergebnisse'}),new AdfRichShowDetailItem('pt1:r1:0:pvoTmpl:Jobcenter',{'clientListeners':{disclosure:pvo_alertTabSwitch},'text':'Jobcenter','shortDesc':'Ergebnisliste der Jobcenter und optierenden Kommunen','accessKey':'\uffff'}),new AdfRichShowDetailItem('pt1:r1:0:pvoTmpl:Familienkasse',{'clientListeners':{disclosure:pvo_alertTabSwitch},'text':'Familienkassen','shortDesc':'Ergebnisliste der Familienkassen','accessKey':'\uffff'}),new AdfRichPopup('pt1:r1:0:pvoTmpl:helpPopup'),new AdfRichPopup('pt1:r1:0:pvoTmpl:helpPopup_2'),new AdfRichCommandLink('pt1:r1:0:_afrCommandDelegate',{'partialSubmit':true}),new AdfRichRegion('pt1:pt_r2'),new AdfRichCommandImageLink('pt1:pt_r2:0:cil2',{'clientListeners':{click:portal_addToFavorites},'partialSubmit':true,'accessKey':'\uffff','text':'Zu den Favoriten hinzuf\xfcgen','shortDesc':'','styleClass':'ba_footerLink','icon':'/apps/images/icons/favoriten-dunkel.png'}),new AdfRichCommandLink('pt1:pt_r2:0:cl1',{'behaviors':new AdfShowPrintablePageBehavior(),'accessKey':'\uffff','text':'Drucken','shortDesc':'Drucken','styleClass':'ba_footerLink'}),new AdfRichGoImageLink('pt1:pt_r2:0:gil3',{'icon':'/apps/images/icons/fehler-melden-dunkel.png'}),new AdfRichCommandImageLink('pt1:pt_r2:0:pt_gil1',{'behaviors':new AdfScrollComponentIntoViewBehavior(':pt1:topAnchor',true),'partialSubmit':true,'accessKey':'\uffff','text':'Seitenanfang','styleClass':'ba_footerLink','icon':'/apps/images/icons/nach-oben-dunkel.png'}),new AdfRichCommandLink('pt1:pt_r2:0:_afrCommandDelegate',{'partialSubmit':true}),new AdfRichOutputText('pt1:bottomAnchor'),new AdfRichPopup('pt1:wPopup',{'contentDelivery':'immediate'}),new AdfRichPanelWindow('pt1:gpw1',{'modal':true,'stretchChildren':'first','closeIconVisible':false}),new AdfRichDialog('d1::msgDlg',{'okVisible':false,'cancelVisible':false,'cancelTextAndAccessKey':'OK','modal':false,'resize':'on','title':''}),new AdfDialogServicePopupContainer('afr::DlgSrvPopupCtnr'),new AdfRichPopup('j_id3',{'contentDelivery':'immediate'}),new AdfRichDialog('j_id4',{'okVisible':false,'cancelVisible':false,'closeIconVisible':false}));AdfPage.PAGE.setDefaultMessageHandlerComponentId("d1");AdfPage.PAGE.__recordSessionTimeout(1200000, 120000, "http://www.arbeitsagentur.de:80/apps/faces/home/pvo");AdfPage.PAGE.__initPollingTimeout(600000);AdfPage.PAGE.__setViewId('/oracle/webcenter/portalapp/pages/pvo.jspx');var exScripts=AdfBootstrap._extendedScripts;for (var i=0;i<exScripts.length;i++){exScripts[i]()};AdfBootstrap._extendedScripts=null;AdfPage.PAGE.__onLoad();};AdfNavigationHistoryAgent.getInstance().initialize('/oracle/webcenter/portalapp/pages/pvo.jspx','?_afrWindowId=null&_afrLoop=194287822430898&q=38685&_afrWindowMode=0&_adf.ctrl-state=4yfgr5d1p_4');AdfPage.PAGE.setFacesPath('/apps/faces');AdfPage.PAGE.setPPRNavigationOptions('3');window.onload=AdfBootstrap._onLoad;</script><script type="text/javascript">AdfBootstrap._extendedScripts=[function(){pvo_afterPrepareRender();}];</script></body><!--Created by Oracle ADF (ADF Faces API - 11.1.1.6.0 / ADF Faces Implementation - 11.1.1.6.0, RCF-revision: 54039 (branch: faces-1208-11.1.1.6.0-release, plugins: 1.2.3), Trinidad-revision: 979 (branch: 1.2.12.6.0-branch, plugins: 1.2.10), build: adf-faces-rt_140801_1415, patch: MLR-19346395, libNum: 4213 / Oracle-BuildSystem: Linux - java - 1.6.0_24-b50, Oracle-Version: 11.1.1.6.38.61.92, Created-By: 19.1-b02 (Sun Microsystems Inc.), Oracle-Builder: Official Builder, Oracle-Label: JDEVADF_11.1.1.6.0_GENERIC_111205.1733.6192.1, Oracle-BuildTimestamp: 2011-12-12 04:32:24 -0800 / powered by JavaServer Faces API 1.2 Sun Sep 26 03:21:43 EDT 2010  (1.2)), accessibility (mode:null, contrast:standard, size:medium), skin:gsr40518e9c_5b59_459a_8d71_85d8a9d30676.desktop (gsr40518e9c_5b59_459a_8d71_85d8a9d30676)--></html>
+test complete!
