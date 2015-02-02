@@ -8,8 +8,44 @@ var id = system.args[3];
 console.error('scraping ort=' + ort + ', plz=' + plz);
 
 
-var page = new WebPage(), testindex = 0, loadInProgress = false;
+var page = require("webpage").create(), testindex = 0, loadInProgress = false;
 
+page.viewportSize = { width: 400, height: 400 };
+page.settings.loadImages = false;
+
+page.onError = function(msg, trace) {
+
+  var msgStack = ['ERROR: ' + msg];
+
+  if (trace && trace.length) {
+    msgStack.push('TRACE:');
+    trace.forEach(function(t) {
+      msgStack.push(' -> ' + t.file + ': ' + t.line + (t.function ? ' (in function "' + t.function +'")' : ''));
+    });
+  }
+
+  console.error(msgStack.join('\n'));
+
+};
+
+page.onResourceError = function(resourceError) {
+  console.log('Unable to load resource (#' + resourceError.id + 'URL:' + resourceError.url + ')');
+  console.log('Error code: ' + resourceError.errorCode + '. Description: ' + resourceError.errorString);
+};
+
+page.onResourceTimeout = function(request) {
+    console.log('Response (#' + request.id + '): ' + JSON.stringify(request));
+};
+
+/* page.onResourceRequested = function(requestData, networkRequest) {
+  console.log('Request (#' + requestData.id + '): ' + JSON.stringify(requestData));
+};
+
+page.onResourceReceived = function(response) {
+  console.log('Response (#' + response.id + ', stage "' + response.stage + '"): ' + JSON.stringify(response));
+};
+
+*/
 
 page.onConsoleMessage = function(msg) {
   console.error(msg);
@@ -20,9 +56,9 @@ page.onLoadStarted = function() {
   console.error("load started");
 };
 
-page.onLoadFinished = function() {
+page.onLoadFinished = function(status) {
   loadInProgress = false;
-  console.error("load finished");
+  console.error("load finished: " + status);
 };
 
 var steps = [
@@ -47,11 +83,11 @@ var steps = [
   }, 
   function() {
     //Login
-    loadInProgress = true;
+    //loadInProgress = true;
 
-    page.includeJs('http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', function() {
+//    page.includeJs('http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', function() {
 
-      loadInProgress = false;
+      //loadInProgress = false;
 
       system.myOffset = page.evaluate(function(ort, plz, id) {
 
@@ -93,38 +129,16 @@ var steps = [
 
         });
 
-        // navigate to 
-        jQuery('div[title="Ergebnisliste der Jobcenter und optierenden Kommunen"]').click();
-//        jobCenterTab = jQuery('a:contains("Jobcenter")');
+        $('div[title="Ergebnisliste der Jobcenter und optierenden Kommunen"]').click();
 
-//        console.log('attr='+jobCenterTab.attr('_afrptkey'));
+      }, ort, plz, id);
 
-/*        console.log('tabs='+jobCenterTab.length);
+//   });
 
-        offset = jobCenterTab.offset();
-
-        console.log('offset innen (' + offset.left + ', ' + offset.top + ')');
-
-        return offset; */
-
-      },ort, plz, id);
-
-      page.sendEvent('click',194,477, button='left');
-    page.sendEvent('mouseup',194,477, button='left');
-
-    });
-
-  }, 
-  function() {
-
-    page.sendEvent('mouseup',194,477, button='left');
-      page.sendEvent('click',194,477, button='left');
-
-    page.render('aa.jpg', {format: 'jpeg', quality: '100'});
   },
   function() {
 
-    page.render('bb.jpg', {format: 'jpeg', quality: '100'});
+//    page.render('bb.jpg', {format: 'jpeg', quality: '100'});
 
     page.evaluate(function(ort, plz, id) {
 
@@ -146,15 +160,15 @@ var steps = [
         anschrift3 = '';
 
         telElement = kontaktHeaderDiv.parent().find('div:contains("Tel")')
-        if (telElement.length) tel = telElement.text();
+        if (telElement.length) tel = telElement.text().substr(5);
         else tel = '';
 
         faxElement = kontaktHeaderDiv.parent().find('div:contains("Fax")')
-        if (faxElement.length) fax = faxElement.text();
+        if (faxElement.length) fax = faxElement.text().substr(5);
         else fax = '';
 
         emailElement = kontaktHeaderDiv.parent().find('div:contains("Email")')
-        if (emailElement.length) email = emailElement.text();
+        if (emailElement.length) email = emailElement.text().substr(7);
         else email = '';
 
 
@@ -174,6 +188,10 @@ var steps = [
 
       });
     },ort, plz, id);
+  },
+  function() {
+
+    page.render('cc.jpg', {format: 'jpeg', quality: '100'});
   }
 ];
 
@@ -188,5 +206,5 @@ interval = setInterval(function() {
     console.error("test complete!");
     phantom.exit();
   }
-}, 200000);
+}, 6000);
 
