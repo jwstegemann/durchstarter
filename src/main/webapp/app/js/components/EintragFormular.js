@@ -23,22 +23,28 @@ module.exports = React.createClass({
       });
 
       var name = this.refs.name.getDOMNode().value;
+      var slogan = this.refs.slogan.getDOMNode().value;
+      var kategorie = this.refs.kategorie.getDOMNode().value;
       var anschrift = this.refs.anschrift.getDOMNode().value;
       var ansprechpartner = this.refs.ansprechpartner.getDOMNode().value;
       var telefon = this.refs.telefon.getDOMNode().value;
       var fax = this.refs.fax.getDOMNode().value;
       var email = this.refs.email.getDOMNode().value;
+      var url = this.refs.url.getDOMNode().value;      
       var postleitzahlen = this.refs.postleitzahlen.getDOMNode().value;
 
       request
            .put('/angebot/2')
            .send({
               name: name,
+              slogan: slogan,
+              kategorie: kategorie,
               anschrift: anschrift,
               ansprechpartner: ansprechpartner,
               telefon: telefon,
               fax: fax,
               eMail: email,
+              url: url,
               postleitzahlen: postleitzahlen
             })
            .end(function(result){
@@ -69,6 +75,18 @@ module.exports = React.createClass({
           <label className="col-sm-2 control-label">Name</label>
           <div className="col-sm-10">
             <input ref="name" required type="text" className="form-control" id="inputName" placeholder="... des Unternehmens"></input>
+          </div>
+        </div>
+        <div className="form-group">
+          <label className="col-sm-2 control-label">Slogan/Zusatz</label>
+          <div className="col-sm-10">
+            <input ref="slogan" type="text" className="form-control" id="inputSlogan" placeholder></input>
+          </div>
+        </div>
+        <div className="form-group">
+          <label className="col-sm-2 control-label">Branche</label>
+          <div className="col-sm-10">
+            <input ref="kategorie" type="text" className="form-control" id="inputBranche" placeholder="Mehrfachnennungen möglich"></input>
           </div>
         </div>
       <div className="form-group">
@@ -102,9 +120,15 @@ module.exports = React.createClass({
           </div>
         </div>
       <div className="form-group">
+          <label className="col-sm-2 control-label">URL</label>
+          <div className="col-sm-10">
+            <input ref="url" required type="text" className="form-control" id="inputURL" placeholder="... zur Verlinkung"></input>
+          </div>
+        </div>
+      <div className="form-group">
           <label className="col-sm-2 control-label">Postleitzahlen</label>
           <div className="col-sm-10">
-            <input ref="postleitzahlen" required type="text" className="form-control" id="inputStandorte" placeholder="... aller Standorte des Unternehmens"></input>
+            <input ref="postleitzahlen" type="text" className="form-control" id="inputStandorte" placeholder="... der weiteren Standorte des Unternehmens (wenn vorhanden)"></input>
           </div>
         </div>            
         <div className="form-group">

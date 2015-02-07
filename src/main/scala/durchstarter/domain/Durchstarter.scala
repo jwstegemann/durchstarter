@@ -24,7 +24,8 @@ case class Datenplatz(
   telefon: String,
   fax: String,
   email: String,
-  url: String
+  url: String,
+  icon: String
 )
 
 case class NewsletterRequest(
@@ -33,11 +34,14 @@ case class NewsletterRequest(
 
 case class AngebotRequest(
   name: String,
+  slogan: String,
+  kategorie: String,
   anschrift: String,
   ansprechpartner: String,
   telefon: String,
   fax: String,
   eMail: String,
+  url: String,
   postleitzahlen: String
 )
 
@@ -45,8 +49,8 @@ object DurchstarterProtocol extends DefaultJsonProtocol {
 
   // JSON-Serialization
   implicit val ortJsonFormat = jsonFormat2(Ort.apply)
-  implicit val datenplatzJsonFormat = jsonFormat11(Datenplatz.apply)
+  implicit val datenplatzJsonFormat = jsonFormat12(Datenplatz.apply)
 
   implicit val newsletterJsonFormat = jsonFormat1(NewsletterRequest.apply)
-  implicit val angebotJsonFormat = jsonFormat7(AngebotRequest.apply)
+  implicit val angebotJsonFormat = jsonFormat10(AngebotRequest.apply)
 }
