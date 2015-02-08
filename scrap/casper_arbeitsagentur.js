@@ -7,6 +7,8 @@ var casper = require('casper').create({
 });
 
 
+var input = require(casper.cli.get(0));
+
 /*
  * scraping
  */
@@ -105,18 +107,25 @@ function scrapJobcenter(ort) {
  */
 
 casper.on('remote.message', function(msg) {
-    this.echo('CONSOLE: >' + msg);
+    this.echo(msg);
 })
 
 casper.start('http://www.arbeitsagentur.de/apps/faces/home/pvo', function() {
 });
 
-function handleOrt(ort, plz, selectorInputPLZ) {
-  casper.echo('scraping ort=' + ort + ', plz=' + plz);
+casper.wait(10000);
 
-  casper.wait(5000);
+function handleOrt(ort, plz, selectorInputPLZ) {
+  //casper.echo('scraping ort=' + ort + ', plz=' + plz + ',selectorInputPLZ=' + selectorInputPLZ);
+
+  casper.thenEvaluate(function(ort, plz, selectorInputPLZ) {
+      jQuery('td:has(label:contains("PLZ oder Ort"))').parent().find('input')[0].value=plz;
+    }, ort, plz, selectorInputPLZ
+  );
+
+  casper.wait(500);
+
   casper.thenEvaluate(function(plz, selectorInputPLZ) {
-      document.querySelector(selectorInputPLZ).value=plz;
       document.querySelector('button[title="Suche ausführen und Suchergebnisse anzeigen"]').click();
     }, plz, selectorInputPLZ
   );
@@ -155,8 +164,13 @@ function handleOrt(ort, plz, selectorInputPLZ) {
 
 }
 
+var oldPlz = '';
 
-handleOrt('123','38685','#pt1\\:r1\\:0\\:pvoTmpl\\:s1\\:dc2\\:pvosubf\\:Suche_OrtPlz\\:\\:content');
-handleOrt('888','38100','#pt1\\:r1\\:1\\:pvoTmpl\\:dc2\\:pvosubf\\:Suche_OrtPlz\\:\\:content');
+input.forEach(function(value, index) {
+  if (oldPlz !== value.plz) {
+    handleOrt(value.ort, value.plz);
+  }
+  oldPlz = value.plz;
+});
 
 casper.run();
