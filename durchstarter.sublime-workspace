@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Dienst",
+				"Dienstleister"
+			],
+			[
 				"job",
 				"jobCenterTab"
 			],
@@ -510,56 +514,122 @@
 			[
 				"Us",
 				"UserContextProtocol"
-			],
-			[
-				"UserContext",
-				"UserContextProtocol"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "//var process = require('process');\nvar _ = require('highland');\nvar request = require('request');\nvar util = require('util');\nvar cheerio = require('cheerio');\nvar bunyan = require('bunyan');\nvar es = require('elasticsearch');\nvar nl = require('os').EOL;\nvar extend = require('util')._extend;\n\nvar orte = require('./orte.js');\n\n\nvar client = new es.Client({\n  host: 'localhost:9200',\n  log: 'error'\n});\n\nvar log = bunyan.createLogger({name: \"index_ihk\", src: true});\n\n\nvar getLandkreise = _.wrapCallback(function(callback) {\n\n  request.get('http://de.wikipedia.org/wiki/Liste_der_Landkreise_in_Deutschland', function(err, res, body) {\n      if (!err) {\n\n        dom = cheerio.load(body);\n\n        lks = [];\n\n        lk_rows = dom('#mw-content-text > table tr').each(function(index, element) {\n          \n          lk_cols = cheerio(element).find('td').map(function(i,e) {\n            return cheerio(e).text();\n          });\n\n          url = cheerio(element).find('td:nth-of-type(2) > a').attr('href');\n\n          lks.push({\n            krs: lk_cols[0],\n            landkreis: lk_cols[1],\n            bundesland: lk_cols[2],\n            kreissitz: lk_cols[3],\n            url: url\n          });\n        });\n\n        callback(err, lks);\n      }\n      else {\n        callback(err, res);\n      }\n    });\n});\n\n\nvar getDetails = _.wrapCallback(function(lk, callback) {\n\n  request.get('http://de.wikipedia.org' + lk.url, function(err, res, body) {\n      if (!err) {\n        domDetails = cheerio.load(body);\n\n//        log.info(body);\n\n        // Anschrift\n\n        adresse = domDetails('td:contains(\"verwaltung:\") + td');\n        adressFelder = adresse.text().split( /\\n/);\n\n        url = domDetails('td:contains(\"Webpräsenz:\") + td').text().replace('\\n','');\n\n        details = extend({\n          anschrift1: adressFelder[0],\n          anschrift2: adressFelder[1],\n          anschrift3: (adressFelder[2])?(adressFelder[2]):'',\n          web: url\n        },lk);\n\n\n        callback(err, details);\n      } \n      else {\n        callback(err, res);\n      }\n    });\n});\n\n\ngetLandkreise()\n  .flatten()\n  .reject(function(lk) {\n    return (!lk.krs || !lk.url)\n  })\n//  .take(1)\n  .flatMap(getDetails)\n  .map(function(lk) {\n    return lk.krs + \"^\"\n      + lk.kreissitz + \"^\"\n      + lk.landkreis + \"^\"\n      + lk.bundesland + \"^\"\n      + lk.anschrift1 + \"^\"\n      + lk.anschrift2 + \"^\"\n      + lk.anschrift3 + \"^\"\n      + lk.web + nl;\n  })\n  .pipe(process.stdout);\n",
-			"file": "scrap/scrap_landkreis.js",
-			"file_size": 2452,
-			"file_write_time": 1422572553000000,
+			"file": "src/main/webapp/app/eintrag.html",
 			"settings":
 			{
-				"buffer_size": 2452,
+				"buffer_size": 9473,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scrap/phantom_arbeitsagentur.js",
+			"file": "src/main/webapp/app/kontakt.html",
 			"settings":
 			{
-				"buffer_size": 5595,
+				"buffer_size": 5208,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scrap/scap_arbeitsamt.sh",
+			"file": "src/main/webapp/app/impressum.html",
 			"settings":
 			{
-				"buffer_size": 337,
+				"buffer_size": 4516,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/js/components/Info.jsx",
+			"settings":
+			{
+				"buffer_size": 6816,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scrap/kategorien.js",
+			"settings":
+			{
+				"buffer_size": 802,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/agbs.html",
+			"settings":
+			{
+				"buffer_size": 11577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 6144,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/js/components/EintragFormular.js",
+			"settings":
+			{
+				"buffer_size": 5356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/scala/durchstarter/core/EmailActor.scala",
+			"settings":
+			{
+				"buffer_size": 2556,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build.sbt",
+			"settings":
+			{
+				"buffer_size": 2928,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/scala/durchstarter/domain/Durchstarter.scala",
+			"settings":
+			{
+				"buffer_size": 1081,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 11385 files for \"zeigeOrte\"\n\n/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/Actions.js:\n    5  module.exports = Reflux.createActions([\n    6      \"zeigeDatenplaetze\",\n    7:     \"zeigeOrte\"\n    8  ]);\n\n/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx:\n   28        }\n   29        this.suggestTimeout = setTimeout(function() {\n   30:         Actions.zeigeOrte(query);\n   31        }, 250);    \n   32    },\n\n/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/OrteStore.js:\n   11      init: function() {\n   12          // Register statusUpdate action\n   13:         this.listenTo(Actions.zeigeOrte, this.update);\n   14      },\n   15  \n\n/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/js/app.js:\n   78  module.exports = Reflux.createActions([\n   79      \"zeigeDatenplaetze\",\n   80:     \"zeigeOrte\"\n   81  ]);\n   82  },{\"reflux\":\"/home/tiberius/scala/projects/durchstarter/src/main/webapp/node_modules/reflux/src/index.js\"}],\"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx\":[function(require,module,exports){\n   ..\n  521        }\n  522        this.suggestTimeout = setTimeout(function() {\n  523:         Actions.zeigeOrte(query);\n  524        }, 250);    \n  525    },\n  ...\n  762      init: function() {\n  763          // Register statusUpdate action\n  764:         this.listenTo(Actions.zeigeOrte, this.update);\n  765      },\n  766  \n\n6 matches across 4 files\n",
+			"settings":
+			{
+				"buffer_size": 1513,
 				"line_ending": "Unix",
-				"name": "#! /bin/bash"
+				"name": "Find Results",
+				"scratch": true
 			}
 		},
 		{
-			"file": "scrap/scrap_ihk.js",
+			"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
 			"settings":
 			{
-				"buffer_size": 3384,
+				"buffer_size": 5905,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scrap/dp_arbeitsagentur.csv",
+			"file": "src/main/webapp/app/index.html",
 			"settings":
 			{
-				"buffer_size": 609,
+				"buffer_size": 6292,
 				"line_ending": "Unix"
 			}
 		}
@@ -707,7 +777,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 521.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -725,14 +795,17 @@
 	"file_history":
 	[
 		"/home/tiberius/scala/projects/durchstarter/scrap/kategorien.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/unternehmer.html",
+		"/home/tiberius/scala/projects/durchstarter/scrap/dp_arbeitsagentur.csv",
+		"/home/tiberius/scala/projects/durchstarter/scrap/scrap_ihk.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/scrap_landkreis.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/scap_arbeitsamt.sh",
+		"/home/tiberius/scala/projects/durchstarter/scrap/phantom_arbeitsagentur.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/test.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/aa.jpg",
-		"/home/tiberius/scala/projects/durchstarter/scrap/dp_arbeitsagentur.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/tmp.txt",
-		"/home/tiberius/scala/projects/durchstarter/scrap/phantom_arbeitsagentur.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/ihk_fein.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/web_landkreis.csv",
-		"/home/tiberius/scala/projects/durchstarter/scrap/scrap_ihk.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/orte.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/ihk_grob_alt.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/index_fa.js",
@@ -754,7 +827,6 @@
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/index.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/agbs.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/unternehmer.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/agbs.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/eintrag.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/index.html",
@@ -849,9 +921,7 @@
 		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/StoryActor.scala",
 		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/domain/Story.scala",
 		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/elasticsearch/ElasticSearchServer.scala",
-		"/home/tiberius/scala/projects/amanuensis/curl/admin/rebuild_index",
-		"/home/tiberius/scala/projects/amanuensis/curl/updates/update_damod_0.9.2",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/Core.scala"
+		"/home/tiberius/scala/projects/amanuensis/curl/admin/rebuild_index"
 	],
 	"find":
 	{
@@ -859,7 +929,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"/home/tiberius/scala/projects/durchstarter/src/main/webapp",
@@ -918,6 +988,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"z-index",
+			"zeigeOrte",
 			"console.error",
 			"logMe",
 			"console.error",
@@ -1043,9 +1115,7 @@
 			"swipe",
 			"edit",
 			"GetUserContext",
-			"touchAction",
-			"touch-action",
-			"Hammer"
+			"touchAction"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1109,106 +1179,135 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "scrap/scrap_landkreis.js",
+					"file": "src/main/webapp/app/eintrag.html",
 					"settings":
 					{
-						"buffer_size": 2452,
+						"buffer_size": 9473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								924,
-								924
+								1476,
+								1476
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 945.0,
+						"translation.y": 15.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "scrap/phantom_arbeitsagentur.js",
+					"file": "src/main/webapp/app/kontakt.html",
 					"settings":
 					{
-						"buffer_size": 5595,
+						"buffer_size": 5208,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5588,
-								5588
+								3747,
+								3747
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2468.0,
+						"translation.y": 538.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "scrap/scap_arbeitsamt.sh",
+					"file": "src/main/webapp/app/impressum.html",
 					"settings":
 					{
-						"buffer_size": 337,
+						"buffer_size": 4516,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								337,
-								337
+								4176,
+								4176
 							]
 						],
 						"settings":
 						{
-							"auto_name": "#! /bin/bash",
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 449.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "scrap/scrap_ihk.js",
+					"file": "src/main/webapp/app/js/components/Info.jsx",
 					"settings":
 					{
-						"buffer_size": 3384,
+						"buffer_size": 6816,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2526,
-								2526
+								3971,
+								3971
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 909.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scrap/kategorien.js",
+					"settings":
+					{
+						"buffer_size": 802,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								578,
+								578
 							]
 						],
 						"settings":
@@ -1224,13 +1323,212 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "scrap/dp_arbeitsagentur.csv",
+					"buffer": 5,
+					"file": "src/main/webapp/app/agbs.html",
 					"settings":
 					{
-						"buffer_size": 609,
+						"buffer_size": 11577,
 						"regions":
 						{
+						},
+						"selection":
+						[
+							[
+								8586,
+								8586
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1753.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/main/webapp/app/styles/main.scss",
+					"settings":
+					{
+						"buffer_size": 6144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5164,
+								5164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4683.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/main/webapp/app/js/components/EintragFormular.js",
+					"settings":
+					{
+						"buffer_size": 5356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1201,
+								1201
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 364.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/main/scala/durchstarter/core/EmailActor.scala",
+					"settings":
+					{
+						"buffer_size": 2556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								540,
+								540
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scala/Scala.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 87.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "build.sbt",
+					"settings":
+					{
+						"buffer_size": 2928,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1666,
+								1666
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/main/scala/durchstarter/domain/Durchstarter.scala",
+					"settings":
+					{
+						"buffer_size": 1081,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								914,
+								914
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scala/Scala.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 254.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"settings":
+					{
+						"buffer_size": 1513,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										208,
+										217
+									],
+									[
+										419,
+										428
+									],
+									[
+										677,
+										686
+									],
+									[
+										895,
+										904
+									],
+									[
+										1264,
+										1273
+									],
+									[
+										1440,
+										1449
+									]
+								],
+								"scope": ""
+							}
 						},
 						"selection":
 						[
@@ -1241,7 +1539,70 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
+					"settings":
+					{
+						"buffer_size": 5905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4373,
+								4373
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2237.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/main/webapp/app/index.html",
+					"settings":
+					{
+						"buffer_size": 6292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1349,
+								1349
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1293,7 +1654,7 @@
 	},
 	"output.sbt":
 	{
-		"height": 274.0
+		"height": 234.0
 	},
 	"output.sbt_error":
 	{
@@ -1840,6 +2201,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 196.0,
+	"side_bar_width": 288.0,
 	"status_bar_visible": true
 }
