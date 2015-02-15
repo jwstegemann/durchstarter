@@ -75,7 +75,7 @@ var getDetails = _.wrapCallback(function(ihk, callback) {
             name: domDetails('h2#titlee').text(),
             anschrift1: adressFelder[0].trim(),
             anschrift2: adressFelder[1].trim(),
-            anschrift3: adressFelder[2].trim(),        
+            anschrift3: adressFelder[2].trim(),
             telefon: "(0" + telElements[1] + ") " + telElements[2],
             fax: "(0" + faxElements[1] + ") " + faxElements[2],
             email: kontakt.find('span.detailLabel_email').text().replace("(at)","@"),
@@ -115,18 +115,18 @@ orte.stream()
   })
   .flatMap(getDetails)
   .map(function(ihk) {
-    return '' 
-      + (++index) + '^' 
-      + ihk.name + '^' 
-      + ihk.anschrift1 + '^' 
-      + ihk.anschrift2 + '^' 
-      + ihk.anschrift3 + '^' 
-      + ihk.telefon + '^' 
-      + ihk.fax + '^' 
-      + ihk.email + '^' 
-      + ihk.url + '^' 
-      + ihk.kategorie + '^' 
-      + ihk.ort + '^' 
+    return ''
+      + (++index) + '^'
+      + ihk.name + '^'
+      + ihk.anschrift1 + '^'
+      + ihk.anschrift2 + '^'
+      + ihk.anschrift3 + '^'
+      + ihk.telefon + '^'
+      + ihk.fax + '^'
+      + ihk.email + '^'
+      + ihk.url + '^'
+      + ihk.kategorie + '^'
+      + ihk.ort + '^'
       + ihk.icon + nl;
   })
   .pipe(process.stdout);

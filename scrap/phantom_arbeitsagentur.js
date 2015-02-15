@@ -1,4 +1,4 @@
- 
+
 var system = require('system');
 
 var ort = system.args[1];
@@ -80,7 +80,7 @@ var steps = [
       doSearchPvo(document.getElementById('pvoq'));
 
     }, ort, plz);
-  }, 
+  },
   function() {
     //Login
     //loadInProgress = true;
@@ -206,5 +206,4 @@ interval = setInterval(function() {
     console.error("test complete!");
     phantom.exit();
   }
-}, 6000);
-
+}, 4000);
