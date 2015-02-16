@@ -1,0 +1,31 @@
+scraping ort=1, plz=01069
+step 1
+load started
+load finished: success
+step 2
+load started
+load finished: success
+load started
+load finished: success
+step 3
+####1_0^Agentur für Arbeit Dresden^Budapester Str. 30^Dresden^^0800 / 4 5555 20^0351 / 4751404^^http://www.arbeitsagentur.de/web/content/07401^Arbeitsamt^1^arbeitsamt.jpg
+step 4
+####1_0^Agentur für Arbeit Dresden^Budapester Str. 30^Dresden^^^0351 / 4751404^^http://www.arbeitsagentur.de/web/content/07401^Jobcenter^1^jobcenter.jpg
+step 5
+test complete!
+scraping ort=2, plz=01097
+step 1
+load started
+load finished: success
+step 2
+load started
+load finished: success
+load started
+load finished: success
+step 3
+####2_0^Agentur für Arbeit Dresden^Budapester Str. 30^Dresden^^0800 / 4 5555 20^0351 / 4751404^^http://www.arbeitsagentur.de/web/content/07401^Arbeitsamt^2^arbeitsamt.jpg
+step 4
+####2_0^Agentur für Arbeit Dresden^Budapester Str. 30^Dresden^^ 0800 4 5555 00 (Arbeitnehmer)*Tel: 0800 4 5555 20 (Arbeitgeber)**Dieser Anruf ist für Sie kostenfrei^0351 / 4751404^^http://www.arbeitsagentur.de/web/content/07401^Jobcenter^2^jobcenter.jpg
+step 5
+test complete!
+scraping ort=3, plz=01099
