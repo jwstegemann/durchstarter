@@ -113,7 +113,7 @@ casper.on('remote.message', function(msg) {
 casper.start('http://www.arbeitsagentur.de/apps/faces/home/pvo', function() {
 });
 
-casper.wait(15000);
+casper.wait(10000);
 
 function handleOrt(ort, plz, selectorInputPLZ) {
   //casper.echo('scraping ort=' + ort + ', plz=' + plz + ',selectorInputPLZ=' + selectorInputPLZ);
