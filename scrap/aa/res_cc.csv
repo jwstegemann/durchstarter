@@ -1,0 +1,67 @@
+Bad engine name. Only phantomjs and slimerjs are supported
+
+Script Error: Component returned failure code: 0x80520005 (NS_ERROR_FILE_DESTINATION_NOT_DIR) [nsIFile.isFile]
+       Stack:
+         -> resource://slimerjs/addon-sdk/sdk/io/file.js: 116 (in function isFile)
+         -> file:///home/juergen/node/lib/node_modules/casperjs/bin/bootstrap.js: 311 (in function initCasperCli)
+         -> file:///home/juergen/node/lib/node_modules/casperjs/bin/bootstrap.js: 378
+         -> file:///home/juergen/node/lib/node_modules/casperjs/bin/bootstrap.js: 78
+
+
+Script Error: Component returned failure code: 0x80520005 (NS_ERROR_FILE_DESTINATION_NOT_DIR) [nsIFile.isFile]
+       Stack:
+         -> resource://slimerjs/addon-sdk/sdk/io/file.js: 116 (in function isFile)
+         -> file:///home/juergen/node/lib/node_modules/casperjs/bin/bootstrap.js: 311 (in function initCasperCli)
+         -> file:///home/juergen/node/lib/node_modules/casperjs/bin/bootstrap.js: 378
+         -> file:///home/juergen/node/lib/node_modules/casperjs/bin/bootstrap.js: 78
+
+[37;41;1mModule: Can not resolve "/home/juergen/src/durchstarter/aa/orte_part_ai.json" module required by main located at file:///home/juergen/node/lib/node_modules/casperjs/bin/bootstrap.js[0m
+  /home/juergen/src/durchstarter/scrap:[33m350[0m
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+####aa_7060_0^Agentur für Arbeit Kirn^Friedrichstr. 6^Kirn^^0800 / 4 5555 20^06752 / 930940^^http://www.arbeitsagentur.de/web/content/51117^Arbeitsamt^7060^arbeitsamt.jpg
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+####jc_7060_0^Jobcenter Bad Kreuznach^Viktoriastr. 36^55543 Bad Kreuznach^^0671 / 850318^0671 / 850485^Jobcenter-Bad-Kreuznach@jobcenter-ge.de^http://www.arbeitsagentur.de/web/content/51102^Jobcenter^7060^jobcenter.jpg
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+####aa_7061_0^Agentur für Arbeit Kirn^Friedrichstr. 6^Kirn^^0800 / 4 5555 20^06752 / 930940^^http://www.arbeitsagentur.de/web/content/51117^Arbeitsamt^7061^arbeitsamt.jpg
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+####jc_7061_0^Agentur für Arbeit Kirn^Friedrichstr. 6^Kirn^^ 0800 4 5555 00 (Arbeitnehmer)*Tel: 0800 4 5555 20 (Arbeitgeber)**Dieser Anruf ist für Sie kostenfrei^06752 / 930940^^http://www.arbeitsagentur.de/web/content/51117^Jobcenter^7061^jobcenter.jpg
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+####aa_6854_0^Jobcenter Bad Kreuznach^Viktoriastr. 36^55543 Bad Kreuznach^^0800 / 4 5555 20^0671 / 850485^^http://www.arbeitsagentur.de/web/content/51102^Arbeitsamt^6854^arbeitsamt.jpg
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+####jc_6854_0^Jobcenter Bad Kreuznach^Viktoriastr. 36^55543 Bad Kreuznach^^0671 / 850318^0671 / 850485^Jobcenter-Bad-Kreuznach@jobcenter-ge.de^http://www.arbeitsagentur.de/web/content/51102^Jobcenter^6854^jobcenter.jpg
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+####aa_6995_0^Agentur für Arbeit Kirn^Friedrichstr. 6^Kirn^^0800 / 4 5555 20^06752 / 930940^^http://www.arbeitsagentur.de/web/content/51117^Arbeitsamt^6995^arbeitsamt.jpg
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+####jc_6995_0^Agentur für Arbeit Kirn^Friedrichstr. 6^Kirn^^ 0800 4 5555 00 (Arbeitnehmer)*Tel: 0800 4 5555 20 (Arbeitgeber)**Dieser Anruf ist für Sie kostenfrei^06752 / 930940^^http://www.arbeitsagentur.de/web/content/51117^Jobcenter^6995^jobcenter.jpg
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+####aa_7001_0^Agentur für Arbeit Kirn^Friedrichstr. 6^Kirn^^0800 / 4 5555 20^06752 / 930940^^http://www.arbeitsagentur.de/web/content/51117^Arbeitsamt^7001^arbeitsamt.jpg
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+####jc_7001_0^Jobcenter Bad Kreuznach^Viktoriastr. 36^55543 Bad Kreuznach^^0671 / 850318^0671 / 850485^Jobcenter-Bad-Kreuznach@jobcenter-ge.de^http://www.arbeitsagentur.de/web/content/51102^Jobcenter^7001^jobcenter.jpg
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+####aa_7005_0^Agentur für Arbeit Kirn^Friedrichstr. 6^Kirn^^0800 / 4 5555 20^06752 / 930940^^http://www.arbeitsagentur.de/web/content/51117^Arbeitsamt^7005^arbeitsamt.jpg
+ERROR: Ergebnisse für Jobcenter nicht gefunden
+####jc_7005_0^Agentur für Arbeit Kirn^Friedrichstr. 6^Kirn^^ 0800 4 5555 00 (Arbeitnehmer)*Tel: 0800 4 5555 20 (Arbeitgeber)**Dieser Anruf ist für Sie kostenfrei^06752 / 930940^^http://www.arbeitsagentur.de/web/content/51117^Jobcenter^7005^jobcenter.jpg
+ERROR: Ergebnisse für Arbeitsagenturen nicht gefunden
+ERROR: Ergebnisse für Jobcenter nicht gefunden
