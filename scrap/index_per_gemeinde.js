@@ -50,7 +50,7 @@ orte.map(function(gemeinden) {
         fax: fields[6],
         email: fields[7],
         url: fields[8],
-        icon: process.argv[5],
+        icon: fields[11],
         gemeinde: fields[10]
       }
     })
