@@ -17,16 +17,15 @@ module.exports = {
   "Gebäudereinigung":150,
   "Energieberater":160,
   "Sonstige Dienstleister":170,
-  "Gemeindeverwaltung":180,
+  "Gemeindeverwaltung (Gewerbeamt, Wirtschaftsförderung Stadt, Bauamt, usw.)":180,
   "Industrie- und Handelskammer":190,
   "Handwerkskammer":200,
   "Finanzamt":210,
   "Arbeitsagentur":220,
   "Jobcenter":230,
-  "Wirtschaftsförderung Landkreis":240,
-  "Wirtschaftsförderung Stadt":250,
+  "Wirtschaftsförderung Landkreis / kreisfreihe Stadt":240,
   "Förderbank Bund":260,
   "Förderbank Land":270,
   "Beteiligungsgesellschaft Land":280,
   "Bürgschaftsbank Land":290
-}  
+}

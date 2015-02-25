@@ -7,7 +7,7 @@ var request = require('superagent');
 
 module.exports = React.createClass({
   demo: function() {
-    alert('in der Demoversion nicht möglich')    
+    alert('in der Demoversion nicht möglich')
   },
 
   newsletter: function(e) {
@@ -32,10 +32,10 @@ module.exports = React.createClass({
     return (
       <div>
       <div className="row">
-          <div className="col-md-10 col-md-offset-1">  
+          <div className="col-md-10 col-md-offset-1">
               <p className="uvp">Das Online-Verzeichnis mit regionalen Kontakten für Gründer und Unternehmer in ganz Deutschland</p>
           </div>
-      </div>            
+      </div>
 
       <div className="row">
           <div className="col-md-10 col-md-offset-1">
@@ -44,7 +44,7 @@ module.exports = React.createClass({
               <p className="narrative">Auch zum Ausdrucken und somit jederzeit griffbereit</p>
               <p className="narrative">...und natürlich kostenlos</p>
           </div>
-      </div>        
+      </div>
 
       <a name="features"></a>
       <div className="row section section">
@@ -58,17 +58,15 @@ module.exports = React.createClass({
                   <li>Finanzamt</li>
                   <li>Industrie- und Handelskammer</li>
                   <li>Handwerkskammer</li>
-                  <li>Wirtschaftsförderung Stadt (in Vorbereitung)</li>
-                  <li>Wirtschaftsförderung Landkreis</li>
-                  <li>Gemeindeverwaltung</li>
+                  <li>Wirtschaftsförderung Landkreis / kreisfreihe Stadt</li>
+                  <li>Gemeindeverwaltung (Gewerbeamt, Wirtschaftsförderung Stadt, Bauamt, usw.)</li>
                   <li>Arbeitsagentur</li>
-                  <li>Jobcenter</li>    
                   <li>Förderbank von Bund und Land</li>
-                  <li>Beteiligungsgesellschaft Land</li>    
-                  <li>Bürgschaftsbank Land</li>    
+                  <li>Beteiligungsgesellschaft Land</li>
+                  <li>Bürgschaftsbank Land</li>
                 </ul>
                 <p className="section-details"><a href="unternehmer.html">mehr...</a></p>
-                
+
           </div>
       </div>
 
@@ -77,20 +75,20 @@ module.exports = React.createClass({
               <p className="section-header">Weitere Kontakte für Sie:</p>
               <p className="section-details">Außerdem haben Dienstleister die Möglichkeit ihre Kontaktdaten in folgenden Branchen und ihrer Region exklusiv und zunächst sogar kostenlos zu präsentieren:</p>
                 <ul className="section-list">
-                <li>Banken</li>  
-                <li>Krankenkassen</li>    
-                <li>Steuerberater</li>      
-                <li>Rechtsanwälte</li>      
-                <li>Unternehmensberater</li>  
-                <li>Versicherungsmakler/-vermittler</li>      
-                <li>Marketing / Werbung / PR</li>   
+                <li>Banken</li>
+                <li>Krankenkassen</li>
+                <li>Steuerberater</li>
+                <li>Rechtsanwälte</li>
+                <li>Unternehmensberater</li>
+                <li>Versicherungsmakler/-vermittler</li>
+                <li>Marketing / Werbung / PR</li>
                 <li>Immobilienmakler</li>
-                <li>Finanzmakler</li>    
-                <li>Personaldienstleister</li>    
-                <li>IT-Spezialisten</li>    
+                <li>Finanzmakler</li>
+                <li>Personaldienstleister</li>
+                <li>IT-Spezialisten</li>
                 <li>Bürodienstleister</li>
-                <li>Krisenmanager</li>   
-                <li>Einkaufsverbände</li>  
+                <li>Krisenmanager</li>
+                <li>Einkaufsverbände</li>
                 <li>Facilitymanagement / Reinigung</li>
                 <li>Energieberater</li>
                 <li>Sonstige Dienstleister</li>
