@@ -20,6 +20,7 @@ var client = new es.Client({
 
 
 var doBulk = _.wrapCallback(function(bulk, callback) {
+      log.info("starte index...");
       client.bulk({body: bulk}, function(err, res, status) {
         if (err) log.error(err);
         else log.info("index erfolgreich... " + status);
@@ -33,7 +34,7 @@ orte.map(function(gemeinden) {
 
   _(fs.createReadStream(process.argv[3]))
     .split()
-//    .take(1000)
+//    .take(3)
     .map(function(line) {
       fields = line.split('^');
 
@@ -67,12 +68,13 @@ orte.map(function(gemeinden) {
           return doc;
         })
     })
-/*    .each(function(dp) {
+    /* .each(function(dp) {
       log.info("DP: " + dp._id + ", ort=" + dp.ort);
     })
-*/
+    */
     .batch(1000)
     .flatMap(function(batch) {
+
       return _(batch).reduce([],function(bulk,doc) {
 
         bulk.push({index: {_index: 'datenplaetze', _type: 'datenplatz', _id: doc._id}});

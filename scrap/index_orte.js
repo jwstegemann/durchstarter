@@ -10,7 +10,7 @@ var orte = require('./orte.js');
 
 
 var client = new es.Client({
-  host: 'localhost:9200',
+  host: process.argv[2],
   log: 'warning'
 });
 
