@@ -80,7 +80,7 @@ module.exports = React.createClass({
         <div className="form-group">
           <label className="col-sm-2 control-label">Slogan/Zusatz</label>
           <div className="col-sm-10">
-            <input ref="slogan" type="text" className="form-control" id="inputSlogan" placeholder></input>
+            <input ref="slogan" type="text" className="form-control" id="inputSlogan"></input>
           </div>
         </div>
         <div className="form-group">

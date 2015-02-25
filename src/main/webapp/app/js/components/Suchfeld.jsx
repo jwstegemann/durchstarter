@@ -194,7 +194,7 @@ module.exports = React.createClass({
       else {
         suggestions = 
           <ul className="suggestions">
-            <li className="suggestionItem">Bitte geben Sie eine gültige Postleitzahl ein (im Test nur 14715, 38640 oder 38685</li>              
+            <li className="suggestionItem">Bitte geben Sie eine gültige Postleitzahl ein.</li>              
           </ul>      
       }
     }

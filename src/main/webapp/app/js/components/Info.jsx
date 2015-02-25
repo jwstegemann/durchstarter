@@ -58,7 +58,7 @@ module.exports = React.createClass({
                   <li>Finanzamt</li>
                   <li>Industrie- und Handelskammer</li>
                   <li>Handwerkskammer</li>
-                  <li>Wirtschaftsförderung Landkreis / kreisfreihe Stadt</li>
+                  <li>Wirtschaftsförderung Landkreis / kreisfreie Stadt</li>
                   <li>Gemeindeverwaltung (Gewerbeamt, Wirtschaftsförderung Stadt, Bauamt, usw.)</li>
                   <li>Arbeitsagentur</li>
                   <li>Förderbank von Bund und Land</li>

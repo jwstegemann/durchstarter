@@ -46,7 +46,7 @@ module.exports = React.createClass({
         <div className="row ergebnis-zeile">
           { this.state.datenplaetze.map(function(object, index) {
             return [
-              <Datenplatz datenplatz={object} key={index} logoFile={'img/logos/logo' + self.logoList[index] + '.jpg'}/>,
+              <Datenplatz datenplatz={object} key={index} />,
               (index%2)?<div className="clearfix visible-md-block"></div>:undefined
             ];
           })}

@@ -23,7 +23,7 @@ module.exports = {
   "Finanzamt":210,
   "Arbeitsagentur":220,
   "Jobcenter":230,
-  "Wirtschaftsförderung Landkreis / kreisfreihe Stadt":240,
+  "Wirtschaftsförderung Landkreis / kreisfreie Stadt":240,
   "Förderbank Bund":260,
   "Förderbank Land":270,
   "Beteiligungsgesellschaft Land":280,
