@@ -11,7 +11,7 @@ module.exports = React.createClass({
     else urlText = this.props.datenplatz.url;
 
     var emailText;
-    if (this.props.datenplatz.email.length > 35) urlText = this.props.datenplatz.email.substr(0,35) + "...";
+    if (this.props.datenplatz.email.length > 35) emailText = this.props.datenplatz.email.substr(0,35) + "...";
     else emailText = this.props.datenplatz.email;
 
     var anschrift1, anschrift2, anschrift3, telefon, fax, email, url;
@@ -28,7 +28,7 @@ module.exports = React.createClass({
       telefon = (<p className="telefon"><i className="fa fa-fw fa-phone icon-grey"></i>&nbsp;{this.props.datenplatz.telefon}</p>)
     }
     if (this.props.datenplatz.fax != '') {
-      fax = (<p className="telefax"><i className="fa fa-fw fa-file-photo-o icon-grey"></i>&nbsp;{this.props.datenplatz.fax}</p>)
+      fax = (<p className="telefax"><i className="fa fa-fw fa-fax icon-grey"></i>&nbsp;{this.props.datenplatz.fax}</p>)
     }        
     if (this.props.datenplatz.email != '') {
       email = (<p className="email"><i className="fa fa-fw fa-envelope-o icon-grey"></i>&nbsp;
