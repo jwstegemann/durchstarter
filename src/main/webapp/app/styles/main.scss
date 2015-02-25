@@ -320,21 +320,24 @@ p.anschrift {
  }
 
 .suggestions {
+  display: block;
+  position: relative;
   top: 10px;
   background: white;
+  background-color: white;
   list-style-type: none;
   margin: 0;
   padding: 10px;
   @include box-shadow($whiteframe-shadow-z2);
   border-radius: 0 0 3px 3px;
-  z-index: 2147483647;
+  z-index: 2000;
 }
 
 .suggestion-item {
   font-size: 14px;
   padding: 5px;
   cursor: pointer;
-  z-index: 2147483647;
+  z-index: 2000;
 }
 
 .second-foto {

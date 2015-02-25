@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"wa",
+				"waitForSelector"
+			],
+			[
+				"scrap",
+				"scrapArbeitsamt"
+			],
+			[
+				"selec",
+				"selectorButtonFind"
+			],
+			[
+				"sele",
+				"selectorButtonFind"
+			],
+			[
+				"input",
+				"selectorInputPLZ"
+			],
+			[
 				"Dienst",
 				"Dienstleister"
 			],
@@ -228,20 +248,12 @@
 				"insertAtCaret"
 			],
 			[
-				"sele",
-				"selectionStart"
-			],
-			[
 				"t",
 				"textarea"
 			],
 			[
 				"select",
 				"selectionLength"
-			],
-			[
-				"selec",
-				"selectionStart"
 			],
 			[
 				"an",
@@ -502,137 +514,11 @@
 			[
 				"err",
 				"errorMessage"
-			],
-			[
-				"we",
-				"welcomeMessage"
-			],
-			[
-				"welcom",
-				"welcomeMessage"
-			],
-			[
-				"Us",
-				"UserContextProtocol"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "src/main/webapp/app/eintrag.html",
-			"settings":
-			{
-				"buffer_size": 9473,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/kontakt.html",
-			"settings":
-			{
-				"buffer_size": 5208,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/impressum.html",
-			"settings":
-			{
-				"buffer_size": 4516,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/js/components/Info.jsx",
-			"settings":
-			{
-				"buffer_size": 6816,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scrap/kategorien.js",
-			"settings":
-			{
-				"buffer_size": 802,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/agbs.html",
-			"settings":
-			{
-				"buffer_size": 11577,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/styles/main.scss",
-			"settings":
-			{
-				"buffer_size": 6144,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/js/components/EintragFormular.js",
-			"settings":
-			{
-				"buffer_size": 5356,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/scala/durchstarter/core/EmailActor.scala",
-			"settings":
-			{
-				"buffer_size": 2556,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "build.sbt",
-			"settings":
-			{
-				"buffer_size": 2928,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/scala/durchstarter/domain/Durchstarter.scala",
-			"settings":
-			{
-				"buffer_size": 1081,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 11385 files for \"zeigeOrte\"\n\n/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/Actions.js:\n    5  module.exports = Reflux.createActions([\n    6      \"zeigeDatenplaetze\",\n    7:     \"zeigeOrte\"\n    8  ]);\n\n/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx:\n   28        }\n   29        this.suggestTimeout = setTimeout(function() {\n   30:         Actions.zeigeOrte(query);\n   31        }, 250);    \n   32    },\n\n/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/OrteStore.js:\n   11      init: function() {\n   12          // Register statusUpdate action\n   13:         this.listenTo(Actions.zeigeOrte, this.update);\n   14      },\n   15  \n\n/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/js/app.js:\n   78  module.exports = Reflux.createActions([\n   79      \"zeigeDatenplaetze\",\n   80:     \"zeigeOrte\"\n   81  ]);\n   82  },{\"reflux\":\"/home/tiberius/scala/projects/durchstarter/src/main/webapp/node_modules/reflux/src/index.js\"}],\"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx\":[function(require,module,exports){\n   ..\n  521        }\n  522        this.suggestTimeout = setTimeout(function() {\n  523:         Actions.zeigeOrte(query);\n  524        }, 250);    \n  525    },\n  ...\n  762      init: function() {\n  763          // Register statusUpdate action\n  764:         this.listenTo(Actions.zeigeOrte, this.update);\n  765      },\n  766  \n\n6 matches across 4 files\n",
-			"settings":
-			{
-				"buffer_size": 1513,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
-			"settings":
-			{
-				"buffer_size": 5905,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/app/index.html",
-			"settings":
-			{
-				"buffer_size": 6292,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -777,7 +663,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 449.0
+		"width": 521.0
 	},
 	"console":
 	{
@@ -794,13 +680,46 @@
 	},
 	"file_history":
 	[
+		"/home/tiberius/scala/projects/durchstarter/scrap/casper_arbeitsagentur.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_al.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_aa.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_ab.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_ac.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_ad.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_ae.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_af.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_ag.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_ah.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_ai.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_aj.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_ak.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_am.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/alleOrte.csv",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_am",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_aa",
+		"/home/tiberius/scala/projects/durchstarter/scrap/scrap_arbeitsamt.sh",
+		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_aa.json",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
+		"/home/tiberius/scala/projects/durchstarter/scrap/test.json",
+		"/home/tiberius/scala/projects/durchstarter/scrap/phantom_arbeitsagentur.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/slimer_arbeitsagentur.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/eintrag.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/kontakt.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/impressum.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
 		"/home/tiberius/scala/projects/durchstarter/scrap/kategorien.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/agbs.html",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/EintragFormular.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/EmailActor.scala",
+		"/home/tiberius/scala/projects/durchstarter/build.sbt",
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/domain/Durchstarter.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/index.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/unternehmer.html",
 		"/home/tiberius/scala/projects/durchstarter/scrap/dp_arbeitsagentur.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/scrap_ihk.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/scrap_landkreis.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/scap_arbeitsamt.sh",
-		"/home/tiberius/scala/projects/durchstarter/scrap/phantom_arbeitsagentur.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/test.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/aa.jpg",
 		"/home/tiberius/scala/projects/durchstarter/scrap/tmp.txt",
@@ -823,28 +742,16 @@
 		"/home/tiberius/scala/projects/durchstarter/scrap/ihks_pure.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/test.txt",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/DatenplaetzeStore.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/eintrag.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/index.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/agbs.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/agbs.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/eintrag.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/index.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/unternehmer.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/EintragFormular.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
-		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/EmailActor.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/impressum.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/kontakt.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Ergebnis.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/app.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/eintrag.js",
-		"/home/tiberius/scala/projects/durchstarter/build.sbt",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/Core.scala",
-		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/domain/Durchstarter.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/QueryHttpService.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/OrteStore.js",
 		"/home/tiberius/scala/projects/durchstarter/elasticsearch/load",
@@ -900,28 +807,7 @@
 		"/home/tiberius/scala/projects/consigneur/src/main/webapp/package.json",
 		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/index.html",
 		"/home/tiberius/scala/projects/consigneur/src/main/webapp/utils/gulp-webserver/src/index.js",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/js/components/AppBar.js",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/styles/_typography.css",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/js/components/comment.jsx",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/styles/_material.scss",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/utils/gulp-webserver/enableMiddlewareShorthand/index.js",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/utils/gulp-webserver/index.js",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/.gitignore",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/utils/gulp-webserver/.gitignore",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/utils/gulp-webserver/.editorconfig",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/dist/index.html",
-		"/home/tiberius/scala/projects/consigneur/.gitignore",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/Gruntfile.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app/scripts/controllers/query.js",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/RebuildIndexActor.scala",
-		"/home/tiberius/scala/projects/amanuensis/.gitignore",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/domain/Slot.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/api/security/StatelessCookieAuthenticator.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/UserActor.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/StoryActor.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/domain/Story.scala",
-		"/home/tiberius/scala/projects/amanuensis/src/main/scala/amanuensis/core/elasticsearch/ElasticSearchServer.scala",
-		"/home/tiberius/scala/projects/amanuensis/curl/admin/rebuild_index"
+		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/js/components/AppBar.js"
 	],
 	"find":
 	{
@@ -929,7 +815,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/home/tiberius/scala/projects/durchstarter/src/main/webapp",
@@ -988,6 +874,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"9418",
+			"353^",
+			"suggestions",
 			"z-index",
 			"zeigeOrte",
 			"console.error",
@@ -1112,10 +1001,7 @@
 			"touch",
 			"swipe",
 			"prevent",
-			"swipe",
-			"edit",
-			"GetUserContext",
-			"touchAction"
+			"swipe"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1179,437 +1065,8 @@
 	"groups":
 	[
 		{
-			"selected": 6,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/main/webapp/app/eintrag.html",
-					"settings":
-					{
-						"buffer_size": 9473,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1476,
-								1476
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 15.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/main/webapp/app/kontakt.html",
-					"settings":
-					{
-						"buffer_size": 5208,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3747,
-								3747
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 538.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/main/webapp/app/impressum.html",
-					"settings":
-					{
-						"buffer_size": 4516,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4176,
-								4176
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 449.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/main/webapp/app/js/components/Info.jsx",
-					"settings":
-					{
-						"buffer_size": 6816,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3971,
-								3971
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 909.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "scrap/kategorien.js",
-					"settings":
-					{
-						"buffer_size": 802,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								578,
-								578
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/main/webapp/app/agbs.html",
-					"settings":
-					{
-						"buffer_size": 11577,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8586,
-								8586
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1753.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/main/webapp/app/styles/main.scss",
-					"settings":
-					{
-						"buffer_size": 6144,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5164,
-								5164
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4683.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/main/webapp/app/js/components/EintragFormular.js",
-					"settings":
-					{
-						"buffer_size": 5356,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1201,
-								1201
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 364.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "src/main/scala/durchstarter/core/EmailActor.scala",
-					"settings":
-					{
-						"buffer_size": 2556,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								540,
-								540
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Scala/Scala.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 87.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "build.sbt",
-					"settings":
-					{
-						"buffer_size": 2928,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1666,
-								1666
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "src/main/scala/durchstarter/domain/Durchstarter.scala",
-					"settings":
-					{
-						"buffer_size": 1081,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								914,
-								914
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Scala/Scala.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 254.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"settings":
-					{
-						"buffer_size": 1513,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										208,
-										217
-									],
-									[
-										419,
-										428
-									],
-									[
-										677,
-										686
-									],
-									[
-										895,
-										904
-									],
-									[
-										1264,
-										1273
-									],
-									[
-										1440,
-										1449
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "src/main/webapp/app/js/components/Suchfeld.jsx",
-					"settings":
-					{
-						"buffer_size": 5905,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4373,
-								4373
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2237.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "src/main/webapp/app/index.html",
-					"settings":
-					{
-						"buffer_size": 6292,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1349,
-								1349
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1671,6 +1128,10 @@
 		"selected_items":
 		[
 			[
+				"such",
+				"src/main/webapp/app/js/components/Suchfeld.jsx"
+			],
+			[
 				"eintrag",
 				"src/main/webapp/app/eintrag.html"
 			],
@@ -1693,10 +1154,6 @@
 			[
 				"email",
 				"src/main/scala/durchstarter/core/EmailActor.scala"
-			],
-			[
-				"such",
-				"src/main/webapp/app/js/components/Suchfeld.jsx"
 			],
 			[
 				"main.",

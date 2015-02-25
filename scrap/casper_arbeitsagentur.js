@@ -123,14 +123,14 @@ function handleOrt(ort, plz, selectorInputPLZ) {
     }, ort, plz, selectorInputPLZ
   );
 
-  casper.wait(500);
+  casper.wait(1000);
 
   casper.thenEvaluate(function(plz, selectorInputPLZ) {
       document.querySelector('button[title="Suche ausführen und Suchergebnisse anzeigen"]').click();
     }, plz, selectorInputPLZ
   );
 
-  casper.wait(250);
+  casper.wait(500);
   casper.thenClick('div[title="Ergebnisliste der Arbeitsagenturen"]');
 
   casper.waitForSelector('div#pt1\\:r1\\:1\\:pvoTmpl\\:Arbeitsagentur > div', 
@@ -145,7 +145,7 @@ function handleOrt(ort, plz, selectorInputPLZ) {
 
   casper.thenEvaluate(scrapArbeitsamt, ort);
 
-  casper.wait(250);
+  casper.wait(500);
   casper.thenClick('div[title="Ergebnisliste der Jobcenter und optierenden Kommunen"]');
 
   casper.waitForSelector('div#pt1\\:r1\\:1\\:pvoTmpl\\:Jobcenter > div', 
@@ -160,7 +160,7 @@ function handleOrt(ort, plz, selectorInputPLZ) {
 
   casper.thenEvaluate(scrapJobcenter, ort);
 
-  casper.wait(500);
+  casper.wait(1000);
 
 }
 
