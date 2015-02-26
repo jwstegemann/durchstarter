@@ -1,6 +1,6 @@
 #! /bin/bash
 
-grep -v "\^\^\^\^" ../export/dp_Kunde.csv > ../export/dp_Kunde_gefiltert.csv
+sudo grep -v "\^\^\^\^" ../export/dp_Kunde.csv > ../export/dp_Kunde_gefiltert.csv
 
 ../elasticsearch/init $1
 

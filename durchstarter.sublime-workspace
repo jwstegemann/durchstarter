@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"dp_Kunde",
+				"dp_Kunde_gefiltert"
+			],
+			[
 				"wa",
 				"waitForSelector"
 			],
@@ -510,15 +514,19 @@
 			[
 				"id",
 				"isDefined"
-			],
-			[
-				"err",
-				"errorMessage"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "scrap/index_all.sh",
+			"settings":
+			{
+				"buffer_size": 852,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -663,7 +671,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 521.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -680,6 +688,19 @@
 	},
 	"file_history":
 	[
+		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchServer.scala",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
+		"/home/tiberius/scala/projects/durchstarter/scrap/kategorien.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/index_orte.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/index_per_gemeinde.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/index_all.sh",
+		"/home/tiberius/scala/projects/durchstarter/scrap/index_per_ort.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Ergebnis.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/DatenplaetzeStore.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/EintragFormular.js",
+		"/home/tiberius/scala/projects/durchstarter/scrap/index_fa.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/casper_arbeitsagentur.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_al.json",
 		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_part_aa.json",
@@ -700,17 +721,13 @@
 		"/home/tiberius/scala/projects/durchstarter/scrap/scrap_arbeitsamt.sh",
 		"/home/tiberius/scala/projects/durchstarter/scrap/aa/orte_aa.json",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/main.scss",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
 		"/home/tiberius/scala/projects/durchstarter/scrap/test.json",
 		"/home/tiberius/scala/projects/durchstarter/scrap/phantom_arbeitsagentur.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/slimer_arbeitsagentur.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/eintrag.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/kontakt.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/impressum.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
-		"/home/tiberius/scala/projects/durchstarter/scrap/kategorien.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/agbs.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/EintragFormular.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/EmailActor.scala",
 		"/home/tiberius/scala/projects/durchstarter/build.sbt",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/domain/Durchstarter.scala",
@@ -727,28 +744,22 @@
 		"/home/tiberius/scala/projects/durchstarter/scrap/web_landkreis.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/orte.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/ihk_grob_alt.js",
-		"/home/tiberius/scala/projects/durchstarter/scrap/index_fa.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/index_ihk.js",
-		"/home/tiberius/scala/projects/durchstarter/scrap/index_orte.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/dp_finanzamt.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/orte.js",
 		"/home/tiberius/scala/projects/durchstarter/elasticsearch/init",
 		"/home/tiberius/scala/projects/durchstarter/scrap/clone.js",
 		"/home/tiberius/Dropbox/Export Portal/export/kategorien.csv",
-		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchServer.scala",
 		"/home/tiberius/scala/projects/durchstarter/scrap/ihk_rx.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/ihk.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/plzs.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/ihks_pure.csv",
 		"/home/tiberius/scala/projects/durchstarter/scrap/test.txt",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/DatenplaetzeStore.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/agbs.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/eintrag.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/index.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/unternehmer.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Ergebnis.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/app.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/eintrag.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/Core.scala",
@@ -804,10 +815,7 @@
 		"/home/tiberius/.config/sublime-text-2/Packages/User/Plain text.sublime-settings",
 		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/styles/appBar.scss",
 		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/styles/typography.css",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/package.json",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/index.html",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/utils/gulp-webserver/src/index.js",
-		"/home/tiberius/scala/projects/consigneur/src/main/webapp/app/js/components/AppBar.js"
+		"/home/tiberius/scala/projects/consigneur/src/main/webapp/package.json"
 	],
 	"find":
 	{
@@ -1065,8 +1073,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "scrap/index_all.sh",
+					"settings":
+					{
+						"buffer_size": 852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1111,7 +1146,7 @@
 	},
 	"output.sbt":
 	{
-		"height": 234.0
+		"height": 358.0
 	},
 	"output.sbt_error":
 	{
@@ -1127,6 +1162,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"datenp",
+				"src/main/webapp/app/js/components/Datenplatz.jsx"
+			],
+			[
+				"datenpla",
+				"src/main/webapp/app/js/components/Datenplatz.jsx"
+			],
+			[
+				"elastics",
+				"src/main/scala/durchstarter/core/elasticsearch/ElasticSearchServer.scala"
+			],
 			[
 				"such",
 				"src/main/webapp/app/js/components/Suchfeld.jsx"
@@ -1626,18 +1673,6 @@
 			[
 				"favourhtr",
 				"src/main/scala/amanuensis/api/FavourHttpService.scala"
-			],
-			[
-				"ng-qu",
-				"src/main/webapp/app/bower_components/ngQuickDate/dist/ng-quick-date.js"
-			],
-			[
-				"queryac",
-				"src/main/scala/amanuensis/core/QueryActor.scala"
-			],
-			[
-				"queryhttp",
-				"src/main/scala/amanuensis/api/QueryHttpService.scala"
 			]
 		],
 		"width": 0.0
