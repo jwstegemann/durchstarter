@@ -138,7 +138,7 @@ module.exports = React.createClass({
           <div className="col-md-6 col-md-offset-3">
               <form ref="newsletterform" className="form-inline" role="form">
                 <div className="form-group col-sm-7">
-                  <input ref="newsletteremail" type="email" className="form-control input-lg" id="exampleInputEmail2" placeholder="Ihre eMail-Adresse" />
+                  <input ref="newsletteremail" type="email" required="true" className="form-control input-lg" id="exampleInputEmail2" placeholder="Ihre eMail-Adresse" />
                 </div>
                 <button className="btn btn-lg btn-default" onClick={this.newsletter}>
                   NEWSLETTER ABONNIEREN
