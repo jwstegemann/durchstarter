@@ -24,7 +24,11 @@ module.exports = React.createClass({
                 //console.log(result)
            });
 
-      form.reset();
+      //form.reset();
+
+      this.refs.newsletteremail.value = "Vielen Dank";
+      this.refs.newsletteremail.disabled = true;
+      this.refs.newsletterbutton.disabled = true;
     }
   },
 
@@ -140,7 +144,7 @@ module.exports = React.createClass({
                 <div className="form-group col-sm-7">
                   <input ref="newsletteremail" type="email" required="true" className="form-control input-lg" id="exampleInputEmail2" placeholder="Ihre eMail-Adresse" />
                 </div>
-                <button className="btn btn-lg btn-default" onClick={this.newsletter}>
+                <button ref="newsletterbutton" className="btn btn-lg btn-default" onClick={this.newsletter}>
                   NEWSLETTER ABONNIEREN
                 </button>
               </form>
