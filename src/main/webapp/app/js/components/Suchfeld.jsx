@@ -174,8 +174,7 @@ module.exports = React.createClass({
   },
 
   render: function() {
- // console.log("focus: " + this.state.showSuggestions);
-
+    console.log("focus: " + this.state.showSuggestions + ", orte:" + this.state.orte);
 
     var self = this;
 
