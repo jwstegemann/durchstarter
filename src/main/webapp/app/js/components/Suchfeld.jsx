@@ -34,6 +34,8 @@ module.exports = React.createClass({
   handleChange: function(e) {
     var newPlz = e.target.value;
 
+    console.log(e.target.value);
+
     if ((newPlz.length < 6) && (newPlz.match(/^[0-9]{0,5}$/))) {
       this.setState(React.addons.update(this.state, {
         plz: {$set: newPlz},
