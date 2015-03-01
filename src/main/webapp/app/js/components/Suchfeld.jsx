@@ -80,11 +80,18 @@ module.exports = React.createClass({
     }
   },
 
-  componentDidMount: function() {
-      console.log("mounting...");
+  componentWillMount: function() {
+      console.log("2mounting...");
 
       this.unsubscribeOrte = OrteStore.listen(this.onOrteChange);
-      console.log("mounting done.");
+      console.log("2mounting done.");
+  },
+
+  componentDidMount: function() {
+      //console.log("mounting...");
+
+      //this.unsubscribeOrte = OrteStore.listen(this.onOrteChange);
+      //console.log("mounting done.");
 
       this.refs.searchinput.getDOMNode().focus();
   },
