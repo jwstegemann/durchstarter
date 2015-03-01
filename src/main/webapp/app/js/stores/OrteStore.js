@@ -20,7 +20,7 @@ module.exports = Reflux.createStore({
             request
                .get('/ort/suggest/' + text)
                .end(function(result){
-//                    console.log("got " + text);
+                    console.log("got " + text);
                     var orte = result.body.suggest[0].options;
                     self.trigger(orte);
                });
