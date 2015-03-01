@@ -67,6 +67,8 @@ module.exports = React.createClass({
   },
 
   onOrteChange: function(orte) {
+    console.log("orte: " + orte);
+
     this.setState(React.addons.update(this.state, {
       orte: {$set: orte}
     }));
@@ -174,7 +176,7 @@ module.exports = React.createClass({
   },
 
   render: function() {
-    console.log("focus: " + this.state.showSuggestions + ", orte:" + this.state.orte);
+    //console.log("focus: " + this.state.showSuggestions + ", orte:" + this.state.orte);
 
     var self = this;
 
