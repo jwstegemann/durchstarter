@@ -207,7 +207,8 @@ module.exports = React.createClass({
             <input ref="searchinput" className="form-control input-lg"
               value={this.state.plz} placeholder="Postleitzahl Ihres Unternehmensstandortes"
               autoComplete="off"
-              onChange={this.handleChange} onKeyDown={this.handleOnKeyDown} 
+              onChange={this.handleChange}
+              onPropertyChange={this.handleChange} onKeyDown={this.handleOnKeyDown} 
               onFocus={this.handleFocus} onBlur={this.handleBlur} />
 
               {suggestions}
