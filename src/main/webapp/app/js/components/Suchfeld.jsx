@@ -78,7 +78,7 @@ module.exports = React.createClass({
         selectedOrt: {$set: 0}
       }));
     }
-  }
+  },
 
   componentDidMount: function() {
       //console.log("mounting...");
