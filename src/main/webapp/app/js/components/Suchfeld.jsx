@@ -67,7 +67,7 @@ module.exports = React.createClass({
   },
 
   onOrteChange: function(orte) {
-    console.log("orte: " + orte);
+    //console.log("orte: " + orte);
 
     this.setState(React.addons.update(this.state, {
       orte: {$set: orte}
@@ -78,19 +78,12 @@ module.exports = React.createClass({
         selectedOrt: {$set: 0}
       }));
     }
-  },
-
-  componentWillMount: function() {
-      console.log("2mounting...");
-
-      this.unsubscribeOrte = OrteStore.listen(this.onOrteChange);
-      console.log("2mounting done.");
-  },
+  }
 
   componentDidMount: function() {
       //console.log("mounting...");
 
-      //this.unsubscribeOrte = OrteStore.listen(this.onOrteChange);
+      this.unsubscribeOrte = OrteStore.listen(this.onOrteChange);
       //console.log("mounting done.");
 
       this.refs.searchinput.getDOMNode().focus();
