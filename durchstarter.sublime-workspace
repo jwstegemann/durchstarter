@@ -519,14 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "scrap/index_all.sh",
-			"settings":
-			{
-				"buffer_size": 852,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -688,17 +680,19 @@
 	},
 	"file_history":
 	[
+		"/home/tiberius/scala/projects/durchstarter/scrap/index_all.sh",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/OrteStore.js",
+		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/elasticsearch/ElasticSearchServer.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Datenplatz.jsx",
 		"/home/tiberius/scala/projects/durchstarter/scrap/kategorien.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/index_orte.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/index_per_gemeinde.js",
-		"/home/tiberius/scala/projects/durchstarter/scrap/index_all.sh",
 		"/home/tiberius/scala/projects/durchstarter/scrap/index_per_ort.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Suchfeld.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Ergebnis.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/DatenplaetzeStore.js",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/Info.jsx",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/components/EintragFormular.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/index_fa.js",
 		"/home/tiberius/scala/projects/durchstarter/scrap/casper_arbeitsagentur.js",
@@ -759,12 +753,10 @@
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/eintrag.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/index.html",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/dist/app/unternehmer.html",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/gulpfile.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/app.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/eintrag.js",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/core/Core.scala",
 		"/home/tiberius/scala/projects/durchstarter/src/main/scala/durchstarter/api/QueryHttpService.scala",
-		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js/stores/OrteStore.js",
 		"/home/tiberius/scala/projects/durchstarter/elasticsearch/load",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_colors.scss",
 		"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/styles/_material.scss",
@@ -823,9 +815,12 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"/home/tiberius/scala/projects/durchstarter/src/main/webapp/app/js",
+			"/home/tiberius/scala/projects/durchstarter/src/main/webapp",
+			"/home/tiberius/scala/projects/durchstarter/src/main/webapp/js",
 			"/home/tiberius/scala/projects/durchstarter/src/main/webapp",
 			"/home/tiberius/scala/projects/durchstarter/src",
 			"/home/tiberius/scala/projects/amanuensis/src/main/webapp/app",
@@ -882,6 +877,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"real",
+			"console.log",
+			"newsletterform",
 			"9418",
 			"353^",
 			"suggestions",
@@ -1006,10 +1004,7 @@
 			"Swipe",
 			"icon",
 			"touch-event",
-			"touch",
-			"swipe",
-			"prevent",
-			"swipe"
+			"touch"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1073,35 +1068,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "scrap/index_all.sh",
-					"settings":
-					{
-						"buffer_size": 852,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								19,
-								19
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

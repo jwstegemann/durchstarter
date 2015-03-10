@@ -34,6 +34,8 @@ module.exports = React.createClass({
   handleChange: function(e) {
     var newPlz = e.target.value;
 
+    console.log(e.target.value);
+
     if ((newPlz.length < 6) && (newPlz.match(/^[0-9]{0,5}$/))) {
       this.setState(React.addons.update(this.state, {
         plz: {$set: newPlz},
@@ -65,6 +67,8 @@ module.exports = React.createClass({
   },
 
   onOrteChange: function(orte) {
+    //console.log("orte: " + orte);
+
     this.setState(React.addons.update(this.state, {
       orte: {$set: orte}
     }));
@@ -77,7 +81,10 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
+      //console.log("mounting...");
+
       this.unsubscribeOrte = OrteStore.listen(this.onOrteChange);
+      //console.log("mounting done.");
 
       this.refs.searchinput.getDOMNode().focus();
   },
@@ -172,8 +179,7 @@ module.exports = React.createClass({
   },
 
   render: function() {
- // console.log("focus: " + this.state.showSuggestions);
-
+    //console.log("focus: " + this.state.showSuggestions + ", orte:" + this.state.orte);
 
     var self = this;
 
@@ -207,7 +213,8 @@ module.exports = React.createClass({
             <input ref="searchinput" className="form-control input-lg"
               value={this.state.plz} placeholder="Postleitzahl Ihres Unternehmensstandortes"
               autoComplete="off"
-              onChange={this.handleChange} onKeyDown={this.handleOnKeyDown} 
+              onChange={this.handleChange}
+              onPropertyChange={this.handleChange} onKeyDown={this.handleOnKeyDown} 
               onFocus={this.handleFocus} onBlur={this.handleBlur} />
 
               {suggestions}
