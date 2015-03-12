@@ -1,7 +1,7 @@
 var gulp        = require('gulp');
 var changed     = require('gulp-changed');
 var del         = require('del');
-var webserver   = require('./utils/gulp-webserver/src/index');
+var webserver   = require('gulp-webserver');
 var gutil       = require('gulp-util');
 var browserify  = require('browserify');
 var uglify      = require('gulp-uglify');
@@ -17,6 +17,7 @@ var minifycss   = require('gulp-minify-css');
 var open        = require("gulp-open");
 var plumber     = require("gulp-plumber")
 var svgSymbols  = require("gulp-svg-symbols")
+var fileinclude = require('gulp-file-include')
 
 
 var paths = {
@@ -25,8 +26,8 @@ var paths = {
   imageFiles: 'app/img/**/*',
   styles: 'app/styles/**/*.scss',
   dist: 'dist/app',
-  staticFiles: ['app/index.html', 
-    'app/favicon.ico', 
+  staticFiles: ['app/index.html',
+    'app/favicon.ico',
     'app/impressum.html',
     'app/unternehmer.html',
     'app/eintrag.html',
@@ -78,8 +79,12 @@ gulp.task('static', [], function() {
 
   return gulp.src(paths.staticFiles)
     .pipe(changed(dest))
+    .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+        }))
     .pipe(gulp.dest(dest));
-}); 
+});
 
 /*
  * fonts ressources
@@ -90,7 +95,7 @@ gulp.task('fonts', [], function() {
   return gulp.src(paths.fontsFiles)
     .pipe(changed(dest))
     .pipe(gulp.dest(dest));
-}); 
+});
 
 /*
  * css ressources
@@ -101,47 +106,53 @@ gulp.task('css', [], function() {
   return gulp.src(paths.cssFiles)
     .pipe(changed(dest))
     .pipe(gulp.dest(dest));
-}); 
+});
 
-/*
- * scripts
- */
-gulp.task('scripts', function() {
+
+function createBundle(bundleFile, bundleName) {
   var bundler, rebundle;
   bundler = browserify({
-    entries: paths.bundle,
-    basedir: __dirname, 
+    entries: bundleFile,
+    basedir: __dirname,
     extensions: ['.jsx'],
     insertGlobals : false,
-    debug: !real_build, 
+    debug: !real_build,
     cache: {}, // required for watchify
     packageCache: {}, // required for watchify
     fullPaths: !real_build // required to be true only for watchify
   });
   if(!real_build) {
-    bundler = watchify(bundler) 
+    bundler = watchify(bundler)
   }
- 
+
   bundler.transform(reactify);
- 
+
   rebundle = function() {
     var stream = bundler.bundle();
     stream.on('error', handleError('Browserify'));
-    stream = stream.pipe(source('app.js'))
+    stream = stream.pipe(source(bundleName))
 
     // uglify
     if(real_build) {
       stream.pipe(streamify(uglify({
         mangle: {
           except: ['require', 'export', '$super']
-        }        
+        }
       })));
     }
     return stream.pipe(gulp.dest(paths.dist + '/js'));
   };
- 
+
   bundler.on('update', rebundle);
   return rebundle();
+}
+
+/*
+ * scripts
+ */
+gulp.task('scripts', function() {
+  createBundle('./app/js/app.js', 'app.js');
+  createBundle('./app/js/eintrag.js', 'eintrag.js');
 });
 
 /*
@@ -224,14 +235,14 @@ gulp.task('watch', function() {
 /*
  * build
  */
-gulp.task('build', ['scripts', 'styles', 'images', 'icons', 'static', 'fonts', 'css']); 
+gulp.task('build', ['scripts', 'styles', 'images', 'icons', 'static', 'fonts', 'css']);
 
 /*
  * build
  */
 gulp.task('prepare_serve', [], function() {
   real_build = false;
-}); 
+});
 
 /*
  * default
