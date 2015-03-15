@@ -9,9 +9,8 @@
       @@include('./common_header.html')
 
       <script type="text/javascript">
-        function handleSubmit(e) {
-          window.location.href='./search.html?plz=' + document.getElementById("searchinput").value;
-          return false;
+        function handleSubmit(event) {
+          window.location.href='./search.html?' + document.getElementById("searchinput").value;
         }
       </script>
 
@@ -20,7 +19,7 @@
               <div id="searchfield" class="row hidden-print">
                 <div class="search col-md-10 col-md-offset-1">
                   <p class="search-header">Ihre Suche hat ein Ende:</p>
-                  <form class="form-inline" role="form" onsubmit="handleSubmit()">
+                  <form class="form-inline" role="form" onsubmit="handleSubmit(); return false;">
                     <div class="form-group col-sm-7 col-sm-offset-1">
                       <input id="searchinput" ref="searchinput" class="form-control input-lg"
                         placeholder="Postleitzahl Ihres Unternehmensstandortes"

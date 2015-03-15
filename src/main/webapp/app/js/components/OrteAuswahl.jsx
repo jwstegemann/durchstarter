@@ -57,7 +57,7 @@ module.exports = React.createClass({
         <div className="row">
           <div className="col-md-10 col-md-offset-1">
             <p className="ort-titel">Es gibt mehrere Orte zu Ihrer Postleitzahl. Meinen Sie: </p>
-            <ul>
+            <ul className="orte-auswahl">
               {this.state.orte.map(function(ort) {
                 return <li key={ort.payload.id}><a className="ort-item" onClick={self.onClickOrt.bind(self,ort)}>{ort.text}</a></li>;
               })}
