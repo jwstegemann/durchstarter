@@ -27,6 +27,7 @@ var paths = {
   styles: 'app/styles/**/*.scss',
   dist: 'dist/app',
   staticFiles: ['app/index.html',
+    'app/search.html',
     'app/favicon.ico',
     'app/impressum.html',
     'app/unternehmer.html',

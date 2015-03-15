@@ -5,34 +5,25 @@ var React = require('react/addons');
 var Reflux = require('reflux');
 var Actions = require('../Actions');
 var OrteStore = require('../stores/OrteStore');
-var Router = require('react-router');
 
 
 module.exports = React.createClass({
-  mixins: [Router.Navigation],
 
   getInitialState: function() {
     return {
-      plz: '',
-      orte: [],
-      selectedOrt: undefined,
-      showSuggestions: false
+      plz: ''
     };
   },
 
-  suggestTimeout: undefined,
+  suche: function() {
+    console.log("suche: " + this.refs.searchinput.getDOMNode().value);
 
-  updateOrte: function(query) {
-      if (this.suggestTimeout != undefined) {
-        clearTimeout(this.suggestTimeout);
-      }
-      this.suggestTimeout = setTimeout(function() {
-        Actions.zeigeOrte(query);
-      }, 250);    
+    Actions.suchePlz(this.refs.searchinput.getDOMNode().value);
+    Actions.resetDatenplaetze();
   },
 
   handleChange: function(e) {
-    var newPlz = e.target.value;
+  /*  var newPlz = e.target.value;
 
     console.log(e.target.value);
 
@@ -52,7 +43,7 @@ module.exports = React.createClass({
           return (plz.substr(0,5));
         }},
         showSuggestions: {$set: true}
-      }));   
+      }));
     }
 
     if (newPlz == undefined || newPlz.length == 0) {
@@ -60,39 +51,26 @@ module.exports = React.createClass({
         orte: {$set: []},
         plz: {$set: ''},
         showSuggestions: {$set: false}
-      }));      
-    }
-
-  
-  },
-
-  onOrteChange: function(orte) {
-    //console.log("orte: " + orte);
-
-    this.setState(React.addons.update(this.state, {
-      orte: {$set: orte}
-    }));
-
-    if ((this.state.orte.length <= this.state.selectedOrt) || (!this.state.selectedOrt)) {
-      this.setState(React.addons.update(this.state, {
-        selectedOrt: {$set: 0}
       }));
     }
+    */
+
   },
 
-  componentDidMount: function() {
-      //console.log("mounting...");
 
-      this.unsubscribeOrte = OrteStore.listen(this.onOrteChange);
-      //console.log("mounting done.");
+  componentDidMount: function() {
+      console.log("mounting Suchfeld...");
+
+      console.log("mounting Suchfeld done.");
 
       this.refs.searchinput.getDOMNode().focus();
   },
 
   componentWillUnmount: function() {
-      this.unsubscribeOrte();
+      console.log("unmounting Suchfeld");
   },
 
+/*
   handleOnKeyDown: function(e) {
     var handled = false;
 
@@ -115,116 +93,21 @@ module.exports = React.createClass({
     }
   },
 
-  handleEnter: function(e) {
-    this.navigateToOrt(this.state.selectedOrt);
-  },
+*/
 
-  navigateToOrt: function(index) {
-//    console.log('navigating to ' + index + ' of ' + this.state.orte);
-
-    if (index != undefined && index >= 0 && index < this.state.orte.length) {
-      var ortId = this.state.orte[index].payload.id;
-
-      this.setState(React.addons.update(this.state, {
-        plz: {$set: this.state.orte[index].text},
-        orte: {$set: []},
-        selectedOrt: {$set: undefined},
-        showSuggestions: {$set: false}
-      }), function() {
-        this.refs.searchbutton.getDOMNode().focus();        
-      });
-
-      Router.transitionTo('ergebnis', {ortId: ortId}, {name: this.state.orte[index].text}); 
-    }   
-  },
-
-  handleUp: function() {
-    if (this.state.selectedOrt > 0) {
-      this.setState(React.addons.update(this.state, {
-        selectedOrt: {$apply: function(index) {
-          return index-1;
-        }}
-      }));
-    }
-  },
-
-  handleDown: function() {
-    if (this.state.selectedOrt < this.state.orte.length-1) {
-      this.setState(React.addons.update(this.state, {
-        selectedOrt: {$apply: function(index) {
-          return index+1;
-        }}
-      }));
-    }
-  },
-
-  handleBlur: function() {
-    this.setState(React.addons.update(this.state, {
-        showSuggestions: {$set: false}
-    }));
-  },
-
-  handleFocus: function() {
-    this.handleChange({
-      target: {
-        value: this.state.plz.substr(0,5)
-      }
-    });
-  },
-
-  handleClickOrt: function(index, event) {
-//  console.log('clicked');
-    event.preventDefault();
-    this.navigateToOrt(index);
-  },
 
   render: function() {
-    //console.log("focus: " + this.state.showSuggestions + ", orte:" + this.state.orte);
-
     var self = this;
 
-    var suggestions;
-    if (this.state.showSuggestions) {
-      if (this.state.orte.length > 0) {
-        suggestions =   
-          <ul className="suggestions">
-            { this.state.orte.map(function(ort, index) {
-                var classes = React.addons.classSet({
-                  'suggestion-item': true,
-                  'active': (index == self.state.selectedOrt)
-                });
-               return <li onMouseDown={self.handleClickOrt.bind(self,index)} key={ort.payload.id} className={classes}>{ort.text}</li>;
-            })}              
-          </ul>
-      }
-      else {
-        suggestions = 
-          <ul className="suggestions">
-            <li className="suggestionItem">Bitte geben Sie eine gültige Postleitzahl ein.</li>              
-          </ul>      
-      }
-    }
-
     return (
-      <div className="search col-md-10 col-md-offset-1">
-        <p className="search-header">Ihre Suche hat ein Ende:</p>
         <form className="form-inline" role="form">
-          <div className="form-group col-sm-7 col-sm-offset-1">
-            <input ref="searchinput" className="form-control input-lg"
-              value={this.state.plz} placeholder="Postleitzahl Ihres Unternehmensstandortes"
-              autoComplete="off"
-              onChange={this.handleChange}
-              onPropertyChange={this.handleChange} onKeyDown={this.handleOnKeyDown} 
-              onFocus={this.handleFocus} onBlur={this.handleBlur} />
-
-              {suggestions}
-
-          </div>
-          <button ref="searchbutton" type="submit" className="btn btn-lg btn-default" onClick={this.handleEnter}>
+            <input ref="searchinput"
+              placeholder="Postleitzahl Ihres Unternehmensstandortes"
+              autoComplete="off" />
+            <button ref="searchbutton" type="button" className="btn btn-lg btn-default" onClick={this.suche}>
             KONTAKTE FINDEN
           </button>
         </form>
-      </div>
     );
   }
 });

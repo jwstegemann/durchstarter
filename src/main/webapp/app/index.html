@@ -8,6 +8,33 @@
     <body>
       @@include('./common_header.html')
 
+      <div class="row hidden-print">
+          <div class="col-md-10 col-md-offset-1 title-screen">
+              <div id="searchfield" class="row hidden-print">
+                <div class="search col-md-10 col-md-offset-1">
+                  <p class="search-header">Ihre Suche hat ein Ende:</p>
+                  <form class="form-inline" role="form">
+                    <div class="form-group col-sm-7 col-sm-offset-1">
+                      <input ref="searchinput" class="form-control input-lg"
+                        placeholder="Postleitzahl Ihres Unternehmensstandortes"
+                        autoComplete="off" />
+                    </div>
+                    <button ref="searchbutton" type="submit" class="btn btn-lg btn-default">
+                      KONTAKTE FINDEN
+                    </button>
+                  </form>
+                </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row visible-print">
+          <div class="col-md-12 visible-print" style="margin-left: 15px;">
+              <img class="visible-print" src="img/logo.png" style="width: 50%" />
+          </div>
+      </div>
+
 <!-- -->
             <div id="container">
 

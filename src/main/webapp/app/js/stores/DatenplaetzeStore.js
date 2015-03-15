@@ -10,7 +10,8 @@ module.exports = Reflux.createStore({
     // Initial setup
     init: function() {
         // Register statusUpdate action
-        this.listenTo(Actions.zeigeDatenplaetze, this.update);
+        this.listenTo(Actions.sucheDatenplaetze, this.update);
+        this.listenTo(Actions.resetDatenplaetze, this.reset);
     },
 
     // Callback
@@ -24,9 +25,13 @@ module.exports = Reflux.createStore({
                 });
                 //console.log("update dps");
                 self.trigger(datenplaetze.sort(function(a,b) {
-                    return (a.prio <= b.prio)?-1:1;    
+                    return (a.prio <= b.prio)?-1:1;
                 }));
            });
+    },
+
+    reset: function() {
+      this.trigger([]);
     }
 
 });

@@ -10,19 +10,21 @@ module.exports = Reflux.createStore({
     // Initial setup
     init: function() {
         // Register statusUpdate action
-        this.listenTo(Actions.zeigeOrte, this.update);
+        this.listenTo(Actions.suchePlz, this.update);
     },
 
     // Callback
     update: function(text) {
+        console.log("update orte " + text);
         if (text.length > 0) {
             self = this;
             request
                .get('/ort/suggest/' + text)
                .end(function(result){
-                    //console.log("got " + text);
                     var orte = result.body.suggest[0].options;
+                    console.log("got orte: " + orte);
                     self.trigger(orte);
+                    console.log("getriggert");
                });
         }
     }
