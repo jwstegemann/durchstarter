@@ -2,6 +2,7 @@
 'use strict';
 
 var es5Shim = require('es5-shim');
+var es5Sham = require('es5-shim/es5-sham');
 
 var React = require('react/addons');
 
