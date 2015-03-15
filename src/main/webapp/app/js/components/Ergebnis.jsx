@@ -9,10 +9,14 @@ var Datenplatz = require('./Datenplatz');
 
 
 module.exports = React.createClass({
-  mixins: [Reflux.connect(DatenplaetzeStore,"datenplaetze")],
+  mixins: [Reflux.connect(DatenplaetzeStore,"ort")],
 
   getInitialState: function() {
-    return {datenplaetze: []};
+    return {ort: {
+      id: undefined,
+      dps: [],
+      name: ''
+    }};
   },
 
   componentWillMount: function() {
@@ -25,26 +29,30 @@ module.exports = React.createClass({
   render: function() {
     var self = this;
 
-    var ortName = 'Hallo'; //(this.props.query.name != undefined)?'in ' + this.props.query.name:'';
+    if (self.state.ort.id && self.state.ort.name) {
+      return (
+        <div>
+          <div className="row">
+              <div className="col-md-10 col-md-offset-1">
+                  <p className="ergebnis-titel">Ihre Ansprechpartner in {self.state.ort.name}:&nbsp;&nbsp;<i className="print-me fa fa-print hidden-print" onClick={this.printMe}></i></p>
+              </div>
+          </div>
 
-    return (
-      <div>
-        <div className="row">
-            <div className="col-md-10 col-md-offset-1">
-                <p className="ergebnis-titel">Ihre Ansprechpartner {ortName}:&nbsp;&nbsp;<i className="print-me fa fa-print hidden-print" onClick={this.printMe}></i></p>
-            </div>
+          <div className="row ergebnis-zeile">
+            { self.state.ort.dps.map(function(object, index) {
+              return [
+                <Datenplatz datenplatz={object} key={index} />,
+                (index%2)?<div className="clearfix visible-md-block"></div>:undefined
+              ];
+            })}
+          </div>
+
         </div>
+      );
+    }
+    else {
+      return <div className="row ausgeblendet" />
+    }
 
-        <div className="row ergebnis-zeile">
-          { this.state.datenplaetze.map(function(object, index) {
-            return [
-              <Datenplatz datenplatz={object} key={index} />,
-              (index%2)?<div className="clearfix visible-md-block"></div>:undefined
-            ];
-          })}
-        </div>
-
-      </div>
-    );
   }
 });

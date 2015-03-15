@@ -63,7 +63,12 @@ module.exports = React.createClass({
 
       console.log("mounting Suchfeld done.");
 
-      this.refs.searchinput.getDOMNode().focus();
+      if (this.props.plz) {
+        this.suche();
+      }
+      else {
+        this.refs.searchinput.getDOMNode().focus();
+      }
   },
 
   componentWillUnmount: function() {
@@ -103,7 +108,8 @@ module.exports = React.createClass({
         <form className="form-inline" role="form">
             <input ref="searchinput"
               placeholder="Postleitzahl Ihres Unternehmensstandortes"
-              autoComplete="off" />
+              autoComplete="off"
+              defaultValue={self.props.plz}/>
             <button ref="searchbutton" type="button" className="btn btn-lg btn-default" onClick={this.suche}>
             KONTAKTE FINDEN
           </button>

@@ -16,6 +16,15 @@ var sucheContainer = document.getElementById('sucheContainer')
 var orteContainer = document.getElementById('orteContainer')
 var datenplaetzeContainer = document.getElementById('datenplaetzeContainer')
 
-React.render(<Suchfeld />, sucheContainer);
+
+var param = window.location.search;
+
+if (param && param.length === 6) {
+  React.render(<Suchfeld plz={param.substring(1)} />, sucheContainer);
+}
+else {
+  React.render(<Suchfeld />, sucheContainer);
+}
+
 React.render(<OrteAuswahl />, orteContainer);
 React.render(<Ergebnis />, datenplaetzeContainer);

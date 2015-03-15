@@ -31,7 +31,7 @@ module.exports = React.createClass({
 
     if (orte.length === 1) {
         console.log("lade DPs");
-      Actions.sucheDatenplaetze(orte[0].payload.id);
+      Actions.sucheDatenplaetze(orte[0]);
     }
   },
 
@@ -40,27 +40,29 @@ module.exports = React.createClass({
       orte: {$set: []}
     }));
 
-    Actions.sucheDatenplaetze(ort.payload.id, ort);
+    Actions.sucheDatenplaetze(ort);
   },
 
   render: function() {
     var self = this;
 
     if (this.state.orte.length === 0) {
-      return <div />;
+      return <div className="row ausgeblendet"/>;
     }
     else if (this.state.orte.length === 1) {
-      return <div />;
+      return <div className="row usgeblendet"/>;
     }
     else {
       return (
-        <div>
-          <p>Es gibt mehrere Orte zu Ihrer Postleitzahl. Meinen Sie: </p>
-          <ul>
-            {this.state.orte.map(function(ort) {
-              return <li key={ort.payload.id}><a onClick={self.onClickOrt.bind(self,ort)}>{ort.text}</a></li>;
-            })}
-          </ul>
+        <div className="row">
+          <div className="col-md-10 col-md-offset-1">
+            <p className="ort-titel">Es gibt mehrere Orte zu Ihrer Postleitzahl. Meinen Sie: </p>
+            <ul>
+              {this.state.orte.map(function(ort) {
+                return <li key={ort.payload.id}><a className="ort-item" onClick={self.onClickOrt.bind(self,ort)}>{ort.text}</a></li>;
+              })}
+            </ul>
+          </div>
         </div>
       );
     }

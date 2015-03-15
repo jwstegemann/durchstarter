@@ -60,7 +60,7 @@ $navbar-default-link-active-color: $text-grey;
   }
 
   div.dp {
-    margin-bottom: 20px !important;  
+    margin-bottom: 20px !important;
   }
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 .navbar-logo > img {
-  width: 250px;  
+  width: 250px;
 }
 
 .main-container {
@@ -209,13 +209,13 @@ input.form-control:focus {
 
 .section-list {
   color: $text-grey;
-  font-size: 16px;  
+  font-size: 16px;
 }
 
 .section-grey {
   padding-top: 15px;
   padding-bottom: 5px;
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
 }
 
 .copyright {
@@ -254,7 +254,7 @@ input.form-control:focus {
 }
 
 .dp {
-  margin-bottom: 40px !important;  
+  margin-bottom: 40px !important;
   padding-left: 30px;
   padding-right: 30px;
   page-break-inside: avoid;
@@ -345,13 +345,13 @@ p.anschrift {
 }
 
 .print-me {
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .screenshot {
   margin-top: 20px;
   margin-bottom: 20px;
-  @include box-shadow($whiteframe-shadow-z2);  
+  @include box-shadow($whiteframe-shadow-z2);
   margin-left: 20px;
   padding: 10px;
 }
@@ -397,4 +397,25 @@ form.angebot {
 form.checked input:required:invalid, input:focus:invalid {
   /* insert your own styles for invalid form input */
   border-bottom: 2px solid $color-red;
+}
+
+.ausgeblendet {
+  display: none;
+}
+
+.ort-titel {
+  font-family: $font;
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: $text-grey;
+}
+
+.ort-item {
+  font-family: $font;
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
 }

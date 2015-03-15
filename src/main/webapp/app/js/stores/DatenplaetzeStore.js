@@ -15,23 +15,31 @@ module.exports = Reflux.createStore({
     },
 
     // Callback
-    update: function(ortId) {
+    update: function(ort) {
         self = this;
         request
-           .get('/datenplaetze/' + ortId)
+           .get('/datenplaetze/' + ort.payload.id)
            .end(function(result){
                 var datenplaetze = result.body.hits.hits.map(function(hit, id) {
                     return hit._source;
                 });
                 //console.log("update dps");
-                self.trigger(datenplaetze.sort(function(a,b) {
-                    return (a.prio <= b.prio)?-1:1;
-                }));
+                self.trigger({
+                  id: ort.payload.id,
+                  dps: datenplaetze.sort(function(a,b) {
+                        return (a.prio <= b.prio)?-1:1;
+                    }),
+                  name: ort.text
+                });
            });
     },
 
     reset: function() {
-      this.trigger([]);
+      this.trigger({
+        id: undefined,
+        dps: [],
+        name: ''
+      });
     }
 
 });
