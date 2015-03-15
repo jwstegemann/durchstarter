@@ -16,9 +16,14 @@ module.exports = React.createClass({
   },
 
   suche: function() {
-    console.log("suche: " + this.refs.searchinput.getDOMNode().value);
 
-    Actions.suchePlz(this.refs.searchinput.getDOMNode().value);
+    var form = this.refs.suchform.getDOMNode();
+
+    if (!form.checkValidity || form.checkValidity()) {
+      //console.log("suche: " + this.refs.searchinput.getDOMNode().value);
+      Actions.suchePlz(this.refs.searchinput.getDOMNode().value);
+    }
+
     Actions.resetDatenplaetze();
   },
 
@@ -65,9 +70,10 @@ module.exports = React.createClass({
 
       if (this.props.plz) {
         this.suche();
+        this.refs.searchinput.getDOMNode().focus();
       }
       else {
-        this.refs.searchinput.getDOMNode().focus();
+        window.location.href="./index.html";
       }
   },
 
@@ -75,20 +81,13 @@ module.exports = React.createClass({
       console.log("unmounting Suchfeld");
   },
 
-/*
-  handleOnKeyDown: function(e) {
+
+  handleKeyDown: function(e) {
     var handled = false;
 
     switch(e.which) {
 
-      case 13:  this.handleEnter(e);
-                handled = true;
-                break;
-
-      case 38:  this.handleUp();
-                handled = true;
-                break;
-      case 40:  this.handleDown();
+      case 13:  this.suche();
                 handled = true;
                 break;
     }
@@ -98,22 +97,23 @@ module.exports = React.createClass({
     }
   },
 
-*/
-
 
   render: function() {
     var self = this;
 
     return (
-        <form className="form-inline" role="form">
-            <input ref="searchinput"
-              placeholder="Postleitzahl Ihres Unternehmensstandortes"
-              autoComplete="off"
-              defaultValue={self.props.plz}/>
-            <button ref="searchbutton" type="button" className="btn btn-lg btn-default" onClick={this.suche}>
-            KONTAKTE FINDEN
-          </button>
-        </form>
+      <form ref="suchform" className="navbar-form navbar-right" role="search">
+        <div className="form-group">
+          <input ref="searchinput" type="text" className="form-control suche-input"
+            placeholder="PLZ"
+            autoComplete="off"
+            defaultValue={self.props.plz}
+            required pattern="[0-9]{5}" maxLength="5" size="5"
+            onKeyDown={self.handleKeyDown} />
+        </div>
+        <button ref="searchbutton" type="button" className="btn btn-default suche-button" onClick={this.suche}>KONTAKTE FINDEN</button>
+      </form>
+
     );
   }
 });

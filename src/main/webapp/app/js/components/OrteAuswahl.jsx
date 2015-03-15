@@ -12,7 +12,7 @@ module.exports = React.createClass({
 
   getInitialState: function() {
     return {
-      orte: []
+      orte: undefined
     };
   },
 
@@ -37,7 +37,7 @@ module.exports = React.createClass({
 
   onClickOrt: function(ort) {
     this.setState(React.addons.update(this.state, {
-      orte: {$set: []}
+      orte: {$set: undefined}
     }));
 
     Actions.sucheDatenplaetze(ort);
@@ -46,11 +46,20 @@ module.exports = React.createClass({
   render: function() {
     var self = this;
 
-    if (this.state.orte.length === 0) {
-      return <div className="row ausgeblendet"/>;
+    if (!this.state.orte) {
+      return (<div className="row ausgeblendet">
+      </div>);
+    }
+    else if (this.state.orte.length === 0) {
+      return (<div className="row orte-meldung">
+        <div className="col-md-10 col-md-offset-1 section-details">
+        <p>Zu der von Ihnen eingegebenen Postleitzahl konnten wir leider keinen Ort in unserer Datenbank ermitteln.</p>
+        <p>Bitte versuchen Sie eine andere Postleitzahl in Ihrer Nähe.</p>
+        </div>
+      </div>);
     }
     else if (this.state.orte.length === 1) {
-      return <div className="row usgeblendet"/>;
+      return <div className="row ausgeblendet"/>;
     }
     else {
       return (

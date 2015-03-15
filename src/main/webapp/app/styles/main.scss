@@ -57,6 +57,8 @@ $navbar-default-link-active-color: $text-grey;
     margin-left: 15px;
     text-align: left;
     font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 60px;
   }
 
   div.dp {
@@ -142,8 +144,12 @@ body {
 .navbar-default .navbar-nav > li > a.btn-default {
   @extend .btn-default;
   padding: 8px 12px;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-left: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  margin-top: 5px;
 }
 
 input.form-control {
@@ -244,13 +250,13 @@ input.form-control:focus {
 }
 
 .ergebnis-titel {
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 28px;
   font-weight: 300;
   text-align: center;
   color: $text-grey;
   margin-left: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .dp {
@@ -421,5 +427,14 @@ form.checked input:required:invalid, input:focus:invalid {
 }
 
 .orte-auswahl {
+  margin-bottom: 40px;
+}
+
+.suche-button {
+  margin-left: 10px;
+}
+
+.orte-meldung {
+  margin-top: 40px;
   margin-bottom: 40px;
 }
