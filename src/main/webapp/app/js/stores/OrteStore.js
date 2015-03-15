@@ -17,7 +17,7 @@ module.exports = Reflux.createStore({
     update: function(text) {
         console.log("update orte " + text);
         if (text.length > 0) {
-            self = this;
+            var self = this;
             request
                .get('/ort/suggest/' + text)
                .end(function(result){

@@ -16,7 +16,7 @@ module.exports = Reflux.createStore({
 
     // Callback
     update: function(ort) {
-        self = this;
+        var self = this;
         request
            .get('/datenplaetze/' + ort.payload.id)
            .end(function(result){
