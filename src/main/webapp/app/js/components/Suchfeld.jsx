@@ -8,6 +8,7 @@ var OrteStore = require('../stores/OrteStore');
 
 
 module.exports = React.createClass({
+  displayName: 'Suchfeld',
 
   getInitialState: function() {
     return {

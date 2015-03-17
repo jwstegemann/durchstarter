@@ -4,6 +4,8 @@
 var React = require('react');
 
 module.exports = React.createClass({
+  displayName: 'Datenplatz',
+
   render: function() {
 
     var urlText;
@@ -29,7 +31,7 @@ module.exports = React.createClass({
     }
     if (this.props.datenplatz.fax != '') {
       fax = (<p className="telefax"><i className="fa fa-fw fa-fax icon-grey"></i>&nbsp;{this.props.datenplatz.fax}</p>)
-    }        
+    }
     if (this.props.datenplatz.email != '') {
       email = (<p className="email"><i className="fa fa-fw fa-envelope-o icon-grey"></i>&nbsp;
               <a href={'mailto:' + this.props.datenplatz.email}>{emailText}</a>
@@ -55,7 +57,7 @@ module.exports = React.createClass({
 
           {telefon}
           {fax}
-          
+
           {email}
           {url}
               </div>
@@ -63,8 +65,8 @@ module.exports = React.createClass({
                   <img className="platzlogo" src={'img/logos/' + this.props.datenplatz.icon} />
               </div>
           </div>
-                
-          
+
+
       </div>
     );
   }

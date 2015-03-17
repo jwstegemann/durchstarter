@@ -8,13 +8,6 @@ var React = require('react/addons');
 var EintragFormular = require('./components/EintragFormular');
 
 
-var ef = document.getElementById('eintragformular')
-if (ef) {
-  var eintragformular = (
-      <EintragFormular />
-  );
+var ef = document.getElementById('eintragformular');
 
-  var suche = React.renderComponent(
-    eintragformular, ef
-  );
-}
+React.render(<EintragFormular />, ef);

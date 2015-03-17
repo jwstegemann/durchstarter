@@ -9,6 +9,8 @@ var Datenplatz = require('./Datenplatz');
 
 
 module.exports = React.createClass({
+  displayName: 'Ergebnis',
+
   mixins: [Reflux.connect(DatenplaetzeStore,"ort")],
 
   getInitialState: function() {

@@ -6,6 +6,8 @@ var request = require('superagent');
 
 
 module.exports = React.createClass({
+  displayName: "EintragFormular",
+
   getInitialState: function() {
     return {
       checked: false,
@@ -23,21 +25,19 @@ module.exports = React.createClass({
       });
 
       var name = this.refs.name.getDOMNode().value;
-      var slogan = this.refs.slogan.getDOMNode().value;
       var kategorie = this.refs.kategorie.getDOMNode().value;
       var anschrift = this.refs.anschrift.getDOMNode().value;
       var ansprechpartner = this.refs.ansprechpartner.getDOMNode().value;
       var telefon = this.refs.telefon.getDOMNode().value;
       var fax = this.refs.fax.getDOMNode().value;
       var email = this.refs.email.getDOMNode().value;
-      var url = this.refs.url.getDOMNode().value;      
+      var url = this.refs.url.getDOMNode().value;
       var postleitzahlen = this.refs.postleitzahlen.getDOMNode().value;
 
       request
            .put('/angebot/2')
            .send({
               name: name,
-              slogan: slogan,
               kategorie: kategorie,
               anschrift: anschrift,
               ansprechpartner: ansprechpartner,
@@ -45,7 +45,8 @@ module.exports = React.createClass({
               fax: fax,
               eMail: email,
               url: url,
-              postleitzahlen: postleitzahlen
+              postleitzahlen: postleitzahlen,
+              slogan: ''
             })
            .end(function(result){
 //                console.log(result)
@@ -75,12 +76,6 @@ module.exports = React.createClass({
           <label className="col-sm-2 control-label">Name</label>
           <div className="col-sm-10">
             <input ref="name" required type="text" className="form-control" id="inputName" placeholder="... des Unternehmens"></input>
-          </div>
-        </div>
-        <div className="form-group">
-          <label className="col-sm-2 control-label">Slogan/Zusatz</label>
-          <div className="col-sm-10">
-            <input ref="slogan" type="text" className="form-control" id="inputSlogan"></input>
           </div>
         </div>
         <div className="form-group">
@@ -130,7 +125,7 @@ module.exports = React.createClass({
           <div className="col-sm-10">
             <input ref="postleitzahlen" type="text" className="form-control" id="inputStandorte" placeholder="... der weiteren Standorte des Unternehmens (wenn vorhanden)"></input>
           </div>
-        </div>            
+        </div>
         <div className="form-group">
           <div className="col-sm-offset-2 col-sm-10">
             <button type="button" className="btn btn-default" onClick={this.angebot}>{this.state.msg}</button>
