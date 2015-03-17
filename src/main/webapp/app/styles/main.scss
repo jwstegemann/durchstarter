@@ -266,41 +266,45 @@ input.form-control:focus {
   page-break-inside: avoid;
 }
 
-p.kategorie {
+.kategorie {
   font-size: 14px;
   font-weight: 400;
   color: $text-grey;
   margin-bottom: 2px !important;
 }
 
-p.name {
+.name {
   font-weight: 400;
   font-size: 16px;
   color: $color-green;
   margin-top: 0 !important;
 }
 
-p.telefon {
+.telefon {
   color: $text-grey;
   margin-bottom: 0 !important;
 }
 
-p.telefax {
+.telefax {
   color: $text-grey;
   margin-top: 0 !important;
 }
 
-p.email {
+.email {
   color: $text-grey;
   margin-bottom: 0 !important;
 }
 
-p.url {
+.url {
   color: $text-grey;
   margin-top: 0 !important;
 }
 
-p.anschrift {
+.anschrift {
+  color: $text-grey;
+}
+
+.ansprechpartner {
   color: $text-grey;
 }
 
@@ -316,6 +320,14 @@ p.anschrift {
   width: 100px;
 }
 
+.icon-col {
+  width: 1.7em;
+  vertical-align: top;
+}
+
+.leer-row {
+  height: 0.4em;
+}
 
 /*
  * Suchfeld

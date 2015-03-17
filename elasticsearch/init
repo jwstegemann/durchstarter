@@ -14,16 +14,26 @@ curl -XPUT "$1/datenplaetze/datenplatz/_mapping" -d'
   "datenplatz": {
     "_source": {"enabled": "true"},
     "properties": {
-      "id": {          
+      "id": {
         "type": "string",
         "store": "yes",
         "analyzer": "keyword"
-      },        
-      "name": {          
+      },
+      "name": {
         "type": "string",
         "store": "yes",
         "analyzer": "german",
         "boost": 2.0
+      },
+      "name2": {
+        "type": "string",
+        "store": "yes",
+        "analyzer": "german"
+      },
+      "ansprechpartner": {
+        "type": "string",
+        "store": "yes",
+        "index": "not_analyzed"
       },
       "anschrift1": {
         "type": "string",
@@ -96,7 +106,7 @@ curl -XPUT "$1/orte/ort/_mapping" -d'
       "enabled": "false"
     },
     "properties": {
-        "id": {          
+        "id": {
           "type": "string",
           "store": "yes",
           "analyzer": "keyword"
@@ -107,27 +117,27 @@ curl -XPUT "$1/orte/ort/_mapping" -d'
             "search_analyzer": "whitespace",
             "payloads": "true"
         },
-        "plz": {          
+        "plz": {
           "type": "string",
           "store": "yes",
           "analyzer": "keyword"
         },
-        "land": {          
+        "land": {
           "type": "string",
           "store": "yes",
           "analyzer": "keyword"
         },
-        "gemeinde": {          
+        "gemeinde": {
           "type": "string",
           "store": "yes",
           "analyzer": "keyword"
         },
-        "koordinaten": {          
+        "koordinaten": {
           "type": "geo_point",
           "store": "yes",
           "geohash": "true",
           "geohash_precision": "1km"
-        }      
+        }
     }
   }
 }'

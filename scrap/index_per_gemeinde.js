@@ -43,6 +43,8 @@ orte.map(function(gemeinden) {
         kategorie: fields[9],
         prio: kategorien[fields[9]],
         name: fields[1],
+        name2: fields[12],
+        ansprechpartner: fields[13],        
         anschrift1: fields[2],
         anschrift2: fields[3],
         anschrift3: fields[4],
@@ -80,7 +82,7 @@ orte.map(function(gemeinden) {
         bulk.push({index: {_index: 'datenplaetze', _type: 'datenplatz', _id: doc._id}});
         bulk.push(doc);
 
-        return bulk;    
+        return bulk;
       })
     })
     .map(doBulk)
@@ -91,5 +93,3 @@ orte.map(function(gemeinden) {
     });
 
 })
-
-

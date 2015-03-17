@@ -16,50 +16,35 @@ module.exports = React.createClass({
     if (this.props.datenplatz.email.length > 35) emailText = this.props.datenplatz.email.substr(0,35) + "...";
     else emailText = this.props.datenplatz.email;
 
-    var anschrift1, anschrift2, anschrift3, telefon, fax, email, url;
-    if (this.props.datenplatz.anschrift1 != '') {
-      anschrift1 = (<span><i className="fa fa-home fa-fw icon-grey"></i>&nbsp;{this.props.datenplatz.anschrift1}<br/></span>)
-    }
-    if (this.props.datenplatz.anschrift2 != '') {
-      anschrift2 = (<span><i className="fa fa-fw"></i>&nbsp;{this.props.datenplatz.anschrift2}<br/></span>)
-    }
-    if (this.props.datenplatz.anschrift3 != '') {
-      anschrift3 = (<span><i className="fa fa-fw"></i>&nbsp;{this.props.datenplatz.anschrift3}<br/></span>)
-    }
-    if (this.props.datenplatz.telefon != '') {
-      telefon = (<p className="telefon"><i className="fa fa-fw fa-phone icon-grey"></i>&nbsp;{this.props.datenplatz.telefon}</p>)
-    }
-    if (this.props.datenplatz.fax != '') {
-      fax = (<p className="telefax"><i className="fa fa-fw fa-fax icon-grey"></i>&nbsp;{this.props.datenplatz.fax}</p>)
-    }
-    if (this.props.datenplatz.email != '') {
-      email = (<p className="email"><i className="fa fa-fw fa-envelope-o icon-grey"></i>&nbsp;
-              <a href={'mailto:' + this.props.datenplatz.email}>{emailText}</a>
-          </p>)
-    }
-    if (this.props.datenplatz.url != '') {
-      url = (<p className="url"><i className="fa fa-fw fa-globe icon-grey"></i>&nbsp;<a href={'http://' + this.props.datenplatz.url} target="_blank">{urlText}</a></p>)
-    }
+    var classLeer0 = (!this.props.datenplatz.ansprechpartner && !this.props.datenplatz.anschrift1 && !this.props.datenplatz.anschrift2 && !this.props.datenplatz.anschrift3)?"ausgeblendet":"";
+    var classAnsprechpartner = (!this.props.datenplatz.ansprechpartner)?"ausgeblendet":"";
+    var classAnschrift = (!this.props.datenplatz.anschrift1 && !this.props.datenplatz.anschrift2 && !this.props.datenplatz.anschrift3)?"ausgeblendet":"";
+    var classLeer1 = (!this.props.datenplatz.telefon && !this.props.datenplatz.fax)?"ausgeblendet":"";
+    var classTelefon = (!this.props.datenplatz.telefon)?"ausgeblendet":"";
+    var classTelefax = (!this.props.datenplatz.fax)?"ausgeblendet":"";
+    var classLeer2 = (!this.props.datenplatz.email && !this.props.datenplatz.url)?"ausgeblendet":"";
+    var classEmail = (!this.props.datenplatz.email)?"ausgeblendet":"";
+    var classUrl = (!this.props.datenplatz.url)?"ausgeblendet":"";
+
 
     return (
       <div className="col-md-6 dp">
 
           <div className="row">
               <div className="col-xs-8">
-                  <p className="kategorie">{this.props.datenplatz.kategorie}</p>
-                  <p className="name">{this.props.datenplatz.name}</p>
-
-                  <p className="anschrift">
-                    {anschrift1}
-                    {anschrift2}
-                    {anschrift3}
-                  </p>
-
-          {telefon}
-          {fax}
-
-          {email}
-          {url}
+                <table>
+                  <tr><td className="kategorie" colSpan="2">{this.props.datenplatz.kategorie}</td></tr>
+                  <tr><td className="name" colSpan="2">{this.props.datenplatz.name}<br/>{this.props.datenplatz.name2}</td></tr>
+                  <tr className={"leer-row " + classLeer0}><td colSpan="2" /></tr>
+                  <tr className={classAnsprechpartner}><td className="icon-col" ><i className="fa fa-user fa-fw icon-grey"></i></td><td className="ansprechpartner">{this.props.datenplatz.ansprechpartner}</td></tr>
+                  <tr className={classAnschrift}><td className="icon-col" ><i className="fa fa-home fa-fw icon-grey"></i></td><td className="anschrift">{this.props.datenplatz.anschrift1}<br/>{this.props.datenplatz.anschrift2}<br/>{this.props.datenplatz.anschrift3}</td></tr>
+                  <tr className={"leer-row " + classLeer1}><td colSpan="2" /></tr>
+                  <tr className={classTelefon}><td className="icon-col" ><i className="fa fa-fw fa-phone icon-grey"></i></td><td className="telefon">{this.props.datenplatz.telefon}</td></tr>
+                  <tr className={classTelefax}><td className="icon-col" ><i className="fa fa-fw fa-fax icon-grey"></i></td><td className="telefax">{this.props.datenplatz.fax}</td></tr>
+                  <tr className={"leer-row " + classLeer2}><td colSpan="2" /></tr>
+                  <tr className={classEmail}><td className="icon-col" ><i className="fa fa-fw fa-envelope-o icon-grey"></i></td><td className="email"><a href={'mailto:' + this.props.datenplatz.email}>{emailText}</a></td></tr>
+                  <tr className={classUrl}><td className="icon-col" ><i className="fa fa-fw fa-globe icon-grey"></i></td><td className="url"><a href={'http://' + this.props.datenplatz.url} target="_blank">{urlText}</a></td></tr>
+                </table>
               </div>
               <div className="col-xs-2">
                   <img className="platzlogo" src={'img/logos/' + this.props.datenplatz.icon} />
