@@ -36,7 +36,7 @@ module.exports = React.createClass({
 
       if (this.props.plz) {
         this.suche();
-        this.refs.searchinput.getDOMNode().focus();
+//        this.refs.searchinput.getDOMNode().focus();
       }
       else {
         window.location.href="./index.html";
