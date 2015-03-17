@@ -28,46 +28,11 @@ module.exports = React.createClass({
     Actions.resetDatenplaetze();
   },
 
-  handleChange: function(e) {
-  /*  var newPlz = e.target.value;
-
-    console.log(e.target.value);
-
-    if ((newPlz.length < 6) && (newPlz.match(/^[0-9]{0,5}$/))) {
-      this.setState(React.addons.update(this.state, {
-        plz: {$set: newPlz},
-        showSuggestions: {$set: true}
-      }));
-
-      this.updateOrte(newPlz);
-    }
-    else if (newPlz.length > 5) {
-      this.updateOrte(this.state.plz.substr(0,5));
-
-      this.setState(React.addons.update(this.state, {
-        plz: {$apply: function(plz) {
-          return (plz.substr(0,5));
-        }},
-        showSuggestions: {$set: true}
-      }));
-    }
-
-    if (newPlz == undefined || newPlz.length == 0) {
-      this.setState(React.addons.update(this.state, {
-        orte: {$set: []},
-        plz: {$set: ''},
-        showSuggestions: {$set: false}
-      }));
-    }
-    */
-
-  },
-
 
   componentDidMount: function() {
-      console.log("mounting Suchfeld...");
+  //    console.log("mounting Suchfeld...");
 
-      console.log("mounting Suchfeld done.");
+  //    console.log("mounting Suchfeld done.");
 
       if (this.props.plz) {
         this.suche();
@@ -79,7 +44,7 @@ module.exports = React.createClass({
   },
 
   componentWillUnmount: function() {
-      console.log("unmounting Suchfeld");
+  //    console.log("unmounting Suchfeld");
   },
 
 

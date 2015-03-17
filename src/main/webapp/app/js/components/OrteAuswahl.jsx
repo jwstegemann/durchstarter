@@ -17,20 +17,20 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-    console.log("mounting OrteAuswahl");
+    //console.log("mounting OrteAuswahl");
     this.unsubscribeOrte = OrteStore.listen(this.onOrteChange);
-    console.log("OrteAuswahl gemountet");
+    //console.log("OrteAuswahl gemountet");
   },
 
   onOrteChange: function(orte) {
-    console.log("orte changed: " + orte);
+    //console.log("orte changed: " + orte);
 
     this.setState(React.addons.update(this.state, {
       orte: {$set: orte}
     }));
 
     if (orte.length === 1) {
-        console.log("lade DPs");
+        //console.log("lade DPs");
       Actions.sucheDatenplaetze(orte[0]);
     }
   },

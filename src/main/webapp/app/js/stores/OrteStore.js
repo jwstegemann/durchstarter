@@ -15,16 +15,16 @@ module.exports = Reflux.createStore({
 
     // Callback
     update: function(text) {
-        console.log("update orte " + text);
+        //console.log("update orte " + text);
         if (text.length > 0) {
             var self = this;
             request
                .get('/ort/suggest/' + text)
                .end(function(result){
                     var orte = result.body.suggest[0].options;
-                    console.log("got orte: " + orte);
+                    //console.log("got orte: " + orte);
                     self.trigger(orte);
-                    console.log("getriggert");
+                    //console.log("getriggert");
                });
         }
     }
