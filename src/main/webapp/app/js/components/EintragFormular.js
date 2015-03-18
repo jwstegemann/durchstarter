@@ -15,6 +15,11 @@ module.exports = React.createClass({
     };
   },
 
+  componentDidMount: function() {
+    var elements = $('input');
+    if (elements.placeholder) elements.placeholder();
+  },
+
   angebot: function(e) {
     var form = this.refs.ef.getDOMNode();
 

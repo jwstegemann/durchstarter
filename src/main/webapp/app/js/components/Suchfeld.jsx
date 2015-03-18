@@ -37,6 +37,9 @@ module.exports = React.createClass({
       if (this.props.plz) {
         this.suche();
 //        this.refs.searchinput.getDOMNode().focus();
+
+        var elements = $('input');
+        if (elements.placeholder) elements.placeholder();
       }
       else {
         window.location.href="./index.html";

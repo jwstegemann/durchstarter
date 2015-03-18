@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "es5-shim": "^4.1.0",
+    "jquery-placeholder": "^2.1.1",
     "react": "^0.13.0",
-    "react-router": "~0.5.2",
     "reflux": "^0.2.7",
     "superagent": "~0.20.0"
   },
