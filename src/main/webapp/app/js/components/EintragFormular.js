@@ -92,7 +92,7 @@ module.exports = React.createClass({
       <div className="form-group">
           <label className="col-sm-2 control-label">Anschrift</label>
           <div className="col-sm-10">
-            <input ref="anschrift" required type="text" className="form-control" id="inputAnschrift" placeholder=""></input>
+            <input ref="anschrift" required type="text" className="form-control" id="inputAnschrift" placeholder="Straße, Hausnummer, Postleitzahl, Ort"></input>
           </div>
         </div>
       <div className="form-group">
