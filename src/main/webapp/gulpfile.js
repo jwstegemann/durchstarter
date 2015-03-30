@@ -28,7 +28,6 @@ var paths = {
   dist: 'dist/app',
   staticFiles: ['app/index.html',
     'app/search.html',
-    'app/favicon.ico',
     'app/impressum.html',
     'app/unternehmer.html',
     'app/eintrag.html',
@@ -38,7 +37,8 @@ var paths = {
   fontsFiles: ['app/fonts/*'],
   cssFiles: ['app/styles/font-awesome.min.css'],
   indexHtml: "http://localhost:9000/index.html",
-  icons: 'app/icons/*'
+  icons: ['app/favicon.ico']
+
 };
 
 
@@ -173,15 +173,11 @@ gulp.task('styles', function() {
  * icons
  */
 gulp.task('icons', function() {
+  var dest = paths.dist;
+
   return gulp.src(paths.icons)
-    .pipe(plumber())
-    .pipe(svgSymbols({
-      svgId: "IconSvg-%f",
-      className: ".IconSvg-%f",
-//      fontSize: 512 // svg icons default font-size,
-      css: false
-    }))
-    .pipe(gulp.dest(paths.dist + '/icons'));
+    .pipe(changed(dest))
+    .pipe(gulp.dest(dest));
 });
 
 

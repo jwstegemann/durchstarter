@@ -20,6 +20,10 @@ $navbar-default-link-color: $text-grey;
 $navbar-default-link-active-color: $text-grey;
 
 
+strong {
+  font-weight: 300 !important;
+}
+
 @mixin box-shadow($shadow) {
   -webkit-box-shadow: $shadow;
      -moz-box-shadow: $shadow;
