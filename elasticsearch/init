@@ -113,8 +113,8 @@ curl -XPUT "$1/orte/ort/_mapping" -d'
         },
         "bezeichnung": {
             "type": "completion",
-            "index_analyzer": "whitespace",
-            "search_analyzer": "whitespace",
+            "index_analyzer": "german",
+            "search_analyzer": "german",
             "payloads": "true"
         },
         "plz": {
