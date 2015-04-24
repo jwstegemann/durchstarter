@@ -4,7 +4,8 @@
 
 pushd .
 cd src/main/webapp
-gulp clean build
+gulp clean
+gulp build
 popd
 
 
