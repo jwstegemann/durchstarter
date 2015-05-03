@@ -38,23 +38,17 @@ orte.stream()
 
       doc = {
         _id: ort.id,
-        bezeichnung: {
-          input: titel,
-          payload: {
-            id: ort.id,
-            koordinaten: koord
-          }
-        },
+        bezeichnung: titel,
         plz: ort.plz,
         land: ort.bundesland,
         gemeinde: ort.gemeinde,
-        koordinaten: koord      
+        koordinaten: koord
       }
 
       bulk.push({index: {_index: 'orte', _type: 'ort', _id: doc._id}});
       bulk.push(doc);
 
-      return bulk;    
+      return bulk;
     })
   })
   .map(doBulk)
@@ -63,4 +57,3 @@ orte.stream()
     log.info("beende Client");
     client.close();
   });
-

@@ -5,11 +5,11 @@ import durchstarter.domain._
 
 case class QueryRequest(query: String)
 
-case class QueryResult(took: Int, hits: Hits)
+case class QueryResult[T](took: Int, hits: Hits[T])
 
-case class Hits(total: Int, max_score: Double, hits: Seq[Hit])
+case class Hits[T](total: Int, max_score: Double, hits: Seq[Hit[T]])
 
-case class Hit(_id: String, _score: Double, _source: Datenplatz)
+case class Hit[T](_id: String, _score: Double, _source: T)
 
 case class Facets(tags: Tags, dates: Dates)
 
@@ -32,10 +32,13 @@ object ElasticSearchProtocol extends DefaultJsonProtocol {
   import DurchstarterProtocol._
 
   // JSON-Serialization
-  implicit val hitJsonFormat = jsonFormat3(Hit)
-  implicit val hitsJsonFormat = jsonFormat3(Hits)
+  implicit val hitJsonDatenplatzFormat = jsonFormat3(Hit[Datenplatz])
+  implicit val hitsJsonDatenplatzFormat = jsonFormat3(Hits[Datenplatz])
   implicit val queryRequestJsonFormat = jsonFormat1(QueryRequest)
-  
+
+  implicit val hitJsonOrtFormat = jsonFormat3(Hit[Ort])
+  implicit val hitsJsonOrtFormat = jsonFormat3(Hits[Ort])
+
   implicit val termJsonFormat = jsonFormat2(Term)
   implicit val tagsJsonFormat = jsonFormat2(Tags)
 
@@ -43,7 +46,9 @@ object ElasticSearchProtocol extends DefaultJsonProtocol {
   implicit val datesJsonFormat = jsonFormat1(Dates)
 
   implicit val facetsJsonFormat = jsonFormat2(Facets)
-  implicit val queryResultJsonFormat = jsonFormat2(QueryResult)
+
+  implicit val queryResultJsonDatenplatFormat = jsonFormat2(QueryResult[Datenplatz])
+  implicit val queryResultJsonOrtFormat = jsonFormat2(QueryResult[Ort])
 
   implicit val suggestOrtOptionJsonFormat = jsonFormat3(SuggestOption[Ort])
   implicit val suggestionOrtJsonFormat = jsonFormat1(Suggestion[Ort])

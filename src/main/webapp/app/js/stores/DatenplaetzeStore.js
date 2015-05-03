@@ -18,18 +18,18 @@ module.exports = Reflux.createStore({
     update: function(ort) {
         var self = this;
         request
-           .get('/datenplaetze/' + ort.payload.id)
+           .get('/datenplaetze/' + ort._id)
            .end(function(result){
                 var datenplaetze = result.body.hits.hits.map(function(hit, id) {
                     return hit._source;
                 });
                 //console.log("update dps");
                 self.trigger({
-                  id: ort.payload.id,
+                  id: ort._id,
                   dps: datenplaetze.sort(function(a,b) {
                         return (a.prio <= b.prio)?-1:1;
                     }),
-                  name: ort.text
+                  name: ort.bezeichnung
                 });
            });
     },

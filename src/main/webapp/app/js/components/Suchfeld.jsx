@@ -77,7 +77,7 @@ module.exports = React.createClass({
             placeholder="PLZ"
             autoComplete="off"
             defaultValue={self.props.plz}
-            required pattern="[0-9]{5}" maxLength="5" size="5"
+            required minLenght="3" maxLength="20" size="5"
             onKeyDown={self.handleKeyDown} />
         </div>
         <button ref="searchbutton" type="button" className="btn btn-default suche-button" onClick={this.suche}>KONTAKTE FINDEN</button>

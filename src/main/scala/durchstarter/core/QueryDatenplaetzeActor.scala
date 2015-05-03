@@ -12,6 +12,7 @@ object QueryDatenplaetzeActor {
 
   case class SuggestOrte(text: String)
   case class GetDatenplaetze(ort: String)
+  case class QueryOrte(text: String)
 }
 
 /**
@@ -32,6 +33,7 @@ class QueryDatenplaetzeActor extends Actor with ActorLogging with Failable {
 
   def receive = {
     case GetDatenplaetze(ort: String) => server.queryDatenplaetze(ort) pipeTo sender
+    case QueryOrte(text: String) => server.queryOrte(text) pipeTo sender
     case SuggestOrte(text: String) => server.suggestOrte(text) pipeTo sender
   }
 

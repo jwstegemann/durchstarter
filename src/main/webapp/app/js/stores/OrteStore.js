@@ -19,9 +19,11 @@ module.exports = Reflux.createStore({
         if (text.length > 0) {
             var self = this;
             request
-               .get('/ort/suggest/' + text)
+               .get('/orte/' + text)
                .end(function(result){
-                    var orte = result.body.suggest[0].options;
+                   var orte = result.body.hits.hits.map(function(hit, id) {
+                       return hit._source;
+                   });
                     //console.log("got orte: " + orte);
                     self.trigger(orte);
                     //console.log("getriggert");

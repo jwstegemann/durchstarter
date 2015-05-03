@@ -12,6 +12,7 @@ import spray.can.Http
 import spray.httpx.SprayJsonSupport
 import spray.client.pipelining._
 import spray.util._
+import spray.httpx.unmarshalling.FromResponseUnmarshaller
 
 import akka.actor.ActorSystem
 import akka.event.Logging
@@ -36,9 +37,9 @@ object ElasticSearchServer {
     val db_server = scala.util.Properties.envOrElse("ELASTICSEARCH_URL", "http://localhost:9200")
 
     db_server match {
-      case WithCredentials(protocol,username,password,host,port) => 
+      case WithCredentials(protocol,username,password,host,port) =>
         ElasticSearchServer(s"$protocol://$host:$port", Some(BasicHttpCredentials(username, password)))
-      case WithoutCredentials(protocol,host,port) => 
+      case WithoutCredentials(protocol,host,port) =>
         ElasticSearchServer(s"$protocol://$host:$port", None)
       case _ => throw ElasticSearchException(s"invalid url for ElasticSearchServer: $db_server")
     }
@@ -60,6 +61,7 @@ case class ElasticSearchServer(url: String, credentialsOption: Option[BasicHttpC
 
 
   val queryDatenplaetzeUrl = s"$url/datenplaetze/datenplatz/_search"
+  val queryOrteUrl = s"$url/orte/ort/_search"
   val orteSuggestUrl = s"$url/orte/_suggest"
 
   // interpret the HttpResponse and throw a Neo4JException if necessary
@@ -80,11 +82,11 @@ case class ElasticSearchServer(url: String, credentialsOption: Option[BasicHttpC
   }
 
   // pipeline for queries that should return something
-  final def pipeline: HttpRequest => Future[QueryResult] = (
+  final def pipeline[T]()(implicit unmarshaller: FromResponseUnmarshaller[QueryResult[T]]): HttpRequest => Future[QueryResult[T]] = (
     addHeader("Accept","application/json; charset=UTF-8")
     ~> send
     ~> mapToElasticSeachException
-    ~> unmarshal[QueryResult]
+    ~> unmarshal[QueryResult[T]]
   )
 
   // pipeline for queries that should return something
@@ -103,7 +105,7 @@ case class ElasticSearchServer(url: String, credentialsOption: Option[BasicHttpC
   )
 
 
-  def queryDatenplaetze(ort: String): Future[QueryResult] = {
+  def queryDatenplaetze(ort: String): Future[QueryResult[Datenplatz]] = {
     val queryObject = JsObject(
       ("query", JsObject(
         ("term", JsObject(
@@ -114,10 +116,29 @@ case class ElasticSearchServer(url: String, credentialsOption: Option[BasicHttpC
     )
 
     log.debug("ElasticSearch-QueryDatenplaetze-Request: {}", queryObject)
-    pipeline(Get(queryDatenplaetzeUrl, queryObject)) recover {
+    val p2 = pipeline[Datenplatz]();
+    p2(Get(queryDatenplaetzeUrl, queryObject)) recover {
         case x => throw ElasticSearchException(s"Error retrieving response from ElasticSearch-server: $x")
     }
   }
+
+  def queryOrte(query: String): Future[QueryResult[Ort]] = {
+    val queryObject = JsObject(
+      ("query", JsObject(
+        ("match_phrase_prefix", JsObject(
+          ("bezeichnung", JsString(query))
+        ))
+      )),
+      ("size", JsNumber(100))
+    )
+
+    log.debug("ElasticSearch-QueryOrte-Request: {}", queryObject)
+    val p2 = pipeline[Ort]()
+    p2(Get(queryOrteUrl, queryObject)) recover {
+        case x => throw ElasticSearchException(s"Error retrieving response from ElasticSearch-server: $x")
+    }
+  }
+
 
   def suggest(url: String, field: String, text: String): Future[SuggestResult[Ort]] = {
     val queryObject = JsObject(
@@ -132,11 +153,9 @@ case class ElasticSearchServer(url: String, credentialsOption: Option[BasicHttpC
     log.debug("ElasticSearch-Suggestion-Request: {}", queryObject)
     pipelineSuggest(Get(url, queryObject)) recover {
       case x => throw ElasticSearchException(s"Error retrieving response from ElasticSearch-server: $x")
-    }    
-  }  
+    }
+  }
 
   def suggestOrte(text: String) = suggest(orteSuggestUrl, "bezeichnung", text)
 
 }
-
-

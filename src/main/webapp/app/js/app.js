@@ -20,7 +20,7 @@ var datenplaetzeContainer = document.getElementById('datenplaetzeContainer')
 
 var param = window.location.search;
 
-if (param && param.length === 6) {
+if (param) {
   React.render(<Suchfeld plz={param.substring(1)} />, sucheContainer);
 }
 else {

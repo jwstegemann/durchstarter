@@ -4,13 +4,12 @@ import spray.json.DefaultJsonProtocol
 
 
 case class Ort(
-  id : String,
-/*  bezeichnung : String,
+  _id : String,
+  bezeichnung : String,
   plz : String,
   land : String,
-  gemeinde : String,
-*/
-  koordinaten: Option[String]
+  gemeinde : String
+//  koordinaten: Option[String]
 )
 
 case class Datenplatz(
@@ -50,7 +49,7 @@ case class AngebotRequest(
 object DurchstarterProtocol extends DefaultJsonProtocol {
 
   // JSON-Serialization
-  implicit val ortJsonFormat = jsonFormat2(Ort.apply)
+  implicit val ortJsonFormat = jsonFormat5(Ort.apply)
   implicit val datenplatzJsonFormat = jsonFormat14(Datenplatz.apply)
 
   implicit val newsletterJsonFormat = jsonFormat1(NewsletterRequest.apply)

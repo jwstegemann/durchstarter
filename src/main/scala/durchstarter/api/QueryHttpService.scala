@@ -20,13 +20,13 @@ import durchstarter.domain._
 import StatusCode._
 
 
-trait QueryHttpService extends HttpService with SprayJsonSupport { 
+trait QueryHttpService extends HttpService with SprayJsonSupport {
 
   import ElasticSearchProtocol._
   import DurchstarterProtocol._
 
   private val queryDatenplaetzeActor = actorRefFactory.actorSelection("/user/queryDatenplaetze")
-//  private val emailActor = 
+//  private val emailActor =
 
   private implicit val timeout = new Timeout(5.seconds)
   private implicit def executionContext = actorRefFactory.dispatcher
@@ -38,17 +38,17 @@ trait QueryHttpService extends HttpService with SprayJsonSupport {
         get {
           dynamic {
             //FixMe: we do not need a Message-Type Fulltext here...
-            complete((queryDatenplaetzeActor ? GetDatenplaetze(ort)).mapTo[QueryResult])
+            complete((queryDatenplaetzeActor ? GetDatenplaetze(ort)).mapTo[QueryResult[Datenplatz]])
           }
         }
       }
     } ~
-    pathPrefix("ort") {
-      path("suggest" / Segment) { text: String =>
+    pathPrefix("orte") {
+      path(Segment) { text: String =>
         get {
           dynamic {
             //FixMe: we do not need a Message-Type Fulltext here...
-            complete((queryDatenplaetzeActor ? SuggestOrte(text)).mapTo[SuggestResult[Ort]])
+            complete((queryDatenplaetzeActor ? QueryOrte(text)).mapTo[QueryResult[Ort]])
           }
         }
       }
@@ -56,7 +56,7 @@ trait QueryHttpService extends HttpService with SprayJsonSupport {
     path("newsletter" / "1") {
       put {
         entity(as[NewsletterRequest]) { newsletter =>
-          val emailActor = actorRefFactory.actorSelection("/user/email")  
+          val emailActor = actorRefFactory.actorSelection("/user/email")
 
           emailActor ! newsletter
           complete(StatusCodes.OK)
@@ -66,7 +66,7 @@ trait QueryHttpService extends HttpService with SprayJsonSupport {
     path("angebot" / "2") {
       put {
         entity(as[AngebotRequest]) { angebot =>
-          val emailActor = actorRefFactory.actorSelection("/user/email")  
+          val emailActor = actorRefFactory.actorSelection("/user/email")
 
           emailActor ! angebot
           complete(StatusCodes.OK)

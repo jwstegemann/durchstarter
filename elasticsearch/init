@@ -103,7 +103,7 @@ curl -XPUT "$1/orte/ort/_mapping" -d'
 {
   "ort": {
     "_source": {
-      "enabled": "false"
+      "enabled": "true"
     },
     "properties": {
         "id": {
@@ -112,10 +112,8 @@ curl -XPUT "$1/orte/ort/_mapping" -d'
           "analyzer": "keyword"
         },
         "bezeichnung": {
-            "type": "completion",
-            "index_analyzer": "german",
-            "search_analyzer": "german",
-            "payloads": "true"
+            "type": "string",
+            "analyzer": "german"
         },
         "plz": {
           "type": "string",
