@@ -25,7 +25,9 @@ module.exports = Reflux.createStore({
                        return hit._source;
                    });
                     //console.log("got orte: " + orte);
-                    self.trigger(orte);
+                    self.trigger(orte.sort(function(a,b) {
+                      return a.plz < b.plz?-1:1;
+                    }));
                     //console.log("getriggert");
                });
         }
