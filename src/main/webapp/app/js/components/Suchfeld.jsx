@@ -74,13 +74,13 @@ module.exports = React.createClass({
       <form ref="suchform" className="navbar-form navbar-right" role="search">
         <div className="form-group">
           <input ref="searchinput" type="text" className="form-control suche-input"
-            placeholder="PLZ"
+            placeholder="Ort / PLZ"
             autoComplete="off"
             defaultValue={self.props.plz}
-            required minLenght="3" maxLength="20" size="5"
+            required minLenght="3" maxLength="20" size="15"
             onKeyDown={self.handleKeyDown} />
         </div>
-        <button ref="searchbutton" type="button" className="btn btn-default suche-button" onClick={this.suche}>KONTAKTE FINDEN</button>
+        <button ref="searchbutton" type="button" className="btn btn-default suche-button" onClick={this.suche}><i className="fa fa-search fa-fw fa-lg"></i></button>
       </form>
 
     );

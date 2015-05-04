@@ -125,8 +125,13 @@ case class ElasticSearchServer(url: String, credentialsOption: Option[BasicHttpC
   def queryOrte(query: String): Future[QueryResult[Ort]] = {
     val queryObject = JsObject(
       ("query", JsObject(
-        ("match_phrase_prefix", JsObject(
-          ("bezeichnung", JsString(query))
+        ("multi_match", JsObject(
+          ("fields", JsArray(
+            JsString("plz"),
+            JsString("gemeinde")
+          )),
+          ("query", JsString(query)),
+          ("type", JsString("phrase_prefix"))
         ))
       )),
       ("size", JsNumber(100))

@@ -53,7 +53,7 @@ module.exports = React.createClass({
     else if (this.state.orte.length === 0) {
       return (<div className="row orte-meldung">
         <div className="col-md-10 col-md-offset-1 section-details">
-        <p>Zu der von Ihnen eingegebenen Postleitzahl konnten wir leider keinen Ort in unserer Datenbank ermitteln.</p>
+        <p>Zu der von Ihnen eingegebenen Suche konnten wir leider keinen Ort in unserer Datenbank ermitteln.</p>
         <p>Bitte versuchen Sie eine andere Postleitzahl in Ihrer Nähe.</p>
         </div>
       </div>);
@@ -65,7 +65,7 @@ module.exports = React.createClass({
       return (
         <div className="row">
           <div className="col-md-10 col-md-offset-1">
-            <p className="ort-titel">Es gibt mehrere Orte zu Ihrer Postleitzahl. Meinen Sie: </p>
+            <p className="ort-titel">Es gibt mehrere Orte zu Ihrer Suche. Meinen Sie: </p>
             <ul className="orte-auswahl">
               {this.state.orte.map(function(ort) {
                 return <li key={ort._id}><a className="ort-item" onClick={self.onClickOrt.bind(self,ort)}>{ort.bezeichnung}</a></li>;
