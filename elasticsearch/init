@@ -113,7 +113,7 @@ curl -XPUT "$1/orte/ort/_mapping" -d'
         },
         "bezeichnung": {
             "type": "string",
-            "analyzer": "german"
+            "index": "not_analyzed"
         },
         "plz": {
           "type": "string",
@@ -128,7 +128,7 @@ curl -XPUT "$1/orte/ort/_mapping" -d'
         "gemeinde": {
           "type": "string",
           "store": "yes",
-          "analyzer": "keyword"
+          "analyzer": "standard"
         },
         "koordinaten": {
           "type": "geo_point",

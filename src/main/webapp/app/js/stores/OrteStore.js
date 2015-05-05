@@ -26,7 +26,17 @@ module.exports = Reflux.createStore({
                    });
                     //console.log("got orte: " + orte);
                     self.trigger(orte.sort(function(a,b) {
-                      return a.plz < b.plz?-1:1;
+                      if (a.gemeinde.toLowerCase() === text.toLowerCase()) {
+                        if (b.gemeinde.toLowerCase() === text.toLowerCase()) {
+                          return a.plz < b.plz?-1:1;
+                        }
+                        else return -1;
+                      }
+                      else if (b.gemeinde.toLowerCase() !== text.toLowerCase()) {
+                        return a.plz < b.plz?-1:1;
+                      }
+                      else return 1;
+
                     }));
                     //console.log("getriggert");
                });
