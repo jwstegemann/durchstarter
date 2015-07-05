@@ -214,6 +214,10 @@ gulp.task('serve', ['prepare_serve', 'build', 'watch'], function() {
         target: 'http://localhost:8080/info'
       },
       {
+        source: '/app',
+        target: 'http://localhost:9000/'
+      },
+      {
         source: '/angebot',
         target: 'http://localhost:8080/angebot'
       }]
