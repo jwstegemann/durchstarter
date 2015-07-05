@@ -24,6 +24,11 @@ strong {
   font-weight: 300 !important;
 }
 
+p.section-details > strong {
+  font-weight: 400 !important;
+}
+
+
 @mixin box-shadow($shadow) {
   -webkit-box-shadow: $shadow;
      -moz-box-shadow: $shadow;
@@ -207,6 +212,15 @@ input.form-control:focus {
   width: 100%;
   margin-right: 20px;
   @include box-shadow($whiteframe-shadow-z2);
+}
+
+h2 {
+  padding: 0;
+  font-family: $font;
+  font-weight: 300;
+  color: $text-dark;
+  font-size: 28px;
+  margin-left: 20px;
 }
 
 .section-header {

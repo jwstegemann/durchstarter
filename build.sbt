@@ -51,10 +51,10 @@ libraryDependencies ++= Seq(
     "com.typesafe.akka"                       %%  "akka-testkit"                % "2.2.3"        % "test",
     "ch.qos.logback"                          %   "logback-classic"             % "1.0.13",
     "joda-time"                               %   "joda-time"                   % "2.3",
-    "org.joda"                                %   "joda-convert"                % "1.2",    
+    "org.joda"                                %   "joda-convert"                % "1.2",
     "org.specs2"                              %%  "specs2"                      % "1.14"         % "test",
     "commons-io"                              %   "commons-io"                  % "2.4"          % "optional",
-    "com.amazonaws"                           %   "aws-java-sdk"                % "1.6.3",
+//    "com.amazonaws"                           %   "aws-java-sdk"                % "1.6.3",
     "me.lessis"                               %%  "courier"                     % "0.1.3"
 )
 
@@ -64,3 +64,6 @@ assemblySettings
 
 mainClass := Some("durchstarter.Rest")
 
+// twirl-api
+
+Twirl.settings

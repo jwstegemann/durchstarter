@@ -21,8 +21,8 @@ import spray.http.HttpHeaders.RawHeader
 
 import spray.http.HttpHeaders._
 
-class RootServiceActor extends Actor with ActorLogging with HttpService with SprayJsonSupport 
-  with StaticHttpService with QueryHttpService {
+class RootServiceActor extends Actor with ActorLogging with HttpService with SprayJsonSupport
+  with StaticHttpService with TwirlHttpService with QueryHttpService {
 
   def actorRefFactory = context
   implicit def executionContext = context.dispatcher
@@ -34,6 +34,7 @@ class RootServiceActor extends Actor with ActorLogging with HttpService with Spr
   def receive = runRoute(
     queryRoute ~
     staticRoute ~
+    twirlRoute ~
     pathSingleSlash {
       redirect("/app/index.html", MovedPermanently)
     }
