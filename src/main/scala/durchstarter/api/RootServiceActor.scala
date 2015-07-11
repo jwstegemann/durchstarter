@@ -33,10 +33,10 @@ class RootServiceActor extends Actor with ActorLogging with HttpService with Spr
 
   def receive = runRoute(
     queryRoute ~
-    staticRoute ~
     twirlRoute ~
     pathSingleSlash {
       redirect("/app/index.html", MovedPermanently)
-    }
+    } ~
+    staticRoute
   )
 }

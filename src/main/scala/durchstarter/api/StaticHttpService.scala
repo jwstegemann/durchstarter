@@ -30,6 +30,13 @@ trait StaticHttpService extends HttpService { self : ActorLogging =>
           }
         }
       }
+    } ~
+    respondWithHeader(`Cache-Control`(`max-age`(86400))) {
+      encodeResponse(Gzip) {
+        cache(staticCache) {
+          getFromResourceDirectory("root")
+        }
+      }
     }
   }
 }

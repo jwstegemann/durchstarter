@@ -58,7 +58,7 @@ function handleError(task) {
 
 gulp.task('clean', function(cb) {
   // You can use multiple globbing patterns as you would with `gulp.src`
-  del([paths.dist], cb);
+  del([paths.dist, paths.dist + "/../*", paths.dist + "/../root/*"], cb);
 });
 
 
@@ -88,10 +88,6 @@ gulp.task('static', ['root'], function() {
           basepath: '@file'
         }))
     .pipe(gulp.dest(dest));
-
-    return gulp.src(paths.rootFiles)
-      .pipe(flatten())
-      .pipe(gulp.dest('dist/'));
 });
 
 
@@ -99,10 +95,10 @@ gulp.task('static', ['root'], function() {
  * root ressources
  */
 gulp.task('root', [], function() {
-  var dest = paths.dist + "/..";
+  var dest = paths.dist + "/../root";
 
     return gulp.src(paths.rootFiles)
-      .pipe(flatten())
+//      .pipe(flatten())
       .pipe(gulp.dest(dest));
 });
 
