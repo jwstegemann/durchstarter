@@ -35,7 +35,7 @@ var paths = {
     'app/kontakt.html',
     'app/agbs.html',
     'node_modules/jquery-placeholder/jquery.placeholder.min.js'],
-  rootFiles: ['app/root/robots.txt', 'app/root/sitemap.xml'],
+  rootFiles: ['app/root/robots.txt', 'app/root/sitemap.xml', 'app/root/googlea5e85038836e94ad.html'],
   fontsFiles: ['app/fonts/*'],
   cssFiles: ['app/styles/font-awesome.min.css'],
   indexHtml: "http://localhost:9000/index.html",
