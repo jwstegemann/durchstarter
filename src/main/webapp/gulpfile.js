@@ -18,6 +18,7 @@ var open        = require("gulp-open");
 var plumber     = require("gulp-plumber")
 var svgSymbols  = require("gulp-svg-symbols")
 var fileinclude = require('gulp-file-include')
+var flatten     = require('gulp-flatten');
 
 
 var paths = {
@@ -34,6 +35,7 @@ var paths = {
     'app/kontakt.html',
     'app/agbs.html',
     'node_modules/jquery-placeholder/jquery.placeholder.min.js'],
+  rootFiles: ['app/root/robots.txt', 'app/root/sitemap.xml'],
   fontsFiles: ['app/fonts/*'],
   cssFiles: ['app/styles/font-awesome.min.css'],
   indexHtml: "http://localhost:9000/index.html",
@@ -76,7 +78,7 @@ gulp.task('images', [], function() {
 /*
  * static ressources
  */
-gulp.task('static', [], function() {
+gulp.task('static', ['root'], function() {
   var dest = paths.dist;
 
   return gulp.src(paths.staticFiles)
@@ -86,6 +88,22 @@ gulp.task('static', [], function() {
           basepath: '@file'
         }))
     .pipe(gulp.dest(dest));
+
+    return gulp.src(paths.rootFiles)
+      .pipe(flatten())
+      .pipe(gulp.dest('dist/'));
+});
+
+
+/*
+ * root ressources
+ */
+gulp.task('root', [], function() {
+  var dest = paths.dist + "/..";
+
+    return gulp.src(paths.rootFiles)
+      .pipe(flatten())
+      .pipe(gulp.dest(dest));
 });
 
 /*
