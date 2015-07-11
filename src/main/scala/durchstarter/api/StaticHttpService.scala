@@ -22,12 +22,10 @@ trait StaticHttpService extends HttpService { self : ActorLogging =>
   lazy val staticCache = routeCache(maxCapacity = 200, timeToIdle = Duration("12 h"))
 
   val staticRoute = {
-    pathPrefix("app") {
-      respondWithHeader(`Cache-Control`(`max-age`(86400))) {
-        encodeResponse(Gzip) {
-          cache(staticCache) {
-            getFromResourceDirectory("app")
-          }
+    respondWithHeader(`Cache-Control`(`max-age`(86400))) {
+      encodeResponse(Gzip) {
+        cache(staticCache) {
+          getFromResourceDirectory(".")
         }
       }
     }
