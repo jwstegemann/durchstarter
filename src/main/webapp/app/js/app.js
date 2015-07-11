@@ -20,12 +20,22 @@ var datenplaetzeContainer = document.getElementById('datenplaetzeContainer')
 
 var param = window.location.search;
 
-if (param) {
-  React.render(<Suchfeld plz={param.substring(1)} />, sucheContainer);
+if (location.pathname.indexOf('/info/') === -1) {
+
+  if (param) {
+    React.render(<Suchfeld plz={param.substring(1)} />, sucheContainer);
+  }
+  else {
+    React.render(<Suchfeld />, sucheContainer);
+  }
+
 }
 else {
-  React.render(<Suchfeld />, sucheContainer);
+  var segments = location.pathname.split( '/' );
+
+  Actions.suchePlz(segments[segments.length-1]);
 }
+
 
 React.render(<OrteAuswahl />, orteContainer);
 React.render(<Ergebnis />, datenplaetzeContainer);

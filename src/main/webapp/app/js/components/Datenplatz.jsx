@@ -47,7 +47,7 @@ module.exports = React.createClass({
                 </table>
               </div>
               <div className="col-xs-2">
-                  <img className="platzlogo" src={'img/logos/' + this.props.datenplatz.icon} />
+                  <img className="platzlogo" src={'/app/img/logos/' + this.props.datenplatz.icon} />
               </div>
           </div>
 
