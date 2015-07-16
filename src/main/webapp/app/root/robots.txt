@@ -1,7 +1,5 @@
 User-agent: *
 Disallow: /app/search.html
-Disallow: /orte
-Disallow: /datenplaetze
 Disallow: /angebot
 Disallow: /newsletter
-Sitemap: http://www.durchstarter24.de/sitemap.xml
+Sitemap: http://www.selbstständig-selbstständig.de/sitemap.xml
