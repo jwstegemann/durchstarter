@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /app/search.html
 Disallow: /angebot
 Disallow: /newsletter
-Sitemap: http://www.selbstständig-selbstständig.de/sitemap.xml
+Sitemap: http://www.selbststaendig-selbststaendig.de/sitemap.xml
