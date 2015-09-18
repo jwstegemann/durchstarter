@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /app/search.html
 Disallow: /angebot
 Disallow: /newsletter
-Sitemap: http://www.selbststaendig-selbststaendig.de/sitemap.xml
+Sitemap: http://www.durchstarter24.de/sitemap.xml
