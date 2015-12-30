@@ -27,5 +27,6 @@ module.exports = {
   "Förderbank Bund":260,
   "Förderbank Land":270,
   "Beteiligungsgesellschaft Land":280,
-  "Bürgschaftsbank Land":290
+  "Bürgschaftsbank Land":290,
+  "Franchiseangebote in der Region":300
 }
