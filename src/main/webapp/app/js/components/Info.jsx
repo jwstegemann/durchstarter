@@ -77,7 +77,7 @@ module.exports = React.createClass({
       <div className="row section">
           <div className="col-md-5 col-md-offset-1 left-column">
               <p className="section-header">Weitere Kontakte für Sie:</p>
-              <p className="section-details">Außerdem haben Dienstleister die Möglichkeit ihre Kontaktdaten in folgenden Branchen und ihrer Region exklusiv und zunächst sogar kostenlos zu präsentieren:</p>
+              <p className="section-details">Außerdem haben Dienstleister die Möglichkeit ihre Kontaktdaten in folgenden Branchen und ihrer Region zu präsentieren:</p>
                 <ul className="section-list">
                 <li>Banken</li>
                 <li>Krankenkassen</li>
@@ -96,6 +96,8 @@ module.exports = React.createClass({
                 <li>Facilitymanagement / Reinigung</li>
                 <li>Energieberater</li>
                 <li>Sonstige Dienstleister</li>
+                <li>Onlinedienste</li>
+                <li>Franchiseangebote in der Region</li>
               </ul>
               <p className="section-details"><a href="eintrag.html">mehr...</a></p>
           </div>
@@ -111,7 +113,7 @@ module.exports = React.createClass({
           </div>
           <div className="col-md-5">
               <p className="section-header">Ihr Vorteil:</p>
-              <p className="section-details">Sie erhalten auf einen Blick und ohne Mühe zahlreiche Kontaktdaten von Dienstleistern, die speziell an Ihnen als Kunden interessiert sind - pro Kategorie jedoch immer nur einen.</p>
+              <p className="section-details">Sie erhalten auf einen Blick und ohne Mühe zahlreiche Kontaktdaten von Dienstleistern aus Ihrer Region, die speziell an Ihnen als Kunden interessiert sind.</p>
           </div>
       </div>
 

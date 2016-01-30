@@ -1,6 +1,6 @@
 
 module.exports = {
-  "Bank":10,
+  "Bank / Finanzierung":10,
   "Steuerberater":20,
   "Rechtsanwalt":30,
   "Krankenkasse ":40,
@@ -8,8 +8,8 @@ module.exports = {
   "Marketing / Werbung / PR":60,
   "Bürodienstleister":70,
   "Personaldienstleister":80,
-  "Versicherungsmakler":90,
-  "Finanzmakler":100,
+  "Versicherungen":90,
+  "Finanzmakler / Finanzdienstleister":100,
   "Immobilienmakler":110,
   "IT-Dienstleister":120,
   "Krisenmanagement":130,
@@ -27,5 +27,6 @@ module.exports = {
   "Förderbank Bund":260,
   "Förderbank Land":270,
   "Beteiligungsgesellschaft Land":280,
-  "Bürgschaftsbank Land":290
+  "Bürgschaftsbank Land":290,
+  "Franchiseangebote in der Region":300
 }
